@@ -1,0 +1,22 @@
+Hi all,
+
+I hope this message finds you all well.
+
+A few of us (Elisa, Josh, and myself) have been discussing putting together a paper that builds on our work from the SFI Summer School. We hope to submit to a Computer Science conference like the International Conference on Weblogs and Social Media (ICWSM-14) or the International Conference on Social Computing (SocialCom-14) since these have hard deadlines (unlike a submission to a journal) and more naturally fit the flavor of our project.
+
+To give you an idea of a possible timeline, the deadlines for these conferences are 15 January 2014 and 1 March 2014. That means we should aim to have most of the research done by late December / early January so that we have two weeks to write the paper itself. The paper should be 6 to 10 pages for these venues, which isn't a lot.
+
+Our basic idea for the paper is to extend the community detection question we explored this summer to include *directed*, content-free information (using something like transfer entropy) as well as content-full information (like mentions and retweets). From the summer, we saw that using *undirected* content-free information (mutual information) allowed us to pick up on additional structure not present in considering the follower network by itself. Thus, an interesting question to explore: do the content-free and content-full communities coincide, and if not, how do they differ?
+
+Let us know if you're interested in working on this project. We're up against a tight deadline, so consider how much time you have to commit and what you think you can contribute to the project. In particular, think about:
+
+1) Which type of information (content-free or content-full) you would most like to analyze?
+
+2) What method you would propose for defining communities based on this type information? (I've proposed some ways above, but there are certainly plenty more!)
+
+3) What kind of questions can we ask (and hopefully answer) about these communities?
+
+Thanks for taking the time to read this.
+
+And Happy (Pre-)Turkey Day to everyone in the US!
+Dave
