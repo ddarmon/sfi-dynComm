@@ -1,0 +1,16 @@
+131113, from Elisa
+
+Paper content:
+- Redefine "communication" between users, based on re-tweets and mentions. Do we have this kind of information for the current data set?
+- New measure of information flow based on the new definition of communication (can we still use Mutual Information or some other information theory based measure?)
+- Select and run a couple of communities detection algorithms for weighted directed networks
+- Result analysis: compare optimal modularity value of communities found with static edges and with information flow weighted edges (+ some other kind of analysis, like a qualitative description of the kind of communities we found?)
+
+Practical issues:
+- Who do we want to involve in the project?
+- What conference / journal do we want to target? 
+* ICWSM 2014 (Ann Arbor, MI, June 2-4) (deadline for paper submission: Jan 22nd)
+* SocialCom 2014 (San Jose, CA, June 21-25) (deadline: Feb 15th)
+* WebSci 2013 (Bloogmington, Indiana, June 23-26) (deadline: Feb 23rd)
+(I suggest that we target a Conference instead of a journal because that would give us a deadline that we will be more motivated to respect. But at the same time we have to make sure that at least one of us can participate, otherwise the paper would not appear in the proceedings.)
+- Timeline (self-imposed intermediate deadlines for each part of the work)

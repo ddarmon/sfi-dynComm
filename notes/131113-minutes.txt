@@ -1,0 +1,88 @@
+General Topics
+==============
+
+Take two basic approaches: content-free and content-full.
+
+* content-free
+
+** Purely information theoretic, looking at the time series of users.
+
+** This is basically the approach we took at the summer school, where we used mutual information between users.
+
+** For this paper, we'll use transfer entropy, which is directed and includes a time lag component missing from mutual information.
+
+** The question this answers: does knowing another user's time series help you predict a focal user's behavior? If the transfer entropy is high between a collection of users compared to outside that collection, their behavior is more jointly predictable. This defines one type of community.
+
+* content-full
+
+** Use the retweets and mentions between users to get a picture of their interaction patterns.
+
+** Use a directed network weighted by
+
+*** raw of number retweets
+
+*** raw of number of mentions
+
+*** proportion of retweets, normalized by total tweets or total retweets
+
+*** proportion of mentions, normalized by total tweets or total mentions
+
+*** ('total' in each case referring to the totals *for a particular user*)
+
+** This more naturally captures what we think of as a 'community' in online social media: people that communicate directly with each other.
+
+* A research question:
+
+** How do content-free and content-full communities compare?
+
+* A new toy model for the content-full approach?
+
+** The linked Bernoulli model does not make sense for the content-full approach.
+
+** A possible (simple) model might, at each timestep, generate mentions / retweets with some probability proportional to (a) the distance to the user, (b) the number of connections leading to the user, or (c) some other metric. (I'm spitballing here...)
+
+** Do we need this toy model, if it's just to test our code? i.e. Do we need it for the paper?
+
+** Another simple 'model' would be to collect two loosely connected communities (cyclists and political accounts) and show that we recover the proper communities using the content-free/full approaches.
+
+* How should we filter the network, if we need to?
+
+** The naive approach was to look at the top 3000 most active users in the 15K network.
+
+** {G} Elisa will look into more principled approaches.
+
+Goals:
+======
+
+* {G} Look at ICWSM data sets to see if they're useful.
+* {G} Dave: get data sets to Elisa and Josh:
+
+** Follower network, retweet histories, mention histories, and raw timestamps.
+
+* {G} Dave: Do a literature review to see if these sorts of things have been done before.
+
+* {G} Dave: Email Bill Rand and Michelle Girvan about whether they would like to be involved with this paper, and their opinions on including more people from the SFI group.
+
+* {G} Elisa: Look into network filtering methods.
+
+* {G} Elisa: Look into methods for community detection in directed networks. (Louvain, InfoMap, etc.)
+
+* {G} Elisa: Begin investigating how to weight directed networks by mentions / replies / some hybrid of the two.
+
+* {G} Josh: Begin looking into weighting the network using Transfer Entropy.
+
+Overall Timeline:
+
+In general, write paper as we go.
+
+* {G} Dave: Set up a GitHub repo for the paper.
+* {G} Dave: Write / find a simple tutorial on using GitHub with Linux.
+
+By December 1st:
+
+* {G} Dave: Have a lit review done.
+* {G} Dave: Have an introduction / background section written.
+
+* {G} Elisa: Have preliminary results for the content-full communities.
+
+* {G} Josh: Have preliminary results for the content-free communities.
