@@ -1,0 +1,72 @@
+Proceedings for ICWSM-2013:
+
+http://www.aaai.org/Library/ICWSM/icwsm13contents.php
+
+Some related papers from that conference:
+
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6128
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/5971
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6085
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6107
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6049, Clauset and Jacobs
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6071
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6076
+http://www.aaai.org/ocs/index.php/ICWSM/ICWSM13/paper/view/6115
+
+Aram Galstyan (has a lot of research related to these sorts of things):
+
+http://arxiv.org/abs/1305.1980
+http://lanl.arxiv.org/abs/1208.4475
+http://arxiv.org/abs/1110.2724
+http://grupoweb.upf.edu/fosw2011/program.html
+http://iopscience.iop.org/0295-5075/90/1/18002/
+
+Google Scholar Search "community detection twitter":
+
+* http://link.springer.com/article/10.1007/s13278-012-0074-8, Using dynamic community detection to identify trends in user-generated content
+
+** Summary: They create a network of *terms*, rather than users, and detect communities within this 'topic' network.
+
+* http://www.scirp.org/journal/PaperInformation.aspx?PaperID=35431&, Mutually Enhancing Community Detection and Sentiment Analysis on Twitter Networks, from Journal of Data Analysis and Information Processing
+
+** Summary: This is the closest paper (so far) to what we're trying to do. They did 'vanilla' community detection on a friend / follower network, and then 
+
+** Key parts: 
+
+*** "After the networks had been constructed, both the Infomap and SLPA algorithms were run to perform initial community detection before any additional features were added."
+
+*** SLPA = SPEAKER-LISTENER LABEL PROPAGATION, http://arxiv.org/pdf/1109.5720.pdf
+
+*** "Three types of features were used to augment the results of SLPA and Infomap on the initial friend/follower networks. These included: replies, mentions and retweets; hashtags; and sentiment classification of tweets. These features were computed for all of the 32 days in the dataset. Then, they were used to iteratively increment edge weights in the four social networks, and community detection was repeated on the networks using edge weights updated with each day’s data. Variations of this technique were attempted in order to determine optimal performance, such as cumulatively maintaining edge weight updates or resetting the network to the initial friend/follower network after computing communities with each day’s data."
+
+*** The above quote shows that they did something very similar to what we plan to do. But they do a very simple weighting, incrementing an edge weight by 1 for each mention / retweet. How does this work to more 'sophisticated' approaches, like weighting by the fraction of mentions, etc.?
+
+*** They use hashtags as an additional weighting, incrementing an edge weight whenever a two users have tweets that share a hashtag.
+
+*** Also, they *start* with obvious communities (based on Twitter accounts run by Microsoft), whereas our network does *not* explicitly begin with any sort of community structure.
+
+*** "This suggests that more meaningful communities were uncovered by updating network edge weights with the three supplementary feature types. Increasing weight values of edges connecting nodes with common features allowed community partitions that were likely more representative of the real world interactions in these networks to be discovered."
+
+*** They are using day-by-day dynamic 'snapshots' of the network, and computing the modularity over time (once for each day).
+
+*** They don't do *anything* in terms of content-free v content-full communities.
+
+* http://arxiv.org/abs/1207.0017, Identifying Topical Twitter Communities via User List Aggregation, unpublished
+
+** Summary: They use Twitter's List feature to extract users who share common people on their lists. A very different approach to defining a community (i.e. a community is when people tend to aggregate the same people to follow).
+
+* http://www.csse.uwa.edu.au/~kwanhui/2012-HT-twitterCommInt.pdf, Following the follower: detecting communities with common interests on twitter, in Proceedings of the 23rd ACM conference on Hypertext and social media
+
+** Summary:
+
+** Key Points:
+
+*** "One important problem in the application of target advertising and viral marketing to online social networks is the efficient identification of communities with common interests. Current approaches involve detecting all communities, then determining the interests of these communities [2, 5]. These approaches involve a lengthy and intensive process of detecting communities for the entire social network and many of the detected communities may not share the interest we are looking for. We propose a method to identify communities comprising like-minded individuals with common interests on Twitter. Also, our method does not unnecessarily detect communities that do not share any specific interest."
+
+*** That is, they are searching for a community of users who are a priori interested in a topic. This obviously differs from our approach, but is nevertheless interesting.
+
+* http://www.researchgate.net/publication/258239934_A_fast_parallel_modularity_optimization_algorithm_(FPMQA)_for_community_detection_in_online_social_network/file/9c9605278a1629df4b.pdf, A fast parallel modularity optimization algorithm (FPMQA) for community detection in online social network, in Knowledge-Based Systems
+
+Misc. Interesting Papers:
+
+http://scitation.aip.org/content/aip/journal/chaos/23/1/10.1063/1.4790830
