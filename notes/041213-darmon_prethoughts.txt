@@ -1,0 +1,5 @@
+What about defining a *pure* mention / follower network, a la 
+
+* http://www.aaai.org/ocs/index.php/icwsm/icwsm12/paper/download/4634/5058, Conversation Practices and Network Structure in Twitter, in ICWSM '12
+
+How do these communities compare to those where we *impose* the structural network?

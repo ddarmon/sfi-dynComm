@@ -89,8 +89,6 @@ Google Scholar Search "community detection twitter":
 
 *** This is a *really* rough paper. The fact that it got accepted into ICWSM makes me very hopeful for the fate of our paper.
 
-
-
 Misc. Interesting Papers:
 
 http://scitation.aip.org/content/aip/journal/chaos/23/1/10.1063/1.4790830

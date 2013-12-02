@@ -1,3 +1,32 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{darmon2013detecting}
+David Darmon, Elisa Omodei, Cesar~O Flores, Lu{\i}s~F Seoane, Kevin Stadler,
+  Jody Wright, Joshua Garland, and Nix Barnett.
+\newblock Detecting communities using information flow in social networks.
+\newblock In {\em Proceedings of the Complex Systems Summer School}. Santa Fe
+  Institute, 2013.
+
+\bibitem{paninski2003estimation}
+Liam Paninski.
+\newblock Estimation of entropy and mutual information.
+\newblock {\em Neural Computation}, 15(6):1191--1253, 2003.
+
+\bibitem{schreiber2000measuring}
+Thomas Schreiber.
+\newblock Measuring information transfer.
+\newblock {\em Physical review letters}, 85(2):461, 2000.
+
+\bibitem{shalizi2007discovering}
+Cosma~Rohilla Shalizi, Marcelo~F Camperi, and Kristina~Lisa Klinkner.
+\newblock Discovering functional communities in dynamical networks.
+\newblock In {\em Statistical network analysis: Models, issues, and new
+  directions}, pages 140--157. Springer, 2007.
+
+\bibitem{ver2012information}
+Greg Ver~Steeg and Aram Galstyan.
+\newblock Information transfer in social media.
+\newblock In {\em Proc. 21st Int'l World Wide Web Conf.}, pages 509--518. ACM,
+  2012.
 
 \end{thebibliography}

@@ -1,0 +1,49 @@
+A community as something that you know when you see. The general definition of a community with the physics literature (in terms of things like modularity). In social networking services, 'community' could mean many things.
+
+Many possible definitions of a community on Twitter:
+
+Structural: Who are you friends with?
+
+Topical: What do you talk about?
+
+Interaction: Who do you talk to?
+
+Behavioral: Who do you act like?
+
+Most previous work considers these types of communities in isolation.
+
+References:
+
+We propose looking at when and how these communities overlap, and whether different approaches to asking the question, ``What community are you in?'' leads to different insights about the network.
+
+Put a `worked example' here as to how a single person might belong to various different types of communities, and how these types of communities might reveal different insights.
+
+Possibly mention 'meta data,' and how, while it has become a dirty word post-Snowden, it can reveal a lot of information about a person.
+
+Previous Work:
+
+We can break down the approaches into two broad categories, content-free and content-full.
+
+Content-free (information theoretic) approaches:
+
+Shalizi proposes a purely behavioral method
+
+\cite{shalizi2007discovering}
+
+originally motivated for finding functional communities within populations of neurons.
+
+We extended this work to social systems, detecting communities on Twitter based on undirected information flow:
+
+\cite{darmon2013detecting}
+
+Galstyan et al propose a similar approach
+
+\cite{ver2012information}
+
+using transfer entropy rather than mutual information. However, their goal was *link prediction* rather than community discovery.
+
+Content-full (socially motivated) approaches:
+
+Twitter, being a social network service, has a great deal of social information embedded in each tweet. Many approaches have explicitly accounted for this information in their definition of a community.
+
+Put references to work done using mentions / replies / retweets / hash tags, etc.
