@@ -67,6 +67,30 @@ Google Scholar Search "community detection twitter":
 
 * http://www.researchgate.net/publication/258239934_A_fast_parallel_modularity_optimization_algorithm_(FPMQA)_for_community_detection_in_online_social_network/file/9c9605278a1629df4b.pdf, A fast parallel modularity optimization algorithm (FPMQA) for community detection in online social network, in Knowledge-Based Systems
 
+** Key Points:
+
+* http://www.jofcis.com/publishedpapers/2012_8_3_991_1000.pdf, Community Discovery in Twitter Based on User Interests, in Journal of Computational Information Systems
+
+** Summary: 
+
+** Key Points:
+
+***  "We use the final user similarity computed in last section as well as classical clustering algorithms to identify communities. There are two well known cluster algorithms: hierarchical clustering and k-means. Hierarchical algorithm is too slow to handle large-scale dataset such as users in Twitter, whereas k-means is very fast and effective. So in this paper, we apply k-means to cluster users in Twitter."
+
+*** Methodologically, they take a *very different approach*. Much more 'CS' that 'Math/Physics.' For example, they use Latent Dirichlet Allocation (a popular Bayesian model) to determine (latent) topics for the users based on their Tweet text, and then consider two users to be related if they share similar topics. (So-called 'text similarity,' where a distance is computed between two users' latent distribution.) They do the final 'clustering' using k-means, rather than a method that explicitly takes into account the topology of the network (like modularity-based methods, stochastic block models, etc.).
+
+*** In general, they define a bunch of ad hoc similarities ('following similarity,' 'hashtag similarity,' 'retweet similarity,' etc.) and then use these to do a multidimensional clustering. The acceptance of the invention of ad hoc similarities is reassuring, given our plans to define ad hoc information weights.
+
+* http://www.aaai.org/ocs/index.php/icwsm/icwsm12/paper/download/4634/5058, Conversation Practices and Network Structure in Twitter, in ICWSM '12
+
+** Summary: They explored the interplay between more static networks (like follower / friend) and 'topic networks' defined in terms of networks where links correspond to retweets and replies, and they show that people seem to follow someone after they've been mentioned (i.e. conversations lead to follower-ship, even if the conversation is just about a broad topic). They did this all through studying tweets related to the show *The X Factor*.
+
+** Key Points:
+
+*** This is a *really* rough paper. The fact that it got accepted into ICWSM makes me very hopeful for the fate of our paper.
+
+
+
 Misc. Interesting Papers:
 
 http://scitation.aip.org/content/aip/journal/chaos/23/1/10.1063/1.4790830
