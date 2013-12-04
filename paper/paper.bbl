@@ -7,15 +7,11 @@ David Darmon, Elisa Omodei, Cesar~O Flores, Lu{\i}s~F Seoane, Kevin Stadler,
 \newblock In {\em Proceedings of the Complex Systems Summer School}. Santa Fe
   Institute, 2013.
 
-\bibitem{paninski2003estimation}
-Liam Paninski.
-\newblock Estimation of entropy and mutual information.
-\newblock {\em Neural Computation}, 15(6):1191--1253, 2003.
-
-\bibitem{schreiber2000measuring}
-Thomas Schreiber.
-\newblock Measuring information transfer.
-\newblock {\em Physical review letters}, 85(2):461, 2000.
+\bibitem{darmon2013understanding}
+David Darmon, Jared Sylvester, Michelle Girvan, and William Rand.
+\newblock Understanding the predictive power of computational mechanics and
+  echo state networks in social media.
+\newblock {\em HUMAN}, 2(1):pp--13, 2013.
 
 \bibitem{shalizi2007discovering}
 Cosma~Rohilla Shalizi, Marcelo~F Camperi, and Kristina~Lisa Klinkner.

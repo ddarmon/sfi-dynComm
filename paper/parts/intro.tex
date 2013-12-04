@@ -1,7 +1,25 @@
 \section{Introduction}
 
-Lorem ipsum.
+Networks play a central role in online social networks like Twitter, Facebook, and Google+. These services have become popular largely because of the fact that they allow for the interaction of millions of users in ways restricted by the network each user chooses to be part of. Central to this interaction is the concept 
 
-\cite{schreiber2000measuring}, \cite{ver2012information}, \cite{shalizi2007discovering}, \cite{paninski2003estimation}
+A large body of work exists on methods for automatic detection of communities within networks \textbf{(lots of references go here, starting with Newman and ending with Fortunato)}. All these methods \emph{begin} with a given network, and then attempt to uncover structure present in the network. That is, they are agnostic to how the network was constructed. Because of this, in answering any sort of question about the communities present in a data set, it is important to begin with a clear picture of the type of community under consideration, and then to tailor the construction of the network and the use of detection algorithms 
 
-Our SFI paper: \cite{darmon2013detecting}
+This is especially true for social network analysis. In online social networks, `community' could mean many things. The simplest definition of community might stem from the network of explicit connections between users on a service (friends, followers, etc.). On small time scales, these connections are more or less static, and we might instead determine communities based on who is talking to whom. On a more abstract level, a user might consider themselves part of a community of people discuss similar topics. We might also define communities as collections of people who exhibit similar behaviors on a service, as in a communities of teenagers vs.\ elderly users. We can characterize these types of communities based on the types of questions we might ask about them:
+\begin{itemize}
+	\item \textbf{Structural:} Who are you friends with?
+	\item \textbf{Interaction-based:} Who do you talk to?
+	\item \textbf{Topic-based:} What do you talk about?
+	\item \textbf{Behavioral:}  Who do you act like?
+\end{itemize}
+
+Most previous work on communities in online social networks have focused on these types of communities in isolation. For instance \textbf{(References from links.txt go here.)}
+
+We propose looking at when and how communities motivated by different questions overlap, and whether different approaches to asking the question, ``What community are you in?'' leads to different insights about a social network. For example, \textbf{(Put a `worked example' here as to how a single person might belong to various different types of communities, and how these types of communities might reveal different insights.)}
+
+In particular, we can break down our approaches into two broad categories: content-free and content-full. The content-free approach is motivated by the question of which individuals act in a concerted manner. The main tools for answering this question stem from information theory. We consider each user on an online social network as an information processing unit, but ignore the content of their messages \textbf{(Cite Shannon here, with his ideas that the content of the message doesn't matter for information theory?)}. We have successfully used this viewpoint to gain insight into local behavior in online social networks~\cite{darmon2013understanding}. The information processing framework applies to equally well to spatially extended systems. In particular, our current content-free approach was originally motivated by a methodology used to detect functional communities within populations of neurons~\cite{shalizi2007discovering}. We have extended this work to social systems, detecting communities on Twitter based on undirected information flow~\cite{darmon2013detecting}. Others have successfully applied a similar viewpoint. For instance, in~\cite{ver2012information}, the authors use transfer entropy, a measure of directed information flow, to perform link detection on Twitter.
+
+In contrast to the content-free approach, a content-full approach would take into account the \emph{content} being transmitted via an online social network. This content has a great deal of social information embedded in it. For example, on Twitter, a tweet might have a hashtag (indicating a topic), a mention or reply (indicating a directed communication), or a retweet (indicating endorsement of another user). This information allows us to build a more complete picture of the \emph{latent} social network, as opposed to the \emph{explicit} social network indicated by friend and follower links.
+
+Many approaches have explicitly accounted for this information in their definition of a community. \textbf{(Put references to work done using mentions / replies / retweets / hash tags, etc.)}
+
+Wrap up. Probably write this \emph{after} more of our results are in.
