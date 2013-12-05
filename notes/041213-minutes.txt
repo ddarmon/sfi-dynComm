@@ -1,0 +1,69 @@
+General Topic
+=============
+
+What types of communities are we interested in, and what methods do we think will pick them out?
+
+* Structural: Any standard community detection algorithm.
+
+* Topics: Some sort of weighting by hashtags (count up the number of shared hashtags between users and weight the edge between them accordingly).
+
+* Conversational: Either the mention/retweet weighting or (maybe) the transfer entropy weighting might might pull these out.
+
+* Behavioral: Mutual information would pick this up. We can return to some of our results from the summer school work.
+
+How should we deal with timescales with the transfer entropy?
+
+* Two sorts of 'timescales':
+
+** How we decide to coarsen the time series (from 1s resolution to something coarser).
+
+** How far back we look in time to compute the transfer entropy.
+
+* Initial approach: choose a reasonable time resolution (1 hour), and try various time lags and see how the weights change.
+
+How to think of transfer entropy
+
+* Transfer entropy isn't *really* about conversations, but as its other name (transfer information) implies, about *information* flow. People might influence each others behaviors without them 'conversing.'
+
+Community Detection Algorithm:
+
+* Many options.
+
+* Disjoint or overlapping communities?
+
+** Overlapping makes the most sense in a social setting.
+
+* Many or one community detection algorithm?
+
+** Focus on one.
+
+How will we measure the goodness-of-fit of our community detection algorithm?
+
+* This is a hard problem in general.
+
+* For modularity-based methods, you can just cite the modularity.
+
+** While this is a general practice, it may not be the best approach. See, for example, this paper by Clauset et al:
+
+*** http://arxiv.org/abs/0910.0165
+
+* We can at least compute the variation of information between the structural and content-free/content-full communities to show that they *do* (or don't) differ.
+
+* Elisa's idea: use something like the convergence time for a consensus clustering algorithm, with the intuition that the longer it takes to converge, the less meaningful the clustering.
+
+To Do
+=====
+
+By Thursday, December 12:
+
+* {G} Dave: Write intro for content-free communities / transfer entropy.
+
+* {G} Dave: Get out the hashtags used by all of the users.
+
+* {G} Elisa: Perform a literature review on directed, weight-based community detection algorithms that allow for overlapping communities.
+
+* {G} Elisa: Begin to try out the algorithms on the networks weighted by mention / reply / retweet data.
+
+* {G} Josh: Integrate Elisa, Dave, and Josh's code.
+
+* {G} Josh: Begin doing a 'parameter sweep' for the transfer entropy approach to decide on a coarsening parameter and a lag parameter.
