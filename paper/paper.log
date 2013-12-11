@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  3 DEC 2013 19:30
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  11 DEC 2013 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,27 +273,61 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 LaTeX Warning: No \author given.
 
-]) (./parts/community.tex) (./paper.bbl [2]) [3] (./paper.aux) ) 
+]) (./parts/community.tex
+Overfull \hbox (0.11023pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/17.28 Activity-Based v. Interaction-Based Com-mu-
+ []
+
+) (./parts/methods.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [2]
+Overfull \hbox (15.74681pt too wide) in paragraph at lines 16--18
+\OT1/cmr/m/n/10.95 are the usual con-di-tional en-tropies over the con-di-tiona
+l (pre-dic-tive) dis-tri-bu-tions $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OM
+L/cmm/m/it/10.95 x[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10
+.95 )$
+ []
+
+
+Overfull \hbox (13.60724pt too wide) in paragraph at lines 42--42
+[]\OT1/cmr/bx/n/14.4 Interaction-Based Com-mu-ni-ties and Men-tion / Retweet
+ []
+
+) (./paper.bbl [3]) [4] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3519 strings out of 493763
- 50994 string characters out of 3144954
- 112283 words of memory out of 3000000
- 6777 multiletter control sequences out of 15000+200000
- 6352 words of font info for 23 fonts, out of 3000000 for 9000
+ 3582 strings out of 493763
+ 51971 string characters out of 3144954
+ 117306 words of memory out of 3000000
+ 6817 multiletter control sequences out of 15000+200000
+ 12795 words of font info for 49 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 38i,4n,38p,1357b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
-ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
-/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper.pdf (3 pages, 100388 bytes).
+ 38i,12n,38p,1357b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2010/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2010/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2010/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on paper.pdf (4 pages, 158300 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

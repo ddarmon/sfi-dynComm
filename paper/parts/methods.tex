@@ -1,0 +1,42 @@
+\section{Methodology}
+
+\subsection{Activity-Based Communities and Transfer Entropy}
+
+Suppose we have two stochastic processes $\{X_{t}\}$ and $\{ Y_{t}\}$. Lag-$k$ transfer entropy is defined as 
+\begin{align}
+	\text{TE}_{Y \to X}^{(k)} &= H\left[X_{t} | X_{t-k}^{t-1}\right] - H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right],
+\end{align}
+where
+\begin{align}
+	H\left[X_{t} | X_{t-k}^{t-1}\right] = - E\left[ \log_{2} p(X_{t} | X_{t-k}^{t-1}) \right]
+\end{align}
+and 
+\begin{align}
+	H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right] = - E\left[ \log_{2} p(X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}) \right]
+\end{align}
+are the usual conditional entropies over the conditional (predictive) distributions $p(x_{t} | x_{t-k}^{t-1})$ and $p(x_{t} | x_{t-k}^{t-1}, y_{t-k}^{t-1})$. This formulation was originally developed in~\cite{schreiber2000measuring}, where transfer entropy was proposed as an information theoretic measure of \emph{directed} information flow. Formally, recalling that $H\left[X_{t} | X_{t-k}^{t-1}\right]$ is the uncertainty in $X_{t}$ given its values at the previous $k$ time points, and that $H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]$ is the uncertainty in $X_{t}$ given the joint process $\{(X_{t}, Y_{t})\}$ at the previous $k$ time points, transfer entropy measures the reduction in uncertainty by including information about $Y_{t}.$ By the `conditioning reduces entropy' result~\cite{cover2012elements}
+\begin{align}
+	H[X | Y, Z] \leq H[X | Y],
+\end{align}
+we can see that transfer entropy is always non-negative, and is zero precisely when $H\left[X_{t} | X_{t-k}^{t-1}\right] = H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]$, in which case knowing the past $k$ lags of $Y_{t}$ does not reduce the uncertainty in $X_{t}$. If the transfer entropy is positive, then $\{ Y_{t}\}$ is considered causal for $\{ X_{t}\}$ in the Granger sense~\cite{granger1963economic, barnett2012transfer}.
+% More generally we can define the transfer entropy as the limit of lag-$k$ transfer entropies,
+% \begin{align}
+% 	\text{TE}_{Y \to X} &= \lim_{k \to \infty} \text{TE}_{Y \to X}^{(k)},
+% \end{align}
+% if the limit exists.
+
+In estimating the transfer entropy from finite data, we will assume that the process $(X_{t}, Y_{t})$ is jointly stationary, which gives us that
+\begin{align}
+	p(x_{t} | x_{t-k}^{t-1}) = p(x_{k+1} | x_{1}^{k})
+\end{align}
+and
+\begin{align}
+	p(x_{t} | x_{t-k}^{t-1}, y_{t-k}^{t-1}) = p(x_{k+1} | x_{1}^{k}, y_{1}^{k})
+\end{align}
+for all $t$. That is, the predictive distribution only depends on the past, not on when the past is observed\footnote{We really only need \emph{conditional} stationarity~\cite{caires2003nonparametric}, but stationarity implies conditional stationarity}. Given this assumption, we compute estimators for $p(x_{k+1} | x_{1}^{k})$ and $p(x_{k+1} | x_{1}^{k}, y_{1}^{k})$ by `counting': for each possible past $(x_{1}^{k}, y_{1}^{k})$, we count the number of times a future of type $x_{k+1}$ occurs, and normalize. Call these estimators $\hat{p}(x_{k+1} | x_{1}^{k})$ and $p(x_{k+1} | x_{1}^{k}, y_{1}^{k})$. Then the plug-in estimator for the transfer entropy is
+\begin{align}
+	\widehat{\text{TE}}_{Y \to X}^{(k)} &= \hat{H}\left[X_{t} | X_{t-k}^{t-1}\right] - \hat{H}\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]
+\end{align}
+where we use the plug-in estimators $\hat{H}\left[X_{t} | X_{t-k}^{t-1}\right]$ and $\hat{H}\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]$ for the entropies. It is well known that the plug-in estimator for entropy is biased~\cite{paninski2003estimation}. To account for this bias, we use the Miller-Madow adjustment to the plug-in estimator~\cite{miller1955note}.
+
+\subsection{Interaction-Based Communities and Mention / Retweet Weighting}
