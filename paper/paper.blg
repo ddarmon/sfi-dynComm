@@ -1,7 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
-The style file: plain.bst
+White space in argument---line 9 of file paper.aux
+ : \citation{
+ :            barnett2012transfer}
+I'm skipping whatever remains of this command
+The style file: aaai.bst
 Database file #1: references.bib
 Repeated entry---line 249 of file references.bib
  : @article{schreiber2000measuring
@@ -12,45 +16,45 @@ Repeated entry---line 292 of file references.bib
  :                                ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 11 entries,
-            2118 wiz_defined-function locations,
-            570 strings with 5822 characters,
-and the built_in function-call counts, 3828 in all, are:
-= -- 386
-> -- 164
+You've used 10 entries,
+            2568 wiz_defined-function locations,
+            640 strings with 6257 characters,
+and the built_in function-call counts, 4152 in all, are:
+= -- 451
+> -- 151
 < -- 2
-+ -- 65
-- -- 54
-* -- 268
-:= -- 634
-add.period$ -- 36
-call.type$ -- 11
-change.case$ -- 59
-chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 150
-empty$ -- 310
-format.name$ -- 54
-if$ -- 806
-int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 12
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 61
++ -- 51
+- -- 50
+* -- 327
+:= -- 677
+add.period$ -- 54
+call.type$ -- 10
+change.case$ -- 64
+chr.to.int$ -- 9
+cite$ -- 11
+duplicate$ -- 165
+empty$ -- 304
+format.name$ -- 65
+if$ -- 857
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 66
+num.names$ -- 30
+pop$ -- 52
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 75
 quote$ -- 0
-skip$ -- 97
+skip$ -- 124
 stack$ -- 0
-substring$ -- 253
-swap$ -- 31
+substring$ -- 230
+swap$ -- 38
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 76
 warning$ -- 1
-while$ -- 40
+while$ -- 37
 width$ -- 13
-write$ -- 124
-(There were 2 error messages)
+write$ -- 146
+(There were 3 error messages)
