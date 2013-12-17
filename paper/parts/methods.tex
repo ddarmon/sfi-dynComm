@@ -37,7 +37,7 @@ and
 \begin{align}
 	p(x_{t} | x_{t-k}^{t-1}, y_{t-k}^{t-1}) = p(x_{k+1} | x_{1}^{k}, y_{1}^{k})
 \end{align}
-for all $t$. That is, the predictive distribution only depends on the past, not on when the past is observed\footnote{We really only need \emph{conditional} stationarity~\cite{caires2003nonparametric}, but stationarity implies conditional stationarity}. Given this assumption, we compute estimators for $p(x_{k+1} | x_{1}^{k})$ and $p(x_{k+1} | x_{1}^{k}, y_{1}^{k})$ by `counting': for each possible past $(x_{1}^{k}, y_{1}^{k})$, we count the number of times a future of type $x_{k+1}$ occurs, and normalize. Call these estimators $\hat{p}(x_{k+1} | x_{1}^{k})$ and $p(x_{k+1} | x_{1}^{k}, y_{1}^{k})$. Then the plug-in estimator for the transfer entropy is
+for all $t$. That is, the predictive distribution only depends on the past, not on when the past is observed\footnote{We really only need \emph{conditional} stationarity~\cite{caires2003nonparametric}, but stationarity implies conditional stationarity}. Given this assumption, we compute estimators for $p(x_{k+1} | x_{1}^{k})$ and $p(x_{k+1} | x_{1}^{k}, y_{1}^{k})$ by `counting': for each possible past $(x_{1}^{k}, y_{1}^{k})$, we count the number of times a future of type $x_{k+1}$ occurs, and normalize. Call these estimators $\hat{p}(x_{k+1} | x_{1}^{k})$ and $\hat{p}(x_{k+1} | x_{1}^{k}, y_{1}^{k})$. Then the plug-in estimator for the transfer entropy is
 \begin{align}
 	\widehat{\text{TE}}_{Y \to X}^{(k)} &= \hat{H}\left[X_{t} | X_{t-k}^{t-1}\right] - \hat{H}\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]
 \end{align}
