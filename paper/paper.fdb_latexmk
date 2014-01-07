@@ -1,14 +1,14 @@
 # Fdb version 3
 ["bibtex paper"] 1386788887 "paper.aux" "paper.bbl" "paper" 
   "./aaai.bst" 1298483771 21725 d3e8c12de289a01b4c188ee5fef3ff00 ""
-  "paper.aux" 1389109569 1208 e54ba582d9bdeee36e83977af5b8b982 ""
+  "paper.aux" 1389109713 1208 e54ba582d9bdeee36e83977af5b8b982 ""
   "paper.bcf" 0 -1 0 ""
   "references.bib" 1386788878 9936 38bf49355379005e41a52e48f7172af8 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1389109568 "paper.tex" "paper.pdf" "paper" 
-  "./parts/community.tex" 1386787168 73 cd3865aea86512c06d10ab6cc5dca3f2 ""
+["pdflatex"] 1389109712 "paper.tex" "paper.pdf" "paper" 
+  "./parts/community.tex" 1389109703 90 fd3f3c910b12b32996c71c15181a8079 ""
   "./parts/discussion.tex" 1386789158 20 0e9daa63e73e84f4a684b671b2ca76db ""
   "./parts/intro.tex" 1386117054 4769 ebac1b3219a0be51d9a433d146608033 ""
   "./parts/methods.tex" 1389109559 12001 2891d3a5c9b2d11ab64c1810333e241c ""
@@ -32,7 +32,7 @@
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/times.sty" 1156702453 857 6c716f26c5eadfb81029fcd6ce2d45e6 ""
   "aaai.sty" 1386626651 13169 52f8454f071b31f30ffabfc6e761eab5 ""
-  "paper.aux" 1389109569 1208 e54ba582d9bdeee36e83977af5b8b982 ""
+  "paper.aux" 1389109713 1208 e54ba582d9bdeee36e83977af5b8b982 ""
   "paper.bbl" 1386788888 2731 c8b7fd3a370f2355a920c4c2727c2705 "bibtex paper"
   "paper.tex" 1386789183 1047 ed6d32103290259dd9e3da989d82cf7c ""
   (generated)
