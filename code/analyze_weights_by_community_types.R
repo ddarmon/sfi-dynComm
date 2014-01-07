@@ -7,12 +7,12 @@ library(np)
 
 # label_type = 'struc'
 # label_type = 'TE4'
-# label_type = 'hashtag'
-label_type = 'mention-retweet'
+label_type = 'hashtag'
+# label_type = 'mention-retweet'
 
-weight_type = 'TE4'
+# weight_type = 'TE4'
 # weight_type = 'hashtag'
-# weight_type = 'mention-retweet'
+weight_type = 'mention-retweet'
 
 comms = 0:9
 
@@ -63,11 +63,11 @@ for (comm_label in comms){
 
 	library(ggplot2)
 
-	cat(sprintf('\n\nFor community %g:\n\nThe mean %s weights internal-to-internal, external-to-internal, and internal-to-external are\n%f\n%f\n%f\n\n', comm_label, weight_type, mean(data_i.to.i), mean(data_e.to.i), mean(data_i.to.e)))
+	cat(sprintf('\n\nFor %s community %g:\n\nThe mean %s weights internal-to-internal, external-to-internal, and internal-to-external are\n%f\n%f\n%f\n\n', label_type, comm_label, weight_type, mean(data_i.to.i), mean(data_e.to.i), mean(data_i.to.e)))
 
 	# For mention-retweet, we have to deal with a *lot* of zero weights.
 
-	if (weight_type == 'mention-retweet'){
+	# if (weight_type == 'mention-retweet'){
 		num.nonzero_i.to.i = sum(data_i.to.i != 0)
 		num.nonzero_e.to.i = sum(data_e.to.i != 0)
 		num.nonzero_i.to.e = sum(data_i.to.e != 0)
@@ -86,7 +86,7 @@ for (comm_label in comms){
 			data_i.to.e = data_i.to.e[-which(data_i.to.e == 0)]
 		}
 		
-	}
+	# }
 
 	dat <- data.frame(xx = c(data_i.to.i, data_e.to.i, data_i.to.e),yy = c(rep(letters[1], length(data_i.to.i)), rep(letters[2], length(data_e.to.i)), rep(letters[3], length(data_i.to.e))))
 
