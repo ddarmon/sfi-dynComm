@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath, amsthm}
+
+\begin{document}
+	
+	When estimating an entropy $H[X]$, call the plug-in / nonparametric maximum likelihood estimator (i.e. the estimator you've been using) $\hat{H}[X]$. Call $\hat{\mathcal{X}}$ the \emph{observed} alphabet of $X$. Then the Miller-Madow estimator of the entropy is
+	\begin{align}
+		\hat{H}_{MM}[X] = \hat{H}[X] + \frac{|\hat{\mathcal{X}}| - 1}{2 n}
+	\end{align}
+	where $|\mathcal{\hat{X}}|$ is the number of observed symbols and $n$ was the number of samples used to estimate $\hat{H}[X].$
+
+	Using the definition from line 368 of your code, we see that transfer entropy can be written as
+	\begin{align}
+		TE_{X \to Y}^{(k)} &= H(Y_t | Y_{t-k}^{t-1}) - H(Y_t | Y_{t-k}^{t-1},X_{t-k}^{t-1}) \\ 
+		&= H(Y_t,Y_{t-k}^{t-1})-H(Y_{t-k}^{t-1})-H(Y_t,Y_{t-k}^{t-1},X_{t-k}^{t-1})+H(Y_{t-k}^{t-1},X_{t-k}^{t-1}),
+	\end{align}
+	where $X_{t-k}^{t-1} = (X_{t - k}, X_{t - (k - 1)}, \ldots, X_{t - 1})$. We would apply the Miller-Madow estimator individually to each of the entropy terms. For example, for the first term, we have
+	\begin{align}
+		\hat{H}_{MM}[Y_{t}, Y_{t - k}^{t-1}] = \hat{H}_{MM}[Y_{t - k}^{t}] = \hat{H}[Y_{t-k}^{t}] + \frac{|\widehat{\mathcal{Y}^{k+1}}| - 1}{2n},
+	\end{align}
+	where $|\widehat{\mathcal{Y}^{k+1}}|$ is the number of $(k + 1)$-tuples we actually observe (of the $2^{k + 1}$ possible tuples). Doing this for each term, the overall Miller-Madow estimator for the transfer entropy is
+	\begin{align}
+		\widehat{TE}_{X \to Y}^{(k)} &= \hat{H}_{MM}(Y_t | Y_{t-k}^{t-1}) - \hat{H}_{MM}(Y_t | Y_{t-k}^{t-1},X_{t-k}^{t-1}) \\ 
+		&= \hat{H}_{MM}(Y_t,Y_{t-k}^{t-1})-\hat{H}_{MM}(Y_{t-k}^{t-1})-\hat{H}_{MM}(Y_t,Y_{t-k}^{t-1},X_{t-k}^{t-1})+\hat{H}_{MM}(Y_{t-k}^{t-1},X_{t-k}^{t-1}).
+	\end{align}
+	One possible problem with this estimator is that it can result in \emph{negative} estimates of entropies. That usually occurs when $\hat{H}$ is very small. I usually record both $\hat{H}$ and $\hat{H}_{MM}$.
+
+\end{document}

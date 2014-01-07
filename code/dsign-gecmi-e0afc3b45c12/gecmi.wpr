@@ -1,0 +1,32 @@
+#!wing
+#!version=4.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.directory-list = [{'dirloc': loc('pysrc'),
+                        'excludes': (),
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('scripts'),
+                        'excludes': (),
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('site_scons'),
+                        'excludes': (),
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-list = [loc('check_1.py'),
+                  loc('data/phylogenomic_trees/tree_utils.py')]
+proj.file-type = 'shared'
+proj.main-file = loc('check_1.py')
+testing.test-framework = {loc('pysrc/gecmim/validation_suite/splitting_confusion.py'): ''\
+        'nose',
+                          loc('pysrc/gecmim/validation_suite/test_splitting_confusion.py'): ''\
+        'nose'}

@@ -1,0 +1,37 @@
+Hashtag
+=======
+
+Your hybrid tf-idf / cosine similarity metric makes sense to me. The log scaling of the overall popularity also makes sense: it allows a relatively gentle penalty as a hashtag becomes more commonly used throughout the network.
+
+Question: Are you planning to generate a dense weighted network (connect all users pairwise by their cosine similarity) or only weight the structural follower network? I think weighting the structural network (i.e. weight the follower network by the tf-idf/cosine similarity) compares more easily with our other (transfer entropy and mention/retweet) approaches. But the hashtag similarity metric doesn't have any sort of asymmetry in it, so we could just as easily generate a dense network. It might make more sense to stick to weighting the structural network, to agree with our other approaches.
+
+Mention/Retweet
+===============
+
+Your currently proposed metric (before the Harmonic Mean) for the influence (?) of $i$ on $j$, $w_{i \to j}$ is
+$$w_{i \to j} = \frac{\text{# of mentions of $j$ by $i$}}{\text{# of mentions by $i$}} + \frac{\text{# of retweets of $i$ by $j$}}{\text{# of retweets by $j$}}.$$
+
+Instead, should we change the first term from 
+$$\frac{\text{# of mentions of $j$ by $i$}}{\text{# of mentions by $i$}}$$
+to
+$$\frac{\text{# of mentions of $j$ by $i$}}{\text{# of mentions of $j$}}$$
+?
+
+My intuition here is that if a user $i$ has a greater influence on user $j$, then a greater proportion of the mentions made of user $j$ will be by user $i$. i.e., If most of the information (mentions) being directed at a user comes from a single person, that person is more likely to have a greater influence on them.
+
+Then again, I could also see your normalization making sense. What do you think?
+
+As for the arithmetic v harmonic mean, if we divide 
+$$w_{i \to j} = \frac{\text{# of mentions of $j$ by $i$}}{\text{# of mentions by $i$}} + \frac{\text{# of retweets of $i$ by $j$}}{\text{# of retweets by $j$}}.$$
+(or the alternative I proposed) by 2 we'll also get something between 0 and 1. I've never had much of an intuition for when the harmonic mean is more appropriate than the arithmetic mean. By the arithmetic weighting, we're basically saying both sorts of influence (retweet and mention) are equally important. I can't immediately think of why this shouldn't be the case.
+
+Overall
+=======
+
+Great ideas!
+
+Let me know what you think about my suggestions. Otherwise, I would go ahead with generating the weighted networks / communities.
+
+Question: Have you used OSLOM with the directed, unweighted (follower) network? I've started looking at how the transfer entropy weighted networks compare, but I'm curious to see how they compare to the unweighted network.
+
+Dave
