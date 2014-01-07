@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  7 JAN 2014 10:48
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  7 JAN 2014 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -161,8 +161,11 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 35.
 
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 35.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
@@ -190,9 +193,6 @@ Missing character: There is no “ in font ptmb7t!
 Missing character: There is no â in font ptmb7t!
 Missing character: There is no € in font ptmb7t!
 Missing character: There is no “ in font ptmb7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2]
 
 LaTeX Warning: Citation ` barnett2012transfer' on page 3 undefined on input lin
@@ -228,11 +228,11 @@ Underfull \vbox (badness 1067) has occurred while \output is active []
 
 ] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1364 strings out of 493763
- 16072 string characters out of 3144954
+ 1363 strings out of 493763
+ 16066 string characters out of 3144954
  74746 words of memory out of 3000000
  4646 multiletter control sequences out of 15000+200000
- 27759 words of font info for 59 fonts, out of 3000000 for 9000
+ 26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  27i,12n,24p,1399b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.en
@@ -248,7 +248,7 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (4 pages, 144164 bytes).
+Output written on paper.pdf (4 pages, 144263 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
