@@ -1,11 +1,23 @@
 \section{Results}
 
+\subsection{Community Statistics (? A better title should go here.)}
+
+Discuss the basic properties of the various types of communities: distribution of sizes, number of singletons, etc.
+
+\subsection{Comparing Community-Types with Normalized Mutual Information}
+
+Because OSLOM detects \emph{coverings} rather than \emph{partitions} of users, standard cluster comparison methods like variation of information~\cite{meilua2003comparing} are not appropriate. Instead, we use a generalized variation of information measure, the normalized information, first introduced in~\cite{lancichinetti2009detecting}. \textbf{TK: Etc. Put more here about NMI, what it does, and how to interpret it.}
+
+The normalized mutual information between the various community-types are shown in Figure~\ref{Fig-compare_coverings}.
+
 \begin{figure}[h!]
   \centering
-\includegraphics[width=0.50\textwidth]{figures/nmi_no_singletons.pdf}
-\caption{The normalized mutual information between the communities using the different weightings. Weighting 0 corresponds to the structural (binary weighting) network, weightings 1 through 6 correspond to the weighting using the transfer entropy with lag 1 through 6, weighting 7 corresponds to the hashtag similarity, and weighting 8 corresponds to the retweet-mention weighting. Values of normalized mutual information close to 1 indicate similarity in the community structure, while values close to 0 indicate dissimilarity. The normalized mutual information is computed with the singletons removed.}
+\includegraphics[width=0.50\textwidth]{figures/nmi_singletons.pdf}
+\caption{The normalized mutual information between the communities using the different weightings. Weighting 0 corresponds to the structural (binary weighting) network, weightings 1 through 6 correspond to the weighting using the transfer entropy with lag 1 through 6, weighting 7 corresponds to the hashtag similarity, and weightings 8, 9, and 10 correspond to the mention, retweet, and mention-retweet weightings. Values of normalized mutual information close to 1 indicate similarity in the community structure, while values close to 0 indicate dissimilarity. The normalized mutual information is computed with the singletons removed.}
 \label{Fig-compare_coverings}
 \end{figure}
+
+\subsection{Comparing Different Flows Across Different Community-Types}
 
 \begin{figure}[h!]
   \centering

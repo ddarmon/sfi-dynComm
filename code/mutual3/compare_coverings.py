@@ -5,12 +5,12 @@ import pylab
 
 from StringIO import StringIO
 
-# singleton_type = 'singletons'
-singleton_type = 'no_singletons'
+singleton_type = 'singletons'
+# singleton_type = 'no_singletons'
 
 file_dir = 'coverings/{}/'.format(singleton_type)
 
-num_types = 9
+num_types = 11
 
 mis = numpy.ones((num_types, num_types))*numpy.nan
 

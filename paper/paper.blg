@@ -11,46 +11,50 @@ Repeated entry---line 292 of file references.bib
  : @article{paninski2003estimation
  :                                ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 313 of file references.bib
+ : @incollection{meilua2003comparing
+ :                                  ,
+I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 10 entries,
+You've used 12 entries,
             2568 wiz_defined-function locations,
-            640 strings with 6257 characters,
-and the built_in function-call counts, 4152 in all, are:
-= -- 451
-> -- 151
-< -- 2
-+ -- 51
-- -- 50
-* -- 327
-:= -- 677
-add.period$ -- 54
-call.type$ -- 10
-change.case$ -- 64
-chr.to.int$ -- 9
-cite$ -- 11
-duplicate$ -- 165
-empty$ -- 304
-format.name$ -- 65
-if$ -- 857
+            653 strings with 6616 characters,
+and the built_in function-call counts, 5064 in all, are:
+= -- 554
+> -- 176
+< -- 3
++ -- 59
+- -- 58
+* -- 394
+:= -- 815
+add.period$ -- 66
+call.type$ -- 12
+change.case$ -- 76
+chr.to.int$ -- 11
+cite$ -- 13
+duplicate$ -- 205
+empty$ -- 376
+format.name$ -- 77
+if$ -- 1057
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 11
-newline$ -- 66
-num.names$ -- 30
-pop$ -- 52
+missing$ -- 13
+newline$ -- 79
+num.names$ -- 36
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 89
 quote$ -- 0
-skip$ -- 124
+skip$ -- 157
 stack$ -- 0
-substring$ -- 230
-swap$ -- 38
-text.length$ -- 2
+substring$ -- 290
+swap$ -- 51
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 92
 warning$ -- 1
-while$ -- 37
-width$ -- 13
-write$ -- 146
-(There were 2 error messages)
+while$ -- 45
+width$ -- 15
+write$ -- 176
+(There were 3 error messages)

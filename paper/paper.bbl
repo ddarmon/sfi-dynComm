@@ -37,6 +37,21 @@ Granger, C. W.~J.
 \newblock Economic processes involving feedback.
 \newblock {\em Information and Control} 6(1):28--48.
 
+\bibitem[\protect\citeauthoryear{Lancichinetti, Fortunato, and
+  Kert{\'e}sz}{2009}]{lancichinetti2009detecting}
+Lancichinetti, A.; Fortunato, S.; and Kert{\'e}sz, J.
+\newblock 2009.
+\newblock Detecting the overlapping and hierarchical community structure in
+  complex networks.
+\newblock {\em New Journal of Physics} 11(3):033015.
+
+\bibitem[\protect\citeauthoryear{Meil{\u{a}}}{2003}]{meilua2003comparing}
+Meil{\u{a}}, M.
+\newblock 2003.
+\newblock Comparing clusterings by the variation of information.
+\newblock In {\em Learning theory and kernel machines}. Springer.
+\newblock  173--187.
+
 \bibitem[\protect\citeauthoryear{Miller}{1955}]{miller1955note}
 Miller, G.~A.
 \newblock 1955.

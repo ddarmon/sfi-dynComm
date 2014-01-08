@@ -10,6 +10,26 @@ import pylab
 import numpy
 from itertools import islice
 import sys
+import copy
+
+##################################################
+# Option:
+#
+include_singletons = False
+include_orphans = False # Whether or not to include those nodes that end up disconnected from the network
+#
+##################################################
+
+
+# Get out the userids from the full structural network.
+
+user_seen_gold = {}
+
+with open('../data/network-stats/filtered_userids.txt') as ofile:
+	for line in ofile:
+		uid = line.strip()
+
+		user_seen_gold[uid] = 0
 
 # All of the communities (or 'modules') are
 # written into the 'tp' files, which have the format
@@ -23,11 +43,15 @@ prefixes = ['twitter_unweighted_network.txt_oslo_files']
 
 prefixes.extend(weighted_prefixes)
 
-prefixes.extend(['twitter_network_hashtags_weighted.txt_oslo_files', 'twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files'])
+prefixes.extend(['twitter_network_hashtags_weighted.txt_oslo_files', 'twitter_network_mentions.txt_oslo_files', 'twitter_network_retweets.txt_oslo_files', 'twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files'])
 
 for lag, prefix in enumerate(prefixes):
-	# full_name = '{}/tp_without_singletons'.format(prefix)
-	full_name = '{}/tp'.format(prefix)
+	user_seen_cur = copy.copy(user_seen_gold)
+
+	if include_singletons:
+		full_name = '{}/tp'.format(prefix)
+	else:
+		full_name = '{}/tp_without_singletons'.format(prefix)
 
 	comm_dict = {}
 	comm_count = 0
@@ -66,11 +90,19 @@ for lag, prefix in enumerate(prefixes):
 		members = ''
 
 		for member in community:
+			user_seen_cur[member] = 1
 			members += '{} '.format(member)
 
 		out.write(members)
 
 		out.write('\n')
+
+	if include_orphans:
+		for userid in user_seen_cur:
+			if user_seen_cur[userid] == 0:
+				out.write('{}\n'.format(userid))
+
+
 
 	if to_file:
 		out.close()
