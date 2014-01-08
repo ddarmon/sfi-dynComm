@@ -197,79 +197,24 @@ def H_transfer_entropy(prob_mass_function):
         H += prob_mass_function[perm]*numpy.log2(prob_mass_function[perm])
     return -H
 
-def joint_mass_function(XT,YT):
-    #This should calculate the joint mass funciton of three variables
-    #In particular P(X_{t-1},Y_{t-1},Yt)
-    #   XT should be the  sparse_binary_tweet history of the followed_by
-    #   YT should be the sparse_binary_tweet history of the follower. 
-    #   we then form a tuple with(X_{t-1},Y_{t-1},Y_t) =((0,1),(1,1),0)
-    #   in the simple case this is ((0),(1),0). Each element in the lag adds a new symbol
-    #   to the x_t-1 random variable alphabet
-    #   full_length = 
-    counts = defaultdict(int)
-
-    nonzero_count = 0
-    for y in YT:
-        #print y,y-1,
-        yt = (1)
-        #yt_1 = (1)
-        if y-1 in YT:
-            yt_1 = 1
-        else:
-            yt_1 = 0
-        if y-1 in XT:
-            xt_1 = (1)
-        else:
-            xt_1 = (0)
-        stencil = (xt_1,yt_1,yt)
-        #print(stencil),(y-1,y-1,y)
-        nonzero_count +=1
-        counts[stencil] +=1
-        if y+1 not in YT:
-            yt = (0)
-            yt_1 = (1)
-            if y in XT:
-                xt_1 = (1)
-            else:
-                xt_1 = (0)
-            stencil = (xt_1,yt_1,yt)
-            #print(stencil),(y,y,y+1)
-            nonzero_count +=1
-            counts[stencil] +=1
-    for xt in XT:
-        #print "xt",xt
-        if xt not in YT and xt+1 not in YT:
-            #print(xt)
-            xt_1 = (1)
-            yt_1 = (0)
-            yt = 0
-            stencil = (xt_1,yt_1,yt)
-            #print(stencil),xt
-            counts[stencil] +=1
-            nonzero_count +=1
-
-    zero_stencil = ((0),(0),0)
-    counts[zero_stencil] = full_length-nonzero_count
-    #print(full_length)
-    #print "Tweets for X:",len(XT)
-    #print "Tweet History for X:",XT
-    #print "Tweet History for Y:", YT
-    #print "Tweets for Y:",len(YT)
-    #print(counts)
-    full_joint_prob_mass_func = {}
-    for perm in counts:
-        full_joint_prob_mass_func[perm]=counts[perm]/full_length
-    #prob_total = 0
-    #for perm in full_joint_prob_mass_func:
-    #    prob_total += full_joint_prob_mass_func[perm]
+def H_transfer_entropyMM(prob_mass_function,lag):
+    H = 0
+    n = full_length-lag
+    Xhat = 0
     
-        #marginal_dist[(xt_1,yt)]+=c
-    #print "marginal_dict on yt_1",marginal_dist
-    #print "total_tweets_by y",len(YT)
-    #print "probability_func",full_joint_prob_mass_func
-    #print"Total Probability",prob_total
-    return full_joint_prob_mass_func
+    for perm in prob_mass_function:
+        H += prob_mass_function[perm]*numpy.log2(prob_mass_function[perm])
+        Xhat +=1
+        #print perm, prob_mass_function[perm]
+    H = -H
     
+    #print "Xhat",Xhat
+    MMbiasCorrector = (Xhat -1)/(2*n)
+    #print "Bias Corrector",MMbiasCorrector
+    Hmm = H + MMbiasCorrector
+    return H,Hmm
+
+
 
 
 def joint_mass_function_lagged(XT,YT,lag):
@@ -388,34 +333,37 @@ def transfer_entropy(followed_by_id,follower_id,sparse_histories,lag):
     for (xt_1,yt_1,yt),c in prob_mass_func.items():
         marginal_distyt_1xt_1[(xt_1,yt_1)]+=c
 
-    #T = H(Y_t,Y_{t-1})-H(Y_{t-1})-H(Yt,Y_{t-1},X_{t-1})+H(Y_{t-1},X_{t-1})
-    trans_entropy = H_transfer_entropy(marginal_distytyt_1)-H_transfer_entropy(marginal_distyt_1)-H_transfer_entropy(prob_mass_func)+H_transfer_entropy(marginal_distyt_1xt_1)
+    #T = H(Y_t,Y_{t-1})-H(Y_{t-1})-H(Yt,Y_{t-1},X_{t-1})+H(Y_{t-1},X_{t-1}) = H1-H2-H3+H4
+
+    H1 = H_transfer_entropyMM(marginal_distytyt_1,lag)
+    H2 = H_transfer_entropyMM(marginal_distyt_1,lag)
+    H3 = H_transfer_entropyMM(prob_mass_func,lag)
+    H4 = H_transfer_entropyMM(marginal_distyt_1xt_1,lag)
+
+    trans_entropy = H1[0]-H2[0]-H3[0]+H4[0]
+    #trans_entropy = H_transfer_entropy(marginal_distytyt_1)-H_transfer_entropy(marginal_distyt_1)-H_transfer_entropy(prob_mass_func)+H_transfer_entropy(marginal_distyt_1xt_1)
+    trans_entropyMM = H1[1]-H2[1]-H3[1]+H4[1]
     #print uid1,u1TS, s1
     #print uid2,u2TS,s2
     #trans_entropy = s1+s2
-    #print trans_entropy
-    return trans_entropy
+    #print trans_entropy,trans_entropyMM
+    return trans_entropy,trans_entropyMM
 
 
-def calculate_weight(edges,sparse_histories,weight_type):
+def calculate_weight(edges,sparse_histories,weight_type,lag=1):
     edge_weights = {}
     if weight_type == 'transfer_entropy':
         for edge in edges:
             if edge[0] in sparse_histories and edge[1] in sparse_histories:
                 #edge = (edge[0],edge[1]) = followed_by, follower
-                edge_weights[edge]= transfer_entropy(edge[0],edge[1],sparse_histories,3)
+                edge_weights[edge]= transfer_entropy(edge[0],edge[1],sparse_histories,lag)
 
     return edge_weights
 
 def build_directed_graph_without_weights():
-    #read in filtered nodes
-    #nodefile = open('../data/twitter_network_filtered_nodes.txt','r')
     edgefile =  open('../data/twitter_network_filtered_edges.txt','r')
-    #nodeLines = nodefile.readlines()
     edgeLines = edgefile.readlines()
-    #nodefile.close()
     edgefile.close()
-    #nodes is all the filtered nodes
     #neighbors is a dictonary that maps a user to all the people that user follows (maybe ... ask Elisa)
     nodes = set(); edges = []; neighbors = {}
     #neighbors will be a dictionary which maps a userid to a list of followers.
@@ -425,16 +373,6 @@ def build_directed_graph_without_weights():
     #        ur                 ul
     #     ###uid1####      ##uid2###
     #nodes is simply a set of uids that we are using. (may not actually be used)
-    
-    #This for loop might be unnessecary me might be able to just say nodes = neighbors.keys()
-    #for line in nodeLines:
-    #   row = line.split()
-    #	user = row[0]
-    #   follower = row[2]
-    #	nodes.add(user); #nodes.add(follower)
-    #	#edges.append((user,follower))
-    #	#if user in neighbors: neighbors[user].append(follower)
-    #	#else: neighbors[user] = [follower]
     print "Starting neighbor relation construction."
     for line in edgeLines:
         row = line.split('\t')
@@ -450,50 +388,8 @@ def build_directed_graph_without_weights():
         nodes.add(node)
     #nodes = neighbors.keys()
     print "Finished neighbor relation construction."
-
-    #coarsaning should happen here if it is going to happen, the sparse_tweet_history is a sparse representation where
-    #each bin is 1 second if this is too rapid the bins should be readjusted using "coarse_resolution"
-
-    #sparse_tweet_history_10_minute=coarsen_sparse_dict(sparse_tweet_history_1_sec)
-    #pickle.dump(sparse_tweet_history_10_minute, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10min.p", "wb" ) )
-
-    #print "size of sparse_tweet_history_1_sec",len(sparse_tweet_history_1_sec[Testuid])
-    #print "size of sparse_tweet_history_10_minute", len(sparse_tweet_history_10_minute[Testuid])
-    #print "size of coarse tweet historys",len(sparse_tweet_history[Testuid])
-
-    #edges_weights = calculate_weight(edges,sparse_tweet_history,'transfer_entropy')
-    #I think I want edge_weights to be a dictionary keyed by an edge and pointing to a weight so
-    # {[followed_by,follower]:weight}
-    #for node in neighbors.keys():
-    #    for follower in neighbors[node]:
-    #        weight_test = calculate_edge_weight(node,follower)
-    #        print 'Test Weight',weight_test
-    # doing it this way actually regrabs a bunch of files for example it regrabs 76 over and over
-    #for edge in edges:
-        #print edge
-        #    weight_test = calculate_edge_weight(edge[0],edge[1])
-        #     print 'Test Weight',weight_test
     print 'number of edges:',len(edges)
     print 'number of nodes:',len(nodes)
-
-
-    
-    DWG = {}
-    #IF the edge does not go both ways should we still weight the edge
-    #DWG = {user:{follows:edge_weight}
-    
-    #network = igraph.Graph(directed=True)
-    #i think this is just the nodes
-    #network.add_vertices(giant_components_nodes)
-    #network.add_vertices(nodes)
-    #network.add_edges(final_edge_list)
-    #I think this is just the edges I don't eliminate any 
-    #network.add_edges(edges)
-    #I still need to caluclate the weights list
-    #network.es['weight'] = final_weights_list
-    #network.write_pajek('twitter_network_contentfull_weighted.net')
-    #network.write_ncol('twitter_network_contentfree_weighted.txt')
-
 
     return (nodes,edges,neighbors)
 
@@ -517,22 +413,27 @@ sparse_tweet_history = get_tweet_history()
 #pickle.dump(sparse_tweet_history_10_minute, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10min_set_version.p", "wb" ))
 
 print "starting edge weight"
-edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy')
 print "done"
 
 
+for lag in range(1,7):
+    with open('../data/TE_edge_weights_joshua/edge_weights_bin10minutes_lag_{}_withMMBIAS.dat'.format(lag),'w') as f:
+    #f = open('edge_weights_10min_testMM.dat', 'w')
+        print "Building Edges for lag ",lag
+        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag)
+        print "Finished Edges for lag ",lag
 
-f = open('edge_weights_10min_lag3.dat', 'w')
-f.write("followed_by, follower, transfer_entropy\n")
-for edge in edge_weight:
-    f.write(str(edge[0]))
-    f.write(", ")
-    f.write(str(edge[1]))
-    f.write(", ")
-    f.write(str(edge_weight[edge]))
-    f.write("\n")
-
-f.close()
+        f.write("followed_by, follower, transfer_entropy,transfer_entropy_corrected(MM)\n")
+        for edge in edge_weight:
+            f.write(str(edge[0]))
+            f.write(", ")
+            f.write(str(edge[1]))
+            f.write(", ")
+            f.write(str(edge_weight[edge][0]))
+            f.write(", ")
+            f.write(str(edge_weight[edge][1]))
+            f.write("\n")
+        f.close()
     #print edge,edge_weight[edge]
 
 #coarsen_analysis(sparse_tweet_history)
