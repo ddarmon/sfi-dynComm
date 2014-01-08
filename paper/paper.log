@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  8 JAN 2014 11:33
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  8 JAN 2014 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,9 +315,6 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 15--16
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    date: 2014-01-07 10:29:44
 (epstopdf)                    size: 26961 bytes
@@ -343,13 +340,13 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 24--25
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./parts/discussion.tex) (./paper.bbl
+) (./parts/discussion.tex) (./paper.bbl [4 <./figures/nmi_singletons.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 42--47
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-[4 <./figures/nmi_singletons.pdf>]) [5
+) [5
 
  <./figures/edge-types-eps-converted-to.pdf>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
@@ -374,7 +371,7 @@ e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1
 rw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on paper.pdf (5 pages, 224705 bytes).
+Output written on paper.pdf (5 pages, 225472 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream

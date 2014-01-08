@@ -6,9 +6,9 @@ Discuss the basic properties of the various types of communities: distribution o
 
 \subsection{Comparing Community-Types with Normalized Mutual Information}
 
-Because OSLOM detects \emph{coverings} rather than \emph{partitions} of users, standard cluster comparison methods like variation of information~\cite{meilua2003comparing} are not appropriate. Instead, we use a generalized variation of information measure, the normalized information, first introduced in~\cite{lancichinetti2009detecting}. \textbf{TK: Etc. Put more here about NMI, what it does, and how to interpret it.}
+Because OSLOM detects \emph{coverings} rather than \emph{partitions} of users, standard cluster comparison methods like variation of information~\cite{meilua2003comparing} are not appropriate. Instead, we use a generalization of variation of information measure first introduced in~\cite{lancichinetti2009detecting}, the normalized information. \textbf{TK: Etc. Put more here about NMI, what it does, and how to interpret it.}
 
-The normalized mutual information between the various community-types are shown in Figure~\ref{Fig-compare_coverings}.
+The normalized mutual information between the various community-types are shown in Figure~\ref{Fig-compare_coverings}. We see that similarity between the coverings is dictated by the generic covering type, with distinct community structure between the structural, activity-based, and interaction-based communities. Interestingly, the communities resulting from the different weightings are all more similar to each other than to the structural communities from the unweighted network.Also note that the communities based on the hashtag similarities are different from both the activity-based and mention-retweet-based communities.
 
 \begin{figure}[h!]
   \centering
