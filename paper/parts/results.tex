@@ -4,7 +4,14 @@
 
 Discuss the basic properties of the various types of communities: distribution of sizes, number of singletons, etc.
 
-\subsection{Comparing Community-Types with Normalized Mutual Information}
+\begin{figure}[h!]
+  \centering
+\includegraphics[width=0.50\textwidth]{Figures/comm_sizes_ecdf_loglog.pdf}
+\caption{The proportion of communities greater than $c$ in size, across the different community types. Note the logarithmic scale on the horizontal and vertical axes.}
+\label{Fig-community_size_distribution}
+\end{figure}
+
+\subsection{Comparing Community Types with Normalized Mutual Information}
 
 Because OSLOM detects \emph{coverings} rather than \emph{partitions} of users, standard cluster comparison methods like variation of information~\cite{meilua2003comparing} are not appropriate. Instead, we use a generalization of variation of information measure first introduced in~\cite{lancichinetti2009detecting}, the normalized information. \textbf{TK: Etc. Put more here about NMI, what it does, and how to interpret it.}
 
