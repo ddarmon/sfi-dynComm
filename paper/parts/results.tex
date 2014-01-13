@@ -6,6 +6,13 @@ Discuss the basic properties of the various types of communities: distribution o
 
 \begin{figure}[h!]
   \centering
+\includegraphics[width=0.50\textwidth]{Figures/overlap_by_type.pdf}
+\caption{Lorem ipsum.}
+\label{Fig-}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
 \includegraphics[width=0.50\textwidth]{Figures/comm_sizes_ecdf_loglog.pdf}
 \caption{The proportion of communities greater than $c$ in size, across the different community types. Note the logarithmic scale on the horizontal and vertical axes.}
 \label{Fig-community_size_distribution}
@@ -26,7 +33,7 @@ The normalized mutual information between the various community-types are shown 
 
 \subsection{Comparing Edges Across Different Community-Types}
 
-We have defined communities using four different criteria: structure, activity, interaction, and content. For a given type of community, edges for a particular community may be partitioned into three sets: those from a node in the community to another node in the community (internal-to-internal), those from a node in the community to a node outside of the community (internal-to-external), and those from a node outside the community to a node inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
+We have defined communities using four different criteria: structure, activity, interaction, and content. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a node in the community to another node in the community (internal-to-internal), those from a node in the community to a node outside of the community (internal-to-external), and those from a node outside the community to a node inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
 
 \begin{figure}[h!]
   \centering
@@ -35,23 +42,41 @@ We have defined communities using four different criteria: structure, activity, 
 \label{Fig-edge_types}
 \end{figure}
 
-For example, Figure~\ref{Fig-edge_types} shows the distributions of hashtag-based weights for the largest community defined by mention-retweets. We see that the distribution of internal-to-internal hashtag weights has a longer tail, with edges 
+For example, Figure~\ref{Fig-edge_types} shows the distributions of hashtag-based weights for the largest community defined by the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of \emph{topic-similarity}.
 
 \begin{figure}[h!]
   \centering
 \includegraphics[width=0.50\textwidth]{Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
-\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}.}
+\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topics.}
 \label{Fig-dist_across_community}
 \end{figure}
 
+This shift in the distribution was typical of many of the community type / weight pairings. To explore this further, for each of the top 100 largest communities defined by a particular community type (structure-based, behavior-based, content-based, or activity-based), we computed the median internal-to-internal, external-to-internal, and internal-to-external weight for that community for each weight type. These values summarize the typical value of each of these types of edges. We can then compute the ratio of the median internal-to-internal weight and the median external/internal-to-internal/external weight, which captures the proportional shift in the distribution. Finally, we compute the median of this proportional shift across all 100 of the largest communities. These values are summarized in Table~\ref{Table-medians}.
+
+% \begin{table}
+% 	\caption{The median value for the ratio of the median external/internal-to-internal/external weight to median internal-to-internal weight for the different community/weight pairings.}
+% 	\centering
+% 	\begin{tabular}{c | c | c  c  c  c}
+% 		& & \multicolumn{4}{ c }{Community} \\ \hline
+% 		\multirow{4}{*}{Weight} & & S & TE & MR & HT \\ \hline
+% 		& TE & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
+% 		& MR & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
+% 		& HT & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$
+% 	\end{tabular}
+% \end{table}
+
 \begin{table}
-	\caption{The median value for the ratio of the median external/internal-to-internal/external weight to median internal-to-internal weight for the different community/weight pairings.}
+	\label{Table-medians}
+	\caption{The median value across the 100 largest communities for the ratio of the median internal-to-internal weight to median external/internal-to-internal/external weight for the different community/weight pairings. \\ * For mention-retweet weights, weight zero edges were excluded from the computation of the median.}
 	\centering
-	\begin{tabular}{c | c | c  c  c  c}
-		& & \multicolumn{4}{ c }{Community} \\ \hline
-		\multirow{4}{*}{Weight} & & S & TE & MR & HT \\ \hline
-		& TE & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
-		& MR & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
-		& HT & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$
+	\begin{tabular}{c | c | c  c  c}
+		& & \multicolumn{3}{ c }{Weight} \\ \hline
+		\multirow{4}{*}{Community} & & TE & MR & HT \\ \hline
+		& S & $0.96/0.94$& $1.7/2.1$*& $9.0/8.0$\\
+		& TE & $1.0/0.96$& $1.5/2.4$*& $24/17$\\
+		& MR & $0.83/0.86$& $3.2/4.4$& $10/8.5$\\
+		& HT & $0.9/0.89$& $2.4/2.6$*& $28/26$
 	\end{tabular}
 \end{table}
+
+We see that overall, the 
