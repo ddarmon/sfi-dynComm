@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  12 JAN 2014 18:43
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  12 JAN 2014 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,35 +156,38 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+(/usr/local/texlive/2010/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen114
+)
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
-\scratchdimen=\dimen114
+\scratchdimen=\dimen115
 \scratchbox=\box28
 \nofMPsegments=\count101
 \nofMParguments=\count102
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count103
-\MPscratchDim=\dimen115
+\MPscratchDim=\dimen116
 \MPnumerator=\count104
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -235,31 +238,31 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 
 
 LaTeX Warning: No \author given.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 50.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
 (./parts/intro.tex
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
@@ -341,37 +344,75 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    size: 6167 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/edge-types-eps-con
 verted-to.pdf figures/edge-types.eps>
-(epstopdf)             \includegraphics on input line 31.
+(epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 <figures/edge-types-eps-converted-to.pdf, id=25, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
 Package pdftex.def Info: figures/edge-types-eps-converted-to.pdf used on input 
-line 31.
+line 33.
 (pdftex.def)             Requested size: 252.94499pt x 214.58537pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 31--32
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./parts/discussion.tex) (./parts/conclusion.tex) (./paper.bbl [4 <./Figures/
-comm_sizes_ecdf_loglog.pdf>]
+
+Underfull \hbox (badness 3000) in paragraph at lines 38--39
+\OT1/ptm/m/n/10 based weights for the largest com-mu-nity de-fined by
+ []
+
+
+<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=26, 505.89pt
+ x 505.89pt>
+File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
+e (type pdf)
+
+<use Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>
+Package pdftex.def Info: Figures/comm0_labels-mention-retweet_weights-hashtag-e
+cdf.pdf used on input line 42.
+(pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
+
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 48--48
+[]\OT1/ptm/m/n/10 Table 1: The me-dian value for the ra-tio of the me-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 48--48
+\OT1/ptm/m/n/10 dian external/internal-to-internal/external weight to me-
+ []
+
+) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+ [4 <./Figures/comm_sizes_ecdf_loglog.pdf>] [5 <./figures/nmi_singletons.pdf> <
+./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention-retw
+eet_weights-hashtag-ecdf.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 42--47
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-) [5 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>
+) [6
+
 ] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2583 strings out of 493763
- 34734 string characters out of 3144954
- 102055 words of memory out of 3000000
- 5798 multiletter control sequences out of 15000+200000
+ 2601 strings out of 493763
+ 35374 string characters out of 3144954
+ 102275 words of memory out of 3000000
+ 5811 multiletter control sequences out of 15000+200000
  26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  37i,12n,24p,1399b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -388,10 +429,10 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (5 pages, 369321 bytes).
+Output written on paper.pdf (6 pages, 402527 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 378 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

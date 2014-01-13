@@ -24,7 +24,9 @@ The normalized mutual information between the various community-types are shown 
 \label{Fig-compare_coverings}
 \end{figure}
 
-\subsection{Comparing Different Flows Across Different Community-Types}
+\subsection{Comparing Edges Across Different Community-Types}
+
+We have defined communities using four different criteria: structure, activity, interaction, and content. For a given type of community, edges for a particular community may be partitioned into three sets: those from a node in the community to another node in the community (internal-to-internal), those from a node in the community to a node outside of the community (internal-to-external), and those from a node outside the community to a node inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
 
 \begin{figure}[h!]
   \centering
@@ -32,3 +34,24 @@ The normalized mutual information between the various community-types are shown 
 \caption{An example of the edges considered in determining the edge weight distribution for a given community (the focal community is in yellow). We focus on the internal-to-internal (red), internal-to-external (green), and external-to-internal (blue) edges. For a given focal community, all other edges (grey) are not considered.}
 \label{Fig-edge_types}
 \end{figure}
+
+For example, Figure~\ref{Fig-edge_types} shows the distributions of hashtag-based weights for the largest community defined by mention-retweets. We see that the distribution of internal-to-internal hashtag weights has a longer tail, with edges 
+
+\begin{figure}[h!]
+  \centering
+\includegraphics[width=0.50\textwidth]{Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
+\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}.}
+\label{Fig-dist_across_community}
+\end{figure}
+
+\begin{table}
+	\caption{The median value for the ratio of the median external/internal-to-internal/external weight to median internal-to-internal weight for the different community/weight pairings.}
+	\centering
+	\begin{tabular}{c | c | c  c  c  c}
+		& & \multicolumn{4}{ c }{Community} \\ \hline
+		\multirow{4}{*}{Weight} & & S & TE & MR & HT \\ \hline
+		& TE & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
+		& MR & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$\\
+		& HT & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$ & $0.0 / 0.0$
+	\end{tabular}
+\end{table}
