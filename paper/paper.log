@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  12 JAN 2014 21:57
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  12 JAN 2014 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -251,11 +251,8 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-
-
-LaTeX Warning: No \author given.
-
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 50.
+
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
@@ -301,12 +298,12 @@ Underfull \hbox (badness 1005) in paragraph at lines 39--46
 T1/cmr/m/n/10 =
  []
 
-
+[3]
 Overfull \hbox (34.66524pt too wide) in paragraph at lines 80--80
 [] 
  []
 
-[3]) (./parts/results.tex
+) (./parts/results.tex
 <Figures/comm_sizes_ecdf_loglog.pdf, id=23, 505.89pt x 505.89pt>
 File: Figures/comm_sizes_ecdf_loglog.pdf Graphic file (type pdf)
 
@@ -318,9 +315,6 @@ Package pdftex.def Info: Figures/comm_sizes_ecdf_loglog.pdf used on input line
 Overfull \hbox (13.55061pt too wide) in paragraph at lines 9--10
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <figures/nmi_singletons.pdf, id=24, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
@@ -336,6 +330,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 22--23
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[4 <./Figures/comm_sizes_ecdf_loglog.pdf>]
 Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    date: 2014-01-07 10:29:44
 (epstopdf)                    size: 26961 bytes
@@ -346,7 +341,8 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 verted-to.pdf figures/edge-types.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<figures/edge-types-eps-converted-to.pdf, id=25, 1734.48pt x 1471.4975pt>
+
+<figures/edge-types-eps-converted-to.pdf, id=34, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
@@ -367,7 +363,7 @@ Underfull \hbox (badness 3000) in paragraph at lines 38--39
  []
 
 
-<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=26, 505.89pt
+<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=35, 505.89pt
  x 505.89pt>
 File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
 e (type pdf)
@@ -395,11 +391,14 @@ Underfull \hbox (badness 2042) in paragraph at lines 48--48
  []
 
 ) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl
-Underfull \vbox (badness 1817) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./Figures/comm_sizes_ecdf_loglog.pdf>] [5 <./figures/nmi_singletons.pdf> <
-./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention-retw
-eet_weights-hashtag-ecdf.pdf>]
+
+Overfull \vbox (46.42958pt too high) has occurred while \output is active []
+
+
+[5 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf> <
+./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 42--47
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
@@ -411,7 +410,7 @@ hysics
 Here is how much of TeX's memory you used:
  2601 strings out of 493763
  35374 string characters out of 3144954
- 102275 words of memory out of 3000000
+ 100275 words of memory out of 3000000
  5811 multiletter control sequences out of 15000+200000
  26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -429,7 +428,7 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 402527 bytes).
+Output written on paper.pdf (6 pages, 403861 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
