@@ -4,45 +4,45 @@ The top-level auxiliary file: paper.aux
 The style file: aaai.bst
 Database file #1: references.bib
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 22 entries,
+You've used 23 entries,
             2568 wiz_defined-function locations,
-            730 strings with 8708 characters,
-and the built_in function-call counts, 9411 in all, are:
-= -- 1014
-> -- 367
+            736 strings with 8840 characters,
+and the built_in function-call counts, 9724 in all, are:
+= -- 1044
+> -- 380
 < -- 5
-+ -- 125
-- -- 122
-* -- 764
-:= -- 1529
-add.period$ -- 119
-call.type$ -- 22
-change.case$ -- 147
-chr.to.int$ -- 20
-cite$ -- 23
-duplicate$ -- 362
-empty$ -- 673
-format.name$ -- 156
-if$ -- 1946
++ -- 129
+- -- 126
+* -- 788
+:= -- 1582
+add.period$ -- 124
+call.type$ -- 23
+change.case$ -- 152
+chr.to.int$ -- 21
+cite$ -- 24
+duplicate$ -- 376
+empty$ -- 698
+format.name$ -- 162
+if$ -- 2010
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 141
-num.names$ -- 68
-pop$ -- 109
+missing$ -- 25
+newline$ -- 147
+num.names$ -- 71
+pop$ -- 117
 preamble$ -- 1
-purify$ -- 170
+purify$ -- 177
 quote$ -- 0
-skip$ -- 281
+skip$ -- 291
 stack$ -- 0
-substring$ -- 531
-swap$ -- 85
+substring$ -- 536
+swap$ -- 87
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
+type$ -- 176
 warning$ -- 1
-while$ -- 80
-width$ -- 27
-write$ -- 320
+while$ -- 82
+width$ -- 28
+write$ -- 333
 (There was 1 warning)

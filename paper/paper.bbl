@@ -135,6 +135,13 @@ Paninski, L.
 \newblock Estimation of entropy and mutual information.
 \newblock {\em Neural Computation} 15(6):1191--1253.
 
+\bibitem[\protect\citeauthoryear{Salton and
+  {McGill}}{1983}]{salton_introduction_1983}
+Salton, G., and {McGill}, M.~J.
+\newblock 1983.
+\newblock {\em Introduction to modern information retrieval}.
+\newblock New York: {McGraw-Hill}.
+
 \bibitem[\protect\citeauthoryear{Schreiber}{2000}]{schreiber2000measuring}
 Schreiber, T.
 \newblock 2000.
