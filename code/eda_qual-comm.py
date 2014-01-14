@@ -1,4 +1,4 @@
-import os
+import webbrowser
 import numpy
 
 # The weights used to determine the community 
@@ -6,8 +6,8 @@ import numpy
 
 # label_type = 'struc'
 # label_type = 'TE4'
-# label_type = 'hashtag'
-label_type = 'mention-retweet'
+label_type = 'hashtag'
+#label_type = 'mention-retweet'
 
 print '\nUsing weights of type {}\n'.format(label_type)
 
@@ -52,15 +52,15 @@ with open(full_name) as ofile:
 
 comm_sorted = numpy.argsort(comm_sizes)
 
-# comm_id = comm_sorted[-1]
-comm_id = comm_sorted[0]
+# comm_id = comm_sorted[-1] # Start with the largest community
+comm_id = comm_sorted[0] # Start with the smallest community
 
 print 'Community {} using the weight type {} has {} members.'.format(comm_id, label_type, len(comm_dict[comm_id]))
 
 at_a_time = 5 # Open this many at a time.
 
 for ind, node in enumerate(comm_dict[comm_id]):
-	os.system("open 'http://twitter.com/account/redirect_by_id?id={}'".format(node))
+	webbrowser.open('http://twitter.com/account/redirect_by_id?id={}'.format(node))
 
 	if (ind+1)%at_a_time == 0:
 		raw_input("")
