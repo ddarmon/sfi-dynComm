@@ -1,5 +1,15 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Baumes \bgroup et al\mbox.\egroup
+  }{2005}]{BaumesGKMP05}
+Baumes, J.; Goldberg, M.~K.; Krishnamoorthy, M.~S.; Magdon-Ismail, M.; and
+  Preston, N.
+\newblock 2005.
+\newblock Finding communities by clustering a graph into overlapping subgraphs.
+\newblock In Guimar{\~a}es, N., and Isa{\'\i}as, P.~T., eds., {\em IADIS AC},
+  97--104.
+\newblock IADIS.
+
 \bibitem[\protect\citeauthoryear{Caires and
   Ferreira}{2003}]{caires2003nonparametric}
 Caires, S., and Ferreira, J.
@@ -31,16 +41,61 @@ Darmon, D.; Sylvester, J.; Girvan, M.; and Rand, W.
   echo state networks in social media.
 \newblock {\em HUMAN} 2(1):pp--13.
 
+\bibitem[\protect\citeauthoryear{Evans and
+  Lambiotte}{2009}]{PhysRevE.80.016105}
+Evans, T.~S., and Lambiotte, R.
+\newblock 2009.
+\newblock Line graphs, link partitions, and overlapping communities.
+\newblock {\em Phys. Rev. E} 80:016105.
+
+\bibitem[\protect\citeauthoryear{Fortunato}{2010}]{fortunato2010community}
+Fortunato, S.
+\newblock 2010.
+\newblock Community detection in graphs.
+\newblock {\em Physics Reports} 486(3):75--174.
+
 \bibitem[\protect\citeauthoryear{Granger}{1963}]{granger1963economic}
 Granger, C. W.~J.
 \newblock 1963.
 \newblock Economic processes involving feedback.
 \newblock {\em Information and Control} 6(1):28--48.
 
+\bibitem[\protect\citeauthoryear{Gregory}{2007}]{Gre07}
+Gregory, S.
+\newblock 2007.
+\newblock An algorithm to find overlapping community structure in networks.
+\newblock In {\em Proceedings of the 11th European Conference on Principles and
+  Practice of Knowledge Discovery in Databases (PKDD 2007)},  91--102.
+\newblock Springer-Verlag.
+
+\bibitem[\protect\citeauthoryear{Kov\'{a}cs \bgroup et al\mbox.\egroup
+  }{2010}]{Kovacs2010}
+Kov\'{a}cs, I.~A.; Palotai, R.; Szalay, M.~S.; and Csermely, P.
+\newblock 2010.
+\newblock Community landscapes: An integrative approach to determine
+  overlapping network module hierarchy, identify key nodes and predict network
+  dynamics.
+\newblock {\em PLoS ONE} 5(9):e12528.
+
+\bibitem[\protect\citeauthoryear{Lancichinetti \bgroup et al\mbox.\egroup
+  }{2011}]{LancichinettiPlos}
+Lancichinetti, A.; Radicchi, F.; Ramasco, J.~J.; and Fortunato, S.
+\newblock 2011.
+\newblock Finding statistically significant communities in networks.
+\newblock {\em PLoS ONE} 6(4):e18961.
+
 \bibitem[\protect\citeauthoryear{Lancichinetti, Fortunato, and
-  Kert{\'e}sz}{2009}]{lancichinetti2009detecting}
+  Kert\'{e}sz}{2009a}]{Lancichinetti2009}
+Lancichinetti, A.; Fortunato, S.; and Kert\'{e}sz, J.
+\newblock 2009a.
+\newblock {Detecting the overlapping and hierarchical community structure in
+  complex networks}.
+\newblock {\em New J. Phys.} 11(3).
+
+\bibitem[\protect\citeauthoryear{Lancichinetti, Fortunato, and
+  Kert{\'e}sz}{2009b}]{lancichinetti2009detecting}
 Lancichinetti, A.; Fortunato, S.; and Kert{\'e}sz, J.
-\newblock 2009.
+\newblock 2009b.
 \newblock Detecting the overlapping and hierarchical community structure in
   complex networks.
 \newblock {\em New Journal of Physics} 11(3):033015.
@@ -58,6 +113,21 @@ Miller, G.~A.
 \newblock Note on the bias of information estimates.
 \newblock {\em Information theory in psychology: Problems and methods}
   2:95--100.
+
+\bibitem[\protect\citeauthoryear{Nepusz \bgroup et al\mbox.\egroup
+  }{2008}]{PhysRevE.77.016107}
+Nepusz, T.; Petr\'oczi, A.; N\'egyessy, L.; and Bazs\'o, F.
+\newblock 2008.
+\newblock Fuzzy communities and the concept of bridgeness in complex networks.
+\newblock {\em Phys. Rev. E} 77:016107.
+
+\bibitem[\protect\citeauthoryear{Palla \bgroup et al\mbox.\egroup
+  }{2005}]{PalEtAl05}
+Palla, G.; Der{\'e}nyi, I.; Farkas, I.; and Vicsek, T.
+\newblock 2005.
+\newblock Uncovering the overlapping community structure of complex networks in
+  nature and society.
+\newblock {\em Nature} 435(7043):814--818.
 
 \bibitem[\protect\citeauthoryear{Paninski}{2003}]{paninski2003estimation}
 Paninski, L.
@@ -87,5 +157,13 @@ Ver~Steeg, G., and Galstyan, A.
 \newblock Information transfer in social media.
 \newblock In {\em Proc. 21st Int'l World Wide Web Conf.},  509--518.
 \newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Zhang, Wang, and Zhang}{2007}]{ZhaWanZha07}
+Zhang, S.; Wang, R.-S.; and Zhang, X.-S.
+\newblock 2007.
+\newblock Identification of overlapping community structure in complex networks
+  using fuzzy c-means clustering.
+\newblock {\em Physica A: Statistical Mechanics and its Applications}
+  374(1):483--490.
 
 \end{thebibliography}
