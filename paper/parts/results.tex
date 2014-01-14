@@ -2,7 +2,7 @@
 
 \subsection{Comparing Aggregate Statistics of Community Structure}
 
-We begin by examining the overall statistics for the communities inferred by OSLOM using the weightings defined in Sections \ref{method-activity}, \ref{method-interaction}, and \ref{method-topic}. The number of communities by community type is given in Table~\ref{Table-comm_count}. We see that the topic- and interaction-based networks admit the most communities. The activity-based network admits the least number of communities.  One advantage of the OSLOM over many other community detection algorithms is that it explicitly accounts for singleton `communities': those nodes who do not belong to \emph{any} extant communities. This is especially important when a network is collected via a breadth-first search, as in our network, where we begin from a seed node and then branch out. Such a search, once terminated, will result in a collection of nodes on the periphery of the network that may not belong to any community in the core.
+We begin by examining the overall statistics for the communities inferred by OSLOM using the weightings defined in Sections \ref{sec:method-activity}, \ref{sec:method-interaction}, and \ref{sec:method-topic}. The number of communities by community type is given in Table~\ref{Table-comm_count}. We see that the topic- and interaction-based networks admit the most communities. The activity-based network admits the least number of communities.  One advantage of the OSLOM over many other community detection algorithms is that it explicitly accounts for singleton `communities': those nodes who do not belong to \emph{any} extant communities. This is especially important when a network is collected via a breadth-first search, as in our network, where we begin from a seed node and then branch out. Such a search, once terminated, will result in a collection of nodes on the periphery of the network that may not belong to any community in the core.
 
 % See here
 % 	http://arxiv.org/pdf/1202.2684v2.pdf
@@ -11,7 +11,6 @@ We begin by examining the overall statistics for the communities inferred by OSL
 The number of singletons by community type is also shown in Table~\ref{Table-comm_count}. We see that the topic- and interaction-based communities have the most singletons, with the activity-based community dominating this measure. This result for the activity-based community is an artifact of a property of the retweet/mention weighting: many of the users in the data set (\textbf{TK: give actual number}) did not interact with each other, and thus all of their edges were zero-weighted, leading to trivial singletons.
 
 \begin{table}[ht]
-	\label{Table-comm_count}
 	\caption{Number of non-singleton communities and singletons by community type: S(tructural), A(ctivity -based), T(opic-based), and I(nteraction-based).}
 	\centering
 	\begin{tabular}{| c | c | c |}
@@ -35,6 +34,7 @@ The number of singletons by community type is also shown in Table~\ref{Table-com
 		T & 289 & 1064 \\
 		I & 252 & 2436 \\ \hline
 	\end{tabular}
+	\label{Table-comm_count}
 \end{table}
 
 Next we consider the distribution of community sizes across the community types. The complementary cumulative distribution of community sizes is given in Figure~\ref{Fig-community_size_distribution}. Note that the axes are plotted on log-scale, and the horizontal axis begins with non-singleton communities. Thus, for a fixed community size $c$, Figure~\ref{Fig-community_size_distribution} shows the proportion of communities of size greater than $c$ for each community type. The largest communities for the structural, activity-based, topic-based, and interaction-based networks are 198, 358, 338, and 811 respectively.
@@ -64,7 +64,7 @@ Because OSLOM detects \emph{coverings} rather than \emph{partitions} of users, s
 
 The normalized mutual information between the various community-types are shown in Figure~\ref{Fig-compare_coverings}. We see that similarity between the coverings is dictated by the generic covering type, with distinct community structure between the structural, activity-based, and interaction-based communities. Interestingly, the communities resulting from the different weightings are all more similar to each other than to the structural communities from the unweighted network.Also note that the communities based on the hashtag similarities are different from both the activity-based and mention-retweet-based communities.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
 \includegraphics[width=0.50\textwidth]{figures/nmi_singletons.pdf}
 \caption{The normalized mutual information between the communities using the different weightings. Weighting 0 corresponds to the structural (binary weighting) network, weightings 1 through 6 correspond to the weighting using the transfer entropy with lag 1 through 6, weighting 7 corresponds to the hashtag similarity, and weightings 8, 9, and 10 correspond to the mention, retweet, and mention-retweet weightings. Values of normalized mutual information close to 1 indicate similarity in the community structure, while values close to 0 indicate dissimilarity. The normalized mutual information is computed with the singletons removed.}
@@ -75,7 +75,7 @@ The normalized mutual information between the various community-types are shown 
 
 We have defined communities using four different criteria: structure, activity, interaction, and content. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a node in the community to another node in the community (internal-to-internal), those from a node in the community to a node outside of the community (internal-to-external), and those from a node outside the community to a node inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
 \includegraphics[width=0.50\textwidth]{figures/edge-types.eps}
 \caption{An example of the edges considered in determining the edge weight distribution for a given community (the focal community is in yellow). We focus on the internal-to-internal (red), internal-to-external (green), and external-to-internal (blue) edges. For a given focal community, all other edges (grey) are not considered.}
@@ -84,7 +84,7 @@ We have defined communities using four different criteria: structure, activity, 
 
 For example, Figure~\ref{Fig-edge_types} shows the distributions of hashtag-based weights for the largest community defined by the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of \emph{topic-similarity}.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
 \includegraphics[width=0.50\textwidth]{Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
 \caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topics.}
