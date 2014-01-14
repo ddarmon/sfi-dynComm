@@ -8,9 +8,10 @@ from collections import Counter
 
 comm_types = [0, 4, 7, 10]
 
-community_labels = {0 : 'structural', 4 : 'behavior', 7 : 'topic', 10 : 'activity'}
+community_labels = {0 : 'structure', 4 : 'activity', 7 : 'topic', 10 : 'interaction'}
 
-with open('tmp.dat', 'w') as wfile:
+with open('overlap_counts.txt', 'w') as wfile:
+	wfile.write('type count\n')
 	for comm_type in comm_types:
 		label_file = 'mutual3/coverings/no_singletons/communitites{}_comp.txt'.format(comm_type)
 
@@ -35,9 +36,12 @@ with open('tmp.dat', 'w') as wfile:
 				num_nodes_with_overlap += 1
 				# print node, user_dict[node]
 
-		print label_file, num_nodes_with_overlap, overlap_dict
+				if user_dict[node] == 7:
+					print node
 
-		# to_print = '{} '.format(community_labels[comm_type])
+		# print label_file, num_nodes_with_overlap, overlap_dict
+
+		to_print = '{} '.format(community_labels[comm_type])
 
 		for ind in range(2, 5):
 			# print '{} {} {}'.format(community_labels[comm_type], ind, overlap_dict[ind])

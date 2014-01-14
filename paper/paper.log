@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  13 JAN 2014 15:35
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  14 JAN 2014 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -284,76 +284,66 @@ Missing character: There is no â in font ptmb7t!
 Missing character: There is no € in font ptmb7t!
 Missing character: There is no “ in font ptmb7t!
  [2]
-Underfull \hbox (badness 2150) in paragraph at lines 24--25
+Underfull \hbox (badness 2150) in paragraph at lines 26--27
 []\OT1/ptm/m/n/10 Let $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 X[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 and $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 Y[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 be two strong-sense sta-tion-ary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--46
+Underfull \hbox (badness 10000) in paragraph at lines 41--48
 \OT1/ptm/m/n/10 we can see that trans-fer en-tropy is al-ways non-
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 39--46
+Underfull \hbox (badness 1005) in paragraph at lines 41--48
 \OT1/ptm/m/n/10 negative, and is zero pre-cisely when $\OML/cmm/m/it/10 H [] \O
 T1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (34.66524pt too wide) in paragraph at lines 80--80
+Overfull \hbox (34.66524pt too wide) in paragraph at lines 85--85
 [] 
  []
 
 [3]) (./parts/results.tex
-<Figures/overlap_by_type.pdf, id=23, 571.13374pt x 385.44pt>
-File: Figures/overlap_by_type.pdf Graphic file (type pdf)
-
-<use Figures/overlap_by_type.pdf>
-Package pdftex.def Info: Figures/overlap_by_type.pdf used on input line 9.
-(pdftex.def)             Requested size: 252.94499pt x 170.70569pt.
-
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 9--10
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/comm_sizes_ecdf_loglog.pdf, id=24, 505.89pt x 505.89pt>
+<Figures/comm_sizes_ecdf_loglog.pdf, id=23, 505.89pt x 505.89pt>
 File: Figures/comm_sizes_ecdf_loglog.pdf Graphic file (type pdf)
 
 <use Figures/comm_sizes_ecdf_loglog.pdf>
 Package pdftex.def Info: Figures/comm_sizes_ecdf_loglog.pdf used on input line 
-16.
+44.
 (pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 16--17
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
+<Figures/overlap_by_type.pdf, id=24, 505.89pt x 505.89pt>
+File: Figures/overlap_by_type.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use Figures/overlap_by_type.pdf>
+Package pdftex.def Info: Figures/overlap_by_type.pdf used on input line 56.
+(pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
 
-<figures/nmi_singletons.pdf, id=25, 500.84616pt x 430.45976pt>
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+[4] <figures/nmi_singletons.pdf, id=29, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
 
 <use figures/nmi_singletons.pdf>
-Package pdftex.def Info: figures/nmi_singletons.pdf used on input line 29.
+Package pdftex.def Info: figures/nmi_singletons.pdf used on input line 69.
 (pdftex.def)             Requested size: 252.94499pt x 217.39688pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 29--30
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./Figures/overlap_by_type.pdf> <./Figures/comm_sizes_ecdf_loglog.pdf>]
 Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    date: 2014-01-07 10:29:44
 (epstopdf)                    size: 26961 bytes
@@ -362,18 +352,17 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    size: 6167 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/edge-types-eps-con
 verted-to.pdf figures/edge-types.eps>
-(epstopdf)             \includegraphics on input line 40.
+(epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/edge-types-eps-converted-to.pdf, id=41, 1734.48pt x 1471.4975pt>
+<figures/edge-types-eps-converted-to.pdf, id=30, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
 Package pdftex.def Info: figures/edge-types-eps-converted-to.pdf used on input 
-line 40.
+line 80.
 (pdftex.def)             Requested size: 252.94499pt x 214.58537pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 40--41
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
@@ -381,37 +370,43 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 40--41
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=42, 505.89pt
+<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=31, 505.89pt
  x 505.89pt>
 File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
 e (type pdf)
 
 <use Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>
 Package pdftex.def Info: Figures/comm0_labels-mention-retweet_weights-hashtag-e
-cdf.pdf used on input line 49.
+cdf.pdf used on input line 89.
 (pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 49--50
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl [5 <./figures
-/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
+) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl [5 <./Figures
+/comm_sizes_ecdf_loglog.pdf> <./Figures/overlap_by_type.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 42--47
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-) [6 <./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf> <
+./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]) [7
+
+]
 (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2608 strings out of 493763
- 35541 string characters out of 3144954
- 102290 words of memory out of 3000000
- 5817 multiletter control sequences out of 15000+200000
+ 2612 strings out of 493763
+ 35622 string characters out of 3144954
+ 102318 words of memory out of 3000000
+ 5821 multiletter control sequences out of 15000+200000
  26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  37i,12n,24p,1399b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -428,10 +423,10 @@ xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
 ive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 409806 bytes).
+Output written on paper.pdf (7 pages, 412963 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 390 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
