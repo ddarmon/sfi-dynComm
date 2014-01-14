@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  14 JAN 2014 10:51
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  14 JAN 2014 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -301,13 +301,13 @@ Underfull \hbox (badness 1005) in paragraph at lines 41--48
 T1/cmr/m/n/10 =
  []
 
-
+[3]
 Overfull \hbox (34.66524pt too wide) in paragraph at lines 85--85
 [] 
  []
 
-[3]) (./parts/results.tex
-<Figures/comm_sizes_ecdf_loglog.pdf, id=23, 505.89pt x 505.89pt>
+) (./parts/results.tex [4]
+<Figures/comm_sizes_ecdf_loglog.pdf, id=27, 505.89pt x 505.89pt>
 File: Figures/comm_sizes_ecdf_loglog.pdf Graphic file (type pdf)
 
 <use Figures/comm_sizes_ecdf_loglog.pdf>
@@ -319,7 +319,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-<Figures/overlap_by_type.pdf, id=24, 505.89pt x 505.89pt>
+<Figures/overlap_by_type.pdf, id=28, 505.89pt x 505.89pt>
 File: Figures/overlap_by_type.pdf Graphic file (type pdf)
 
 <use Figures/overlap_by_type.pdf>
@@ -330,7 +330,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
-[4] <figures/nmi_singletons.pdf, id=29, 500.84616pt x 430.45976pt>
+<figures/nmi_singletons.pdf, id=29, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
 
 <use figures/nmi_singletons.pdf>
@@ -384,46 +384,46 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
+[5 <./Figures/comm_sizes_ecdf_loglog.pdf> <./Figures/overlap_by_type.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl [5 <./Figures
-/comm_sizes_ecdf_loglog.pdf> <./Figures/overlap_by_type.pdf>]
+) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf> <
+./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 42--47
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
+) [7
 
-LaTeX Warning: Text page 6 contains only floats.
-
-[6 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf> <
-./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]) [7
-
-]
-(./paper.aux) ) 
+] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
  2612 strings out of 493763
  35622 string characters out of 3144954
- 102318 words of memory out of 3000000
+ 101318 words of memory out of 3000000
  5821 multiletter control sequences out of 15000+200000
  26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 37i,12n,24p,1399b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}
-</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (7 pages, 412963 bytes).
+ 37i,12n,24p,1516b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
+texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (7 pages, 413762 bytes).
 PDF statistics:
  390 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
