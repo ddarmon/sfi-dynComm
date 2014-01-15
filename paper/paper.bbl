@@ -10,6 +10,13 @@ Baumes, J.; Goldberg, M.~K.; Krishnamoorthy, M.~S.; Magdon-Ismail, M.; and
   97--104.
 \newblock IADIS.
 
+\bibitem[\protect\citeauthoryear{Becker, Naaman, and
+  Gravano}{2011}]{becker2011beyond}
+Becker, H.; Naaman, M.; and Gravano, L.
+\newblock 2011.
+\newblock Beyond trending topics: Real-world event identification on twitter.
+\newblock In {\em ICWSM}.
+
 \bibitem[\protect\citeauthoryear{Caires and
   Ferreira}{2003}]{caires2003nonparametric}
 Caires, S., and Ferreira, J.
@@ -17,6 +24,16 @@ Caires, S., and Ferreira, J.
 \newblock On the nonparametric prediction of conditionally stationary
   sequences.
 \newblock {\em Probability, Networks and Algorithms} (4):1--32.
+
+\bibitem[\protect\citeauthoryear{Cazabet, Leguistin, and
+  Amblard}{2012}]{cazabet2012automated}
+Cazabet, R.; Leguistin, M.; and Amblard, F.
+\newblock 2012.
+\newblock Automated community detection on social networks: useful? efficient?
+  asking the users.
+\newblock In {\em Proceedings of the 4th International Workshop on Web
+  Intelligence \& Communities}, ~6.
+\newblock ACM.
 
 \bibitem[\protect\citeauthoryear{Cover and Thomas}{2012}]{cover2012elements}
 Cover, T.~M., and Thomas, J.~A.
@@ -68,6 +85,14 @@ Gregory, S.
   Practice of Knowledge Discovery in Databases (PKDD 2007)},  91--102.
 \newblock Springer-Verlag.
 
+\bibitem[\protect\citeauthoryear{Java \bgroup et al\mbox.\egroup
+  }{2009}]{java2009we}
+Java, A.; Song, X.; Finin, T.; and Tseng, B.
+\newblock 2009.
+\newblock Why we twitter: An analysis of a microblogging community.
+\newblock In {\em Advances in Web Mining and Web Usage Analysis}. Springer.
+\newblock  118--138.
+
 \bibitem[\protect\citeauthoryear{Kov\'{a}cs \bgroup et al\mbox.\egroup
   }{2010}]{Kovacs2010}
 Kov\'{a}cs, I.~A.; Palotai, R.; Szalay, M.~S.; and Csermely, P.
@@ -100,12 +125,30 @@ Lancichinetti, A.; Fortunato, S.; and Kert{\'e}sz, J.
   complex networks.
 \newblock {\em New Journal of Physics} 11(3):033015.
 
+\bibitem[\protect\citeauthoryear{Lim and Datta}{2012}]{lim2012tweets}
+Lim, K.~H., and Datta, A.
+\newblock 2012.
+\newblock Tweets beget propinquity: Detecting highly interactive communities on
+  twitter using tweeting links.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
+  2012 IEEE/WIC/ACM International Conferences on}, volume~1,  214--221.
+\newblock IEEE.
+
 \bibitem[\protect\citeauthoryear{Meil{\u{a}}}{2003}]{meilua2003comparing}
 Meil{\u{a}}, M.
 \newblock 2003.
 \newblock Comparing clusterings by the variation of information.
 \newblock In {\em Learning theory and kernel machines}. Springer.
 \newblock  173--187.
+
+\bibitem[\protect\citeauthoryear{Michelson and
+  Macskassy}{2010}]{michelson2010discovering}
+Michelson, M., and Macskassy, S.~A.
+\newblock 2010.
+\newblock Discovering users' topics of interest on twitter: a first look.
+\newblock In {\em Proceedings of the fourth workshop on Analytics for noisy
+  unstructured text data},  73--80.
+\newblock ACM.
 
 \bibitem[\protect\citeauthoryear{Miller}{1955}]{miller1955note}
 Miller, G.~A.
@@ -121,6 +164,18 @@ Nepusz, T.; Petr\'oczi, A.; N\'egyessy, L.; and Bazs\'o, F.
 \newblock Fuzzy communities and the concept of bridgeness in complex networks.
 \newblock {\em Phys. Rev. E} 77:016107.
 
+\bibitem[\protect\citeauthoryear{Newman and Girvan}{2004}]{newman2004finding}
+Newman, M.~E., and Girvan, M.
+\newblock 2004.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E} 69(2):026113.
+
+\bibitem[\protect\citeauthoryear{Newman}{2004}]{newman2004fast}
+Newman, M.~E.
+\newblock 2004.
+\newblock Fast algorithm for detecting community structure in networks.
+\newblock {\em Physical review E} 69(6):066133.
+
 \bibitem[\protect\citeauthoryear{Palla \bgroup et al\mbox.\egroup
   }{2005}]{PalEtAl05}
 Palla, G.; Der{\'e}nyi, I.; Farkas, I.; and Vicsek, T.
@@ -134,6 +189,13 @@ Paninski, L.
 \newblock 2003.
 \newblock Estimation of entropy and mutual information.
 \newblock {\em Neural Computation} 15(6):1191--1253.
+
+\bibitem[\protect\citeauthoryear{Rosvall and Bergstrom}{2008}]{rosvall2008maps}
+Rosvall, M., and Bergstrom, C.~T.
+\newblock 2008.
+\newblock Maps of random walks on complex networks reveal community structure.
+\newblock {\em Proceedings of the National Academy of Sciences}
+  105(4):1118--1123.
 
 \bibitem[\protect\citeauthoryear{Salton and
   {McGill}}{1983}]{salton_introduction_1983}
@@ -157,6 +219,15 @@ Shalizi, C.~R.; Camperi, M.~F.; and Klinkner, K.~L.
   directions}. Springer.
 \newblock  140--157.
 
+\bibitem[\protect\citeauthoryear{Tsur and Rappoport}{2012}]{tsur2012s}
+Tsur, O., and Rappoport, A.
+\newblock 2012.
+\newblock What's in a hashtag?: content based prediction of the spread of ideas
+  in microblogging communities.
+\newblock In {\em Proceedings of the fifth ACM international conference on Web
+  search and data mining},  643--652.
+\newblock ACM.
+
 \bibitem[\protect\citeauthoryear{Ver~Steeg and
   Galstyan}{2012}]{ver2012information}
 Ver~Steeg, G., and Galstyan, A.
@@ -172,5 +243,13 @@ Zhang, S.; Wang, R.-S.; and Zhang, X.-S.
   using fuzzy c-means clustering.
 \newblock {\em Physica A: Statistical Mechanics and its Applications}
   374(1):483--490.
+
+\bibitem[\protect\citeauthoryear{Zhao \bgroup et al\mbox.\egroup
+  }{2011}]{zhao2011comparing}
+Zhao, W.~X.; Jiang, J.; Weng, J.; He, J.; Lim, E.-P.; Yan, H.; and Li, X.
+\newblock 2011.
+\newblock Comparing twitter and traditional media using topic models.
+\newblock In {\em Advances in Information Retrieval}. Springer.
+\newblock  338--349.
 
 \end{thebibliography}
