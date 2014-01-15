@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1389802868 "intro.tex" "intro.pdf" "intro" 
+["pdflatex"] 1389817281 "intro.tex" "intro.pdf" "intro" 
   "/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii" 1251025892 71625 fad1c4b52151c234b6873a255b0ad6b3 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1303254447 7604 85d429dbffd68dd07db4a57e78f67c79 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -35,8 +35,8 @@
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd" 1137110629 576 95c2c0baea9c719a4be29a3d4122498b ""
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/times.sty" 1156702453 857 6c716f26c5eadfb81029fcd6ce2d45e6 ""
-  "intro.aux" 1389802869 680 bddffb890c090559e7982b3e06bbdac6 ""
-  "intro.tex" 1389802866 9589 08ad39f86541536753761ca3bcc3349d ""
+  "intro.aux" 1389817282 1000 2835d439f52f47efade61f165039203c ""
+  "intro.tex" 1389817280 12815 d3f7023d7c69ff12e307ab529ff7350e ""
   (generated)
   "intro.pdf"
   "intro.aux"

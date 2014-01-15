@@ -1,52 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
-White space in argument---line 8 of file paper.aux
- : \citation{
- :            blondel2008fast}
-I'm skipping whatever remains of this command
 The style file: aaai.bst
 Database file #1: references.bib
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 33 entries,
+You've used 42 entries,
             2568 wiz_defined-function locations,
-            788 strings with 10757 characters,
-and the built_in function-call counts, 14474 in all, are:
-= -- 1567
-> -- 549
-< -- 12
-+ -- 185
-- -- 182
-* -- 1144
-:= -- 2303
-add.period$ -- 182
-call.type$ -- 33
-change.case$ -- 220
-chr.to.int$ -- 31
-cite$ -- 34
-duplicate$ -- 578
-empty$ -- 1055
-format.name$ -- 237
-if$ -- 3046
-int.to.chr$ -- 3
+            831 strings with 12538 characters,
+and the built_in function-call counts, 18669 in all, are:
+= -- 2010
+> -- 746
+< -- 15
++ -- 254
+- -- 250
+* -- 1477
+:= -- 2971
+add.period$ -- 230
+call.type$ -- 42
+change.case$ -- 290
+chr.to.int$ -- 39
+cite$ -- 43
+duplicate$ -- 743
+empty$ -- 1343
+format.name$ -- 317
+if$ -- 3929
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 213
-num.names$ -- 101
-pop$ -- 180
+missing$ -- 44
+newline$ -- 270
+num.names$ -- 128
+pop$ -- 242
 preamble$ -- 1
-purify$ -- 255
+purify$ -- 334
 quote$ -- 0
-skip$ -- 454
+skip$ -- 584
 stack$ -- 0
-substring$ -- 807
-swap$ -- 154
-text.length$ -- 12
+substring$ -- 1004
+swap$ -- 201
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 256
+type$ -- 328
 warning$ -- 1
-while$ -- 122
-width$ -- 37
-write$ -- 485
-(There was 1 error message)
+while$ -- 153
+width$ -- 46
+write$ -- 615
+(There was 1 warning)

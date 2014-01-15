@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  15 JAN 2014 11:21
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  15 JAN 2014 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,71 +252,112 @@ LaTeX Warning: Citation `newman2004finding' on page 1 undefined on input line 1
 LaTeX Warning: Citation `java2009we' on page 1 undefined on input line 16.
 
 
-LaTeX Warning: Citation `newman2004fast' on page 1 undefined on input line 31.
+LaTeX Warning: Citation `grabowicz2012social' on page 1 undefined on input line
+ 16.
 
 
-LaTeX Warning: Citation `newman2004finding' on page 1 undefined on input line 3
-1.
+LaTeX Warning: Citation `newman2004fast' on page 1 undefined on input line 18.
 
 
-LaTeX Warning: Citation `rosvall2008maps' on page 1 undefined on input line 31.
+LaTeX Warning: Citation `newman2004finding' on page 1 undefined on input line 1
+8.
+
+
+LaTeX Warning: Citation `rosvall2008maps' on page 1 undefined on input line 18.
 
 
 
-LaTeX Warning: Citation `blondel2008fast' on page 1 undefined on input line 31.
+LaTeX Warning: Citation `blondel2008fast' on page 1 undefined on input line 18.
 
 
 
-LaTeX Warning: Citation `LancichinettiPlos' on page 1 undefined on input line 3
-1.
+LaTeX Warning: Citation `LancichinettiPlos' on page 1 undefined on input line 1
+8.
 
 
 LaTeX Warning: Citation `fortunato2010community' on page 1 undefined on input l
-ine 31.
+ine 18.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
  [1
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: Citation `darmon2013understanding' on page 2 undefined on input 
-line 43.
+line 30.
 
 
 LaTeX Warning: Citation `shalizi2007discovering' on page 2 undefined on input l
-ine 43.
+ine 30.
 
 
 LaTeX Warning: Citation `darmon2013detecting' on page 2 undefined on input line
- 43.
+ 30.
 
 
 LaTeX Warning: Citation `ver2012information' on page 2 undefined on input line 
-43.
+30.
 
 
-LaTeX Warning: Citation `zhao2011comparing' on page 2 undefined on input line 4
-5.
+LaTeX Warning: Citation `zhao2011comparing' on page 2 undefined on input line 3
+2.
 
 
 LaTeX Warning: Citation `michelson2010discovering' on page 2 undefined on input
- line 45.
+ line 32.
 
 
-LaTeX Warning: Citation `becker2011beyond' on page 2 undefined on input line 45
+LaTeX Warning: Citation `becker2011beyond' on page 2 undefined on input line 32
 .
 
 
-LaTeX Warning: Citation `tsur2012s' on page 2 undefined on input line 45.
+LaTeX Warning: Citation `tsur2012s' on page 2 undefined on input line 32.
 
 [2]
 
-LaTeX Warning: Citation `lim2012tweets' on page 3 undefined on input line 53.
+LaTeX Warning: Citation `java2009we' on page 3 undefined on input line 38.
+
+
+LaTeX Warning: Citation `nguyen2011adaptive' on page 3 undefined on input line 
+38.
+
+
+LaTeX Warning: Citation `ver2012information' on page 3 undefined on input line 
+41.
+
+
+LaTeX Warning: Citation `darmon2013detecting' on page 3 undefined on input line
+ 41.
+
+
+LaTeX Warning: Citation `conover2011political' on page 3 undefined on input lin
+e 43.
+
+
+LaTeX Warning: Citation `deitrick2013mutually' on page 3 undefined on input lin
+e 43.
+
+
+LaTeX Warning: Citation `rossi2012conversation' on page 3 undefined on input li
+ne 45.
+
+
+LaTeX Warning: Citation `lim2012following' on page 3 undefined on input line 45
+.
+
+
+LaTeX Warning: Citation `yin2012latent' on page 3 undefined on input line 45.
+
+
+LaTeX Warning: Citation `lim2012tweets' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation `kao2013talison' on page 3 undefined on input line 81.
 
 [3] (./intro.aux)
 
@@ -324,10 +365,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2465 strings out of 493763
- 33011 string characters out of 3144954
+ 2473 strings out of 493763
+ 33168 string characters out of 3144954
  90212 words of memory out of 3000000
- 5733 multiletter control sequences out of 15000+200000
+ 5741 multiletter control sequences out of 15000+200000
  10668 words of font info for 23 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  37i,4n,24p,1508b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -336,7 +377,7 @@ exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on intro.pdf (3 pages, 53162 bytes).
+Output written on intro.pdf (3 pages, 53171 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

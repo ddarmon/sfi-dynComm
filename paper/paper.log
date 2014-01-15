@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  15 JAN 2014 11:25
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  15 JAN 2014 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,11 +265,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 
 (./parts/intro.tex
-
-LaTeX Warning: Citation ` blondel2008fast' on page 1 undefined on input line 20
-.
-
-
 Underfull \vbox (badness 1400) has occurred while \output is active []
 
  [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -278,23 +273,28 @@ Underfull \vbox (badness 1400) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 
-Underfull \hbox (badness 1158) in paragraph at lines 36--37
+Underfull \hbox (badness 1158) in paragraph at lines 25--26
 []\OT1/ptm/m/n/10 The activity-based, topic-based, and interaction-based
  []
 
-) (./parts/methods.tex
+
+Underfull \hbox (badness 1490) in paragraph at lines 32--33
+[]\OT1/ptm/m/n/10 Information the-o-retic, activity-based ap-proaches have
+ []
+
+[2]) (./parts/methods.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [2]
+
 Underfull \hbox (badness 2150) in paragraph at lines 19--20
 []\OT1/ptm/m/n/10 Let $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 X[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 and $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 Y[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 be two strong-sense sta-tion-ary
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 34--41
 \OT1/ptm/m/n/10 we can see that trans-fer en-tropy is al-ways non-
  []
@@ -305,17 +305,17 @@ Underfull \hbox (badness 1005) in paragraph at lines 34--41
 T1/cmr/m/n/10 =
  []
 
-[3]
+
 Overfull \hbox (34.66524pt too wide) in paragraph at lines 77--77
 [] 
  []
 
-) (./parts/results.tex
+[4]) (./parts/results.tex
 Underfull \hbox (badness 1221) in paragraph at lines 11--12
 \OT1/ptm/m/n/10 based com-mu-ni-ties have the most sin-gle-tons, with the
  []
 
-[4] <Figures/comm_sizes_ecdf_loglog.pdf, id=27, 505.89pt x 505.89pt>
+<Figures/comm_sizes_ecdf_loglog.pdf, id=26, 505.89pt x 505.89pt>
 File: Figures/comm_sizes_ecdf_loglog.pdf Graphic file (type pdf)
 
 <use Figures/comm_sizes_ecdf_loglog.pdf>
@@ -327,7 +327,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-<Figures/overlap_by_type.pdf, id=28, 505.89pt x 505.89pt>
+<Figures/overlap_by_type.pdf, id=27, 505.89pt x 505.89pt>
 File: Figures/overlap_by_type.pdf Graphic file (type pdf)
 
 <use Figures/overlap_by_type.pdf>
@@ -338,7 +338,8 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
-<figures/nmi_singletons.pdf, id=29, 500.84616pt x 430.45976pt>
+[5 <./Figures/comm_sizes_ecdf_loglog.pdf>]
+<figures/nmi_singletons.pdf, id=37, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
 
 <use figures/nmi_singletons.pdf>
@@ -359,7 +360,7 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 verted-to.pdf figures/edge-types.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<figures/edge-types-eps-converted-to.pdf, id=30, 1734.48pt x 1471.4975pt>
+<figures/edge-types-eps-converted-to.pdf, id=38, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
@@ -371,7 +372,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-[5 <./Figures/comm_sizes_ecdf_loglog.pdf>]
+
 <Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=39, 505.89pt
  x 505.89pt>
 File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
@@ -386,26 +387,27 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
-) (./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl
+[6 <./Figures/overlap_by_type.pdf> <./figures/nmi_singletons.pdf>])
+(./parts/discussion.tex) (./parts/conclusions.tex) (./paper.bbl
 Underfull \hbox (badness 1253) in paragraph at lines 5--12
 []\OT1/ptm/m/n/10 Baumes, J.; Gold-berg, M. K.; Kr-ish-namoor-thy, M. S.;
  []
 
-[6 <./Figures/overlap_by_type.pdf> <./figures/nmi_singletons.pdf>]
-Underfull \hbox (badness 1968) in paragraph at lines 122--127
+[7 <./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention-
+retweet_weights-hashtag-ecdf.pdf>]
+Underfull \hbox (badness 1968) in paragraph at lines 162--167
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-[7 <./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention-
-retweet_weights-hashtag-ecdf.pdf>]) [8
+[8]) [9
 
 ] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2634 strings out of 493763
- 35988 string characters out of 3144954
- 101005 words of memory out of 3000000
- 5846 multiletter control sequences out of 15000+200000
+ 2642 strings out of 493763
+ 36144 string characters out of 3144954
+ 101270 words of memory out of 3000000
+ 5854 multiletter control sequences out of 15000+200000
  26681 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  37i,12n,24p,1911b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -422,10 +424,10 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 420593 bytes).
+Output written on paper.pdf (9 pages, 423743 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 396 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

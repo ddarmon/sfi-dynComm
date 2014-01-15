@@ -17,6 +17,14 @@ Becker, H.; Naaman, M.; and Gravano, L.
 \newblock Beyond trending topics: Real-world event identification on twitter.
 \newblock In {\em ICWSM}.
 
+\bibitem[\protect\citeauthoryear{Blondel \bgroup et al\mbox.\egroup
+  }{2008}]{blondel2008fast}
+Blondel, V.~D.; Guillaume, J.-L.; Lambiotte, R.; and Lefebvre, E.
+\newblock 2008.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment}
+  2008(10):P10008.
+
 \bibitem[\protect\citeauthoryear{Caires and
   Ferreira}{2003}]{caires2003nonparametric}
 Caires, S., and Ferreira, J.
@@ -34,6 +42,14 @@ Cazabet, R.; Leguistin, M.; and Amblard, F.
 \newblock In {\em Proceedings of the 4th International Workshop on Web
   Intelligence \& Communities}, ~6.
 \newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Conover \bgroup et al\mbox.\egroup
+  }{2011}]{conover2011political}
+Conover, M.; Ratkiewicz, J.; Francisco, M.; Gon{\c{c}}alves, B.; Menczer, F.;
+  and Flammini, A.
+\newblock 2011.
+\newblock Political polarization on twitter.
+\newblock In {\em ICWSM}.
 
 \bibitem[\protect\citeauthoryear{Cover and Thomas}{2012}]{cover2012elements}
 Cover, T.~M., and Thomas, J.~A.
@@ -58,6 +74,13 @@ Darmon, D.; Sylvester, J.; Girvan, M.; and Rand, W.
   echo state networks in social media.
 \newblock {\em HUMAN} 2(1):pp--13.
 
+\bibitem[\protect\citeauthoryear{Deitrick and Hu}{2013}]{deitrick2013mutually}
+Deitrick, W., and Hu, W.
+\newblock 2013.
+\newblock Mutually enhancing community detection and sentiment analysis on
+  twitter networks.
+\newblock {\em Journal of Data Analysis and Information Processing} 1:19.
+
 \bibitem[\protect\citeauthoryear{Evans and
   Lambiotte}{2009}]{PhysRevE.80.016105}
 Evans, T.~S., and Lambiotte, R.
@@ -70,6 +93,14 @@ Fortunato, S.
 \newblock 2010.
 \newblock Community detection in graphs.
 \newblock {\em Physics Reports} 486(3):75--174.
+
+\bibitem[\protect\citeauthoryear{Grabowicz \bgroup et al\mbox.\egroup
+  }{2012}]{grabowicz2012social}
+Grabowicz, P.~A.; Ramasco, J.~J.; Moro, E.; Pujol, J.~M.; and Eguiluz, V.~M.
+\newblock 2012.
+\newblock Social features of online networks: The strength of intermediary ties
+  in online social media.
+\newblock {\em PLOS ONE} 7(1):e29358.
 
 \bibitem[\protect\citeauthoryear{Granger}{1963}]{granger1963economic}
 Granger, C. W.~J.
@@ -92,6 +123,15 @@ Java, A.; Song, X.; Finin, T.; and Tseng, B.
 \newblock Why we twitter: An analysis of a microblogging community.
 \newblock In {\em Advances in Web Mining and Web Usage Analysis}. Springer.
 \newblock  118--138.
+
+\bibitem[\protect\citeauthoryear{Kao \bgroup et al\mbox.\egroup
+  }{2013}]{kao2013talison}
+Kao, A.; Ferng, W.; Poteet, S.; Quach, L.; and Tjoelker, R.
+\newblock 2013.
+\newblock Talison-tensor analysis of social media data.
+\newblock In {\em Intelligence and Security Informatics (ISI), 2013 IEEE
+  International Conference on},  137--142.
+\newblock IEEE.
 
 \bibitem[\protect\citeauthoryear{Kov\'{a}cs \bgroup et al\mbox.\egroup
   }{2010}]{Kovacs2010}
@@ -125,9 +165,18 @@ Lancichinetti, A.; Fortunato, S.; and Kert{\'e}sz, J.
   complex networks.
 \newblock {\em New Journal of Physics} 11(3):033015.
 
-\bibitem[\protect\citeauthoryear{Lim and Datta}{2012}]{lim2012tweets}
+\bibitem[\protect\citeauthoryear{Lim and Datta}{2012a}]{lim2012following}
 Lim, K.~H., and Datta, A.
-\newblock 2012.
+\newblock 2012a.
+\newblock Following the follower: Detecting communities with common interests
+  on twitter.
+\newblock In {\em Proceedings of the 23rd ACM conference on Hypertext and
+  social media},  317--318.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Lim and Datta}{2012b}]{lim2012tweets}
+Lim, K.~H., and Datta, A.
+\newblock 2012b.
 \newblock Tweets beget propinquity: Detecting highly interactive communities on
   twitter using tweeting links.
 \newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
@@ -176,6 +225,15 @@ Newman, M.~E.
 \newblock Fast algorithm for detecting community structure in networks.
 \newblock {\em Physical review E} 69(6):066133.
 
+\bibitem[\protect\citeauthoryear{Nguyen \bgroup et al\mbox.\egroup
+  }{2011}]{nguyen2011adaptive}
+Nguyen, N.~P.; Dinh, T.~N.; Xuan, Y.; and Thai, M.~T.
+\newblock 2011.
+\newblock Adaptive algorithms for detecting community structure in dynamic
+  social networks.
+\newblock In {\em INFOCOM, 2011 Proceedings IEEE},  2282--2290.
+\newblock IEEE.
+
 \bibitem[\protect\citeauthoryear{Palla \bgroup et al\mbox.\egroup
   }{2005}]{PalEtAl05}
 Palla, G.; Der{\'e}nyi, I.; Farkas, I.; and Vicsek, T.
@@ -189,6 +247,13 @@ Paninski, L.
 \newblock 2003.
 \newblock Estimation of entropy and mutual information.
 \newblock {\em Neural Computation} 15(6):1191--1253.
+
+\bibitem[\protect\citeauthoryear{Rossi and
+  Magnani}{2012}]{rossi2012conversation}
+Rossi, L., and Magnani, M.
+\newblock 2012.
+\newblock Conversation practices and network structure in twitter.
+\newblock In {\em ICWSM}.
 
 \bibitem[\protect\citeauthoryear{Rosvall and Bergstrom}{2008}]{rosvall2008maps}
 Rosvall, M., and Bergstrom, C.~T.
@@ -235,6 +300,15 @@ Ver~Steeg, G., and Galstyan, A.
 \newblock Information transfer in social media.
 \newblock In {\em Proc. 21st Int'l World Wide Web Conf.},  509--518.
 \newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Yin \bgroup et al\mbox.\egroup
+  }{2012}]{yin2012latent}
+Yin, Z.; Cao, L.; Gu, Q.; and Han, J.
+\newblock 2012.
+\newblock Latent community topic analysis: Integration of community discovery
+  with topic modeling.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)}
+  3(4):63.
 
 \bibitem[\protect\citeauthoryear{Zhang, Wang, and Zhang}{2007}]{ZhaWanZha07}
 Zhang, S.; Wang, R.-S.; and Zhang, X.-S.
