@@ -39,11 +39,11 @@ kde.positive.support = function(x){
 # weight_type = 'hashtag'
 # weight_type = 'mention-retweet'
 
-label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
-weight_types = c('TE4', 'hashtag', 'mention-retweet')
+# label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
+# weight_types = c('TE4', 'hashtag', 'mention-retweet')
 
-# label_types = c('struc')
-# weight_types = c('hashtag')
+label_types = c('mention-retweet')
+weight_types = c('hashtag')
 
 comms = 0:9
 
@@ -65,7 +65,7 @@ for (comm_label in comms){
 	data_e.to.i[is.na(data_e.to.i)] = 0
 	data_i.to.e[is.na(data_i.to.e)] = 0
 
-	# xmax = 0.2
+	# xmax = 0.05
 	xmax = max(c(data_i.to.i, data_e.to.i, data_i.to.e))
 
 	# pdf(paste0('figures/', prefix, '_i-to-i-ecdf.pdf'))
@@ -83,7 +83,7 @@ for (comm_label in comms){
 	lwd = 2
 
 	pdf(paste0('figures/', prefix, '-ecdf.pdf'))
-	plot(ecdf(data_i.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '', col = 'red', lwd = lwd)
+	plot(ecdf(data_i.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'Empirical Distribution of Weights', main = '', col = 'red', lwd = lwd)
 	lines(ecdf(data_e.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '', col = 'blue', lwd = lwd)
 	lines(ecdf(data_i.to.e), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '', col = 'green', lwd = lwd)
 	legend('bottomright', c('Internal-to-Internal', 'External-to-Internal', 'Internal-to-External'), col = c('red', 'blue', 'green'), lwd = lwd, lty = rep(1, 3))
