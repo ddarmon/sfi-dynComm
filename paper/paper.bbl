@@ -94,6 +94,13 @@ Fortunato, S.
 \newblock Community detection in graphs.
 \newblock {\em Physics Reports} 486(3):75--174.
 
+\bibitem[\protect\citeauthoryear{Good, de Montjoye, and
+  Clauset}{2010}]{good2010performance}
+Good, B.~H.; de~Montjoye, Y.-A.; and Clauset, A.
+\newblock 2010.
+\newblock Performance of modularity maximization in practical contexts.
+\newblock {\em Physical Review E} 81(4):046106.
+
 \bibitem[\protect\citeauthoryear{Grabowicz \bgroup et al\mbox.\egroup
   }{2012}]{grabowicz2012social}
 Grabowicz, P.~A.; Ramasco, J.~J.; Moro, E.; Pujol, J.~M.; and Eguiluz, V.~M.

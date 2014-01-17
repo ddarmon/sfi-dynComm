@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  16 JAN 2014 22:49
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  17 JAN 2014 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,14 +358,19 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 86--87
  [][] 
  []
 
+
+Underfull \hbox (badness 1062) in paragraph at lines 91--92
+[]\OT1/ptm/m/n/10 As an ex-am-ple, Fig-ure 4[] shows the dis-tri-bu-tions of
+ []
+
 [6 <./Figures/comm_sizes_ecdf_loglog.pdf>]
-<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=43, 505.89pt
+<figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=43, 505.89pt
  x 505.89pt>
-File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
+File: figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
 e (type pdf)
 
-<use Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>
-Package pdftex.def Info: Figures/comm0_labels-mention-retweet_weights-hashtag-e
+<use figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>
+Package pdftex.def Info: figures/comm0_labels-mention-retweet_weights-hashtag-e
 cdf.pdf used on input line 95.
 (pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
 
@@ -373,50 +378,51 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
-) (./parts/conclusions.tex
-Underfull \vbox (badness 1097) has occurred while \output is active []
+[7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
 )
-(./paper.bbl
+(./parts/conclusions.tex) (./paper.bbl
 Underfull \hbox (badness 1253) in paragraph at lines 5--12
 []\OT1/ptm/m/n/10 Baumes, J.; Gold-berg, M. K.; Kr-ish-namoor-thy, M. S.;
  []
 
-[8 <./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
-Underfull \hbox (badness 1968) in paragraph at lines 162--167
+[8 <./figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
+Underfull \hbox (badness 1968) in paragraph at lines 169--174
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-) [9] (./paper.aux) ) 
+[9]) [10
+
+] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2639 strings out of 493763
- 35987 string characters out of 3144954
- 102325 words of memory out of 3000000
- 5852 multiletter control sequences out of 15000+200000
+ 2640 strings out of 493763
+ 36008 string characters out of 3144954
+ 102367 words of memory out of 3000000
+ 5853 multiletter control sequences out of 15000+200000
  27608 words of font info for 61 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  37i,12n,24p,1982b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
-.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
-pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
-local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
-texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (9 pages, 533552 bytes).
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (10 pages, 567941 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 399 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

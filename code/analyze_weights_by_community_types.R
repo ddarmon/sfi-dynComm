@@ -43,7 +43,8 @@ kde.positive.support = function(x){
 # weight_types = c('TE4', 'hashtag', 'mention-retweet')
 
 label_types = c('mention-retweet')
-weight_types = c('hashtag')
+weight_types = c('TE4')
+# weight_types = c('hashtag')
 
 comms = 0:9
 
@@ -51,6 +52,7 @@ for (label_type in label_types){
 for (weight_type in weight_types){
 
 for (comm_label in comms){
+# for (comm_label in c(0)){
 	prefix = paste0('comm', comm_label, '_labels-', label_type, '_weights-', weight_type)
 
 	data_i.to.i = read.csv(paste0('../data/edges-by-type/', prefix, '_i-to-i.dat'), header = FALSE)$V1
@@ -65,8 +67,19 @@ for (comm_label in comms){
 	data_e.to.i[is.na(data_e.to.i)] = 0
 	data_i.to.e[is.na(data_i.to.e)] = 0
 
+	# For some reason min is behaving strangely here...
+
+	min1 = log10(min(data_i.to.i)); min2 = log10(min(data_e.to.i)); min3 = log10(min(data_i.to.e))
+
 	# xmax = 0.05
 	xmax = max(c(data_i.to.i, data_e.to.i, data_i.to.e))
+# 	xmin = 10^(min(c(min1, min2, min3)))
+	xmin = 10^(min(c(min1, min2, min3)))
+	if (xmin == 0.){
+		xmin = 1e-10
+	}
+
+	cat(sprintf('\n\nUsing xmin = %e and xmax = %e\n\n', xmin, xmax))
 
 	# pdf(paste0('figures/', prefix, '_i-to-i-ecdf.pdf'))
 	# plot(ecdf(data_i.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '')
@@ -83,10 +96,12 @@ for (comm_label in comms){
 	lwd = 2
 
 	pdf(paste0('figures/', prefix, '-ecdf.pdf'))
-	plot(ecdf(data_i.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'Empirical Distribution of Weights', main = '', col = 'red', lwd = lwd)
-	lines(ecdf(data_e.to.i), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '', col = 'blue', lwd = lwd)
-	lines(ecdf(data_i.to.e), xlim = c(0, xmax), xlab = 'Weight', ylab = 'ECDF', main = '', col = 'green', lwd = lwd)
-	legend('bottomright', c('Internal-to-Internal', 'External-to-Internal', 'Internal-to-External'), col = c('red', 'blue', 'green'), lwd = lwd, lty = rep(1, 3))
+	par(mar=c(4.5,5,2,1), cex.lab = 2, cex.axis = 2)
+	plot(ecdf(data_i.to.i), xlim = c(xmin, xmax), xlab = 'Weight', ylab = 'Empirical Distribution of Weights', main = '', col = 'red', lwd = lwd, log = 'x')
+	lines(ecdf(data_e.to.i), xlim = c(xmin, xmax), col = 'blue', lwd = lwd)
+	lines(ecdf(data_i.to.e), xlim = c(xmin, xmax), col = 'green', lwd = lwd)
+	abline(v = c(median(data_i.to.i), median(data_e.to.i), median(data_i.to.e)), col = c('red', 'blue', 'green'), lwd = lwd, lty = rep(2, 3)); 
+	legend('topleft', c('Internal-to-Internal', 'External-to-Internal', 'Internal-to-External'), col = c('red', 'blue', 'green'), lwd = lwd, lty = rep(1, 3))
 	dev.off()
 
 	# pdf(paste0('figures/', prefix, '-dens.pdf'))
@@ -154,12 +169,13 @@ for (comm_label in comms){
 	    # xlab('Weight') + ylab('Estimated Density') #+
 	    # scale_x_log10()
 	    # xlim(c(0, 0.05))
-	    if (weight_type == 'hashtag'){
-	    	qplot(xx, ..density.., data = dat, geom = "histogram", facets = Type ~ ., binwidth = binwidth, col = Type, fill = Type, xlab = 'Weights', ylab = 'Estimated Density', log = 'x')
-	    } else{
-	    	qplot(xx, ..density.., data = dat, geom = "histogram", facets = Type ~ ., binwidth = binwidth, col = Type, fill = Type, xlab = 'Weights', ylab = 'Estimated Density')
-	    }
-    ggsave(paste0('figures/', prefix, '-hist.pdf'))
+
+	   #  if (weight_type == 'hashtag'){
+	   #  	qplot(xx, ..density.., data = dat, geom = "histogram", facets = Type ~ ., binwidth = binwidth, col = Type, fill = Type, xlab = 'Weights', ylab = 'Estimated Density', log = 'x')
+	   #  } else{
+	   #  	qplot(xx, ..density.., data = dat, geom = "histogram", facets = Type ~ ., binwidth = binwidth, col = Type, fill = Type, xlab = 'Weights', ylab = 'Estimated Density')
+	   #  }
+    # ggsave(paste0('figures/', prefix, '-hist.pdf'))
 
   #   if ((length(data_i.to.i[data_i.to.i != 0])!=0)&(length(data_e.to.i[data_e.to.i != 0])!=0)&(length(data_i.to.e[data_i.to.e != 0])!=0)){
   # #   	ggplot(dat,aes(x=xx)) + 

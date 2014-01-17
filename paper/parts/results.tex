@@ -64,7 +64,7 @@ In the previous section, we saw that the large scale statistics of the communiti
 \begin{align}
 	\text{NMI}(\mathcal{C}_{1}, \mathcal{C}_{2}) = 1 - \frac{1}{2} \left( \frac{H[\mathbf{X} | \mathbf{Y}]}{H[\mathbf{X}]} + \frac{H[\mathbf{Y} | \mathbf{X}]}{H[\mathbf{Y}]}\right)
 \end{align}
-where $H[\cdot]$ is a marginal entropy and $H[\cdot | \cdot]$ is a conditional entropy. The normalized mutual information varies from 0 to 1, attaining the value of 1 only when $\mathcal{C}_{1}$ and $\mathcal{C}_{2}$ are identical coverings up to a permutation of their labels. See the appendix of~\cite{lancichinetti2009detecting} for more details.
+where $H[\cdot]$ denotes a marginal entropy and $H[\cdot | \cdot]$ denotes a conditional entropy. The normalized mutual information varies from 0 to 1, attaining the value of 1 only when $\mathcal{C}_{1}$ and $\mathcal{C}_{2}$ are identical coverings up to a permutation of their labels. See the appendix of~\cite{lancichinetti2009detecting} for more details.
 
 We considered the normalized mutual information between the communities inferred from the structural network and the networks weighted with lag 1 through 6 transfer entropies, hashtag similarity, and mention, retweet, and mention-retweet activity. The resulting $\text{NMI}(\mathcal{C}_{i}, \mathcal{C}_{j})$ are shown in Figure~\ref{Fig-compare_coverings}. We see that similarity between the coverings is dictated by the generic community type (structural, activity-based, etc.). That is, the transfer entropy coverings are more similar to each other than to any of the other coverings, with a similar result for the mention, retweet, and mention-retweet coverings. Interestingly, the coverings resulting from the different weightings are all more similar to each other than to the structural covering from the unweighted network. Also note that the covering based on the hashtag similarities are different from all of the other weight-based coverings.
 
@@ -77,9 +77,9 @@ We considered the normalized mutual information between the communities inferred
 
 Thus, we see that although the activity-based, interaction-based, and topic-based communities relied on the structural network, their community structure differs \emph{the most} from the community structure of the follower network. This agrees with the results from the previous section, and reinforces that the follower network is a necessary but not sufficient part of detecting communities in online social networks.
 
-\subsection{Comparing Edges Across Different Community-Types}
+\subsection{Comparing Edges Across Different Community Types}
 
-We have defined communities using four different criteria: structure, activity, interaction, and content. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a node in the community to another node in the community (internal-to-internal), those from a node in the community to a node outside of the community (internal-to-external), and those from a node outside the community to a node inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
+We have defined communities using four different criteria: structure, activity, interaction, and topic. We next explore how edge weights, and thus different forms of information flow, differ between community types. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a user in the community to another user in the community (internal-to-internal), those from a user in the community to a user outside of the community (internal-to-external), and those from a user outside the community to a user inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
 
 \begin{figure}[ht]
   \centering
@@ -88,16 +88,16 @@ We have defined communities using four different criteria: structure, activity, 
 \label{Fig-edge_types}
 \end{figure}
 
-For example, Figure~\ref{Fig-dist_across_community} shows the distributions of hashtag-based weights for the largest community defined by the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of \emph{topic-similarity}.
+As an example, Figure~\ref{Fig-dist_across_community} shows the distributions of hashtag-based weights for the largest community in the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of topic-similarity.
 
 \begin{figure}[ht]
   \centering
-\includegraphics[width=0.50\textwidth]{Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
-\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topics.}
+\includegraphics[width=0.50\textwidth]{figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
+\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topic similarity. The dashed horizontal lines indicate the median weight for each type of edge. Note the logarithmic scale on the horizontal axis.}
 \label{Fig-dist_across_community}
 \end{figure}
 
-This shift in the distribution was typical of many of the community type / weight pairings. To explore this further, for each of the top 100 largest communities defined by a particular community type (structure-based, behavior-based, content-based, or activity-based), we computed the median internal-to-internal, external-to-internal, and internal-to-external weight for that community for each weight type. These values summarize the typical value of each of these types of edges. We can then compute the ratio of the median internal-to-internal weight and the median external/internal-to-internal/external weight, which captures the proportional shift in the distribution. Finally, we compute the median of this proportional shift across all 100 of the largest communities. These values are summarized in Table~\ref{Table-medians}.
+This change in the tail of the distribution between edge types was typical of many of the community type / weight pairings. A useful summary statistic to quantify the change involves the median weights across the three types of edges, as demonstrated in Figure~\ref{Fig-dist_across_community}. In particular, by computing the ratio of the median weight for the internal-to-internal edges to the median weight for the internal/external-to-external/internal edges, we can quantify the ratio change in weight strength internal vs. external to a community. We computed this quantity for each of the top 100 largest communities defined by a particular community type (structure-based, activity-based, interaction-based, or topic-based), and report the median value across the 100 largest communities for each type in Table~\ref{Table-medians}. This statistic represents the typical ratio shift for each community type / weight pairing. Values greater than 1 indicate that the edge weights tend to be higher within the community, and values less than 1 indicate that the edge weights tend to be higher for those edges crossing the community boundary.
 
 % \begin{table}
 % 	\caption{The median value for the ratio of the median external/internal-to-internal/external weight to median internal-to-internal weight for the different community/weight pairings.}
@@ -111,22 +111,56 @@ This shift in the distribution was typical of many of the community type / weigh
 % 	\end{tabular}
 % \end{table}
 
+% \begin{table}
+% 	\label{Table-medians}
+% 	\caption{The median value across the 100 largest communities for the ratio of the median internal-to-internal weight to the median external-to-internal / internal-to-external weight for the different community / weight pairings. Note: For mention-retweet weights, weight zero edges were excluded from the computation of the median. We indicate such cases with an asterisk.}
+% 	\centering
+% 	\begin{tabular}{c | c | c  c  c}
+% 		& & \multicolumn{3}{ c }{Weight Type} \\ \cline{3-5}
+% 		& & TE & MR & HT \\ \cline{2-5}
+% 		\multirow{4}{*}{Community Type} & S & $0.96/0.94$& $1.7/2.1$*& $9.0/8.0$\\
+% 		& A & $1.0/0.96$& $1.5/2.4$*& $24/17$\\
+% 		& I & $0.83/0.86$& $3.2/4.4$& $10/8.5$\\
+% 		& T & $0.9/0.89$& $2.4/2.6$*& $28/26$
+% 	\end{tabular}
+% \end{table}
+
 \begin{table}
-	\label{Table-medians}
-	\caption{The median value across the 100 largest communities for the ratio of the median internal-to-internal weight to median external/internal-to-internal/external weight for the different community/weight pairings. \\ * For mention-retweet weights, weight zero edges were excluded from the computation of the median.}
+	\caption{The median value across the 100 largest communities for the ratio of the median internal-to-internal weight to the median external-to-internal / internal-to-external weight for the different community / weight pairings. Note: For mention-retweet weights, zero weight edges were excluded from the computation of the median. We indicate such cases with an asterisk.}
 	\centering
-	\begin{tabular}{c | c | c  c  c}
-		& & \multicolumn{3}{ c }{Weight} \\ \hline
-		\multirow{4}{*}{Community} & & TE & MR & HT \\ \hline
-		& S & $0.96/0.94$& $1.7/2.1$*& $9.0/8.0$\\
-		& TE & $1.0/0.96$& $1.5/2.4$*& $24/17$\\
-		& MR & $0.83/0.86$& $3.2/4.4$& $10/8.5$\\
-		& HT & $0.9/0.89$& $2.4/2.6$*& $28/26$
+	\begin{tabular}{c  c | c  c  c}
+		& & \multicolumn{3}{ c }{Weight Type} \\ %\cline{3-5}
+		& & TE & MR & HT \\ \cline{1-5}
+		\multirow{4}{*}{Community} & S & $0.96/0.94$& $1.7/2.1$*& $9.0/8.0$\\
+		\multirow{4}{*}{Type} & A & $1.0/0.96$& $1.5/2.4$*& $24/17$\\
+		& I & $0.83/0.86$& $3.2/4.4$& $10/8.5$\\
+		& T & $0.9/0.89$& $2.4/2.6$*& $28/26$
 	\end{tabular}
+	\label{Table-medians}
 \end{table}
 
-We see that overall, the 
+We see that for all weight types except the transfer entropy, the weight on the edges internal to the communities tend to be higher than those entering or exiting the communities, ranging from a factor of 1.5 times larger for the activity-based/mention-retweet pairing to a factor of 28 times larger for the topic-based/hashtag similarity pairing. As stated above, we expect this ratio to be high for community / weight pairings that match (e.g. considering mention-retweet weighting for interaction-based communities), and we see that this is the case for all but the activity-based / transfer entropy pairing. Moreover, for both the mention-retweet and hashtag weightings, the ratio is largest when they match with the interaction-based and topic-based communities, respectively.
 
-\subsection{Qualitative Analysis}
+For all four community types, the transfer entropy tended to be higher for edges crossing community boundaries than for those internal to community boundaries. Recall that the transfer entropy $\text{TE}_{X(u) \to X(f)}$ quantifies the reduction in uncertainty about a follower $f$'s activity from knowing the activity of a user $u$. This result therefore implies that, in terms of prediction, it is more useful to know the time series of a user followed outside of the community compared to a user followed inside of the community. Thus, in an information theoretic sense, we see that novel information useful for prediction is more likely to flow \emph{across} community boundaries than \emph{within} community boundaries.
 
-In order to further explore the differences between the communities obtained through the various weightings, we also performed a qualitative analysis of such communities. Some interesting examples are, for instance, communities in the topic-based network such as one composed of 83 users who talk about environmental issues and frequently use hashtags such as \#green, \#eco and \#sustainability, and another one 47 users talking about small businesses and entrepreneurship, characterized by hashtags such as \#smallbiz, \#marketing and \#enterpreneur. In both cases most members of the topic-based communities are not found in the same community in the other networks, indicating that these people talk about the same things and can therefore be considered a thematic community, but do not strongly interact with each other nor behave the same, and so belong to different social groups with respect to interactions and behavior. Another interesting example is the one of a community thematically focused on Denver and Colorado, whose users do not belong to the same community in the interaction networks, but most of them do belong to the same community in the information based network. This indicates that these users react on the same events and issues regarding Colorado and are therefore strongly connected in the topic-based and in the activity-based networks, but at the same time they do not directly interact with each other and are therefore more loosely connected in the interaction-based networks, where they belong to different communities.
+Note that the communities defined by the follower network do tend to have higher edge weights internal compared to across community boundaries. Thus, we do see that the structural communities capture some information about the functional behavior of users in terms of topics and interaction. However, the ratio is not as large as when we explicitly seek out communities based on a particular type of functional community. This again emphasizes the importance of properly formulating the goal of a community detection study in the context of online social networks.
+
+% \begin{tabular}{cc|ccc}
+% & & \multicolumn{3}{ c| }{Weight Type} \\ \cline{3-5}
+% & & 2 & 3 & 5  \\ \cline{1-5}
+% \multicolumn{1}{ c| }{\multirow{4}{*}{Powers} } &
+% \multicolumn{1}{ c| }{504} & 3 & 2 & 0    \\ \cline{2-5}
+% \multicolumn{1}{ c|  }{}                        &
+% \multicolumn{1}{ c| }{540} & 2 & 3 & 1     \\
+% \multicolumn{1}{ c| }{gcd} & 2 & 2 & 0 \\ \cline{2-5}
+% \multicolumn{1}{ c  }{}                        &
+% \multicolumn{1}{ c| }{lcm} & 3 & 3 & 1 \\ \cline{1-5}
+% \end{tabular}
+
+\subsection{Qualitative Analysis of Community Memberships Across Types}
+
+As demonstrated in~\cite{good2010performance} in the context of modularity maximization-based community detection, an exponential number of nearby partitions may exist that nearly maximize an objective function used to measure the goodness-of-fit of the graph partition used for community detection. Because of this and related issues, it is always wise to perform some sort of curated study of the communities returned by any  community detection algorithm to verify their meaningfulness with respect to the scientific question at hand. In this section, we consider a collection of communities in such a study. 
+
+In the topic-based communities, we find a single community consisting of 83 users who tweet about environmental issues and frequently use hashtags such as \#green, \#eco and \#sustainability. We also find a different community of 47 users who tweet about small businesses and entrepreneurship, using hashtags such as \#smallbiz, \#marketing and \#enterpreneur. In both cases most members of the topic-based communities are not found in the same community in the other networks, indicating that while these people talk about the same things and can therefore be considered a community based on their content, they do not strongly interact with each other nor behave the same, and so belong to different social groups with respect to interactions and behavior.
+
+Another interesting example is the one of a community whose topics tend focus on Denver and Colorado. These users do not belong to the same community in the interaction-based network, but most of them do belong to the same community in the activity-based network. This indicates that these users react to the same events and issues regarding Colorado and are therefore strongly connected in the topic-based and activity-based networks, but at the same time they do not directly interact with each other and are therefore more loosely connected in the interaction-based networks, where they belong to different communities.
