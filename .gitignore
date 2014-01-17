@@ -4,3 +4,6 @@
 !ts1.dat
 *.p
 comm*_labels-*_weights-*
+*.synctex.gz
+*.log
+*.aux
