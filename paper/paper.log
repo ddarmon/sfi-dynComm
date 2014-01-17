@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  17 JAN 2014 15:49
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  17 JAN 2014 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,7 +313,7 @@ Underfull \hbox (badness 1221) in paragraph at lines 11--12
 \OT1/ptm/m/n/10 based com-mu-ni-ties have the most sin-gle-tons, with the
  []
 
-<Figures/comm_sizes_ecdf_loglog.pdf, id=26, 505.89pt x 505.89pt>
+[5] <Figures/comm_sizes_ecdf_loglog.pdf, id=30, 505.89pt x 505.89pt>
 File: Figures/comm_sizes_ecdf_loglog.pdf Graphic file (type pdf)
 
 <use Figures/comm_sizes_ecdf_loglog.pdf>
@@ -325,7 +325,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-[5] <figures/nmi_singletons.pdf, id=31, 500.84616pt x 430.45976pt>
+<figures/nmi_singletons.pdf, id=31, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
 
 <use figures/nmi_singletons.pdf>
@@ -336,6 +336,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
+[6 <./Figures/comm_sizes_ecdf_loglog.pdf>]
 Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    date: 2014-01-07 10:29:44
 (epstopdf)                    size: 26961 bytes
@@ -346,7 +347,8 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 verted-to.pdf figures/edge-types.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<figures/edge-types-eps-converted-to.pdf, id=32, 1734.48pt x 1471.4975pt>
+
+<figures/edge-types-eps-converted-to.pdf, id=42, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
@@ -363,7 +365,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 91--92
 []\OT1/ptm/m/n/10 As an ex-am-ple, Fig-ure 4[] shows the dis-tri-bu-tions of
  []
 
-[6 <./Figures/comm_sizes_ecdf_loglog.pdf>]
+
 <figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=43, 505.89pt
  x 505.89pt>
 File: figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
@@ -378,10 +380,7 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
-[7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
+[7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>])
 (./parts/conclusions.tex) (./paper.bbl
 Underfull \hbox (badness 1253) in paragraph at lines 5--12
 []\OT1/ptm/m/n/10 Baumes, J.; Gold-berg, M. K.; Kr-ish-namoor-thy, M. S.;
@@ -419,7 +418,7 @@ ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
 e/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (10 pages, 567941 bytes).
+Output written on paper.pdf (10 pages, 567827 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream

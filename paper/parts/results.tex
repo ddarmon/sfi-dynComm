@@ -8,7 +8,7 @@ We begin by examining the overall statistics for the communities inferred by OSL
 % 	http://arxiv.org/pdf/1202.2684v2.pdf
 % for possible useful references on core-periphery networks.
 
-The number of singletons by community type is also shown in Table~\ref{Table-comm_count}. We see that the topic- and interaction-based communities have the most singletons, with the activity-based community dominating this measure. This result for the activity-based community is an artifact of a property of the retweet/mention weighting: 717 of the users were removed in the process \textbf{TK: Fix after clarification from Elisa}.
+The number of singletons by community type is also shown in Table~\ref{Table-comm_count}. We see that the topic- and interaction-based communities have the most singletons, with the activity-based community dominating this measure. This result for the activity-based community is partially an artifact of a property of the retweet/mention weighting: 717 of the users were disconnected from the network by how the weights were defined, resulting in `orphan' nodes which we have included in the collection of singletons for all of our analyses. However, even after accounting for this artifact, the interaction-based network still has the most non-orphan singletons. This seems to indicate that a large fraction of the 6917 (nearly 25\%) do not interact with each other in a concerted way that would mark them as a community under our interaction-based definition.
 
 \begin{table}[ht]
 	\caption{Number of non-singleton communities and singletons by community type: S(tructural), A(ctivity -based), T(opic-based), and I(nteraction-based).}
@@ -93,7 +93,7 @@ As an example, Figure~\ref{Fig-dist_across_community} shows the distributions of
 \begin{figure}[ht]
   \centering
 \includegraphics[width=0.50\textwidth]{figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf}
-\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topic similarity. The dashed horizontal lines indicate the median weight for each type of edge. Note the logarithmic scale on the horizontal axis.}
+\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topic similarity. The dashed vertical lines indicate the median weight for each type of edge. Note the logarithmic scale on the horizontal axis.}
 \label{Fig-dist_across_community}
 \end{figure}
 
