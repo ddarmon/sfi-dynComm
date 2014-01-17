@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  16 JAN 2014 20:56
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 JAN 2014 16:13
-=======
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  16 JAN 2014 17:05
->>>>>>> 9d2a70f6eb9b767288c2584c46c60e29cf4a80da
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.27)  16 JAN 2014 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,46 +287,27 @@ Underfull \hbox (badness 1490) in paragraph at lines 32--33
 [2]) (./parts/methods.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-<<<<<<< HEAD
 
-Underfull \hbox (badness 2150) in paragraph at lines 17--18
-=======
+Underfull \vbox (badness 2951) has occurred while \output is active []
+
  [3]
-Underfull \hbox (badness 2150) in paragraph at lines 31--32
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+Underfull \hbox (badness 2150) in paragraph at lines 29--30
 []\OT1/ptm/m/n/10 Let $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 X[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 and $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 Y[]\OMS/cmsy/m/n/10 g
 $ \OT1/ptm/m/n/10 be two strong-sense sta-tion-ary
  []
 
-<<<<<<< HEAD
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 32--39
-=======
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+Underfull \hbox (badness 10000) in paragraph at lines 44--51
 \OT1/ptm/m/n/10 we can see that trans-fer en-tropy is al-ways non-
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 1005) in paragraph at lines 32--39
-=======
-Underfull \hbox (badness 1005) in paragraph at lines 46--53
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+Underfull \hbox (badness 1005) in paragraph at lines 44--51
 \OT1/ptm/m/n/10 negative, and is zero pre-cisely when $\OML/cmm/m/it/10 H [] \O
 T1/cmr/m/n/10 =
  []
 
-<<<<<<< HEAD
-
-Overfull \hbox (34.66524pt too wide) in paragraph at lines 75--75
-[] 
- []
-
-=======
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
 [4]) (./parts/results.tex
 Underfull \hbox (badness 1221) in paragraph at lines 11--12
 \OT1/ptm/m/n/10 based com-mu-ni-ties have the most sin-gle-tons, with the
@@ -352,39 +325,16 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-[5 <./Figures/comm_sizes_ecdf_loglog.pdf>]
-<Figures/overlap_by_type.pdf, id=36, 505.89pt x 505.89pt>
-File: Figures/overlap_by_type.pdf Graphic file (type pdf)
-
-<use Figures/overlap_by_type.pdf>
-Package pdftex.def Info: Figures/overlap_by_type.pdf used on input line 56.
-(pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
-
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 56--57
- [][] 
- []
-
-<<<<<<< HEAD
-<figures/nmi_singletons.pdf, id=37, 500.84616pt x 430.45976pt>
-=======
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-<figures/nmi_singletons.pdf, id=32, 500.84616pt x 430.45976pt>
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+[5] <figures/nmi_singletons.pdf, id=31, 500.84616pt x 430.45976pt>
 File: figures/nmi_singletons.pdf Graphic file (type pdf)
 
 <use figures/nmi_singletons.pdf>
-Package pdftex.def Info: figures/nmi_singletons.pdf used on input line 69.
+Package pdftex.def Info: figures/nmi_singletons.pdf used on input line 73.
 (pdftex.def)             Requested size: 252.94499pt x 217.39688pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 69--70
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 73--74
  [][] 
  []
-
-
-Underfull \vbox (badness 2334) has occurred while \output is active []
 
 Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    date: 2014-01-07 10:29:44
@@ -394,106 +344,68 @@ Package epstopdf Info: Source file: <figures/edge-types.eps>
 (epstopdf)                    size: 6167 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/edge-types-eps-con
 verted-to.pdf figures/edge-types.eps>
-(epstopdf)             \includegraphics on input line 80.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<<<<<<< HEAD
-
-<figures/edge-types-eps-converted-to.pdf, id=38, 1734.48pt x 1471.4975pt>
-=======
-<figures/edge-types-eps-converted-to.pdf, id=33, 1734.48pt x 1471.4975pt>
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+<figures/edge-types-eps-converted-to.pdf, id=32, 1734.48pt x 1471.4975pt>
 File: figures/edge-types-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/edge-types-eps-converted-to.pdf>
 Package pdftex.def Info: figures/edge-types-eps-converted-to.pdf used on input 
-line 80.
+line 86.
 (pdftex.def)             Requested size: 252.94499pt x 214.58537pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 80--81
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 86--87
  [][] 
  []
 
-
-<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=34, 505.89pt
+[6 <./Figures/comm_sizes_ecdf_loglog.pdf>]
+<Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf, id=43, 505.89pt
  x 505.89pt>
 File: Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf Graphic fil
 e (type pdf)
 
 <use Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>
 Package pdftex.def Info: Figures/comm0_labels-mention-retweet_weights-hashtag-e
-cdf.pdf used on input line 89.
+cdf.pdf used on input line 95.
 (pdftex.def)             Requested size: 252.94499pt x 252.94437pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 89--90
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
-) (./parts/discussion.tex [6 <./Figures/comm_sizes_ecdf_loglog.pdf> <./Figures/
-overlap_by_type.pdf>]) (./parts/conclusions.tex) (./paper.bbl
+) (./parts/conclusions.tex
+Underfull \vbox (badness 1097) has occurred while \output is active []
+
+ [7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
+)
+(./paper.bbl
 Underfull \hbox (badness 1253) in paragraph at lines 5--12
 []\OT1/ptm/m/n/10 Baumes, J.; Gold-berg, M. K.; Kr-ish-namoor-thy, M. S.;
  []
 
-<<<<<<< HEAD
-[7 <./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention-
-retweet_weights-hashtag-ecdf.pdf>]
-=======
-<<<<<<< HEAD
-[7 <./figures/nmi_singletons.pdf> <./figures/edge-types-eps-converted-to.pdf>]
-=======
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./figures/edge-types-eps-converted-to.pdf> <./Figures/comm0_labels-mention
--retweet_weights-hashtag-ecdf.pdf>]
->>>>>>> 9d2a70f6eb9b767288c2584c46c60e29cf4a80da
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+[8 <./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]
 Underfull \hbox (badness 1968) in paragraph at lines 162--167
 \OT1/ptm/m/n/10 ture in com-plex net-works.  \OT1/ptm/m/it/10 New Jour-nal of P
 hysics
  []
 
-[8 <./Figures/comm0_labels-mention-retweet_weights-hashtag-ecdf.pdf>]) [9
-
-]
-(./paper.aux) ) 
+) [9] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 2679 strings out of 493315
- 36744 string characters out of 6137904
- 105790 words of memory out of 5000000
- 6044 multiletter control sequences out of 15000+600000
- 26681 words of font info for 58 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 37i,12n,26p,1540b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (9 pages, 425968 bytes).
-=======
- 2642 strings out of 493763
- 36144 string characters out of 3144954
- 102345 words of memory out of 3000000
- 5854 multiletter control sequences out of 15000+200000
- 26681 words of font info for 58 fonts, out of 3000000 for 9000
+ 2639 strings out of 493763
+ 35987 string characters out of 3144954
+ 102325 words of memory out of 3000000
+ 5852 multiletter control sequences out of 15000+200000
+ 27608 words of font info for 61 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 37i,12n,24p,1929b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+ 37i,12n,24p,1982b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
+pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
 local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
@@ -501,15 +413,10 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on paper.pdf (9 pages, 519489 bytes).
-=======
-Output written on paper.pdf (9 pages, 519036 bytes).
->>>>>>> 9d2a70f6eb9b767288c2584c46c60e29cf4a80da
->>>>>>> d7f00eea2ae0b4f1d5601515740e7579882c7218
+Output written on paper.pdf (9 pages, 533552 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 396 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

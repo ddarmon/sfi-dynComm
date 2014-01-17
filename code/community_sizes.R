@@ -57,5 +57,5 @@ for (cur.ind in 1:4){
 
 	lines(x, 1 - F(x), col = colors[cur.ind], lwd = lwd)
 }
-legend('topright', c('Structural', 'Activity-based', 'Content-based', 'Interaction-based'), lwd = rep(lwd,4), lty = rep(1, 4), col = colors)
+legend('topright', c('Structural', 'Activity-based', 'Topic-based', 'Interaction-based'), lwd = rep(lwd,4), lty = rep(1, 4), col = colors)
 dev.off()

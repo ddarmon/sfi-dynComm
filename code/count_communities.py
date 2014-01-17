@@ -19,7 +19,7 @@ for comm_type in comm_types:
 		for line in ofile:
 			comm_count += 1
 
-	# print comm_type, comm_count
+	print comm_type, comm_count
 
 	# Count number of singleton communities.
 
