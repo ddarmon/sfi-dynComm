@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1389991677 "results.tex" "results.pdf" "results" 
+["pdflatex"] 1390080385 "conclusions.tex" "conclusions.pdf" "conclusions" 
   "/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii" 1251025892 71625 fad1c4b52151c234b6873a255b0ad6b3 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1303254447 7604 85d429dbffd68dd07db4a57e78f67c79 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -34,10 +34,9 @@
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/helvet.sty" 1156702453 1500 3c2647c8649928795ededd42a6e85f85 ""
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/times.sty" 1156702453 857 6c716f26c5eadfb81029fcd6ce2d45e6 ""
-  "results.aux" 1389991678 164 f7839a9d345d8687d9fba819198b81f9 ""
-  "results.tex" 1389991676 2286 dfcc29de99c77fe0d767bb2baf8f2352 ""
+  "conclusions.aux" 1390080386 206 acac9ce99270089d8d1bedd31214cf2a ""
+  "conclusions.tex" 1390080382 3672 1db4da7351f0404deda54fa4d8259ffd ""
   (generated)
-  "results.aux"
-  "results.log"
-  "../figures/edge-types-eps-converted-to.pdf"
-  "results.pdf"
+  "conclusions.log"
+  "conclusions.aux"
+  "conclusions.pdf"

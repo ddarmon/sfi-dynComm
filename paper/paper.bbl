@@ -43,6 +43,13 @@ Cazabet, R.; Leguistin, M.; and Amblard, F.
   Intelligence \& Communities}, ~6.
 \newblock ACM.
 
+\bibitem[\protect\citeauthoryear{Claeskens and
+  Hjort}{2008}]{claeskens2008model}
+Claeskens, G., and Hjort, N.~L.
+\newblock 2008.
+\newblock {\em Model selection and model averaging}, volume 330.
+\newblock Cambridge University Press Cambridge.
+
 \bibitem[\protect\citeauthoryear{Conover \bgroup et al\mbox.\egroup
   }{2011}]{conover2011political}
 Conover, M.; Ratkiewicz, J.; Francisco, M.; Gon{\c{c}}alves, B.; Menczer, F.;
@@ -140,6 +147,14 @@ Kao, A.; Ferng, W.; Poteet, S.; Quach, L.; and Tjoelker, R.
   International Conference on},  137--142.
 \newblock IEEE.
 
+\bibitem[\protect\citeauthoryear{Kitsak \bgroup et al\mbox.\egroup
+  }{2010}]{kitsak2010identification}
+Kitsak, M.; Gallos, L.~K.; Havlin, S.; Liljeros, F.; Muchnik, L.; Stanley,
+  H.~E.; and Makse, H.~A.
+\newblock 2010.
+\newblock Identification of influential spreaders in complex networks.
+\newblock {\em Nature Physics} 6(11):888--893.
+
 \bibitem[\protect\citeauthoryear{Kov\'{a}cs \bgroup et al\mbox.\egroup
   }{2010}]{Kovacs2010}
 Kov\'{a}cs, I.~A.; Palotai, R.; Szalay, M.~S.; and Csermely, P.
@@ -231,6 +246,12 @@ Newman, M.~E.
 \newblock 2004.
 \newblock Fast algorithm for detecting community structure in networks.
 \newblock {\em Physical review E} 69(6):066133.
+
+\bibitem[\protect\citeauthoryear{Newman}{2009}]{newman2009networks}
+Newman, M.
+\newblock 2009.
+\newblock {\em Networks: an introduction}.
+\newblock Oxford University Press.
 
 \bibitem[\protect\citeauthoryear{Nguyen \bgroup et al\mbox.\egroup
   }{2011}]{nguyen2011adaptive}
