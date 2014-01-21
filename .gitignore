@@ -7,3 +7,4 @@ comm*_labels-*_weights-*
 *.synctex.gz
 *.log
 *.aux
+paper/paper.log
