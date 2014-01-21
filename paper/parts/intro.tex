@@ -8,10 +8,10 @@ A large body of work exists on methods for automatic detection of communities wi
 
 This is especially true for social network analysis. In online social networks, `community' could refer to several possible structures. The simplest definition of community, as we have seen, might stem from the network of explicit connections between users on a service (friends, followers, etc.). On small time scales, these connections are more or less static, and we might instead determine communities based on who is talking to whom, providing a more dynamic. On a more abstract level, a user might consider themselves part of a community of people discussing similar topics. We might also define communities as collections of people who exhibit similar behaviors on a service, as in a communities of teenagers vs.\ elderly users. We can characterize these types of communities based on the types of questions we might ask about them:
 \begin{itemize}
-	\item \textbf{Structure-based:} Who are you friends with? Who do you follow?
+	\item \textbf{Structure-based:} Who are you connected to?
 	\item \textbf{Activity-based:} Who do you act like?
 	\item \textbf{Topic-based:} What do you talk about?
-	\item \textbf{Interaction-based:} Who do you talk to? Who do you talk about?
+	\item \textbf{Interaction-based:} Who do you communicate with?
 \end{itemize}
 
 We propose looking at when and how communities motivated by different questions overlap, and whether different approaches to asking the question, ``What community are you in?'' leads to different insights about a social network. For example, a user on Twitter might connect mostly with computational social scientists, talk mostly about machine learning, interact soley with close friends (who may or may not be computational social scientists), and utilize the service only on nights and weekends. Each of these different `profiles' of the user highlight different views of the user's social network, and represent different types of communities. We divide our approaches into four categories based on the questions outlined above: structure-based, activity-based, topic-based, and interaction-based. The structure-based approach, as outlined above, is most common, and for our data relies on reported follower relationships.
@@ -26,14 +26,14 @@ The activity-based, topic-based, and interaction-based networks allow us to buil
 
 \section{Related Work}
 
-Most previous work on communities in online social networks have focused on detecting communities based on a single type of network. For example, an early paper considered the communities, and associated statistics, inferred from a friendship network in Twitter~\cite{java2009we}. More recent work has considered the dynamics of communities based on structural links in Facebook~\cite{nguyen2011adaptive}.
+Previous research on communities in social networks focused almost exclusively on different network types in isolation. For example, an early paper considered the communities, and associated statistics, inferred from a friendship network in Twitter~\cite{java2009we}. More recent work has considered the dynamics of communities based on structural links in Facebook~\cite{nguyen2011adaptive} and how structural communities impact mentions and retweets on Twitter~\cite{grabowicz2012social}.
 
 
 Information theoretic, activity-based approaches have been applied previously to the analysis of networks arising in online social media~\cite{ver2012information,darmon2013detecting}, but to the best of our knowledge this is the first use of transfer entropy for community detection.
 
 For interaction-based networks, \cite{conover2011political} considered both mention and retweet networks in isolation for a collection of users chosen for their political orientation. In~\cite{deitrick2013mutually}, the authors construct a dynamic network based on simple time-windowed counts of mentions and retweets, and use the evolution of this network to aid in community detection.
 
-There are two broad approaches to topic-based communities in the literature. \cite{rossi2012conversation} used a set of users collected based on their use of a single hashtag, and tracked the formation of follower and friendship links within that set of users. In~\cite{lim2012following}, the authors chose a set of topics to explore, and then seeded a network from a celebrity chosen to exemplify a particular topic. Both approaches thus begin with a particular topic in mind, and perform the data collection accordingly. Other approaches use probabilistic models for the topics that treat community membership as a latent variable~\cite{yin2012latent}.
+There are two broad approaches to topic-based networks in the literature. \cite{rossi2012conversation} used a set of users collected based on their use of a single hashtag, and tracked the formation of follower and friendship links within that set of users. In~\cite{lim2012following}, the authors chose a set of topics to explore, and then seeded a network from a celebrity chosen to exemplify a particular topic. Both approaches thus begin with a particular topic in mind, and perform the data collection accordingly. Other approaches use probabilistic models for the topics that treat community membership as a latent variable~\cite{yin2012latent}.
 
 % Structural:
 % ==========

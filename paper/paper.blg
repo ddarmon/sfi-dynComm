@@ -8,45 +8,45 @@ Repeated entry---line 717 of file references.bib
  :                             ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 46 entries,
+You've used 47 entries,
             2568 wiz_defined-function locations,
-            852 strings with 13183 characters,
-and the built_in function-call counts, 20228 in all, are:
-= -- 2166
-> -- 822
-< -- 16
-+ -- 280
-- -- 276
-* -- 1612
-:= -- 3234
-add.period$ -- 250
-call.type$ -- 46
-change.case$ -- 317
-chr.to.int$ -- 43
-cite$ -- 47
-duplicate$ -- 799
-empty$ -- 1450
-format.name$ -- 350
-if$ -- 4239
+            859 strings with 13298 characters,
+and the built_in function-call counts, 20718 in all, are:
+= -- 2224
+> -- 829
+< -- 17
++ -- 283
+- -- 278
+* -- 1641
+:= -- 3301
+add.period$ -- 255
+call.type$ -- 47
+change.case$ -- 322
+chr.to.int$ -- 44
+cite$ -- 48
+duplicate$ -- 824
+empty$ -- 1487
+format.name$ -- 353
+if$ -- 4350
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 50
-newline$ -- 294
-num.names$ -- 140
-pop$ -- 268
+missing$ -- 51
+newline$ -- 300
+num.names$ -- 143
+pop$ -- 272
 preamble$ -- 1
-purify$ -- 367
+purify$ -- 373
 quote$ -- 0
-skip$ -- 627
+skip$ -- 653
 stack$ -- 0
-substring$ -- 1067
-swap$ -- 210
-text.length$ -- 16
+substring$ -- 1113
+swap$ -- 223
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 360
 warning$ -- 1
-while$ -- 164
-width$ -- 50
-write$ -- 670
+while$ -- 169
+width$ -- 51
+write$ -- 684
 (There was 1 error message)
