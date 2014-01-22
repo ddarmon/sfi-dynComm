@@ -69,6 +69,7 @@ For the communities based on transfer entropy, we weight each edge from a user $
 \begin{align}
 	w_{u \to f}^{\text{TE}(k)} = \widehat{\text{TE}}_{X(u) \to X(f)}^{(k)}. \label{Eqn-EW-activity}
 \end{align}
+A positive value for the transfer entropy of the user $u$ on $f$ indicates that $u$ influences $f$, or that $u$ and $f$ share a common influencer~\cite{ver2012information}.
 
 Operationally, we expect users to interact with Twitter on a human time scale, and thus the natural one-second time resolution is too fine since most humans do not write tweets at the time scale of seconds. We coarsen each time series by considering non-overlapping time intervals ten minutes in length. For each time interval, we record a 1 if the user has tweeted during that time interval, and a 0 if they have not. Thus, the new coarsened time series now captures whether or not the user has been active on Twitter over any given ten minute time interval in our data set. We then compute the transfer entropy on these coarsened time series taking $k$ to range from 1 to 6, which corresponds to a lag of ten minutes to an hour. The choice of lag must balance a trade-off between additional information and sparsity of samples: as we increase the lag, we account for longer range dependencies, but we also decrease the number of samples availabe to infer a higher dimensional predictive distribution. Ultimately, due to similarities in the underlying communities we chose a lag-4 transfer entropy. All references to activity-based weights, unless otherwise noted, refer to this choice of lag.
 
