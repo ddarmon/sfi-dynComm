@@ -282,6 +282,15 @@ Paninski, L.
 \newblock Estimation of entropy and mutual information.
 \newblock {\em Neural Computation} 15(6):1191--1253.
 
+\bibitem[\protect\citeauthoryear{Romero \bgroup et al\mbox.\egroup
+  }{2011}]{romero2011influence}
+Romero, D.~M.; Galuba, W.; Asur, S.; and Huberman, B.~A.
+\newblock 2011.
+\newblock Influence and passivity in social media.
+\newblock In {\em Machine learning and knowledge discovery in databases}.
+  Springer.
+\newblock  18--33.
+
 \bibitem[\protect\citeauthoryear{Rossi and
   Magnani}{2012}]{rossi2012conversation}
 Rossi, L., and Magnani, M.
