@@ -43,13 +43,6 @@ Cazabet, R.; Leguistin, M.; and Amblard, F.
   Intelligence \& Communities}, ~6.
 \newblock ACM.
 
-\bibitem[\protect\citeauthoryear{Claeskens and
-  Hjort}{2008}]{claeskens2008model}
-Claeskens, G., and Hjort, N.~L.
-\newblock 2008.
-\newblock {\em Model selection and model averaging}, volume 330.
-\newblock Cambridge University Press Cambridge.
-
 \bibitem[\protect\citeauthoryear{Conover \bgroup et al\mbox.\egroup
   }{2011}]{conover2011political}
 Conover, M.; Ratkiewicz, J.; Francisco, M.; Gon{\c{c}}alves, B.; Menczer, F.;
@@ -100,13 +93,6 @@ Fortunato, S.
 \newblock 2010.
 \newblock Community detection in graphs.
 \newblock {\em Physics Reports} 486(3):75--174.
-
-\bibitem[\protect\citeauthoryear{Good, de Montjoye, and
-  Clauset}{2010}]{good2010performance}
-Good, B.~H.; de~Montjoye, Y.-A.; and Clauset, A.
-\newblock 2010.
-\newblock Performance of modularity maximization in practical contexts.
-\newblock {\em Physical Review E} 81(4):046106.
 
 \bibitem[\protect\citeauthoryear{Grabowicz \bgroup et al\mbox.\egroup
   }{2012}]{grabowicz2012social}
