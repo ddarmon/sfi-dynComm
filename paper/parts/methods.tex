@@ -67,6 +67,7 @@ where we use the plug-in estimators $\hat{H}\left[X_{t} | X_{t-k}^{t-1}\right]$ 
 
 For the communities based on transfer entropy, we weight each edge from a user $u$ to a follower $f$ by the estimated transfer entropy of the user $u$ on $f$, 
 \begin{align}
+\label{Eqn-EW-activity}
 	w_{u \to f}^{\text{TE}(k)} = \widehat{\text{TE}}_{X(u) \to X(f)}^{(k)}.
 \end{align}
 
@@ -96,6 +97,7 @@ and mention-retweet as the arithmetic mean of these two measures,
 %w_{u \to f}^{\text{M}} = pM = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# %total mentions of }f}
 %\end{equation}
 \begin{align}
+\label{Eqn-EW-interaction}
 	w_{u \to f}^{\text{MR}} = \frac{(pM+pR)}{2}.
 \end{align} 
 
@@ -116,6 +118,7 @@ where $n_i(u)$ is the frequency of hashtag $i$ occuring in user $u$'s tweets, $N
 
 For the topical communities we weight each directed edge from a user $u$ to a follower $f$ with the cosine similarity of their respective vectors $\vec{h}(u)$ and $\vec{h}(f)$:
 \begin{align}
+	\label{Eqn-EW-topic}
 	w_{u \to f}^{\text{HT}} = \frac{\vec{h}(u) \cdot \vec{h}(f)}{||\vec{h}(u)|| \ \ ||\vec{h}(f)||}.
 \end{align}
 This weight captures the similarity between users in terms of the topics discussed in their tweets. 
