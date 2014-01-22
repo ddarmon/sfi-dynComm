@@ -1,14 +1,14 @@
 # Fdb version 3
 ["bibtex paper"] 1390419492 "paper.aux" "paper.bbl" "paper" 
   "./aaai.bst" 1298483771 21725 d3e8c12de289a01b4c188ee5fef3ff00 ""
-  "paper.aux" 1390419690 6205 90df58fa360b9caa9b3a3a0ed3dc16ec ""
+  "paper.aux" 1390419835 6205 90df58fa360b9caa9b3a3a0ed3dc16ec ""
   "paper.bcf" 0 -1 0 ""
   "references.bib" 1390411590 29441 b6a4fb3abfb44c56b390708e39409174 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1390419689 "paper.tex" "paper.pdf" "paper" 
-  "./parts/conclusions.tex" 1390419059 9166 60e9432816c9cb5c88342e944b6dd56f ""
+["pdflatex"] 1390419834 "paper.tex" "paper.pdf" "paper" 
+  "./parts/conclusions.tex" 1390419829 9165 e4b6aa1d2cf55e9d83fe8dc5163695b3 ""
   "./parts/intro.tex" 1390412580 12867 75fd45c032f8b024e7b1e49088a85f7a ""
   "./parts/methods.tex" 1390419487 18266 a24de15162ad1633b6164f7e99792e91 ""
   "./parts/results.tex" 1390419676 20973 ab24fe1ff0b7475ec6010b2da70e4ded ""
@@ -55,7 +55,7 @@
   "figures/edge-types-eps-converted-to.pdf" 1389125827 6167 4467a411b689ebcaafdc87fcdff59f70 ""
   "figures/edge-types.eps" 1389108584 26961 a4e478ad7bc52b24e91cd17868a8ce8a ""
   "figures/nmi_singletons.pdf" 1390340261 79149 e5930531dfff078962264ffca2a57f6d ""
-  "paper.aux" 1390419690 6205 90df58fa360b9caa9b3a3a0ed3dc16ec ""
+  "paper.aux" 1390419835 6205 90df58fa360b9caa9b3a3a0ed3dc16ec ""
   "paper.bbl" 1390419493 13649 95a857a7b017d57293060ebfd7c662a6 "bibtex paper"
   "paper.tex" 1390417808 2964 4b1af8b2a43337b8e5f661f5396154e0 ""
   (generated)
