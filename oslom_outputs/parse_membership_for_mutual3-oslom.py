@@ -15,8 +15,8 @@ import copy
 ##################################################
 # Option:
 #
-include_singletons = False
-include_orphans = False # Whether or not to include those nodes that end up disconnected from the network
+include_singletons = True
+include_orphans = True # Whether or not to include those nodes that end up disconnected from the network
 #
 ##################################################
 
@@ -38,12 +38,15 @@ with open('../data/network-stats/filtered_userids.txt') as ofile:
 # # node1, node2, node3, ...
 
 weighted_prefixes = ['edge_weights_bin10minutes_lag_{}_withMMBIAS_edgelist.dat_oslo_files'.format(lag) for lag in range(1, 7)]
-
 prefixes = ['twitter_unweighted_network.txt_oslo_files']
-
 prefixes.extend(weighted_prefixes)
-
 prefixes.extend(['twitter_network_hashtags_weighted.txt_oslo_files', 'twitter_network_mentions.txt_oslo_files', 'twitter_network_retweets.txt_oslo_files', 'twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files'])
+
+# Just interaction-based, mention-based, and retweet-based.
+
+# prefixes = ['twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files']
+# prefixes = ['twitter_network_mentions.txt_oslo_files']
+# prefixes = ['twitter_network_retweets.txt_oslo_files']
 
 for lag, prefix in enumerate(prefixes):
 	user_seen_cur = copy.copy(user_seen_gold)
@@ -98,9 +101,14 @@ for lag, prefix in enumerate(prefixes):
 		out.write('\n')
 
 	if include_orphans:
+		orphan_count = 0 # Count the number of orphaned nodes.
+
 		for userid in user_seen_cur:
 			if user_seen_cur[userid] == 0:
+				orphan_count += 1
 				out.write('{}\n'.format(userid))
+
+		print 'There were {} orphaned nodes.'.format(orphan_count)
 
 
 

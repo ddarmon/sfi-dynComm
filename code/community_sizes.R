@@ -11,7 +11,7 @@ max.comm.size = 811
 
 pdf(sprintf('figures/comm_sizes_ecdf.pdf'))
 par(mar=c(4.5,5,2,1), cex.lab = 2, cex.axis = 2)
-plot(0, cex = 0, log = 'xy', type = 'l', xlim = c(1, max.comm.size), ylim = c(1e-4, 0.5), xlab = 'c', ylab = 'Proportion of communities larger than c')
+plot(0, cex = 0, log = 'xy', type = 'l', xlim = c(1, max.comm.size), ylim = c(1e-4, 1), xlab = 'c', ylab = 'Proportion of communities larger than c')
 
 for (cur.ind in 1:4){
 	cat(sprintf('\n\n====\n\n'))
@@ -51,11 +51,11 @@ for (cur.ind in 1:4){
 	# x = seq(min(counts.without.singletons), 800, by = 0.01)
 
 	F = ecdf(comm.sizes)
-	x = seq(1, max(comm.sizes), by = 0.01)
+	x = seq(0.1, max(comm.sizes), by = 0.01)
 
 	cat(sprintf('%f\n\n', min(1-F(x))))
 
 	lines(x, 1 - F(x), col = colors[cur.ind], lwd = lwd)
 }
-legend('topright', c('Structural', 'Activity-based', 'Content-based', 'Interaction-based'), lwd = rep(lwd,4), lty = rep(1, 4), col = colors)
+legend('topright', c('Structural', 'Activity-based', 'Topic-based', 'Interaction-based'), lwd = rep(lwd,4), lty = rep(1, 4), col = colors)
 dev.off()

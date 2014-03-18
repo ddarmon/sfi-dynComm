@@ -3,58 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: aaai.bst
 Database file #1: references.bib
-Repeated entry---line 249 of file references.bib
- : @article{schreiber2000measuring
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 292 of file references.bib
- : @article{paninski2003estimation
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 313 of file references.bib
- : @incollection{meilua2003comparing
- :                                  ,
-I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 12 entries,
+You've used 46 entries,
             2568 wiz_defined-function locations,
-            653 strings with 6616 characters,
-and the built_in function-call counts, 5064 in all, are:
-= -- 554
-> -- 176
-< -- 3
-+ -- 59
-- -- 58
-* -- 394
-:= -- 815
-add.period$ -- 66
-call.type$ -- 12
-change.case$ -- 76
-chr.to.int$ -- 11
-cite$ -- 13
-duplicate$ -- 205
-empty$ -- 376
-format.name$ -- 77
-if$ -- 1057
-int.to.chr$ -- 2
+            853 strings with 13196 characters,
+and the built_in function-call counts, 20546 in all, are:
+= -- 2214
+> -- 821
+< -- 17
++ -- 281
+- -- 276
+* -- 1616
+:= -- 3262
+add.period$ -- 252
+call.type$ -- 46
+change.case$ -- 318
+chr.to.int$ -- 43
+cite$ -- 47
+duplicate$ -- 820
+empty$ -- 1475
+format.name$ -- 347
+if$ -- 4329
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 13
-newline$ -- 79
-num.names$ -- 36
-pop$ -- 62
+missing$ -- 49
+newline$ -- 295
+num.names$ -- 140
+pop$ -- 270
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 367
 quote$ -- 0
-skip$ -- 157
+skip$ -- 651
 stack$ -- 0
-substring$ -- 290
-swap$ -- 51
-text.length$ -- 3
+substring$ -- 1114
+swap$ -- 227
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
+type$ -- 356
 warning$ -- 1
-while$ -- 45
-width$ -- 15
-write$ -- 176
-(There were 3 error messages)
+while$ -- 169
+width$ -- 49
+write$ -- 672
+(There was 1 warning)

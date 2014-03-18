@@ -1,0 +1,1 @@
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dEmbedAllFonts=true -sOutputFile=paper-2.pdf -f paper.pdf

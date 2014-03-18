@@ -31,7 +31,7 @@ print mis
 
 pylab.figure()
 pylab.imshow(mis, interpolation = 'nearest', vmin = 0, vmax = 1, cmap = pylab.cm.gray_r)#, extent = (0, num_types, num_types, 0))
-pylab.xlabel('Weighting $j$'); pylab.ylabel('Weighting $i$')
+pylab.xlabel('Community Type $j$'); pylab.ylabel('Community Type $i$')
 pylab.colorbar()
 pylab.savefig('nmi_{}.pdf'.format(singleton_type))
 # pylab.show()

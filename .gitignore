@@ -3,4 +3,8 @@
 !ts0.dat
 !ts1.dat
 *.p
-comm*_labels-hashtag_weights-hashtag_*-to-*.dat
+comm*_labels-*_weights-*
+*.synctex.gz
+*.log
+*.aux
+paper/paper.log

@@ -1,0 +1,58 @@
+From Josh
+=========
+
+"This counterintuitive result warrants further investigation. In addition, more rigorous choices of both the lag and time resolution based on methods for model selection should be explored~\cite{claeskens2008model}."
+
+I wonder if we can reword this a little and/or add to this sentence to make it more obvious this is a *plan* for future work. What I mean is I think currently it sounds like we ran out of time to do this rather than we are currently investigating and plan to report on it in future work. What do you think? I am happy either way it might just sound stronger if we phrase this more strongly as future work. Even just changing should be explored to  something like we plan to explore in future work.
+
+From Keith
+==========
+
+- Related Work (p. 2):
+ 
+      - "Most previous work on communities in online social networks have focused on ... " may be clearer if the author said: "Previous research on communities in social networks focused almost exclusively on the above networks."  
+     - "More recent work considered the dynamics of based on structural links in Facebook" only cites one paper. Are there more papers, or is there only one "recent work"?
+     -Also, "topic based communities" are described, which may confuse the reader, when it seems that "topic-based networks" is what the author really means.
+
+-Methodology (p. 3-5):
+ 
+     - The Community Detection method is not explicitly stated until the very end, which makes the methodology not as clear as it could be. Also OSLOM is a very different community detection algorithm and critical to the paper, therefore, it may need to be stated in more detail to help the audience understand how the research was carried out.
+     - An aside for the data: http://arxiv.org/pdf/1306.0158.pdf suggests that we can get a data set that's much larger than the current one. I'm unsure if it's possible to use similar data, but I just thought it worth mentioning that we may be able to do community detection on larger data sets.
+     - "Incoming/Outgoing information events": why was the network chosen with greater than 8 such events? it seems arbitrary, as is the minimum of 1 tweet/day as a basis for active nodes. Is there any information to suggest it needed to be this value and not another?
+
+     - In "Activity-Based Communities and Transfer Entropy" (p. 4): The audience may need a sentence on what Granger Causality is(?).
+
+     - In "Topic-based communities": the "b" in "based" should be capitalized. Also, it should again be emphasized that the this is a topic-weighted network.
+
+-Results (p.5 - ):
+
+     - About the OSLOM community detection algorithm: are there potential artifacts of the algorithm itself which may effect the Fig. 1? Note that link communities allow for nodes to belong to multiple communities in a weighted, directed network (see: http://bioinformatics.oxfordjournals.org/content/27/14/2011.full for code which may work for a 15K network) thus OSLOM isn't the only algorithm, or even the best known algorithm that can be used for your purposes, I believe.
+
+     - "Comparing Edges Across Different Community Types": The first paragraph seems to repeat itself, as if it's not aware of how this was mentioned in the previous parts of the paper.
+
+     - p.7: "We see that for all weight types except transfer entropy, the weight on the edges ..." sounds confusing.
+     
+     - The first sentence of "QualityAnalysis of Community Memberships Across Types" has too many "in"s. In other words, although I believe it's grammatically correct, it seems a bit strange, and may catch the reader offgaurd. Also, the quality function with an exponential number of similar partitions doesn't seem to be the same one used to determine the current communities, thus talking about this is a bit of a red herring.
+
+-Conclusion (p. 9):
+
+     - In stating that it is surprising for influence to be stronger across community boundaries than between them, I am a little confused. Isn't this the idea behind the "Strength of Weak Ties" in a way? I.e. novel information flows through weak ties, thus is more likely to bring influential ideas? At the very least, this sounds like the reasoning behind Betweenness centralities (e.g. edge betweenness defining networks).
+
+     - Also you may want to show how your work differs from Kitsak et. al., perhaps?
+
+From Michelle
+=============
+
+* Somehow I feel that the punchline isn't quite strong enough in the results and conclusions.  For me, figure 2 was the only one with important results.  I think another figure comparing community structure from the different methods would help drive the point home.  For this submission, I don't think there's time to do anything additional, but I can think about it if you end up doing a resubmission.
+
+* The section "comparing edges across different community types" was a bit confusing and didn't read as well as other parts.  The weighting type acronyms should be defined again in the caption of table
+
+* By averaging the values in table 2 over communities instead of over edges, you are basically giving each community equal importance regardless of size.  Do you really want to do this?  What's the justification?
+
+* In figure 2, the use of the term "weighting" (and also elsewhere in the paper) makes your study sound less significant than it really is.  To me it sounds like perhaps you were doing structural community finding with marginally different weighting schemes. 
+
+* Even for your structural network, you filter quite heavily based on what I would call "interaction" similarity.  I think your case would be stronger if you didn't do this.
+
+* In the bullet which defines "interaction based," I think it would be better to say: Interaction based: whom do you communicate with the most?  or something like that
+
+* In the bullet which defines structure-based, maybe "structure-based: to whom are you connected." I know that you mean "friends" in the facebook sense, but I think that's not clear here.
