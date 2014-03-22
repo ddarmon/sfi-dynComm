@@ -6,8 +6,8 @@ import numpy
 
 # label_type = 'struc'
 # label_type = 'TE4'
-# label_type = 'hashtag'
-label_type = 'mention-retweet'
+label_type = 'hashtag'
+#label_type = 'mention-retweet'
 
 print '\nUsing weights of type {}\n'.format(label_type)
 
