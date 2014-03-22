@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--there's a number but no volume in caires2003nonparametric
+You've used 46 entries,
+            2118 wiz_defined-function locations,
+            776 strings with 12629 characters,
+and the built_in function-call counts, 17629 in all, are:
+= -- 1757
+> -- 821
+< -- 17
++ -- 324
+- -- 276
+* -- 1236
+:= -- 2832
+add.period$ -- 154
+call.type$ -- 46
+change.case$ -- 272
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 704
+empty$ -- 1392
+format.name$ -- 276
+if$ -- 3789
+int.to.chr$ -- 0
+int.to.str$ -- 46
+missing$ -- 49
+newline$ -- 233
+num.names$ -- 94
+pop$ -- 300
+preamble$ -- 1
+purify$ -- 229
+quote$ -- 0
+skip$ -- 493
+stack$ -- 0
+substring$ -- 1114
+swap$ -- 195
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 178
+warning$ -- 1
+while$ -- 169
+width$ -- 48
+write$ -- 519
+(There was 1 warning)

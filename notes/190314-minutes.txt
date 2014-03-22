@@ -1,0 +1,62 @@
+Possible journals to submit to:
+===============================
+
+* Social Networks
+
+http://www.journals.elsevier.com/social-networks/
+
+* Network Science
+
+http://www.indiana.edu/~netsci/
+
+* Journal of Complex Networks
+
+http://comnet.oxfordjournals.org
+
+Near Term Tasks for Paper:
+==========================
+
+0. Investigate a few papers from each of the three journals listed above to determine the most appropriate venue for *our* paper.
+
+Everyone
+
+1. Write up, in more detail, the methodology for Transfer Entropy.
+
+Dave / Josh
+
+2. Motivate *why* we think Transfer Entropy provides a useful weighting for community detection, beyond novelty.
+
+Dave
+
+3. Put back in and expand qualitative analysis of the communities.
+
+Elisa
+
+4. Add a 'qualitative' (really, just more in-depth) analysis of the transfer entropy communities:
+
+** Which individuals have the highest transfer entropy into / out of a particular community? Does this make sense?
+
+** Rank users in the community by their transfer entropy, giving something like a 'most influential person' ranking of the users.
+
+** More along these lines.
+
+Everyone, especially with regards to brainstorming questions to ask
+
+5. Expand on / clarify / determine a better metric for the 'links within / across communities' section.
+
+Dave
+
+6. arXiv the paper 'as is.'
+
+* Before this, return the paper to non-ICWSM LaTeX format.
+
+Dave
+
+7. Add a list of the reviewer comments to GitHub, and pick them off as we go.
+
+Everyone
+
+Next Meeting:
+=============
+
+Tuesday, March 25 at 10AM SFI time

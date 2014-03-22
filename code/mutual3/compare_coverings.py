@@ -10,7 +10,7 @@ singleton_type = 'singletons'
 
 file_dir = 'coverings/{}/'.format(singleton_type)
 
-num_types = 11
+num_types = 12
 
 mis = numpy.ones((num_types, num_types))*numpy.nan
 
