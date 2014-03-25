@@ -1,0 +1,18 @@
+Network Science
+===============
+
+Multi-scale community organization of the human structural connectome and its relationship with resting-state functional connectivity	21 pages	http://journals.cambridge.org/download.php?file=%2F1804_16190403417421AE347D722BFA41EE39_journals__NWS_NWS1_03_S2050124213000192a.pdf&cover=Y&code=05111b876fb37130a239898b8d35813a
+
+Journal of Complex Networks
+===========================
+
+Cascading behaviour in complex socio-technical networks	22 pages	http://comnet.oxfordjournals.org/content/1/1/3.abstract
+
+Dynamic network centrality summarizes learning in the human brain	10 pages	http://comnet.oxfordjournals.org/content/1/1/83.abstract
+
+Oriented and degree-generated block models: generating and inferring communities with inhomogeneous degree distributions
+	18 pages	http://comnet.oxfordjournals.org/content/2/1/1.abstract
+
+Community detection: effective evaluation on large social networks	19 pages	http://comnet.oxfordjournals.org/content/2/1/19.abstract
+
+Detecting events in the dynamics of ego-centred measurements of the Internet topology	22 pages	http://comnet.oxfordjournals.org/content/2/1/38.abstract
