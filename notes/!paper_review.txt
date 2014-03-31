@@ -8,8 +8,6 @@ Some specific points:
 
 1. I am not sure about calling the network "latent." Since all the features are observed, the interaction network is an observed network in its own right.
 
-2. The reader does not need to be referred to the Fortunato review on community detection methods in the introduction AND the methodology section.
-
 3. The majority of community detection methods are single membership, but this does not mean that it poses a problem since there are many community detection algorithms, and certainly more than the eight mentioned.
 
 4. The choice of the OSLOM method for community detection should be better justified. Just because an algorithm uses the inputs you wish to use, does not necessarily mean that the output will meet your expectations. How do the assumptions of this model relate to your objectives? More needs to be said, I think.
@@ -37,10 +35,6 @@ Some specific points:
 15. "We see in Table 1 that the topic- and interaction-based communities have the most singletons, with the activity based community dominating this measure." -- What does it mean to "dominate" the measure?
 
 16. "non-structural networks" seems like an oxymoron. This is very confusing.
-
-17. The end of the last sentence on page 5 is hidden between the table and figure on page 6.
-
-18. Figure 4 appears to be a cumulative function rather than a probability distribution.
 
 19. How does Figure 4 demonstrate that the median is a useful summary statistic?
 

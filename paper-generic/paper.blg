@@ -3,27 +3,22 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: plain.bst
 Database file #1: references.bib
-Repeated entry---line 717 of file references.bib
- : @article{good2010performance
- :                             ,
-I'm skipping whatever remains of this entry
-Warning--there's a number but no volume in caires2003nonparametric
 You've used 47 entries,
             2118 wiz_defined-function locations,
-            782 strings with 12800 characters,
-and the built_in function-call counts, 17971 in all, are:
+            783 strings with 12801 characters,
+and the built_in function-call counts, 17969 in all, are:
 = -- 1789
 > -- 839
 < -- 17
 + -- 331
 - -- 282
-* -- 1265
+* -- 1264
 := -- 2891
 add.period$ -- 157
 call.type$ -- 47
 change.case$ -- 278
 chr.to.int$ -- 0
-cite$ -- 48
+cite$ -- 47
 duplicate$ -- 715
 empty$ -- 1418
 format.name$ -- 282
@@ -33,11 +28,11 @@ int.to.str$ -- 47
 missing$ -- 50
 newline$ -- 238
 num.names$ -- 96
-pop$ -- 304
+pop$ -- 303
 preamble$ -- 1
 purify$ -- 234
 quote$ -- 0
-skip$ -- 500
+skip$ -- 502
 stack$ -- 0
 substring$ -- 1137
 swap$ -- 196
@@ -45,8 +40,7 @@ text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 182
-warning$ -- 1
+warning$ -- 0
 while$ -- 172
 width$ -- 49
 write$ -- 530
-(There was 1 error message)
