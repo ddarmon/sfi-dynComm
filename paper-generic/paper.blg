@@ -3,46 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: plain.bst
 Database file #1: references.bib
+Repeated entry---line 717 of file references.bib
+ : @article{good2010performance
+ :                             ,
+I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in caires2003nonparametric
-You've used 46 entries,
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            776 strings with 12629 characters,
-and the built_in function-call counts, 17629 in all, are:
-= -- 1757
-> -- 821
+            782 strings with 12800 characters,
+and the built_in function-call counts, 17971 in all, are:
+= -- 1789
+> -- 839
 < -- 17
-+ -- 324
-- -- 276
-* -- 1236
-:= -- 2832
-add.period$ -- 154
-call.type$ -- 46
-change.case$ -- 272
++ -- 331
+- -- 282
+* -- 1265
+:= -- 2891
+add.period$ -- 157
+call.type$ -- 47
+change.case$ -- 278
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 704
-empty$ -- 1392
-format.name$ -- 276
-if$ -- 3789
+cite$ -- 48
+duplicate$ -- 715
+empty$ -- 1418
+format.name$ -- 282
+if$ -- 3858
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 49
-newline$ -- 233
-num.names$ -- 94
-pop$ -- 300
+int.to.str$ -- 47
+missing$ -- 50
+newline$ -- 238
+num.names$ -- 96
+pop$ -- 304
 preamble$ -- 1
-purify$ -- 229
+purify$ -- 234
 quote$ -- 0
-skip$ -- 493
+skip$ -- 500
 stack$ -- 0
-substring$ -- 1114
-swap$ -- 195
+substring$ -- 1137
+swap$ -- 196
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 178
+type$ -- 182
 warning$ -- 1
-while$ -- 169
-width$ -- 48
-write$ -- 519
-(There was 1 warning)
+while$ -- 172
+width$ -- 49
+write$ -- 530
+(There was 1 error message)

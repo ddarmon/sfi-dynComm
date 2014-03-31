@@ -72,6 +72,11 @@ Santo Fortunato.
 \newblock Community detection in graphs.
 \newblock {\em Physics Reports}, 486(3):75--174, 2010.
 
+\bibitem{good2010performance}
+Benjamin~H Good, Yves-Alexandre de~Montjoye, and Aaron Clauset.
+\newblock Performance of modularity maximization in practical contexts.
+\newblock {\em Physical Review E}, 81(4):046106, 2010.
+
 \bibitem{grabowicz2012social}
 Przemyslaw~A Grabowicz, Jos{\'e}~J Ramasco, Esteban Moro, Josep~M Pujol, and
   Victor~M Eguiluz.

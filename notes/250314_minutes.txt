@@ -1,0 +1,24 @@
+Possible journals:
+
+Journal of Complex Networks
+
+Josh: Meet with Aaron Clauset
+
+"People who cause a lot of community activation tend to be outside of the community." -- Why we care about transfer entropy
+
+** It gives you interesting feedback
+
+Null model for transfer entropy 
+
+Put back in qualitative section to arXiv.
+
+Multidimensional transfer entropy instead of averaging. (Josh)
+
+--> How to collapse all of the users to tell how influential a user is?
+
+Figure out who the important people are and then consider who they actually are.
+
+Next meeting April 1st.
+Finish writing things by the evening of March 31st.
+
+Summer school from the 7th through the 18th.
