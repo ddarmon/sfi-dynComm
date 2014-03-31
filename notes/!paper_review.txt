@@ -1,0 +1,49 @@
+This paper addresses the important issue of identifying different types of communities in network data.  Often when performing community detection or clustering on data there are many distinct "good" solutions that can be found. The authors use a set of questions to define different types of communities.  This leads to the construction of 4 types of networks: friendship, topic, activity and interaction.
+
+I can see a number of problems with the approach the authors take and the way that it is presented.  Given that the approach is model-based (unsupervised), careful consideration needs to be taken in setting up the model and in how the design assumptions may bias the output of the algorithm.  To be clear, the same community detection algorithm must be used to detect each type of community based on the justification that it accepts the type of inputs the authors wish to use -- "not garbage" on the input side does not imply "not garbage" on the output side.
+
+There is also too little discussion of the choice of how to construct the different networks. For example, transfer entropy seems to have been proposed primarily because it hasn't been used before, rather than because it may have particular strengths for the chosen community detection task.  The results and analysis are also insufficiently clear. It would be much better to validate the meaningfulness of the communities by comparing them against something known about the network (for instance, relevant vertex attributes), by demonstrating that the communities found capture different aspects of the data, or by showing that the communities help with some kind of other task, e.g., link prediction. An illustration via a predictive task would also help support the idea that they model the data well (this is hinted at in the paper, but not demonstrated).  Overall I think that the basic idea is reasonable, but the approach and validation needs more thought and better justification.
+
+Some specific points:
+
+1. I am not sure about calling the network "latent." Since all the features are observed, the interaction network is an observed network in its own right.
+
+2. The reader does not need to be referred to the Fortunato review on community detection methods in the introduction AND the methodology section.
+
+3. The majority of community detection methods are single membership, but this does not mean that it poses a problem since there are many community detection algorithms, and certainly more than the eight mentioned.
+
+4. The choice of the OSLOM method for community detection should be better justified. Just because an algorithm uses the inputs you wish to use, does not necessarily mean that the output will meet your expectations. How do the assumptions of this model relate to your objectives? More needs to be said, I think.
+
+5. A definition of strong-sense stationary stochastic process would be good along with why that assumption is made.
+
+6. What does the time series Y represent? It is not clear to me.
+
+7. footnote 1: If only conditional stationarity is required, why make the stronger assumption of stationarity? The assumption that activity patterns are a strict stationary time series seems wholly unreasonable when activity is periodic, as it is with human behavior.
+
+8. Why is 'counting' in quotes?  This explanation of how the probabilities are calculated is not clear.
+
+9. Eq. 7 is the same as Eq. 1: just with hats to show estimated values, this seems unnecessary.
+
+10. For the activity-based communities, transfer entropy is used to weight the edges.  But, it is not explained why this is an appropriate choice for this task or why it should work well with the community detection algorithm.  Why is this a better choice over other approaches for learning structure in, for instance, the graphical lasso. It is also not explained why a network should be used to represent this at all, since the activity is a binary time series (post/no-post), so why not just use more standard clustering algorithms?
+
+11. Eqs. 5 and 6 seem to suggest that the conditional probabilities are always the same as the (k+1)th time step conditioned on the FIRST k time steps.  While this is true, I think it should really be saying that it is equal to probability of any time step conditioned on the previous k steps. So, some clarification seems necessary.
+
+12. Frequently the term "community" is misused, relative to accepted usages in the literature. For instance: "This type of information flow defines a community in a much different way than transfer entropy." But these methods are not defining a community, they are defining links. Communities are inferred using the community detection algorithm.
+
+13. The topic-based communities section provides a good justification for using hashtags as a proxy for topics.
+
+14. What is the purpose of the analysis in the section "Comparing Edges Across Different Community Types"?  It seems to be comparing the different networks with the communities found from those different networks, but it is not clear why this is being done. It seems that this comparison is used to justify or validate the approach, but this doesn't really tell us that the different types of communities are capturing different aspects of the data.
+
+15. "We see in Table 1 that the topic- and interaction-based communities have the most singletons, with the activity based community dominating this measure." -- What does it mean to "dominate" the measure?
+
+16. "non-structural networks" seems like an oxymoron. This is very confusing.
+
+17. The end of the last sentence on page 5 is hidden between the table and figure on page 6.
+
+18. Figure 4 appears to be a cumulative function rather than a probability distribution.
+
+19. How does Figure 4 demonstrate that the median is a useful summary statistic?
+
+20. The take-home message here seems to be that different networks produce different sets of communities. This does not seem that interesting!
+
+21. The conclusion states that the communities were validated by showing that they represented meaningful divisions, yet it does not seem that the communities correspond to any known and meaningful division. It seems that the only "meaning" is related to the ratio of internal and external community edges, which is clearly the desired effect of performing community detection and says little about how useful these network constructions are. This seems problematic. The authors need to do a better job of explaining why these results teach us something useful, or show that they allow us to better accomplish some useful task.
