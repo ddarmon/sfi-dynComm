@@ -35,7 +35,7 @@ weight_types = c('TE4', 'hashtag', 'mention-retweet')
 # weight_types = c('hashtag')
 # weight_types = c('mention-retweet')
 
-comms = c(0:19)
+comms = c(0:9)
 
 for (label_type in label_types){
 for (weight_type in weight_types){
