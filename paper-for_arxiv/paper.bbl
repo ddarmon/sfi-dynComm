@@ -144,6 +144,11 @@ Andrea Lancichinetti, Filippo Radicchi, Jos{\'e}~J. Ramasco, and Santo
 \newblock Finding statistically significant communities in networks.
 \newblock {\em PLoS ONE}, 6(4):e18961, 04 2011.
 
+\bibitem{Lancichinetti2010}
+Andrea Lancichinetti, Filippo Radicchi and Jos{\'e}~J. Ramasco.
+\newblock Statistical significance of communities in networks.
+\newblock {\em Physical Review E}, 81(4):046110, 2010.
+
 \bibitem{lim2012following}
 Kwan~Hui Lim and Amitava Datta.
 \newblock Following the follower: Detecting communities with common interests
