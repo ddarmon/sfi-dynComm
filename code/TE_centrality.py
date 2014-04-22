@@ -53,7 +53,7 @@ pylab.show()
 order_incoming_centrality = numpy.argsort(incoming_centrality)[::-1]
 order_outgoing_centrality = numpy.argsort(outgoing_centrality)[::-1]
 
-K = 10
+K = 100
 
 print 'The top {} influential users are:'.format(K)
 
