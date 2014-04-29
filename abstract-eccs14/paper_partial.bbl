@@ -1,0 +1,51 @@
+\begin{thebibliography}{10}
+
+\bibitem{conover2011political}
+Michael Conover, Jacob Ratkiewicz, Matthew Francisco, Bruno Gon{\c{c}}alves,
+  Filippo Menczer, and Alessandro Flammini.
+\newblock Political polarization on twitter.
+\newblock In {\em ICWSM}, 2011.
+
+\bibitem{fortunato2010community}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics Reports}, 486(3):75--174, 2010.
+
+\bibitem{java2009we}
+Akshay Java, Xiaodan Song, Tim Finin, and Belle Tseng.
+\newblock Why we twitter: An analysis of a microblogging community.
+\newblock In {\em Advances in Web Mining and Web Usage Analysis}, pages
+  118--138. Springer, 2009.
+
+\bibitem{kao2013talison}
+Anne Kao, William Ferng, Stephen Poteet, Lesley Quach, and Rod Tjoelker.
+\newblock Talison-tensor analysis of social media data.
+\newblock In {\em Intelligence and Security Informatics (ISI), 2013 IEEE
+  International Conference on}, pages 137--142. IEEE, 2013.
+
+\bibitem{lancichinetti2009detecting}
+Andrea Lancichinetti, Santo Fortunato, and J{\'a}nos Kert{\'e}sz.
+\newblock Detecting the overlapping and hierarchical community structure in
+  complex networks.
+\newblock {\em New Journal of Physics}, 11(3):033015, 2009.
+
+\bibitem{LancichinettiPlos}
+Andrea Lancichinetti, Filippo Radicchi, Jos{\'e}~J. Ramasco, and Santo
+  Fortunato.
+\newblock Finding statistically significant communities in networks.
+\newblock {\em PLoS ONE}, 6(4):e18961, 04 2011.
+
+\bibitem{ver2012information}
+Greg Ver~Steeg and Aram Galstyan.
+\newblock Information transfer in social media.
+\newblock In {\em Proc. 21st Int'l World Wide Web Conf.}, pages 509--518. ACM,
+  2012.
+
+\bibitem{yin2012latent}
+Zhijun Yin, Liangliang Cao, Quanquan Gu, and Jiawei Han.
+\newblock Latent community topic analysis: Integration of community discovery
+  with topic modeling.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  3(4):63, 2012.
+
+\end{thebibliography}
