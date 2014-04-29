@@ -1,11 +1,11 @@
 # Fdb version 3
 ["bibtex paper"] 1398181584 "paper.aux" "paper.bbl" "paper" 
-  "paper.aux" 1398181586 5402 1a0f780287b6617cfe81bfb186341282 ""
+  "paper.aux" 1398182844 5402 1a0f780287b6617cfe81bfb186341282 ""
   "paper.bcf" 0 -1 0 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1398181584 "paper.tex" "paper.pdf" "paper" 
+["pdflatex"] 1398182843 "paper.tex" "paper.pdf" "paper" 
   "/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii" 1251025892 71625 fad1c4b52151c234b6873a255b0ad6b3 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1303254447 7604 85d429dbffd68dd07db4a57e78f67c79 ""
   "/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -55,10 +55,10 @@
   "edge-types.eps" 1398175730 26961 a4e478ad7bc52b24e91cd17868a8ce8a ""
   "methods.tex" 1398176244 19679 eae603b19ca978ff917a9e2effeb1a7d ""
   "nmi_singletons.pdf" 1396306199 79149 e5930531dfff078962264ffca2a57f6d ""
-  "paper.aux" 1398181586 5402 1a0f780287b6617cfe81bfb186341282 ""
+  "paper.aux" 1398182844 5402 1a0f780287b6617cfe81bfb186341282 ""
   "paper.bbl" 1398181584 0 d41d8cd98f00b204e9800998ecf8427e "bibtex paper"
   "paper.tex" 1398181454 16259 14d8a596c98dc0d3b52e7172055778ad ""
-  "results.tex" 1398181581 22096 a5357a95c50b1a6274bed192074ad980 ""
+  "results.tex" 1398182833 22097 f3cef03dc06a84d91558456b0a9dd319 ""
   (generated)
   "edge-types-eps-converted-to.pdf"
   "paper.pdf"

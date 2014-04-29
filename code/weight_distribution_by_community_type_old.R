@@ -9,6 +9,8 @@
 #
 # DMD, 22 April 2014
 
+library(reldist)
+
 # Search type to use:
 # 	labels-BLANK_weights-BLANK
 #
@@ -23,15 +25,15 @@
 # weight_type = 'hashtag'
 # weight_type = 'mention-retweet'
 
-label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
-weight_types = c('TE4', 'hashtag', 'mention-retweet')
+# label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
+# weight_types = c('TE4', 'hashtag', 'mention-retweet')
 
 # label_types = c('struc')
 # label_types = c('TE4')
-# label_types = c('hashtag')
+label_types = c('hashtag')
 # label_types = c('mention-retweet')
 
-# weight_types = c('TE4')
+weight_types = c('TE4')
 # weight_types = c('hashtag')
 # weight_types = c('mention-retweet')
 
@@ -97,7 +99,7 @@ ecdf.lw = 3
 
 prefix.pdf = paste0('labels-', label_type, '_weights-', weight_type)
 
-pdf(paste0('figures/', prefix.pdf, '-ecdf_by_type.pdf'))
+# pdf(paste0('figures/', prefix.pdf, '-ecdf_by_type.pdf'))
 par(mar=c(5,6,2,1), cex.lab = 2, cex.axis = 2)
 plot(ecdf(data_i.to.i_aggregate), col = 'red', xlim = xlim, ylab = expression(paste('P(', W[i*j] <= w, '| ', T == t, ')')), xlab = expression(paste('Weight, ', w)), lw = ecdf.lw, main = sprintf('Community Type %s, Weight Type %s', label_type, weight_type), lty = 1)
 lines(ecdf(data_e.to.i_aggregate), col = 'blue', lw = ecdf.lw, lty = 2)
@@ -106,7 +108,13 @@ legend('bottomright', legend = c('Internal-to-Internal', 'External-to-Internal',
 abline(v = median(data_i.to.i_aggregate), col = 'red', lw = ab.lw, lty = 1)
 abline(v = median(data_e.to.i_aggregate), col = 'blue', lw = ab.lw, lty = 2)
 abline(v = median(data_i.to.e_aggregate), col = 'green', lw = ab.lw, lty = 3)
-dev.off()
+# dev.off()
+
+rel.dist_i.to.e = reldist(yo = data_i.to.i_aggregate, y = data_i.to.e_aggregate, graph = FALSE)
+rel.dist_e.to.i = reldist(yo = data_i.to.i_aggregate, y = data_e.to.i_aggregate, graph = FALSE)
+
+plot(rel.dist_e.to.i$x, rel.dist_e.to.i$y, type = 'l', col = 'blue')
+lines(rel.dist_i.to.e$x, rel.dist_i.to.e$y, type = 'l', col = 'green')
 
 }	
 }
