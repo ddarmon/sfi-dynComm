@@ -78,25 +78,29 @@ We considered the normalized mutual information between the communities inferred
 
 Thus, we see that although the activity-based, interaction-based, and topic-based communities relied on the structural network, their community structure differs \emph{the most} from the community structure of the follower network. This agrees with the results from the previous section, and reinforces that the follower network is a necessary but not sufficient part of detecting communities characterized by properties beyond follower-followee relationships.
 
-\subsection{Comparing Edges Across Different Community Types}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%============================================================
+% Old section on 'Comparing Edges Across Different Community Types'
 
-We next explore how the edge weights defined by equations (\ref{Eqn-EW-activity}), (\ref{Eqn-EW-interaction}), and (\ref{Eqn-EW-topic}), and thus different forms of information flow, differ between community types. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a user in the community to another user in the community (internal-to-internal), those from a user in the community to a user outside of the community (internal-to-external), and those from a user outside the community to a user inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
+% \subsection{Comparing Edges Across Different Community Types}
 
-\begin{figure}[ht]
-  \centering
-\includegraphics[width=0.50\textwidth]{edge-types.eps}
-\caption{An example of the edges considered in determining the edge weight distribution for a given community (the focal community is in yellow). We focus on the internal-to-internal (red), internal-to-external (green), and external-to-internal (blue) edges. For a given focal community, all other edges (grey) are not considered.}
-\label{Fig-edge_types}
-\end{figure}
+% We next explore how the edge weights defined by equations (\ref{Eqn-EW-activity}), (\ref{Eqn-EW-interaction}), and (\ref{Eqn-EW-topic}), and thus different forms of information flow, differ between community types. For a fixed community type, edges for a particular community may be partitioned into three sets: those from a user in the community to another user in the community (internal-to-internal), those from a user in the community to a user outside of the community (internal-to-external), and those from a user outside the community to a user inside the community (external-to-internal). See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. For a meaningful community, we expect the distribution of weights within the community (internal-to-internal weights) to be different from the distribution of weights without the community (internal-to-external and external-to-internal).
 
-As an example, Figure~\ref{Fig-dist_across_community} shows the distributions of hashtag-based weights for the largest community in the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of topic-similarity.
+% \begin{figure}[ht]
+%   \centering
+% \includegraphics[width=0.50\textwidth]{edge-types.eps}
+% \caption{An example of the edges considered in determining the edge weight distribution for a given community (the focal community is in yellow). We focus on the internal-to-internal (red), internal-to-external (green), and external-to-internal (blue) edges. For a given focal community, all other edges (grey) are not considered.}
+% \label{Fig-edge_types}
+% \end{figure}
 
-\begin{figure}[ht]
-  \centering
-\includegraphics[width=0.50\textwidth]{comm0_labels-hashtag_weights-mention-retweet-ecdf.pdf}
-\caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topic similarity. The dashed vertical lines indicate the median weight for each type of edge. Note the logarithmic scale on the horizontal axis.}
-\label{Fig-dist_across_community}
-\end{figure}
+% As an example, Figure~\ref{Fig-dist_across_community} shows the distributions of hashtag-based weights for the largest community in the mention-retweet network. We see that the distribution of internal-to-internal hashtag weights has a longer tail than either the external-to-internal or internal-to-external hashtag weights, with edges within the community having higher weights than edges crossing the boundary of the community. Thus, while the community was defined in terms of interactions, we still see a shift in the distribution of topic-similarity.
+
+% \begin{figure}[ht]
+%   \centering
+% \includegraphics[width=0.50\textwidth]{comm0_labels-hashtag_weights-mention-retweet-ecdf.pdf}
+% \caption{The proportion of edges with a weight at least as large as the weight on the horizontal axis, across the types of edges described in Figure~\ref{Fig-edge_types}. The community is defined by user interactions, and the edge weights are determined by topic similarity. The dashed vertical lines indicate the median weight for each type of edge. Note the logarithmic scale on the horizontal axis.}
+% \label{Fig-dist_across_community}
+% \end{figure}
 
 % \begin{figure}
 %         \centering
@@ -156,9 +160,9 @@ As an example, Figure~\ref{Fig-dist_across_community} shows the distributions of
 
 % We see that for every weight type except transfer entropy, the weight on edges internal to the communities tend to be higher than on edges entering or exiting the communities, ranging from a factor of 1.5 times larger for the activity-based/mention-retweet pairing to a factor of 28 times larger for the topic-based/hashtag similarity pairing. As stated above, we expect this ratio to be high for community / weight pairings that match (e.g. considering mention-retweet weighting for interaction-based communities), and we see that this is the case for all but the activity-based / transfer entropy pairing. Moreover, for both the mention-retweet and hashtag weightings, the ratio is largest when they match with the interaction-based and topic-based communities, respectively.
 
-For all four community types, the transfer entropy tended to be higher for edges crossing community boundaries than for those internal to community boundaries. Recall that the transfer entropy $\text{TE}_{X(u) \to X(f)}$ quantifies the reduction in uncertainty about a follower $f$'s activity from knowing the activity of a user $u$. This result therefore implies that, in terms of prediction, it is more useful to know the time series of a user followed outside of the community compared to a user followed inside of the community. Thus, in an information theoretic sense, we see that novel information useful for prediction is more likely to flow \emph{across} community boundaries than \emph{within} community boundaries.
+% For all four community types, the transfer entropy tended to be higher for edges crossing community boundaries than for those internal to community boundaries. Recall that the transfer entropy $\text{TE}_{X(u) \to X(f)}$ quantifies the reduction in uncertainty about a follower $f$'s activity from knowing the activity of a user $u$. This result therefore implies that, in terms of prediction, it is more useful to know the time series of a user followed outside of the community compared to a user followed inside of the community. Thus, in an information theoretic sense, we see that novel information useful for prediction is more likely to flow \emph{across} community boundaries than \emph{within} community boundaries.
 
-Note that the communities defined by the follower network do tend to have higher edge weights internal compared to across community boundaries. Thus, we do see that the structural communities capture some information about the functional behavior of communities of users in terms of topics and interaction. However, the ratio is not as large as when we explicitly seek out communities based on a particular type of functional community. This again emphasizes the importance of properly formulating the goal of a community detection study in the context of online social networks.
+% Note that the communities defined by the follower network do tend to have higher edge weights internal compared to across community boundaries. Thus, we do see that the structural communities capture some information about the functional behavior of communities of users in terms of topics and interaction. However, the ratio is not as large as when we explicitly seek out communities based on a particular type of functional community. This again emphasizes the importance of properly formulating the goal of a community detection study in the context of online social networks.
 
 % \begin{tabular}{cc|ccc}
 % & & \multicolumn{3}{ c| }{Weight Type} \\ \cline{3-5}
@@ -171,6 +175,50 @@ Note that the communities defined by the follower network do tend to have higher
 % \multicolumn{1}{ c  }{}                        &
 % \multicolumn{1}{ c| }{lcm} & 3 & 3 & 1 \\ \cline{1-5}
 % \end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%============================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%============================================================
+% New section on 'Comparing Edges Across Different Community Types'
+
+\subsection{Comparing Edges Across Different Community Types}
+
+Any covering determined by OSLOM induces a natural partition of the edges in a directed network. In particular, Let $u$ and $f$ be two users in the network, and let $M_{u}$ and $M_{f}$ be their community memberships. Then any edge $e_{u \to f}$ can be partitioned into one of three classes by
+\begin{align}
+	T(e_{u \to f}) = \left\{ \begin{array}{ll}
+		\text{Inter-edge} &: \ \ \ |M_{u} \cap M_{f}| = 0 \\
+		\text{Intra-edge} &: \ \ \ |M_{u} \cap M_{f}| = 1, |M_{u}| = |M_{f}| = 1 \\
+		\text{Multi-edge} &: \ \ \ |M_{u} \cap M_{f}| \geq 1, \max \{|M_{u}|, |M_{f}| \} > 1 \\
+	\end{array}\right. \label{Eqn-edge_types}.
+\end{align}
+In words, an inter-edge connects two users who share no community memberships, an intra-edge connects two users who each belong to the same, and only one, community, and a multi-edge connects two users who share a community membership under the restriction that at least one of the users belongs to a single community. See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. Thus, inter-edges cross community boundaries, intra-edges lie within community boundaries, and multi-edges lie at the borders of community boundaries.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{edge-types.pdf}
+	\caption{Lorem ipsum.}
+	\label{Fig-edge_types}
+\end{figure}
+
+Each community type (Structural, Activity-based, Topic-based, Interaction-based) induces a different partition of the edges, and each edge type (Transfer Entropy, Hashtag, Mention-Retweet) induces a different distribution of weights. That is, let $W_{u \to f}$ be the weight on a randomly selected edge $E_{u \to f}$ from the network, and compute
+\begin{align}
+	P(W_{u \to f} \leq w | T(E_{u \to f}) = t)
+\end{align}
+where $t$ is one of inter, intra, and multi. For meaningful community structure, we expect the distribution of edge weights to differ depending on the edge type.
+These distributions are shown in Figure~\ref{Fig-distributions_by_types}. 
+
+Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how the distribution of a particular edge weight changes with the community type used to induce the partition. For example, the second column shows how the distributions of hashtag weights change based on the community partition. Unsurprisingly, we see that the greatest difference between the distributions occurs when we consider the topic-based communities, since the topic-based communities are determined based on the hashtag weights. However, we also see differences in distributions when the Community-type / Weight-type pairs are different. 
+
+% $(\text{Structural, Activity-based, Topic-based, Interaction-based}) \times (\text{Transfer Entropy, Hashtag, Mention-Retweet})$.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{distributions-edges.eps}
+	\caption{A schematic of how, given a covering, the edges of the network can be partitioned using \ref{Eqn-edge_types}.}
+	\label{Fig-distributions_by_types}
+\end{figure}
 
 \subsection{Qualitative Analysis of Community Memberships Across Types}
 
