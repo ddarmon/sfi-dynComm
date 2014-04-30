@@ -188,17 +188,17 @@ Thus, we see that although the activity-based, interaction-based, and topic-base
 Any covering determined by OSLOM induces a natural partition of the edges in a directed network. In particular, Let $u$ and $f$ be two users in the network, and let $M_{u}$ and $M_{f}$ be their community memberships. Then any edge $e_{u \to f}$ can be partitioned into one of three classes by
 \begin{align}
 	T(e_{u \to f}) = \left\{ \begin{array}{ll}
-		\text{Inter-edge} &: \ \ \ |M_{u} \cap M_{f}| = 0 \\
-		\text{Intra-edge} &: \ \ \ |M_{u} \cap M_{f}| = 1, |M_{u}| = |M_{f}| = 1 \\
-		\text{Multi-edge} &: \ \ \ |M_{u} \cap M_{f}| \geq 1, \max \{|M_{u}|, |M_{f}| \} > 1 \\
+		\text{Inter-edge} &: \ \ \ M_{u} \cap M_{f} = \emptyset \\
+		\text{Intra-edge} &: \ \ \ M_{u} = M_{f}\\
+		\text{Multi-edge} &: \ \ \ \text{ otherwise} \\
 	\end{array}\right. \label{Eqn-edge_types}.
 \end{align}
-In words, an inter-edge connects two users who share no community memberships, an intra-edge connects two users who each belong to the same, and only one, community, and a multi-edge connects two users who share a community membership under the restriction that at least one of the users belongs to a single community. See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning. Thus, inter-edges cross community boundaries, intra-edges lie within community boundaries, and multi-edges lie at the borders of community boundaries.
+In words, an inter-edge connects two users who share no community memberships, an intra-edge connects two users who each belong to the same communities, and a multi-edge connects two users who share some, but not all, community memberships. Thus, inter-edges cross community boundaries, intra-edges lie within community boundaries, and multi-edges lie at the borders of community boundaries. See Figure~\ref{Fig-edge_types} for a schematic of this edge partitioning.
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{edge-types.pdf}
-	\caption{Lorem ipsum.}
+	\caption{A schematic of how, given a covering, the edges of the network can be partitioned using \ref{Eqn-edge_types} into inter-edges, intra-edges, and multi-edges. Inter-edges (red) cross community boundaries. Intra-edges (blue) remain inside community boundaries. Multi-edges (purple) both remain in and cross community boundaries due to overlap in community membership. Each column corresponds to the same collection of weights, but partitioned using a different covering. Each row corresponds to the same covering, but for the different weights.}
 	\label{Fig-edge_types}
 \end{figure}
 
@@ -209,14 +209,12 @@ Each community type (Structural, Activity-based, Topic-based, Interaction-based)
 where $t$ is one of inter, intra, and multi. For meaningful community structure, we expect the distribution of edge weights to differ depending on the edge type.
 These distributions are shown in Figure~\ref{Fig-distributions_by_types}. 
 
-Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how the distribution of a particular edge weight changes with the community type used to induce the partition. For example, the second column shows how the distributions of hashtag weights change based on the community partition. Unsurprisingly, we see that the greatest difference between the distributions occurs when we consider the topic-based communities, since the topic-based communities are determined based on the hashtag weights. However, we also see differences in distributions when the Community-type / Weight-type pairs are different. 
-
-% $(\text{Structural, Activity-based, Topic-based, Interaction-based}) \times (\text{Transfer Entropy, Hashtag, Mention-Retweet})$.
+Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how the distribution of weights change with the community type used to induce the partition. For example, the second column shows how the distributions of hashtag weights change based on the community partition. Unsurprisingly, we see that the greatest difference between the distributions occurs when we consider the topic-based communities, since the topic-based communities are determined based on the hashtag weights. However, we also see differences in the distributions when the Community-type / Weight-type pairs do not match. For example, for the covering corresponding to the activity-based community, the distribution of
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{distributions-edges.eps}
-	\caption{A schematic of how, given a covering, the edges of the network can be partitioned using \ref{Eqn-edge_types}.}
+	\caption{The distribution of edge weights for different community types and weight types. }
 	\label{Fig-distributions_by_types}
 \end{figure}
 
