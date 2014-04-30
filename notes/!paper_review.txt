@@ -17,9 +17,3 @@ Some specific points:
 15. "We see in Table 1 that the topic- and interaction-based communities have the most singletons, with the activity based community dominating this measure." -- What does it mean to "dominate" the measure?
 
 16. "non-structural networks" seems like an oxymoron. This is very confusing.
-
-19. How does Figure 4 demonstrate that the median is a useful summary statistic?
-
-20. The take-home message here seems to be that different networks produce different sets of communities. This does not seem that interesting!
-
-21. The conclusion states that the communities were validated by showing that they represented meaningful divisions, yet it does not seem that the communities correspond to any known and meaningful division. It seems that the only "meaning" is related to the ratio of internal and external community edges, which is clearly the desired effect of performing community detection and says little about how useful these network constructions are. This seems problematic. The authors need to do a better job of explaining why these results teach us something useful, or show that they allow us to better accomplish some useful task.

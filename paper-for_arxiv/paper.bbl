@@ -12,6 +12,12 @@ Hila Becker, Mor Naaman, and Luis Gravano.
 \newblock Beyond trending topics: Real-world event identification on twitter.
 \newblock In {\em ICWSM}, 2011.
 
+\bibitem{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2008(10):P10008, 2008.
+
 \bibitem{cazabet2012automated}
 Remy Cazabet, Maud Leguistin, and Frederic Amblard.
 \newblock Automated community detection on social networks: useful? efficient?
@@ -214,6 +220,11 @@ Daniel~M Romero, Wojciech Galuba, Sitaram Asur, and Bernardo~A Huberman.
 Luca Rossi and Matteo Magnani.
 \newblock Conversation practices and network structure in twitter.
 \newblock In {\em ICWSM}, 2012.
+
+\bibitem{Rosvall08mapsof}
+M.~Rosvall and C.~T. Bergstrom.
+\newblock Maps of random walks on complex networks reveal community structure.
+\newblock {\em Proc. Natl. Acad. Sci. USA}, page 1118, 2008.
 
 \bibitem{salton_introduction_1983}
 Gerard Salton and Michael~J. {McGill}.
