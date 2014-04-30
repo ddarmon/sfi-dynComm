@@ -1,22 +1,4 @@
-This paper addresses the important issue of identifying different types of communities in network data.  Often when performing community detection or clustering on data there are many distinct "good" solutions that can be found. The authors use a set of questions to define different types of communities.  This leads to the construction of 4 types of networks: friendship, topic, activity and interaction.
-
-I can see a number of problems with the approach the authors take and the way that it is presented.  Given that the approach is model-based (unsupervised), careful consideration needs to be taken in setting up the model and in how the design assumptions may bias the output of the algorithm.  To be clear, the same community detection algorithm must be used to detect each type of community based on the justification that it accepts the type of inputs the authors wish to use -- "not garbage" on the input side does not imply "not garbage" on the output side.
-
-There is also too little discussion of the choice of how to construct the different networks. For example, transfer entropy seems to have been proposed primarily because it hasn't been used before, rather than because it may have particular strengths for the chosen community detection task.  The results and analysis are also insufficiently clear. It would be much better to validate the meaningfulness of the communities by comparing them against something known about the network (for instance, relevant vertex attributes), by demonstrating that the communities found capture different aspects of the data, or by showing that the communities help with some kind of other task, e.g., link prediction. An illustration via a predictive task would also help support the idea that they model the data well (this is hinted at in the paper, but not demonstrated).  Overall I think that the basic idea is reasonable, but the approach and validation needs more thought and better justification.
-
 Some specific points:
-
-1. I am not sure about calling the network "latent." Since all the features are observed, the interaction network is an observed network in its own right.
-
-3. The majority of community detection methods are single membership, but this does not mean that it poses a problem since there are many community detection algorithms, and certainly more than the eight mentioned.
-
-4. The choice of the OSLOM method for community detection should be better justified. Just because an algorithm uses the inputs you wish to use, does not necessarily mean that the output will meet your expectations. How do the assumptions of this model relate to your objectives? More needs to be said, I think.
-
-5. A definition of strong-sense stationary stochastic process would be good along with why that assumption is made.
-
-6. What does the time series Y represent? It is not clear to me.
-
-7. footnote 1: If only conditional stationarity is required, why make the stronger assumption of stationarity? The assumption that activity patterns are a strict stationary time series seems wholly unreasonable when activity is periodic, as it is with human behavior.
 
 8. Why is 'counting' in quotes?  This explanation of how the probabilities are calculated is not clear.
 

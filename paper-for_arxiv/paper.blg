@@ -1,47 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
-I found no \bibdata command---while reading file paper.aux
-I found no \bibstyle command---while reading file paper.aux
-You've used 45 entries,
-            0 wiz_defined-function locations,
-            138 strings with 1412 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: plain.bst
+Database file #1: references.bib.bib
+Warning--I didn't find a database entry for "Lancichinetti2010"
+You've used 44 entries,
+            2118 wiz_defined-function locations,
+            766 strings with 12256 characters,
+and the built_in function-call counts, 16915 in all, are:
+= -- 1681
+> -- 796
+< -- 17
++ -- 314
+- -- 268
+* -- 1172
+:= -- 2714
+add.period$ -- 148
+call.type$ -- 44
+change.case$ -- 261
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 44
+duplicate$ -- 683
+empty$ -- 1335
+format.name$ -- 268
+if$ -- 3646
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 44
+missing$ -- 48
+newline$ -- 223
+num.names$ -- 90
+pop$ -- 299
+preamble$ -- 1
+purify$ -- 221
 quote$ -- 0
-skip$ -- 0
+skip$ -- 479
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1039
+swap$ -- 193
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 168
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+while$ -- 160
+width$ -- 46
+write$ -- 496
+(There was 1 warning)

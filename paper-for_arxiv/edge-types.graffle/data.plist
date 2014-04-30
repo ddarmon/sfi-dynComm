@@ -3174,7 +3174,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-04-29 22:44:56 +0000</string>
+	<string>2014-04-30 11:50:51 +0000</string>
 	<key>Modifier</key>
 	<string>David Darmon</string>
 	<key>NotesVisible</key>
@@ -5396,7 +5396,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1690.7085189427344, 2173.1914262115542}, {458, 65}}</string>
+					<string>{{1690.7085189427344, 2173.1914262115542}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5443,36 +5443,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx8xIMOXIDEwLTIs
-						IDEgw5cgMTAtMiwgMSDDlyAxMC0y
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyUxLjIgw5cgMTAt
+						MiwgOS40IMOXIDEwLTMsIDcuMiDD
+						lyAxMC0zhoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5481,7 +5481,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 1 \'d7 10\super -2\cf0 \nosupersub , \cf3 1 \'d7 10\super -2\cf0 \nosupersub , \cf4 1 \'d7 10\super -2}</string>
+\f0\fs80 \cf2 1.2 \'d7 10\super -2\cf0 \nosupersub , \cf3 9.4 \'d7 10\super -3\cf0 \nosupersub , \cf4 7.2 \'d7 10\super -3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5490,7 +5490,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1116.3792396486613, 2173.1914262115552}, {458, 65}}</string>
+					<string>{{1116.3792396486613, 2173.1914262115552}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5537,36 +5537,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx8xIMOXIDEwLTMs
-						IDMgw5cgMTAtNCwgNiDDlyAxMC00
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyUxLjAgw5cgMTAt
+						MywgMi44IMOXIDEwLTQsIDYuMyDD
+						lyAxMC00hoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5575,7 +5575,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 1 \'d7 10\super -3\cf0 \nosupersub , \cf3 3 \'d7 10\super -4\cf0 \nosupersub , \cf4 6 \'d7 10\super -4}</string>
+\f0\fs80 \cf2 1.0 \'d7 10\super -3\cf0 \nosupersub , \cf3 2.8 \'d7 10\super -4\cf0 \nosupersub , \cf4 6.3 \'d7 10\super -4}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5584,7 +5584,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{513.18086553793353, 2173.1914262115561}, {458, 65}}</string>
+					<string>{{513.18086553793353, 2173.1914262115561}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5631,36 +5631,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx8xIMOXIDEwLTIs
-						IDEgw5cgMTAtMiwgMSDDlyAxMC0y
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyU5LjIgw5cgMTAt
+						MywgOS44IMOXIDEwLTMsIDEuMSDD
+						lyAxMC0yhoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5669,7 +5669,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 1 \'d7 10\super -2\cf0 \nosupersub , \cf3 1 \'d7 10\super -2\cf0 \nosupersub , \cf4 1 \'d7 10\super -2}</string>
+\f0\fs80 \cf2 9.2 \'d7 10\super -3\cf0 \nosupersub , \cf3 9.8 \'d7 10\super -3\cf0 \nosupersub , \cf4 1.1 \'d7 10\super -2}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5678,7 +5678,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1704.6620070827271, 1627.8891091018697}, {458, 65}}</string>
+					<string>{{1704.6620070827271, 1627.8891091018697}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5725,36 +5725,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx8yIMOXIDEwLTIs
-						IDEgw5cgMTAtMiwgMSDDlyAxMC0y
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyUyLjEgw5cgMTAt
+						MiwgNy44IMOXIDEwLTMsIDEuMiDD
+						lyAxMC0yhoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5763,7 +5763,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 2 \'d7 10\super -2\cf0 \nosupersub , \cf3 1 \'d7 10\super -2\cf0 \nosupersub , \cf4 1 \'d7 10\super -2}</string>
+\f0\fs80 \cf2 2.1 \'d7 10\super -2\cf0 \nosupersub , \cf3 7.8 \'d7 10\super -3\cf0 \nosupersub , \cf4 1.2 \'d7 10\super -2}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5772,7 +5772,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1130.332727788654, 1627.8891091018709}, {458, 65}}</string>
+					<string>{{1130.332727788654, 1627.8891091018709}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5819,36 +5819,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx8xIMOXIDEwLTMs
-						IDEgw5cgMTAtNCwgMyDDlyAxMC0z
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyUxLjQgw5cgMTAt
+						MywgNy43IMOXIDEwLTUsIDMuMiDD
+						lyAxMC0zhoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5857,7 +5857,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 1 \'d7 10\super -3\cf0 \nosupersub , \cf3 1 \'d7 10\super -4\cf0 \nosupersub , \cf4 3 \'d7 10\super -3}</string>
+\f0\fs80 \cf2 1.4 \'d7 10\super -3\cf0 \nosupersub , \cf3 7.7 \'d7 10\super -5\cf0 \nosupersub , \cf4 3.2 \'d7 10\super -3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5866,7 +5866,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{527.13435367792624, 1627.8891091018718}, {458, 65}}</string>
+					<string>{{527.13435367792624, 1627.8891091018718}, {548, 65}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5913,36 +5913,36 @@
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBJOU0F0dHJpYnV0ZWRTdHJpbmcA
 						hIQITlNPYmplY3QAhZKEhIQITlNT
-						dHJpbmcBlIQBKx83IMOXIDEwLTMs
-						IDcgw5cgMTAtMywgNSDDlyAxMC0z
-						hoQCaUkBBpKEhIQMTlNEaWN0aW9u
-						YXJ5AJSEAWkDkoSWlgdOU0NvbG9y
-						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
-						ZmZmZoPv7W0/g4GAAD6DqagoPgGG
-						koSWlhBOU1BhcmFncmFwaFN0eWxl
-						hpKEhIQQTlNQYXJhZ3JhcGhTdHls
-						ZQCUhARDQ0BTAACEhIQHTlNBcnJh
-						eQCUmQyShISECU5TVGV4dFRhYgCU
-						hAJDZgAchpKEoqEAOIaShKKhAFSG
-						koSioQBwhpKEoqEAgYwAhpKEoqEA
-						gagAhpKEoqEAgcQAhpKEoqEAgeAA
-						hpKEoqEAgfwAhpKEoqEAgRgBhpKE
-						oqEAgTQBhpKEoqEAgVABhoYAhpKE
-						lpYGTlNGb250hpKEhIQGTlNGb250
-						HpSZIIQFWzMyY10GAAAAGAAAAP/+
-						QgBhAHMAawBlAHIAdgBpAGwAbABl
-						AIQBZiibAJsBmwCbAIaGlwICkoSY
-						mQSSrpKvkpySnZKElpYNTlNTdXBl
-						clNjcmlwdIaShISECE5TTnVtYmVy
-						AISEB05TVmFsdWUAlIQBKoSEAXGo
-						AYaSmZKahpcDApKEmJkCkpySnZKu
-						kq+GlwQGkoSYmQOSmZKEm5sCnIOB
-						gIA+g/LwcD2D/vx8PwGGkpySnZKu
-						kq+GlwUCkoSYmQSSrpKvkpySnZKy
-						krOSmZK5hpcDApcGBpKEmJkDkpmS
-						hJubApyDhYQEP4OBgIA9g4yLCz8B
-						hpKckp2SrpKvhpcHApKEmJkEkq6S
-						r5Kckp2SspKzkpmSvIaG
+						dHJpbmcBlIQBKyU2LjYgw5cgMTAt
+						MywgNy4zIMOXIDEwLTMsIDUuMSDD
+						lyAxMC0zhoQCaUkBCJKEhIQMTlNE
+						aWN0aW9uYXJ5AJSEAWkDkoSWlgdO
+						U0NvbG9yhpKEhIQHTlNDb2xvcgCU
+						hAFjAoQEZmZmZoPv7W0/g4GAAD6D
+						qagoPgGGkoSWlhBOU1BhcmFncmFw
+						aFN0eWxlhpKEhIQQTlNQYXJhZ3Jh
+						cGhTdHlsZQCUhARDQ0BTAACEhIQH
+						TlNBcnJheQCUmQyShISECU5TVGV4
+						dFRhYgCUhAJDZgAchpKEoqEAOIaS
+						hKKhAFSGkoSioQBwhpKEoqEAgYwA
+						hpKEoqEAgagAhpKEoqEAgcQAhpKE
+						oqEAgeAAhpKEoqEAgfwAhpKEoqEA
+						gRgBhpKEoqEAgTQBhpKEoqEAgVAB
+						hoYAhpKElpYGTlNGb250hpKEhIQG
+						TlNGb250HpSZIIQFWzMyY10GAAAA
+						GAAAAP/+QgBhAHMAawBlAHIAdgBp
+						AGwAbABlAIQBZiibAJsBmwCbAIaG
+						lwICkoSYmQSSrpKvkpySnZKElpYN
+						TlNTdXBlclNjcmlwdIaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAXGoAYaSmZKahpcDApKEmJkC
+						kpySnZKukq+GlwQIkoSYmQOSmZKE
+						m5sCnIOBgIA+g/LwcD2D/vx8PwGG
+						kpySnZKukq+GlwUCkoSYmQSSrpKv
+						kpySnZKykrOSmZK5hpcDApcGCJKE
+						mJkDkpmShJubApyDhYQEP4OBgIA9
+						g4yLCz8BhpKckp2SrpKvhpcHApKE
+						mJkEkq6Sr5Kckp2SspKzkpmSvIaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
@@ -5951,7 +5951,7 @@
 }
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs80 \cf2 7 \'d7 10\super -3\cf0 \nosupersub , \cf3 7 \'d7 10\super -3\cf0 \nosupersub , \cf4 5 \'d7 10\super -3}</string>
+\f0\fs80 \cf2 6.6 \'d7 10\super -3\cf0 \nosupersub , \cf3 7.3 \'d7 10\super -3\cf0 \nosupersub , \cf4 5.1 \'d7 10\super -3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -10295,7 +10295,7 @@
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{-0, -0}, {838, 1028}}</string>
+		<string>{{-0, -0}, {1676, 1028}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -10309,7 +10309,7 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{630.23254765633851, 183.720927176571}, {1634.8836937358153, 2067.4418260755901}}</string>
+		<string>{{-636, 0}, {3583.7208706214669, 2067.4418260755901}}</string>
 		<key>Zoom</key>
 		<real>0.43000000715255737</real>
 		<key>ZoomValues</key>
