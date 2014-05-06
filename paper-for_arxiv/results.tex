@@ -202,6 +202,19 @@ In words, an inter-edge connects two users who share no community memberships, a
 	\label{Fig-edge_types}
 \end{figure}
 
+\begin{table}
+	\caption{The percentage of intra-, inter-, and multi-edges associated with the coverings for each of the four community types.}
+	\centering
+	\begin{tabular}{l | r r r}
+		Community Type & Intra & Inter & Multi \\
+		\hline
+		Structural & 7.5 & 87.0 &  5.5 \\
+		Activity-based & 10.7 & 81.9 & 7.4 \\
+		Topic-based & 7.3 & 89.0  & 3.7 \\
+		Interaction-based & 42.3 & 47.9 & 9.8
+	\end{tabular}
+\end{table}
+
 Each community type (Structural, Activity-based, Topic-based, Interaction-based) induces a different partition of the edges, and each edge type (Transfer Entropy, Hashtag, Mention-Retweet) induces a different distribution of weights. That is, let $W_{u \to f}$ be the weight on a randomly selected edge $E_{u \to f}$ from the network, and compute
 \begin{align}
 	P(W_{u \to f} \leq w | T(E_{u \to f}) = t),
