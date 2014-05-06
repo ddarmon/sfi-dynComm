@@ -218,6 +218,13 @@ Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how t
 	\label{Fig-distributions_by_types}
 \end{figure}
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{densities-edges.eps}
+	\caption{The density of edge weights for different community types (rows) and weight types (columns). The red,  blue, and magenta values below each collection of densities indicate the median of weight on intra-, inter-, and multi-edges, respectively.}
+	\label{Fig-distributions_by_types}
+\end{figure}
+
 We also note that the distribution of transfer entropy weights always tend to be higher for edges crossing community boundaries (inter- or multi-edges) compared to those edges within community boundaries (intra-edges). This is a property not exhibited by either the hashtag or mention-retweet weights, independent of the covering used to partition the edges. Moreover, for all but the activity-based covering, the weights of multi-edges tend to be highest overall.  Recall that the transfer entropy $\text{TE}_{X(u) \to X(f)}$ quantifies the reduction in uncertainty about a follower $f$'s activity from knowing the activity of a user $u$. This result therefore implies that, in terms of prediction, it is more useful to know the time series of a user followed outside of the community compared to a user followed inside of the community, and even more useful to know the time series of a user that shares some, but not all, of the same community memberships. Thus, in an information theoretic sense, we see that novel information useful for prediction is more likely to flow \emph{across} community boundaries than \emph{within} community boundaries.
 
 \subsection{Qualitative Analysis of Community Memberships Across Types}
