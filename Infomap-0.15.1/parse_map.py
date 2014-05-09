@@ -16,7 +16,7 @@ type_to_name = {0 : 'twitter_unweighted_network_idsfrom1',
 
 lookup_to_userid = {}
 
-fname = '/Users/daviddarmon/Documents/Reference/R/Research/2013/sfi-dynComm/Infomap-0.15.1/results/new_ids_dictionary.txt'
+fname = 'results/new_ids_dictionary.txt'
 
 with open(fname) as ofile:
 	for line in islice(ofile, 1, None):
@@ -32,7 +32,7 @@ for comm_type in comm_types:
 
 	comms_to_users = {}
 
-	dir_prefix   = '/Users/daviddarmon/Documents/Reference/R/Research/2013/sfi-dynComm/Infomap-0.15.1/results'
+	dir_prefix   = 'results'
 
 	fname_prefix = '{}'.format(type_to_name[comm_type])
 
@@ -69,13 +69,13 @@ for comm_type in comm_types:
 
 	comms_ordered = numpy.argsort(sizes_comms)[::-1] + 1
 
-	with open('/Users/daviddarmon/Documents/Reference/R/Research/2013/sfi-dynComm/data/coverings/communities{}i_comp.txt'.format(comm_type), 'w') as wfile:
+	with open('../data/coverings/communities{}i_comp.txt'.format(comm_type), 'w') as wfile:
 		for rank in comms_ordered:
 			for userid in comms_to_users[rank]:
 				wfile.write('{} '.format(userid))
 
 			wfile.write('\n')
 
-	with open('/Users/daviddarmon/Documents/Reference/R/Research/2013/sfi-dynComm/data/coverings/communities{}i_comp_sizes.txt'.format(comm_type), 'w') as wfile:
+	with open('../data/coverings/communities{}i_comp_sizes.txt'.format(comm_type), 'w') as wfile:
 		for rank in comms_ordered:
 			wfile.write('{}\n'.format(len(comms_to_users[rank])))
