@@ -36,12 +36,15 @@ import collections
 # '', which corresponds to OSLOM, or 'i',
 # which corresponds to InfoMap.
 
-comm_alg = 'i'
+# comm_alg = 'i' # For InfoMap
+#
+comm_alg = 'WSBM_K10' # For WSBM
 
 label_type_to_number = {'struc' : 0, 'TE4' : 4, 'hashtag' : 7, 'mention-retweet' : 10}
 
 for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
-	for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
+	# for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
+	for label_type in ['struc', 'mention-retweet']:
 		print 'Working on {}/{} pairing...'.format(weight_type, label_type)
 
 		if 'TE' in weight_type:
@@ -171,7 +174,7 @@ for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
 
 		if comm_alg == '':
 			output_prefix = 'interintramulti_labels-{}_weights-{}'.format(label_type, weight_type)
-		elif comm_alg == 'i':
+		else:
 			output_prefix = 'interintramulti_labels-{}_{}_weights-{}'.format(label_type, comm_alg, weight_type)
 
 		with open('../data/edges-by-type/{}_inter.dat'.format(output_prefix), 'w') as wfile:

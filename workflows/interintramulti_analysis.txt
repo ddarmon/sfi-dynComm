@@ -1,0 +1,19 @@
+1. Files with the users-by-communities (i.e. each line corresponds to a space-separated list of users in a community) with names
+
+	communities*#_comp.txt
+
+where * is the community type (one of {0, 1, ..., 10}) and # is the community detection algorithm used (one of {'' = OSLOM, 'i' = INFOMAP, 'WSBM_K2' = WSBM with K = 2, ...}) should be placed in the directory
+
+	data/coverings/
+
+2. Use compare_weights_inter_v_intra_community-NEW.py to partition the edges (and edge weights) into intra- and inter-edges (or also multi edges, for coverings as in OSLOM).
+
+3. To analyze the weight distributions, use
+
+	ecdf_distribution_by_community_type-coverings.R
+
+or 
+
+	ecdf_distribution_by_community_type-partitions.R
+
+depending on whether the you are considering coverings of the nodes or partitions of the nodes.

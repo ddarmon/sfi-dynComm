@@ -25,7 +25,8 @@
 # weight_type = 'hashtag'
 # weight_type = 'mention-retweet'
 
-label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
+# label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
+label_types = c('struc', 'mention-retweet')
 weight_types = c('TE4', 'hashtag', 'mention-retweet')
 
 # label_types = c('struc')
@@ -37,6 +38,10 @@ weight_types = c('TE4', 'hashtag', 'mention-retweet')
 # weight_types = c('hashtag')
 # weight_types = c('mention-retweet')
 
+# alg.name = 'i' # For InfoMap.
+
+alg.name = 'WSBM_K10'
+
 output.filename = 'stats_for_edges-INFOMAP.dat'
 
 cat('comm.type\tweight.type\tmed.intra\tmed.inter\tn.intra\tn.inter\n', file = output.filename, append = FALSE)
@@ -46,7 +51,7 @@ for (weight_type in weight_types){
 
 	cat(sprintf('Working with %s / %s\n\n', label_type, weight_type))
 
-prefix = paste0('interintramulti_labels-', label_type, '_i_weights-', weight_type)
+prefix = paste0('interintramulti_labels-', label_type, '_', alg.name, '_weights-', weight_type)
 
 cat(sprintf('Loading data...\n\n'))
 
@@ -84,7 +89,7 @@ if (weight_type == 'TE4'){
 
 lwd.cdf = 3
 
-prefix.pdf = paste0('labels-', label_type, '_i_weights-', weight_type)
+prefix.pdf = paste0('labels-', label_type, '_', alg.name, '_weights-', weight_type)
 
 to.do.points = FALSE
 vertical = FALSE
