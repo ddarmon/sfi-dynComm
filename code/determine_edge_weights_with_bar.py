@@ -25,13 +25,14 @@ reference_stop = datetime.datetime(2011, 6, 25, 14, 31, 59)
 #SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1.p"
 #SPARSE_BINARY_HISTORY_PICKLE ="test_histories_factor_600.p"
 #SPARSE_BINARY_HISTORY_PICKLE ="test_histories_factor_600_set_version.p"
-SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10min_set_version.p"
+#SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10min_set_version.p"
 #SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1day_set_version.p"
 #SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1hour_set_version.p"
 #SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-2hour_set_version.p"
-
+#SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1w75percentofTS.p"
+SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_75PercentOfTimeSeries_set_version.p"
 T = (reference_stop - reference_start).total_seconds()
-
+predictTCutOff = T*.75
 factor_10Min = 600 #this corresponds to the 10-minute history
 factor_1hour = 3600  #this corresponds to the 1 hour history
 factor_1day = 86400  #this corresponds to the 1 day history
@@ -41,7 +42,7 @@ factor_1day = 86400  #this corresponds to the 1 day history
 full_length_1day = int(T/factor_1day)
 full_length_1hour = int(T/factor_1hour)
 full_length_10min = int(T/factor_10Min)
-
+length75percent_10mbins = int(predictTCutOff/factor_10Min)
 def take(n, iterable):
     "Return first n items of the iterable as a list"
     return list(islice(iterable, n))
@@ -58,11 +59,11 @@ def  make_test_set(full_history):
 
 
 
-def coarsen_sparse_dict(sparse_tweet_history_1_sec, factor):
+def coarsen_sparse_dict(sparse_tweet_history_1_sec,orig_size, factor):
     coarse_sparse_dict = {}
     for user in sparse_tweet_history_1_sec:
         #print "starting the analysis of user**************:",user
-        coarse_sparse_dict[user]=coarse_sparse_resolution(sparse_tweet_history_1_sec[user],T,factor)
+        coarse_sparse_dict[user]=coarse_sparse_resolution(sparse_tweet_history_1_sec[user],orig_size,factor)
     return coarse_sparse_dict
 
 def coarse_sparse_resolution(binary_tweets,orig_size, factor):
@@ -75,7 +76,6 @@ def coarse_sparse_resolution(binary_tweets,orig_size, factor):
     for x in binary_tweets:
         #This completely corsenes the time series and doesn't take into account how many tweets occured in the larger interval
         #print x, i*n_coarsebins
-        
         #if x < i*n_coarsebins: d[i*n_coarsebins] = 1
         #else: i = i+1
         home_found = False
@@ -85,7 +85,6 @@ def coarse_sparse_resolution(binary_tweets,orig_size, factor):
                 d[i]=1
                 home_found = True
                 #print "putting ", x," in bin ", i
-
             else: i = i+1
     #print "d.keys()",d.keys()
     #exit()
@@ -155,18 +154,7 @@ def create_binary_ts_from_arrival_times(uid,erroridfile):
             binary[tweets]=1
         except IOError:
             erroridfile.write(uid+'\n')
-            # generate a file of all 
 
-        #with open('tweet_times_2011/tweet_times_{}.dat'.format(uid)) as ofile:
-        #for line in ofile:
-        #tweets.append(int(line)) # Read in all of the times of the tweets.
-
-
-
-
-	#binary[tweets] = 1
-
-	#return binary
         return tweets
 # To save to a file. Though you're probably
 # better just generating binary each time 
@@ -179,6 +167,57 @@ def create_binary_ts_from_arrival_times(uid,erroridfile):
 
 
 #binary = create_binary_ts_from_arrival_times(uid)
+
+
+def create_binary_ts_from_arrival_times_shorthistory(uid,erroridfile):
+	tweets = [] # A placeholder for the times of the tweets.
+        # Keep track of the total number of seconds elapsed from the reference
+	# start to the reference stop.
+	# binary is a length T vector with a 0 at index n if 
+	# a Tweet occurred and a 1 otherwise.
+	binary = numpy.zeros(predictTCutOff+1, dtype = 'int8')
+        try:
+            with open('../data/tweet_times_2011/tweet_times_{}.dat'.format(uid)) as ofile:
+		for line in ofile:
+                    if int(line)<=predictTCutOff:
+                        tweets.append(int(line)) # Read in all of the times of the tweets.:
+                        print "appended ", int(line)," smaller than ",predictTCutOff
+                    else:
+                        print "did not append ", int(line)," larger than ",predictTCutOff
+            binary[tweets]=1
+        except IOError:
+            erroridfile.write(uid+'\n')
+        return tweets
+# To save to a file. Though you're probably
+# better just generating binary each time 
+# you need to do any computations rather 
+# than writing and then reading from the file.
+
+# with open('tweet_times_2011/tweet_times_binary_{}.dat'.format(uid), 'w') as wfile:
+# 	for bit in binary:
+# 		wfile.write('{}'.format(bit))
+
+
+#binary = create_binary_ts_from_arrival_times(uid)
+
+
+def make_sparse_binary_ts_dict_shorten(nodes):
+    errorfile= open("nodesWithoutTweetHistory.txt", "w")
+    ts_dict = {}
+    i = 0
+    #testnode = Testuid
+    for node in nodes:
+        ts_dict[node] = create_binary_ts_from_arrival_times_shorthistory(node,errorfile)
+        i = i+1
+        print i,len(nodes)
+    #ts_dict[node] = create_binary_ts_from_arrival_times(node,errorfile)
+    #print len(ts_dict[node])
+    print "Finished Building Sparse Tweet History, now writing to pickle."
+    pickle.dump(ts_dict, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1w75percentofTS.p", "wb" ) )
+    errorfile.close()
+    return ts_dict
+
+
 
 
 
@@ -368,7 +407,7 @@ def transfer_entropy(followed_by_id,follower_id,sparse_histories,lag,full_length
     return trans_entropy,trans_entropyMM
 
 
-def calculate_weight(edges,sparse_histories,weight_type,lag=1,full_length=full_length_10min):
+def calculate_weight(edges,sparse_histories,weight_type,lag,full_length):
     edge_weights = {}
     num_edges =len(edges)
     bar = progressbar.ProgressBar(maxval=num_edges, \
@@ -411,7 +450,6 @@ def build_directed_graph_without_weights():
     print "Finished neighbor relation construction."
     print 'number of edges:',len(edges)
     print 'number of nodes:',len(nodes)
-
     return (nodes,edges,neighbors)
 
 #Construct Graph
@@ -425,6 +463,7 @@ sparse_tweet_history = get_tweet_history()
 #For Testing
 #make_test_set(sparse_tweet_history)
 
+#sparse_tweet_history2hour=coarsen_sparse_dict(users,factor_2hour)
 
 
 
@@ -434,6 +473,13 @@ sparse_tweet_history = get_tweet_history()
 #factor_2hour = 7200  #this corresponds to the 1 hour history
 #sparse_tweet_history1hour=coarsen_sparse_dict(sparse_tweet_history,factor_1hour)
 #pickle.dump(sparse_tweet_history1hour, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1hour_set_version.p", "wb" ))
+
+#predictTCutOff = T*.75
+#factor_10Min = 600 #this corresponds to the 10-minute history
+
+#sparse_tweet_history75Percent10Min=coarsen_sparse_dict(sparse_tweet_history,predictTCutOff,factor_10Min)
+#pickle.dump(sparse_tweet_history75Percent10Min, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_75PercentOfTimeSeries_set_version.p", "wb" ))
+
 
 #sparse_tweet_history2hour=coarsen_sparse_dict(sparse_tweet_history,factor_2hour)
 #pickle.dump(sparse_tweet_history2hour, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-2hour_set_version.p", "wb" ))
@@ -449,10 +495,10 @@ sparse_tweet_history = get_tweet_history()
 
 
 
-for lag in range(6,7):
-    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS.dat'.format(lag),'w') as f:
+for lag in range(3,5):
+    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_75PercentTS.dat'.format(lag),'w') as f:
         print "Building Edges for lag ",lag
-        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,full_length_10min)
+        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,length75percent_10mbins)
         print "Finished Edges for lag ",lag
 
         f.write("followed_by, follower, transfer_entropy,transfer_entropy_corrected(MM)\n")
