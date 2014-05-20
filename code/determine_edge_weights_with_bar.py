@@ -495,7 +495,7 @@ sparse_tweet_history = get_tweet_history()
 
 
 
-for lag in range(3,5):
+for lag in range(5,6):
     with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_75PercentTS.dat'.format(lag),'w') as f:
         print "Building Edges for lag ",lag
         edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,length75percent_10mbins)
