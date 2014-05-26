@@ -1,0 +1,38 @@
+Next Actions (13 May 2014):
+===========================
+
+Elisa:
+
+E1. Rerun OSLOM with partitions rather than coverings.
+
+E2. See if InfoMap communities can be improved.
+
+E3. Rerun mention-retweet network construction using the first 3/4 of the data:
+
+Start at 2011/4/25 9am and stop at 2011/5/23 9am.
+
+Josh:
+
+J1. Rerun transfer entropy network construction using the first 3/4 of the data:
+
+Start at 2011/4/25 9am and stop at 2011/5/23 9am.
+
+Do lag-4 transfer entropy first.
+
+J2. Think about a good transfer entropy-specific question for question-oriented approach.
+
+Dave:
+
+D1. Continue with weighted stochastic block models:
+
+	* Choose good parametric distributions for transfer entropy and hashtag networks.
+
+	* Validate the choice of K using Bayes factors / cross-validation.
+
+D2. Think about questions for topic / activity-based communities.
+
+D3. Run the prediction problem with the new, time-truncated networks
+
+All:
+
+A1. Think about questions one might ask that would motivate the types communities we have decided on.

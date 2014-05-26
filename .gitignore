@@ -8,3 +8,4 @@ comm*_labels-*_weights-*
 *.log
 *.aux
 paper/paper.log
+data/content-full/*
