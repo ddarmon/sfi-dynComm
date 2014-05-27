@@ -41,15 +41,26 @@ with open(user_file) as ofile:
 
 # community_type = '0'
 
-# community_types = ['0', '4', '10']
-community_types = ['0', '10']
+community_types = ['0', '4', '10']
+# community_types = ['0', '10']
 
-suffix = 'WSBM_K5'
+suffix = '' # For OSLOM
+# suffix = 'WSBM_K5' # For WSBM
+
+# The training set runs 
+#
+# 	2011/4/25 9am to 2011/5/23 9am.
+# 
+# which is 28 days or 2419200 seconds.
+
+seconds_train = 2419200
 
 for community_type in ['{}{}'.format(community_type, suffix) for community_type in community_types]:
 
-	data_type = 'mentions'
-	# data_type = 'retweets'
+	# data_type = 'mentions'
+	data_type = 'retweets'
+
+	print 'Counting {}...'.format(data_type)
 
 	if 'i' in community_type or 'WSBM' in community_type:
 		partition_or_covering = 'partition'
@@ -93,27 +104,33 @@ for community_type in ['{}{}'.format(community_type, suffix) for community_type 
 
 	tweets_file = '../data/content-full/retweets-mentions/{}2011_userid_zeroed.tsv'.format(data_type)
 
-	if partition_or_covering == 'partition':
+	if partition_or_covering == 'partition': # If we consider a partition of the nodes, as with the WSBM.
 		internal_count = 0
 		external_count = 0
 		total_count    = 0
+		subset_count   = 0
 
 		with open(tweets_file) as ofile:
 			for line in islice(ofile, 1, None):
 				time, uid1, uid2 = line.strip().split('\t')
 
-				if user_present.get(uid1, False) and user_present.get(uid2, False):
-					if userid_to_community[uid1] == userid_to_community[uid2]:
-						internal_count += 1
-					else:
-						external_count += 1
+				if time > seconds_train: # Only compute the count on the testing data.
+					if user_present.get(uid1, False) and user_present.get(uid2, False):
+						subset_count += 1
 
-				total_count += 1
+						if userid_to_community[uid1] == userid_to_community[uid2]:
+							internal_count += 1
+						else:
+							external_count += 1
 
-		print 'comm_type\tinternal_count\texternal_count\ttotal_count'
+					total_count += 1
+				else:
+					pass
 
-		print '{}\t{}\t{}\t{}'.format(community_type, internal_count, external_count, total_count)
-	else:
+		print 'comm_type\tinternal_count\texternal_count\tsubset_count\ttotal_count'
+
+		print '{}\t{}\t{}\t{}'.format(community_type, internal_count, external_count, subset_count, total_count)
+	else: # If we consider a covering of the nodes, as in OSLOM.
 		internal_count = 0
 		external_count = 0
 		subset_count   = 0
@@ -122,22 +139,24 @@ for community_type in ['{}{}'.format(community_type, suffix) for community_type 
 		with open(tweets_file) as ofile:
 			for line in islice(ofile, 1, None):
 				time, uid1, uid2 = line.strip().split('\t')
+				if time > seconds_train: # Only compute the count on the testing data.
+					if user_present.get(uid1, False) and user_present.get(uid2, False):
+						# if userid_to_community.get(uid1, True):
+						# 	print 'Missing user {}'.format(uid1)
+						# elif userid_to_community.get(uid2, True):
+						# 	print 'Missing user {}'.format(uid2)
+						# else:
+						subset_count += 1
 
-				if user_present.get(uid1, False) and user_present.get(uid2, False):
-					# if userid_to_community.get(uid1, True):
-					# 	print 'Missing user {}'.format(uid1)
-					# elif userid_to_community.get(uid2, True):
-					# 	print 'Missing user {}'.format(uid2)
-					# else:
-					subset_count += 1
+						if len(set(userid_to_community[uid1]).intersection(userid_to_community[uid2])) > 0:
+							internal_count += 1
+						else:
+							external_count += 1
 
-					if len(set(userid_to_community[uid1]).intersection(userid_to_community[uid2])) > 0:
-						internal_count += 1
-					else:
-						external_count += 1
+					total_count += 1
+				else:
+					pass
 
-				total_count += 1
-
-		print 'comm_type\tinternal_count\texternal_count\ttotal_count'
+		print 'comm_type\tinternal_count\texternal_count\ttotal_count\t'
 
 		print '{}\t{}\t{}\t{}'.format(community_type, internal_count, external_count, total_count)
