@@ -8,7 +8,7 @@ weight.types = c('blank', 'TE4', 'hashtag', 'mention-retweet')
 weight.type = weight.types[2]
 
 weight.dists = c('lognormal', 'gamma', 'exponential', 'pareto')
-weight.dist = weight.dists[1]
+weight.dist = weight.dists[2]
 
 # method.type = '' # For OSLOM
 method.type = 'WSBM_K4' # For WSBM
@@ -44,7 +44,7 @@ for (comm.rank in comm.ranks){
 		cat(sprintf('The median %s type weight is %f.\n', edge.type, median.weight))
 		
 		if (weight.type == 'TE4'){
-			xlim = c(0, 0.1); ylim = c(0, 200)
+			xlim = c(0, 0.1); ylim = c(0, 500)
 		} else if (weight.type == 'hashtag'){
 			xlim = c(0, 0.1); ylim = c(0, 1500)
 		} else if (weight.type == 'mention-retweet'){
