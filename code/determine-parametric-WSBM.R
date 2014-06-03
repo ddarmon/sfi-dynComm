@@ -3,20 +3,23 @@ library(MASS)
 edge.types = c('e-to-i', 'i-to-e', 'i-to-i')
 
 label.types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
-label.type = label.types[4]
+label.type = label.types[2]
 weight.types = c('blank', 'TE4', 'hashtag', 'mention-retweet')
-weight.type = weight.types[3]
+weight.type = weight.types[2]
 
 weight.dists = c('lognormal', 'gamma', 'exponential', 'pareto')
-weight.dist = weight.dists[4]
+weight.dist = weight.dists[1]
+
+# method.type = '' # For OSLOM
+method.type = 'WSBM_K4' # For WSBM
 
 # comm.ranks = c(1)
-comm.ranks = 0:9
+comm.ranks = 0:3
 
 for (comm.rank in comm.ranks){
 	par(mar=c(5,5,2,1), cex.lab = 2, cex.axis = 2, mfrow = c(3, 1))
 	for (edge.type in edge.types){
-		input.fname = sprintf('../data/edges-by-type/comm%g_labels-%s_weights-%s_%s.dat', comm.rank, label.type, weight.type, edge.type)
+		input.fname = sprintf('../data/edges-by-type/comm%g%s_labels-%s_weights-%s_%s.dat', comm.rank, method.type, label.type, weight.type, edge.type)
 	
 		data = read.csv(input.fname, header = FALSE)$V1
 		which.na = is.na(data)
@@ -45,7 +48,7 @@ for (comm.rank in comm.ranks){
 		} else if (weight.type == 'hashtag'){
 			xlim = c(0, 0.1); ylim = c(0, 1500)
 		} else if (weight.type == 'mention-retweet'){
-			xlim = c(0, 0.1); ylim = c(0, 100)
+			xlim = c(0, 0.1); ylim = c(0, 400)
 		}
 		
 		plot(density(data, from = 0), xlim = xlim, ylim = ylim, main = sprintf('Edge Type: %s, Num Edges = %g, Median Weight = %f', edge.type, length(data), median.weight), xlab = 'Weight', ylab = 'Estimated Density', lwd = 3, col = 'red')

@@ -23,14 +23,18 @@ import ipdb
 
 # community_type = '0'
 
-community_types = ['0', '4', '10']
-# community_types = ['0', '10']
+# community_types = ['0', '4', '10']
+community_types = ['0', '10']
+# community_types = ['4', '7', '10']
 
-suffix = '' # For OSLOM
-# suffix = 'WSBM_K5' # For WSBM
+# suffix = '' # For OSLOM
+suffix = 'WSBM_K5' # For WSBM
 
-# data_type = 'mentions'
-data_type = 'retweets'
+time_frame = '' # For communities inferred using the entire data set
+# time_frame = '-partial' # For communities inferred using only the first 3/4 of the data set.
+
+data_type = 'mentions'
+# data_type = 'retweets'
 
 print 'Counting {}...'.format(data_type)
 
@@ -43,6 +47,8 @@ print 'Counting {}...'.format(data_type)
 seconds_train = 2419200
 
 user_files = {'0' : '../data/twitter_network_filtered_edges.txt', '4' : '../data/content-free/directedweightsTE/edge_weights_bin10minutes_lag_4_withMMBIAS.dat', '7' : '../data/content-full/twitter_network_hashtags_weighted.txt', '10' : '../data/content-full/twitter_network_contentfull_weighted_arithmeticmean.txt'}
+
+# user_files = {'4' : '../data/content-free/directedweightsTE/edge_weights_bin10minutes_lag_4_withMMBIAS.dat', '7' : '../data/content-full/twitter_network_hashtags_weighted.txt', '10' : '../data/content-full/twitter_network_contentfull_weighted_arithmeticmean.txt'}
 
 # 2: For each network type, determine whether
 #    an edge occurs inter- / intra-community.
@@ -81,7 +87,7 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 	else:
 		partition_or_covering = 'covering'
 
-	community_file = '../data/coverings/communities{}_comp.txt'.format(community_type)
+	community_file = '../data/coverings/communities{}{}_comp.txt'.format(community_type, time_frame)
 
 	userid_to_community = {}
 
@@ -149,6 +155,8 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 		external_count = 0
 		subset_count   = 0
 		total_count    = 0
+		
+		already_warned = {}
 
 		with open(tweets_file) as ofile:
 			for line in islice(ofile, 1, None):
@@ -156,12 +164,19 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 				if time > seconds_train: # Only compute the count on the testing data.
 					if user_present.get(uid1, False) and user_present.get(uid2, False):
 						if len(userid_to_community.get(uid1, [])) == 0:
-							print 'Missing user {}'.format(uid1)
+							if uid1 in already_warned:
+								pass
+							else:
+								print 'Missing user {}'.format(uid1)
+								already_warned[uid1] = True
 						elif len(userid_to_community.get(uid2, [])) == 0:
-							print 'Missing user {}'.format(uid2)
+							if uid2 in already_warned:
+								pass
+							else:
+								print 'Missing user {}'.format(uid2)
+								already_warned[uid2] = True
 						else:
 							subset_count += 1
-
 							if len(set(userid_to_community[uid1]).intersection(userid_to_community[uid2])) > 0:
 								internal_count += 1
 							else:
@@ -171,6 +186,6 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 				else:
 					pass
 
-		print 'comm_type\tinternal_count\texternal_count\tsubset_count\ttotal_count\t'
+		print 'comm_type\tinternal_count\texternal_count\tsubset_count\t total_count'
 
 		print '{}\t{}\t{}\t{}\t{}'.format(community_type, internal_count, external_count, subset_count, total_count)

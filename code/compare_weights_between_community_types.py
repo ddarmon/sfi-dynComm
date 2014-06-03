@@ -31,8 +31,14 @@ import numpy
 # label_type = 'hashtag'
 # label_type = 'mention-retweet'
 
+# method_type = '' # For OSLOM
+method_type = 'WSBM_K4' # For WSBM
+# method_type = 'i' # For Infomap
+
 for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
-	for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
+	# for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
+	# for label_type in ['struc', 'mention-retweet']:
+	for label_type in ['TE4']:
 		print 'Working on {}/{} pairing...'.format(weight_type, label_type)
 
 		if 'TE' in weight_type:
@@ -43,21 +49,32 @@ for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
 		elif weight_type == 'mention-retweet':
 			weight_file = '../data/content-full/twitter_network_contentfull_weighted_arithmeticmean.txt'
 
+		# Old way to get out the communities-by-label. This has since been standardized.
+
+		# if label_type == 'struc':
+# 			label_file  = 'twitter_unweighted_network.txt_oslo_files'
+# 		elif 'TE' in label_type:
+# 			lag = label_type.split('E')[1]
+# 			label_file  = 'edge_weights_bin10minutes_lag_{}_withMMBIAS_edgelist.dat_oslo_files'.format(lag)
+# 		elif label_type == 'hashtag':
+# 			label_file  = 'twitter_network_hashtags_weighted.txt_oslo_files'
+# 		elif label_type == 'mention-retweet':
+# 			label_file  = 'twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files'
+
 		if label_type == 'struc':
-			label_file  = 'twitter_unweighted_network.txt_oslo_files'
+			label_file  = '0'
 		elif 'TE' in label_type:
-			lag = label_type.split('E')[1]
-			label_file  = 'edge_weights_bin10minutes_lag_{}_withMMBIAS_edgelist.dat_oslo_files'.format(lag)
+			label_file = '4'
 		elif label_type == 'hashtag':
-			label_file  = 'twitter_network_hashtags_weighted.txt_oslo_files'
+			label_file  = '7'
 		elif label_type == 'mention-retweet':
-			label_file  = 'twitter_network_contentfull_weighted_arithmeticmean.txt_oslo_files'
+			label_file  = '10'
 
 		# Generate a dictionary of the form
 		# {user_id : community_id} from the 
 		# communities based on the labels.
 
-		full_name = '../oslom_outputs/{}/tp'.format(label_file)
+		full_name = '../data/coverings/communities{}{}_comp.txt'.format(label_file, method_type)
 
 		comm_dict = {}
 		comm_count = 0
@@ -65,22 +82,17 @@ for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
 		comm_sizes = []
 
 		with open(full_name) as ofile:
-			line = ofile.readline()
+			for line in ofile:
 
-			while line != '':
-				nodes = ofile.readline().strip().split(' ')
+				nodes = line.strip().split(' ')
 
 				comm_sizes.append(len(nodes))
 				
 				for node in nodes:
 					comm_dict[node.strip()] = comm_count
-
 				comm_count += 1
-
-				line = ofile.readline()
-
+		
 		order_comm_sizes = numpy.argsort(numpy.array(comm_sizes))[::-1]
-
 		# Create a dictionary representation of the weighted network
 		# that determines the *weights* we'll consider. The 
 		# dictionary is of the form
@@ -202,7 +214,7 @@ for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
 
 			print 'There are {} i to i links, {} i to e links, and {} e to i links.'.format(len(i_to_i), len(i_to_e), len(e_to_i))
 
-			output_prefix = 'comm{}_labels-{}_weights-{}'.format(comm_rank, label_type, weight_type)
+			output_prefix = 'comm{}{}_labels-{}_weights-{}'.format(comm_rank, method_type, label_type, weight_type)
 
 			with open('../data/edges-by-type/{}_i-to-i.dat'.format(output_prefix), 'w') as wfile:
 				for weight in i_to_i:
