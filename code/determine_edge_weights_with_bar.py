@@ -19,8 +19,13 @@ Testuid1 = '456'
 Testuid2 = '237962820'
 Testuid3 = '243494256'
 strangeuid ='51319087'
+#Split Time "Start at 2011/4/25 9am and stop at 2011/5/23 9am."
 reference_start = datetime.datetime(2011, 4, 25, 9, 24, 58)
+prediction_splitpoint = datetime.datetime(2011,5,23,9,0,0)
+
 reference_stop = datetime.datetime(2011, 6, 25, 14, 31, 59)
+
+
 #SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10min.p"
 #SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1.p"
 #SPARSE_BINARY_HISTORY_PICKLE ="test_histories_factor_600.p"
@@ -30,19 +35,29 @@ reference_stop = datetime.datetime(2011, 6, 25, 14, 31, 59)
 #SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1hour_set_version.p"
 #SPARSE_BINARY_HISTORY_PICKLE = "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-2hour_set_version.p"
 #SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1w75percentofTS.p"
-SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_75PercentOfTimeSeries_set_version.p"
-T = (reference_stop - reference_start).total_seconds()
-predictTCutOff = T*.75
+#SPARSE_BINARY_HISTORY_PICKLE ="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_75PercentOfTimeSeries_set_version.p"
+#SPARSE_BINARY_HISTORY_PICKLE="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1wfirsthalf.p"
+SPARSE_BINARY_HISTORY_PICKLE= "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1wsecondhalf.p"
+#SPARSE_BINARY_HISTORY_PICKLE="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_firsthalfTimeSeries_set_version.p"
+SPARSE_BINARY_HISTORY_PICKLE="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_secondhalfTimeSeries_set_version.p"
+
+
+#T = (reference_stop - reference_start).total_seconds()
+#Prediction_T_split =(prediction_splitpoint - reference_start).total_seconds()
+#predictTCutOff = T*.75
+Last_T_split =(reference_stop-prediction_splitpoint).total_seconds()
+First_half_T_split =(prediction_splitpoint - reference_start).total_seconds()
+#cutoff = may 23 9a
 factor_10Min = 600 #this corresponds to the 10-minute history
 factor_1hour = 3600  #this corresponds to the 1 hour history
 factor_1day = 86400  #this corresponds to the 1 day history
 #factor = 1
 #factor = int(5288821/4)
 #Can I do away with this?
-full_length_1day = int(T/factor_1day)
-full_length_1hour = int(T/factor_1hour)
-full_length_10min = int(T/factor_10Min)
-length75percent_10mbins = int(predictTCutOff/factor_10Min)
+#full_length_1day = int(T/factor_1day)
+#full_length_1hour = int(T/factor_1hour)
+#full_length_10min = int(T/factor_10Min)
+#length75percent_10mbins = int(predictTCutOff/factor_10Min)
 def take(n, iterable):
     "Return first n items of the iterable as a list"
     return list(islice(iterable, n))
@@ -69,7 +84,7 @@ def coarsen_sparse_dict(sparse_tweet_history_1_sec,orig_size, factor):
 def coarse_sparse_resolution(binary_tweets,orig_size, factor):
     #orig_size = T
     d = {}
-    n_coarsebins =int(orig_size/factor)
+    #n_coarsebins =int(orig_size/factor)
     #floor(numpy.divide(orig_size, factor))
     #print "n_coarsebins: ",n_coarsebins
     i = 0 
@@ -145,7 +160,7 @@ def create_binary_ts_from_arrival_times(uid,erroridfile):
 
 	# binary is a length T vector with a 0 at index n if 
 	# a Tweet occurred and a 1 otherwise.
-	binary = numpy.zeros(T+1, dtype = 'int8')
+	binary = numpy.zeros(Prediction_T_split+1, dtype = 'int8')
         
         try:
             with open('../data/tweet_times_2011/tweet_times_{}.dat'.format(uid)) as ofile:
@@ -175,16 +190,19 @@ def create_binary_ts_from_arrival_times_shorthistory(uid,erroridfile):
 	# start to the reference stop.
 	# binary is a length T vector with a 0 at index n if 
 	# a Tweet occurred and a 1 otherwise.
-	binary = numpy.zeros(predictTCutOff+1, dtype = 'int8')
+        #For second half this will have to be differnt
+        
+        binary =numpy.zeros(Last_T_split+1, dtype = 'int8')
+        #binary = numpy.zeros(predictTCutOff+1, dtype = 'int8')
         try:
             with open('../data/tweet_times_2011/tweet_times_{}.dat'.format(uid)) as ofile:
 		for line in ofile:
-                    if int(line)<=predictTCutOff:
+                    if int(line)>=Last_T_split:
                         tweets.append(int(line)) # Read in all of the times of the tweets.:
-                        print "appended ", int(line)," smaller than ",predictTCutOff
-                    else:
-                        print "did not append ", int(line)," larger than ",predictTCutOff
-            binary[tweets]=1
+                    #    print "appended ", int(line)," greater than ",Last_T_split
+                    #else:
+                    #    print "did not append ", int(line)," smaller than ",Last_T_split
+                #binary[tweets]=1
         except IOError:
             erroridfile.write(uid+'\n')
         return tweets
@@ -213,7 +231,7 @@ def make_sparse_binary_ts_dict_shorten(nodes):
     #ts_dict[node] = create_binary_ts_from_arrival_times(node,errorfile)
     #print len(ts_dict[node])
     print "Finished Building Sparse Tweet History, now writing to pickle."
-    pickle.dump(ts_dict, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1w75percentofTS.p", "wb" ) )
+    pickle.dump(ts_dict, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-1wsecondhalf.p", "wb" ) )
     errorfile.close()
     return ts_dict
 
@@ -457,7 +475,7 @@ users,edges,neighbors = build_directed_graph_without_weights()
 
 
 #Retrieve Tweet History from Pickle
-sparse_tweet_history = get_tweet_history()
+#sparse_tweet_history = get_tweet_history()
 
 
 #For Testing
@@ -481,6 +499,14 @@ sparse_tweet_history = get_tweet_history()
 #pickle.dump(sparse_tweet_history75Percent10Min, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_75PercentOfTimeSeries_set_version.p", "wb" ))
 
 
+#sparse_tweet_historyfirsthalf10Min=coarsen_sparse_dict(sparse_tweet_history,First_half_T_split,factor_10Min)
+#pickle.dump(sparse_tweet_historyfirsthalf10Min, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_firsthalfTimeSeries_set_version.p", "wb" ))
+
+#sparse_tweet_historysecondhalf10Min=coarsen_sparse_dict(sparse_tweet_history,Last_T_split,factor_10Min)
+#pickle.dump(sparse_tweet_historyfirsthalf10Min, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_secondhalfTimeSeries_set_version.p", "wb" ))
+
+
+
 #sparse_tweet_history2hour=coarsen_sparse_dict(sparse_tweet_history,factor_2hour)
 #pickle.dump(sparse_tweet_history2hour, open( "../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-2hour_set_version.p", "wb" ))
 
@@ -495,10 +521,62 @@ sparse_tweet_history = get_tweet_history()
 
 
 
-for lag in range(5,6):
-    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_75PercentTS.dat'.format(lag),'w') as f:
-        print "Building Edges for lag ",lag
-        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,length75percent_10mbins)
+#for lag in range(4,5):
+#    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_75PercentTS.dat'.format(lag),'w') as f:
+#        print "Building Edges for lag ",lag
+#        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,length75percent_10mbins)
+#        print "Finished Edges for lag ",lag
+#
+#        f.write("followed_by, follower, transfer_entropy,transfer_entropy_corrected(MM)\n")
+#        for edge in edge_weight:
+#            f.write(str(edge[0]))
+#            f.write(", ")
+#            f.write(str(edge[1]))
+#            f.write(", ")
+#            f.write(str(edge_weight[edge][0]))
+#            f.write(", ")
+#            f.write(str(edge_weight[edge][1]))
+#            f.write("\n")
+#        f.close()
+#    #print edge,edge_weight[edge]
+
+##coarsen_analysis(sparse_tweet_history)
+
+SPARSE_BINARY_HISTORY_PICKLE="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_firsthalfTimeSeries_set_version.p"
+sparse_tweet_history = get_tweet_history()
+lengthfirsthalf_10mbins = int(First_half_T_split/factor_10Min)
+
+  
+for lag in range(4,5):
+    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_firsthalf.dat'.format(lag),'w') as f:
+        print "Building Edges for first half for lag ",lag
+        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,lengthfirsthalf_10mbins)
+        print "Finished Edges for lag ",lag
+
+        f.write("followed_by, follower, transfer_entropy,transfer_entropy_corrected(MM)\n")
+        for edge in edge_weight:
+            f.write(str(edge[0]))
+            f.write(", ")
+            f.write(str(edge[1]))
+            f.write(", ")
+            f.write(str(edge_weight[edge][0]))
+            f.write(", ")
+            f.write(str(edge_weight[edge][1]))
+            f.write("\n")
+        f.close()
+    #print edge,edge_weight[edge]    
+
+
+SPARSE_BINARY_HISTORY_PICKLE="../data/tweet_times_2011/sparse_binary_ts_dict_bin-space-of-10Min_secondhalfTimeSeries_set_version.p"
+
+sparse_tweet_history = get_tweet_history()
+lengthsecondhalf_10mbins = int(Last_T_split/factor_10Min)
+
+
+for lag in range(4,5):
+    with open('edge_weights_bin10minutes_lag_{}_withMMBIAS_secondhalf.dat'.format(lag),'w') as f:
+        print "Building Edges for second half for lag ",lag
+        edge_weight = calculate_weight(edges,sparse_tweet_history,'transfer_entropy',lag,lengthsecondhalf_10mbins)
         print "Finished Edges for lag ",lag
 
         f.write("followed_by, follower, transfer_entropy,transfer_entropy_corrected(MM)\n")
@@ -513,7 +591,3 @@ for lag in range(5,6):
             f.write("\n")
         f.close()
     #print edge,edge_weight[edge]
-
-#coarsen_analysis(sparse_tweet_history)
-  
-    
