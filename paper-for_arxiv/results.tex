@@ -240,10 +240,18 @@ Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how t
 
 We also note that the distribution of transfer entropy weights always tend to be higher for edges crossing community boundaries (inter- or mixed-edges) compared to those edges within community boundaries (intra-edges). This is a property not exhibited by either the hashtag or mention-retweet weights, independent of the covering used to partition the edges. Moreover, for all but the activity-based covering, the weights of mixed-edges tend to be highest overall.  Recall that the transfer entropy $\text{TE}_{X(u) \to X(f)}$ quantifies the reduction in uncertainty about a follower $f$'s activity from knowing the activity of a user $u$. This result therefore implies that, in terms of prediction, it is more useful to know the time series of a user followed outside of the community compared to a user followed inside of the community, and even more useful to know the time series of a user that shares some, but not all, of the same community memberships. Thus, in an information theoretic sense, we see that novel information useful for prediction is more likely to flow \emph{across} community boundaries than \emph{within} community boundaries.
 
-\subsection{Demonstration of the Question-Oriented Appraoch}
+\subsection{Demonstration of the Question-Oriented Approach}
+
+Next, we demonstrate a particular instance of a question-oriented approach. Suppose we were interested in tracking where conversations occur in a social network. That is, we want to track groups of individuals who interact more with each other than with users outside of their group. This notion of community naturally falls within our interaction-based framework outlined above. We demonstrate how much is gained by tailoring the community detection problem to this question.
+
+% * We want to track *where* conversations are occurring: amongst what group of people.
+
+% * This motivates using the interaction-based communities.
+
+The data set was divided into two disjoint time periods: from 9am April 25th 2011 to 9am May 23rd 2011 and from 9am May 23rd 2011 to 9am June 25th 2011. We then constructed the three weighted networks (the structural network is unchanged) using the activity, retweets, mentions, and hashtags from the first time period, as described in the methodology section. We then used OSLOM to infer the community structure in these weighted networks. 
 
 \begin{table}
-	\caption{Lorem ipsum.}
+	\caption{The percentage of retweets and mentions that occur internal to communities for each of the four community types.}
 	\centering
 	\begin{tabular}{l | c c}
 		Community Type & Percentage of Retweets Internal & Percentage of Mentions Internal \\
@@ -251,7 +259,7 @@ We also note that the distribution of transfer entropy weights always tend to be
 		Structural & 45.4 & 69.9 \\
 		Activity-based & 54.1 & 72.9 \\
 		Topic-based & 52.3 & 74.1  \\
-		Interaction-based & 64.3 & 81.7
+		Interaction-based & \textbf{64.3} & \textbf{81.7}
 	\end{tabular}
 \end{table}
 
