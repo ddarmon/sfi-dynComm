@@ -24,11 +24,12 @@ import ipdb
 # community_type = '0'
 
 # community_types = ['0', '4', '10']
-community_types = ['0', '10']
-# community_types = ['4', '7', '10']
+# community_types = ['0', '4', '10']
+community_types = ['4', '7', '10']
+# community_types = ['0']
 
-# suffix = '' # For OSLOM
-suffix = 'WSBM_K5' # For WSBM
+suffix = '' # For OSLOM
+# suffix = 'WSBM_K4' # For WSBM
 
 time_frame = '' # For communities inferred using the entire data set
 # time_frame = '-partial' # For communities inferred using only the first 3/4 of the data set.
