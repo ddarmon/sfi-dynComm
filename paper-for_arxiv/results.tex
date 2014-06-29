@@ -242,13 +242,13 @@ We also note that the distribution of transfer entropy weights always tend to be
 
 \subsection{Demonstration of the Question-Oriented Approach}
 
-Next, we demonstrate a particular instance of a question-oriented approach. Suppose we were interested in tracking where conversations occur in a social network. That is, we want to track groups of individuals who interact more with each other than with users outside of their group. This notion of community naturally falls within our interaction-based framework outlined above. We demonstrate how much is gained by tailoring the community detection problem to this question.
+Next, we demonstrate a particular instance of a question-oriented approach. Suppose we were interested in tracking where conversations occur in a social network. That is, we want to track groups of individuals who interact more with each other than with users outside of their group. For example, we might wish to select a seed group of individuals in order to spread a message to a subpopulation of a social network. We now demonstrate how the performance on this tracking problem depends on the community type under consideration.
 
 % * We want to track *where* conversations are occurring: amongst what group of people.
 
 % * This motivates using the interaction-based communities.
 
-The data set was divided into two disjoint time periods: from 9am April 25th 2011 to 9am May 23rd 2011 and from 9am May 23rd 2011 to 9am June 25th 2011. We then constructed the three weighted networks (the structural network is unchanged) using the activity, retweets, mentions, and hashtags from the first time period, as described in the methodology section. We then used OSLOM to infer the community structure in these weighted networks. 
+The data set was divided into two disjoint time periods: from 9am April 25th 2011 to 9am May 23rd 2011 (28 days) and from 9am May 23rd 2011 to 9am June 25th 2011 (33 days). We then constructed the three weighted networks (the structural network is unchanged) using the activity, retweets, mentions, and hashtags from the first time period, as described in the methodology section. Using the coverings inferred by OSLOM for the weighted network, we define the inside and outside of a community in the same way as depicted in Figure~\ref{Fig-edge_types}, where now we consider mixed-type edges to be internal. Based on this partitioning of the edges, we then track how many of the retweets / mentions in the second time period fall inside vs outside of the communities. The percentages of retweets and mentions that occur internal to each of the community types are given in Table~\ref{Tab-mentionretweets}.
 
 \begin{table}
 	\caption{The percentage of retweets and mentions that occur internal to communities for each of the four community types.}
@@ -256,11 +256,33 @@ The data set was divided into two disjoint time periods: from 9am April 25th 201
 	\begin{tabular}{l | c c}
 		Community Type & Percentage of Retweets Internal & Percentage of Mentions Internal \\
 		\hline
-		Structural & 45.4 & 69.9 \\
-		Activity-based & 54.1 & 72.9 \\
-		Topic-based & 52.3 & 74.1  \\
-		Interaction-based & \textbf{64.3} & \textbf{81.7}
+		Structural & 47.5 & 70.9 \\
+		Activity-based & 54.7 & 75.6 \\
+		Topic-based & 49.4 & 66.8  \\
+		Interaction-based & \textbf{67.2} & \textbf{84.2}
 	\end{tabular}
+	\label{Tab-mentionretweets}
+\end{table}
+
+Let $I_{c}$ be the number of conversations (defined as a retweet or mention) occuring internal to community $c$, and let $|\mathcal{C}|_{c}$ be the size of community $c$. Finally, let $N$ be the total number of conversations, both internal and external, involving the nodes. An alternative scoring function is then
+\begin{align}
+	\frac{1}{N}\sum_{c} \frac{I_{c}}{|\mathcal{C}_{c}|}.
+	\label{conversation-metric}
+\end{align}
+That is, this measures the average number of internal conversations per user in a community. This will be maximized when the communities are small and the number of internal conversations are large compared to the total number of conversations.
+
+\begin{table}
+	\caption{The metric (\ref{conversation-metric}) for the four community types, computed using the held-out data.}
+	\centering
+	\begin{tabular}{l | c c}
+		Community Type & Retweets & Mentions \\
+		\hline
+		Structural & 0.0289 & 0.0344 \\
+		Activity-based & 0.0793 & 0.0645 \\
+		Topic-based & 0.1031 & 0.1020  \\
+		Interaction-based & 0.0690 & 0.0977
+	\end{tabular}
+	\label{Tab-mentionretweets2}
 \end{table}
 
 \subsection{Qualitative Analysis of Community Memberships Across Types}
