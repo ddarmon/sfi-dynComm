@@ -285,6 +285,19 @@ That is, this measures the average number of internal conversations per user in 
 	\label{Tab-mentionretweets2}
 \end{table}
 
+\begin{table}
+	\caption{The value of the conversation metric proposed by Elisa, averaged over all of the communities in a given covering.}
+	\centering
+	\begin{tabular}{ l | c c}
+		Community Type & Mentions & Retweets \\
+		\hline
+		Structural & 2.9347 & 0.4734 \\
+		Activity-based & \textbf{3.3893} & 0.5173 \\
+		Topic-based & 2.5944 & 0.5580 \\
+		Interaction-based & 2.1984 & \textbf{1.1069}
+	\end{tabular}
+\end{table}
+
 \subsection{Qualitative Analysis of Community Memberships Across Types}
 
 As demonstrated by~\cite{good2010performance} in the context of modularity maximization-based community detection, an exponential number of nearby partitions may exist that nearly maximize an objective function used to measure the goodness-of-fit of a graph partition used for community detection. Because of this and related issues, it is always wise to perform some sort of qualitative study of the communities returned by any  community detection algorithm to verify their meaningfulness with respect to the scientific question at hand. In this section, we consider a collection of communities in such a study. 
