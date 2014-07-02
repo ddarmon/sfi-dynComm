@@ -9,3 +9,5 @@ comm*_labels-*_weights-*
 *.aux
 paper/paper.log
 data/content-full/*
+paper-for_arxiv/paper.blg
+paper-for_arxiv/paper.pdf
