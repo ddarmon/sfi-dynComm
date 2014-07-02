@@ -11,3 +11,5 @@ paper/paper.log
 data/content-full/*
 paper-for_arxiv/paper.blg
 paper-for_arxiv/paper.pdf
+abstract-eccs14/eccs14_abstract.bbl
+abstract-eccs14/eccs14_abstract.blg
