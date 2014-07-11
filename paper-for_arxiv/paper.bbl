@@ -49,41 +49,40 @@ Evans, T.~S. {\&} Lambiotte, R. (2009)  Line graphs, link partitions, and
   overlapping communities. {\em Phys. Rev. E}, \textbf{80}(1), 016105.
 
 \bibitem{fortunato2010community}
-Fortunato, S. (2010)  Community detection in graphs. {\em Physics Reports},
+Fortunato, S. (2010)  Community detection in graphs. {\em Phys. Rep.},
   \textbf{486}(3), 75--174.
 
 \bibitem{good2010performance}
 Good, B.~H., de~Montjoye, Y.-A. {\&} Clauset, A. (2010)  Performance of
-  modularity maximization in practical contexts. {\em Physical Review E},
+  modularity maximization in practical contexts. {\em Phys. Rev. E},
   \textbf{81}(4), 046106.
 
 \bibitem{grabowicz2012social}
 Grabowicz, P.~A., Ramasco, J.~J., Moro, E., Pujol, J.~M. {\&} Eguiluz, V.~M.
   (2012)  Social features of online networks: The strength of intermediary ties
-  in online social media. {\em PLOS ONE}, \textbf{7}(1), e29358.
+  in online social media. {\em PLoS ONE}, \textbf{7}(1), e29358.
 
 \bibitem{granger1963economic}
-Granger, C. W.~J. (1963)  Economic processes involving feedback. {\em
-  Information and Control}, \textbf{6}(1), 28--48.
+Granger, C. W.~J. (1963)  Economic processes involving feedback. {\em Inform.
+  Control}, \textbf{6}(1), 28--48.
 
 \bibitem{granovetter1973strength}
-Granovetter, M.~S. (1973)  The strength of weak ties. {\em American journal of
-  sociology}, pages 1360--1380.
+Granovetter, M.~S. (1973)  The strength of weak ties. {\em Am. J. Sociol.},
+  \textbf{78}(6), 1360--1380.
 
 \bibitem{Gre07}
-Gregory, S. (2007)  An Algorithm to Find Overlapping Community Structure in
-  Networks. In {\em Proceedings of the 11th European Conference on Principles
-  and Practice of Knowledge Discovery in Databases (PKDD 2007)}, pages 91--102.
-  Springer-Verlag.
+Gregory, S. (2007)  An algorithm to find overlapping community structure in
+  networks. In {\em Proc. of the 11th PKDD}, pages 91--102.
 
 \bibitem{grimmett2001probability}
 Grimmett, G. {\&} Stirzaker, D. (2001) {\em Probability and random processes}.
-Oxford university press.
+Oxford University Press.
 
 \bibitem{java2009we}
-Java, A., Song, X., Finin, T. {\&} Tseng, B. (2009)  Why we twitter: An
+Java, A., Song, X., Finin, T. {\&} Tseng, B. (2009)  Why we Twitter: an
   analysis of a microblogging community. In {\em Advances in Web Mining and Web
-  Usage Analysis}, pages 118--138. Springer.
+  Usage Analysis}, volume 5439 of {\em Lecture Notes in Computer Science},
+  pages 118--138. Springer.
 
 \bibitem{kao2013talison}
 Kao, A., Ferng, W., Poteet, S., Quach, L. {\&} Tjoelker, R. (2013)
@@ -98,23 +97,18 @@ Kitsak, M., Gallos, L.~K., Havlin, S., Liljeros, F., Muchnik, L., Stanley,
 
 \bibitem{Kovacs2010}
 Kov\'{a}cs, I.~A., Palotai, R., Szalay, M.~S. {\&} Csermely, P. (2010)
-  Community Landscapes: An Integrative Approach to Determine Overlapping
-  Network Module Hierarchy, Identify Key Nodes and Predict Network Dynamics.
+  Community landscapes: an integrative approach to determine overlapping
+  network module hierarchy, identify key nodes and predict network dynamics.
   {\em PLoS ONE}, \textbf{5}(9), e12528.
 
 \bibitem{Lancichinetti2009}
-Lancichinetti, A., Fortunato, S. {\&} Kert\'{e}sz, J. (2009a)  {Detecting the
+Lancichinetti, A., Fortunato, S. {\&} Kert\'{e}sz, J. (2009)  {Detecting the
   overlapping and hierarchical community structure in complex networks}. {\em
-  New J. Phys.}, \textbf{11}(3).
-
-\bibitem{lancichinetti2009detecting}
-Lancichinetti, A., Fortunato, S. {\&} Kert{\'e}sz, J. (2009b)  Detecting the
-  overlapping and hierarchical community structure in complex networks. {\em
-  New Journal of Physics}, \textbf{11}(3), 033015.
+  New J. Phys.}, \textbf{11}(3), 033015.
 
 \bibitem{LancichinettiPlos}
 Lancichinetti, A., Radicchi, F., Ramasco, J.~J. {\&} Fortunato, S. (2011)
-  Finding Statistically Significant Communities in Networks. {\em PLoS ONE},
+  Finding statistically significant communities in networks. {\em PLoS ONE},
   \textbf{6}(4), e18961.
 
 \bibitem{lim2012following}
@@ -152,7 +146,7 @@ Oxford University Press.
 
 \bibitem{newman2004finding}
 Newman, M.~E. {\&} Girvan, M. (2004)  Finding and evaluating community
-  structure in networks. {\em Physical review E}, \textbf{69}(2), 026113.
+  structure in networks. {\em Phys. Rev. E}, \textbf{69}(2), 026113.
 
 \bibitem{nguyen2011adaptive}
 Nguyen, N.~P., Dinh, T.~N., Xuan, Y. {\&} Thai, M.~T. (2011)  Adaptive
@@ -188,8 +182,8 @@ Salton, G. {\&} {McGill}, M.~J. (1983) {\em Introduction to modern information
 {McGraw-Hill}, New York.
 
 \bibitem{schreiber2000measuring}
-Schreiber, T. (2000)  Measuring information transfer. {\em Physical review
-  letters}, \textbf{85}(2), 461.
+Schreiber, T. (2000)  Measuring information transfer. {\em Phys. Rev. Lett.},
+  \textbf{85}(2), 461--464.
 
 \bibitem{shalizi2007discovering}
 Shalizi, C.~R., Camperi, M.~F. {\&} Klinkner, K.~L. (2007)  Discovering
