@@ -201,15 +201,14 @@ Ver~Steeg, G. {\&} Galstyan, A. (2012)  Information transfer in social media.
   In {\em Proc. 21st Int'l World Wide Web Conf.}, pages 509--518. ACM.
 
 \bibitem{yin2012latent}
-Yin, Z., Cao, L., Gu, Q. {\&} Han, J. (2012)  Latent Community Topic Analysis:
-  Integration of Community Discovery with Topic Modeling. {\em ACM Transactions
-  on Intelligent Systems and Technology (TIST)}, \textbf{3}(4), 63.
+Yin, Z., Cao, L., Gu, Q. {\&} Han, J. (2012)  Latent community topic analysis:
+  integration of community discovery with topic modeling. {\em ACM Trans.
+  Intell. Syst. Technol.}, \textbf{3}(4), 63:1--63:21.
 
 \bibitem{ZhaWanZha07}
-Zhang, S., Wang, R.-S. {\&} Zhang, X.-S. (2007)  Identification of Overlapping
-  Community Structure in Complex Networks Using Fuzzy c-means Clustering. {\em
-  Physica A: Statistical Mechanics and its Applications}, \textbf{374}(1),
-  483--490.
+Zhang, S., Wang, R.-S. {\&} Zhang, X.-S. (2007)  Identification of overlapping
+  community structure in complex networks using fuzzy $c$-means clustering.
+  {\em Phys. A}, \textbf{374}(1), 483--490.
 
 \bibitem{zhao2011comparing}
 Zhao, W.~X., Jiang, J., Weng, J., He, J., Lim, E.-P., Yan, H. {\&} Li, X.
