@@ -28,9 +28,9 @@ import ipdb
 
 # community_type = '0'
 
-community_types = ['0', '4', '7', '10']
+# community_types = ['0', '4', '7', '10']
 # community_types = ['0', '4', '10']
-# community_types = ['4', '7', '10']
+community_types = ['4', '7', '10']
 # community_types = ['0']
 
 # community_types = ['10']
@@ -38,8 +38,8 @@ community_types = ['0', '4', '7', '10']
 suffix = '' # For OSLOM
 # suffix = 'WSBM_K4' # For WSBM
 
-time_frame = '' # For communities inferred using the entire data set
-# time_frame = '-partial' # For communities inferred using only the first 3/4 of the data set.
+# time_frame = '' # For communities inferred using the entire data set
+time_frame = '-partial' # For communities inferred using only the first 3/4 of the data set.
 
 data_type = 'mentions'
 # data_type = 'retweets'
@@ -239,16 +239,16 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 			else:
 				uid1, uid2, weight = map(str.strip, line.strip().split(' '))
 			
-			# if len(userid_to_community.get(uid1, [])) == 0:
-			# 	pass
-			# elif len(userid_to_community.get(uid2, [])) == 0:
-			# 	pass
-			# else:
-			if uid1 == '51319087':
+			if len(userid_to_community.get(uid1, [])) == 0:
 				pass
-			elif uid2 == '51319087':
+			elif len(userid_to_community.get(uid2, [])) == 0:
 				pass
 			else:
+			# if uid1 == '51319087':
+			# 	pass
+			# elif uid2 == '51319087':
+			# 	pass
+			# else:
 				# The shared communities between the two users engaged
 				# in conversation.
 				

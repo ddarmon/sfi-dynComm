@@ -31,18 +31,18 @@ import ipdb
 
 # community_type = '0'
 
-community_types = ['0', '4', '7', '10']
+# community_types = ['0', '4', '7', '10']
 # community_types = ['0', '4', '10']
 # community_types = ['4', '7', '10']
-# community_types = ['0']
+community_types = ['10']
 
 # community_types = ['10']
 
 suffix = '' # For OSLOM
 # suffix = 'WSBM_K4' # For WSBM
 
-time_frame = '' # For communities inferred using the entire data set
-# time_frame = '-partial' # For communities inferred using only the first 1/2 of the data set.
+# time_frame = '' # For communities inferred using the entire data set
+time_frame = '-partial' # For communities inferred using only the first 1/2 of the data set.
 
 # The training set runs 
 #
@@ -147,16 +147,16 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 			else:
 				uid1, uid2, weight = map(str.strip, line.strip().split(' '))
 			
-			# if len(userid_to_community.get(uid1, [])) == 0:
-			# 	pass
-			# elif len(userid_to_community.get(uid2, [])) == 0:
-			# 	pass
-			# else:
-			if uid1 == '51319087':
+			if len(userid_to_community.get(uid1, [])) == 0:
 				pass
-			elif uid2 == '51319087':
+			elif len(userid_to_community.get(uid2, [])) == 0:
 				pass
 			else:
+			# if uid1 == '51319087':
+			# 	pass
+			# elif uid2 == '51319087':
+			# 	pass
+			# else:
 				# The shared communities between the two users engaged
 				# in conversation.
 				
@@ -286,6 +286,8 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 	
 	running_sum = 0 # the sum of the ratios of ic/(ec + 1) across all of the communities
 	
+	ratios = []
+	
 	for commid in range(comm_count):
 		if i_edge_counts_by_community[commid] == 0 or e_edge_counts_by_community[commid] == 0:
 			num_comms_excluded += 1 # Deal with singletons and communities without non-inter-type edges
@@ -297,7 +299,9 @@ for community_type_ind, community_type in enumerate(['{}{}'.format(community_typ
 			
 			if ec == 0:
 				num_wo_ec += 1
-
+			
+			ratios.append(ic/float(ec+1))
+			
 			running_sum += ic/float(ec+1)
 			
 	
