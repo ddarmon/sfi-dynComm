@@ -11,7 +11,7 @@ max.comm.size = 811
 
 pdf(sprintf('figures/comm_sizes_ecdf.pdf'))
 par(mar=c(4.5,5,2,1), cex.lab = 2, cex.axis = 2)
-plot(0, cex = 0, log = 'xy', type = 'l', xlim = c(1, max.comm.size), ylim = c(1e-4, 1), xlab = 'c', ylab = 'Proportion of communities larger than c')
+plot(0, cex = 0, log = 'xy', type = 'l', xlim = c(1, max.comm.size), ylim = c(1e-4, 1), xlab = 'Size of community (s)', ylab = 'Proportion of communities larger than s')
 
 for (cur.ind in 1:4){
 	cat(sprintf('\n\n====\n\n'))

@@ -35,9 +35,9 @@ Darmon, D., Omodei, E., Flores, C.~O., Seoane, L.~F., Stadler, K., Wright, J.,
   Flow in Social Networks. In {\em Proc. of the CSSS, Santa Fe Institute}.
 
 \bibitem{darmon2013understanding}
-Darmon, D., Sylvester, J., Girvan, M. {\&} Rand, W. (2013b)  Understanding the
-  Predictive Power of Computational Mechanics and Echo State Networks in Social
-  Media. {\em HUMAN}, \textbf{2}(1), 1--12.
+Darmon, D., Sylvester, J., Girvan, M. {\&} Rand, W. (2013b)  Predictability of
+  User Behavior in Social Media: Bottom-Up v. Top-Down Modeling. In {\em
+  ASE/IEEE Int'l Conf. on Social Computing}, pages 102--107.
 
 \bibitem{deitrick2013mutually}
 Deitrick, W. {\&} Hu, W. (2013)  Mutually enhancing community detection and
@@ -51,6 +51,11 @@ Evans, T.~S. {\&} Lambiotte, R. (2009)  Line graphs, link partitions, and
 \bibitem{fortunato2010community}
 Fortunato, S. (2010)  Community detection in graphs. {\em Phys. Rep.},
   \textbf{486}(3), 75--174.
+
+\bibitem{girvan2002a}
+Girvan, M. {\&} Newman, M.~E. (2002)  Community structure in social and
+  biological networks. {\em Proceedings of the National Academy of Sciences},
+  \textbf{99}(12), 7821--7826.
 
 \bibitem{good2010performance}
 Good, B.~H., de~Montjoye, Y.-A. {\&} Clauset, A. (2010)  Performance of
@@ -129,8 +134,9 @@ Michelson, M. {\&} Macskassy, S.~A. (2010)  Discovering users' topics of
   analytics for noisy unstructured text data}, pages 73--80. ACM.
 
 \bibitem{miller1955note}
-Miller, G.~A. (1955)  Note on the bias of information estimates. {\em
-  Information theory in psychology: Problems and methods}, \textbf{2}, 95--100.
+Miller, G.~A. (1955)  Note on the bias of information estimates. In Quastler,
+  H., editor, {\em Information theory in psychology II-B}, pages 95--100.
+  Glencoe, Illinois: Free Press.
 
 \bibitem{PhysRevE.77.016107}
 Nepusz, T., Petr\'oczi, A., N\'egyessy, L. {\&} Bazs\'o, F. (2008)  Fuzzy
@@ -158,6 +164,10 @@ Palla, G., Der{\'e}nyi, I., Farkas, I. {\&} Vicsek, T. (2005)  Uncovering the
 \bibitem{paninski2003estimation}
 Paninski, L. (2003)  Estimation of entropy and mutual information. {\em Neural
   Comput.}, \textbf{15}(6), 1191--1253.
+
+\bibitem{porter2009communities}
+Porter, M.~A., Onnela, J.-P. {\&} Mucha, P.~J. (2009)  Communities in networks.
+  {\em Notices of the AMS}, \textbf{56}(9), 1082--1097.
 
 \bibitem{romero2011influence}
 Romero, D.~M., Galuba, W., Asur, S. {\&} Huberman, B.~A. (2011)  Influence and

@@ -10,6 +10,7 @@
 \usepackage{authblk}
 \usepackage{color}
 \usepackage{subfigure}
+\usepackage{appendix}
 %\frenchspacing
 %\setlength{\pdfpagewidth}{8.5in}
 %\setlength{\pdfpageheight}{11in}
@@ -65,7 +66,7 @@ Followers Are Not Enough: Beyond Structural Communities in Online Social Network
 
 \begin{abstract}
 %\begin{quote}
-Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users often have hundreds or even thousands of such connections, and many of these connections do not correspond to real friendships or more generally to accounts that users interact with. We claim that community detection in online social networks should be question-oriented and rely on additional information beyond the simple structure of the network. The concept of `community' is very general, and different questions such as ``who do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different social groups. In this paper we focus on three types of communities beyond structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that the communities obtained in the three weighted cases are highly different from each other, and from the communities obtained by considering only the unweighted structural network. Our results confirm that asking a precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights into the network under study.
+Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users often have hundreds or even thousands of such connections, and many of these connections do not correspond to real friendships or more generally to accounts that users interact with. We claim that community detection in online social networks should be question-oriented and rely on additional information beyond the simple structure of the network. The concept of `community' is very general, and different questions such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different social groups. In this paper we focus on three types of communities beyond structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that the communities obtained in the three weighted cases are highly different from each other, and from the communities obtained by considering only the unweighted structural network. Our results confirm that asking a precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights into the network under study.
 %\end{quote}
 \end{abstract}
 
@@ -76,8 +77,14 @@ Community detection in online social networks is typically based on the analysis
 \input{results.tex}
 \input{conclusions.tex}
 
+\section{Acknowledgments}
+
+Thanks to Cesar Flores, Lu\'is Seoane, Kevin Stadler, Jody Wright, and Nix Barnett to their contributions of preliminary ideas related to this paper and to Michelle Girvan, William Rand, and Aaron Clauset for their valuable comments and suggestions. This work was partially 
+
 \bibliographystyle{comnet}
 \bibliography{references.bib}
+
+\input{appendices.tex}
 
 % \input{paper.bbl}
 
