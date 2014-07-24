@@ -71,8 +71,28 @@ We considered the normalized mutual information between the communities inferred
 
 \begin{figure}[ht]
   \centering
-\includegraphics[width=0.50\textwidth]{nmi_singletons.pdf}
-\caption{The normalized mutual information between the coverings inferred from the different community types. Community type 0 corresponds to the structural communities, community types 1 through 6 correspond to the activity-based communities with lag 1 through 6 transfer entropies, community type 7 corresponds to the topic-based communities, and community types 8, 9, and 10 correspond to the interaction-based communities using mentions, retweets, and both mentions and retweets. Values of normalized mutual information close to 1 indicate similarity in the community structure, while values close to 0 indicate dissimilarity. The normalized mutual information is computed with singletons and orphan nodes included.}
+  \begin{tabu}{cl}
+    \toprule
+    Normalized Mutual Information & Community Types \\
+    \midrule
+    \multirow{8}[8]{*}{\includegraphics[width=0.50\textwidth]{nmi_singletons.pdf}}&0---Structural \bigstrut\\
+    &1-6---Activity-Based with Lags 1-6\bigstrut\\
+    %&2---Activity-Based with Lag 2\bigstrut\\
+    %&3---Activity-Based with Lag 3\bigstrut\\
+    %&4---Activity-Based with Lag 4\bigstrut\\
+    %&5---Activity-Based with Lag 5\bigstrut\\
+    %&6---Activity-Based with Lag 6\bigstrut\\
+    &7---Topic-Based \bigstrut\\
+    &8---Interaction-Based with Mentions\bigstrut\\
+    &9---Interaction-Based with Retweets\bigstrut\\
+    &10---Interaction-Based with both \bigstrut\\
+    &\,\,\,\,\,\,\,\,\,\,\,\,\,\,Mentions and Retweets\bigstrut\\
+    &\bigstrut\\
+    \bottomrule
+\end{tabu}
+\caption{The normalized mutual information between the coverings inferred from the different community types. 
+%Community type 0 corresponds to the structural communities, community types 1 through 6 correspond to the activity-based communities with lag 1 through 6 transfer entropies, community type 7 corresponds to the topic-based communities, and community types 8, 9, and 10 correspond to the interaction-based communities using mentions, retweets, and both mentions and retweets. 
+Values of normalized mutual information close to 1 indicate similarity in the community structure, while values close to 0 indicate dissimilarity. The normalized mutual information is computed with singletons and orphan nodes included.}
 \label{Fig-compare_coverings}
 \end{figure}
 
