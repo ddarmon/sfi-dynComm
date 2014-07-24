@@ -1,0 +1,46 @@
+Next actions:
+
+* Remove Table 2. (Josh)
+
+* Put Figure 4 back into the main text. (Josh)
+
+* Mention *why* we mostly report on lag-4 TE: (Dave)
+	** Add other lags to the ECDF plot.
+	** In text, after we report on the ECDFs and NMIs, say something like 'from here on out, we use TE4'.
+
+* Rethink title: (All)
+	** Possible title: 'Followers Are Not Enough: A Question-Oriented Approach to Community Detection'
+
+* Related to above: Comment on how the network collection was done in a more-or-less agnostic manner. (Dave)
+
+* Also related to above: rework these sentence: (Elisa)
+
+** 'All these methods begin with a given network, and then attempt to uncover structure present in the network, i.e., they are agnostic to how the network was constructed.'
+
+to be more about the analysis you do with a already-collected network rather than how you collect the network.
+
+** 'We then describe our methodology for constructing the question-specific networks.'
+
+* Change the 'teenagers vs. elderly users' to something about activity profiles. (Josh)
+
+* Move the references in the related works section to the introduction, and remove the related works section. (Elisa)
+
+* Add some sentences about how information theoretic and social influence may be different, and we must be careful about how we interpret results related to TE. (Josh)
+
+* Add Aaron Clauset's WSBM paper to the list of community detection methods. (Josh)
+
+* Rewrite the 'We see in Table 1...' text to make sense. (Dave)
+
+* Remove the asterisk from Table 5 and replace it with a $\cdot$ or just a space. (Elisa)
+
+* Add a sentence to 'Next we consider the distribution of community sizes ...' section. (Dave)
+
+* Change the edges in Figure 3 to be solid / dot / dash, to match the plots. (Dave)
+
+* Fix the 'purple' / 'magenta' confusion. (Dave)
+
+* Add an explanation for the use of E vs e wrt random variables vs their realizations. (Dave)
+
+* Use $P(W_{u \to f} \leq w_{u \to f} | ...)$ in the definition of the cdf. (Dave)
+
+* Clarify and make careful distinction between information theoretic and social influence wrt the sentence "Our findings have important implications..." (Josh)
