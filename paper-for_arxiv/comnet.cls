@@ -1303,7 +1303,7 @@
 
 
 \ifnum@bib
-\usepackage[sort&compress]{natbib}
+\usepackage[sort&compress,numbers]{natbib}
 \bibpunct{[}{]}{,}{a}{,}{;}
 \def\@biblabel#1{{\bf #1.\ }}
 \else

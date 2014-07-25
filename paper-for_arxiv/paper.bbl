@@ -1,228 +1,310 @@
-\begin{thebibliography}{00}
+\begin{thebibliography}{48}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Aicher26062014}
-Aicher, C., Jacobs, A.~Z. {\&} Clauset, A. (2014)  Learning latent block
-  structure in weighted networks. {\em To appear, J. Compl. Netw.}
+\bibitem[Aicher et~al.(2014)Aicher, Jacobs, and Clauset]{Aicher26062014}
+Christopher Aicher, Abigail~Z. Jacobs, and Aaron Clauset.
+\newblock Learning latent block structure in weighted networks.
+\newblock \emph{To appear, J. Compl. Netw.}, 2014.
+\newblock \doi{10.1093/comnet/cnu026}.
 
-\bibitem{BaumesGKMP05}
-Baumes, J., Goldberg, M.~K., Krishnamoorthy, M.~S., Magdon-Ismail, M. {\&}
-  Preston, N. (2005)  Finding communities by clustering a graph into
-  overlapping subgraphs.. In {\em Proc. of the IADIS AC}, pages 97--104.
+\bibitem[Baumes et~al.(2005)Baumes, Goldberg, Krishnamoorthy, Magdon-Ismail,
+  and Preston]{BaumesGKMP05}
+Jeffrey Baumes, Mark~K. Goldberg, Mukkai~S. Krishnamoorthy, Malik
+  Magdon-Ismail, and Nathan Preston.
+\newblock Finding communities by clustering a graph into overlapping subgraphs.
+\newblock In \emph{Proc. of the IADIS AC}, pages 97--104, 2005.
 
-\bibitem{becker2011beyond}
-Becker, H., Naaman, M. {\&} Gravano, L. (2011)  Beyond trending topics:
-  real-world event identification on Twitter. In {\em Proc. of the 5th ICWSM},
-  pages 438--441.
+\bibitem[Becker et~al.(2011)Becker, Naaman, and Gravano]{becker2011beyond}
+Hila Becker, Mor Naaman, and Luis Gravano.
+\newblock Beyond trending topics: real-world event identification on twitter.
+\newblock In \emph{Proc. of the 5th ICWSM}, pages 438--441, 2011.
 
-\bibitem{blondel2008fast}
-Blondel, V.~D., Guillaume, J.-L., Lambiotte, R. {\&} Lefebvre, E. (2008)  Fast
-  unfolding of communities in large networks. {\em J. Stat. Mech.},
-  \textbf{2008}(10), P10008.
+\bibitem[Blondel et~al.(2008)Blondel, Guillaume, Lambiotte, and
+  Lefebvre]{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock \emph{J. Stat. Mech.}, 2008\penalty0 (10):\penalty0 P10008, 2008.
 
-\bibitem{cazabet2012automated}
-Cazabet, R., Leguistin, M. {\&} Amblard, F. (2012)  Automated community
-  detection on social networks: useful? efficient? asking the users. In {\em
-  Proc. of the 4th WI\&C}, pages 6:1--6:8.
+\bibitem[Cazabet et~al.(2012)Cazabet, Leguistin, and
+  Amblard]{cazabet2012automated}
+Remy Cazabet, Maud Leguistin, and Frederic Amblard.
+\newblock Automated community detection on social networks: useful? efficient?
+  asking the users.
+\newblock In \emph{Proc. of the 4th WI\&C}, pages 6:1--6:8, 2012.
 
-\bibitem{conover2011political}
-Conover, M., Ratkiewicz, J., Francisco, M., Gon{\c{c}}alves, B., Menczer, F.
-  {\&} Flammini, A. (2011)  Political polarization on Twitter. In {\em Proc. of
-  the 4th ICWSM}, pages 89--96.
+\bibitem[Conover et~al.(2011)Conover, Ratkiewicz, Francisco, Gon{\c{c}}alves,
+  Menczer, and Flammini]{conover2011political}
+Michael Conover, Jacob Ratkiewicz, Matthew Francisco, Bruno Gon{\c{c}}alves,
+  Filippo Menczer, and Alessandro Flammini.
+\newblock Political polarization on twitter.
+\newblock In \emph{Proc. of the 4th ICWSM}, pages 89--96, 2011.
 
-\bibitem{cover2012elements}
-Cover, T.~M. {\&} Thomas, J.~A. (2006) {\em Elements of information theory}.
-Wiley-Interscience.
+\bibitem[Cover and Thomas(2006)]{cover2012elements}
+Thomas~M Cover and Joy~A Thomas.
+\newblock \emph{Elements of information theory}.
+\newblock Wiley-Interscience, 2006.
 
-\bibitem{darmon2013detecting}
-Darmon, D., Omodei, E., Flores, C.~O., Seoane, L.~F., Stadler, K., Wright, J.,
-  Garland, J. {\&} Barnett, N. (2013a)  Detecting Communities Using Information
-  Flow in Social Networks. In {\em Proc. of the CSSS, Santa Fe Institute}.
+\bibitem[Darmon et~al.(2013{\natexlab{a}})Darmon, Omodei, Flores, Seoane,
+  Stadler, Wright, Garland, and Barnett]{darmon2013detecting}
+David Darmon, Elisa Omodei, Cesar~O Flores, Lu{\i}s~F Seoane, Kevin Stadler,
+  Jody Wright, Joshua Garland, and Nix Barnett.
+\newblock Detecting communities using information flow in social networks.
+\newblock In \emph{Proc. of the CSSS, Santa Fe Institute}, 2013{\natexlab{a}}.
 
-\bibitem{darmon2013understanding}
-Darmon, D., Sylvester, J., Girvan, M. {\&} Rand, W. (2013b)  Predictability of
-  User Behavior in Social Media: Bottom-Up v. Top-Down Modeling. In {\em
-  ASE/IEEE Int'l Conf. on Social Computing}, pages 102--107.
+\bibitem[Darmon et~al.(2013{\natexlab{b}})Darmon, Sylvester, Girvan, and
+  Rand]{darmon2013understanding}
+David Darmon, Jared Sylvester, Michelle Girvan, and William Rand.
+\newblock Predictability of user behavior in social media: Bottom-up v.
+  top-down modeling.
+\newblock In \emph{ASE/IEEE Int'l Conf. on Social Computing}, pages 102--107,
+  2013{\natexlab{b}}.
 
-\bibitem{deitrick2013mutually}
-Deitrick, W. {\&} Hu, W. (2013)  Mutually enhancing community detection and
-  sentiment analysis on Twitter networks. {\em J. Data Ana. and Info. Proc.},
-  \textbf{1}(3), 19--29.
+\bibitem[Deitrick and Hu(2013)]{deitrick2013mutually}
+William Deitrick and Wei Hu.
+\newblock Mutually enhancing community detection and sentiment analysis on
+  twitter networks.
+\newblock \emph{J. Data Ana. and Info. Proc.}, 1\penalty0 (3):\penalty0 19--29,
+  2013.
 
-\bibitem{PhysRevE.80.016105}
-Evans, T.~S. {\&} Lambiotte, R. (2009)  Line graphs, link partitions, and
-  overlapping communities. {\em Phys. Rev. E}, \textbf{80}(1), 016105.
+\bibitem[Evans and Lambiotte(2009)]{PhysRevE.80.016105}
+T.~S. Evans and R.~Lambiotte.
+\newblock Line graphs, link partitions, and overlapping communities.
+\newblock \emph{Phys. Rev. E}, 80\penalty0 (1):\penalty0 016105, Jul 2009.
+\newblock \doi{10.1103/PhysRevE.80.016105}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevE.80.016105}.
 
-\bibitem{fortunato2010community}
-Fortunato, S. (2010)  Community detection in graphs. {\em Phys. Rep.},
-  \textbf{486}(3), 75--174.
+\bibitem[Fortunato(2010)]{fortunato2010community}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock \emph{Phys. Rep.}, 486\penalty0 (3):\penalty0 75--174, 2010.
 
-\bibitem{girvan2002a}
-Girvan, M. {\&} Newman, M.~E. (2002)  Community structure in social and
-  biological networks. {\em Proceedings of the National Academy of Sciences},
-  \textbf{99}(12), 7821--7826.
+\bibitem[Girvan and Newman(2002)]{girvan2002a}
+Michelle Girvan and Mark~EJ Newman.
+\newblock Community structure in social and biological networks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
+  (12):\penalty0 7821--7826, 2002.
 
-\bibitem{good2010performance}
-Good, B.~H., de~Montjoye, Y.-A. {\&} Clauset, A. (2010)  Performance of
-  modularity maximization in practical contexts. {\em Phys. Rev. E},
-  \textbf{81}(4), 046106.
+\bibitem[Good et~al.(2010)Good, de~Montjoye, and Clauset]{good2010performance}
+Benjamin~H Good, Yves-Alexandre de~Montjoye, and Aaron Clauset.
+\newblock Performance of modularity maximization in practical contexts.
+\newblock \emph{Phys. Rev. E}, 81\penalty0 (4):\penalty0 046106, 2010.
 
-\bibitem{grabowicz2012social}
-Grabowicz, P.~A., Ramasco, J.~J., Moro, E., Pujol, J.~M. {\&} Eguiluz, V.~M.
-  (2012)  Social features of online networks: The strength of intermediary ties
-  in online social media. {\em PLoS ONE}, \textbf{7}(1), e29358.
+\bibitem[Grabowicz et~al.(2012)Grabowicz, Ramasco, Moro, Pujol, and
+  Eguiluz]{grabowicz2012social}
+Przemyslaw~A Grabowicz, Jos{\'e}~J Ramasco, Esteban Moro, Josep~M Pujol, and
+  Victor~M Eguiluz.
+\newblock Social features of online networks: The strength of intermediary ties
+  in online social media.
+\newblock \emph{PLoS ONE}, 7\penalty0 (1):\penalty0 e29358, 2012.
 
-\bibitem{granger1963economic}
-Granger, C. W.~J. (1963)  Economic processes involving feedback. {\em Inform.
-  Control}, \textbf{6}(1), 28--48.
+\bibitem[Granger(1963)]{granger1963economic}
+Clive William~John Granger.
+\newblock Economic processes involving feedback.
+\newblock \emph{Inform. Control}, 6\penalty0 (1):\penalty0 28--48, 1963.
 
-\bibitem{granovetter1973strength}
-Granovetter, M.~S. (1973)  The strength of weak ties. {\em Am. J. Sociol.},
-  \textbf{78}(6), 1360--1380.
+\bibitem[Granovetter(1973)]{granovetter1973strength}
+Mark~S Granovetter.
+\newblock The strength of weak ties.
+\newblock \emph{Am. J. Sociol.}, 78\penalty0 (6):\penalty0 1360--1380, 1973.
 
-\bibitem{Gre07}
-Gregory, S. (2007)  An algorithm to find overlapping community structure in
-  networks. In {\em Proc. of the 11th PKDD}, pages 91--102.
+\bibitem[Gregory(2007)]{Gre07}
+Steve Gregory.
+\newblock An algorithm to find overlapping community structure in networks.
+\newblock In \emph{Proc. of the 11th PKDD}, pages 91--102, 2007.
 
-\bibitem{grimmett2001probability}
-Grimmett, G. {\&} Stirzaker, D. (2001) {\em Probability and random processes}.
-Oxford University Press.
+\bibitem[Grimmett and Stirzaker(2001)]{grimmett2001probability}
+Geoffrey Grimmett and David Stirzaker.
+\newblock \emph{Probability and random processes}.
+\newblock Oxford University Press, 2001.
 
-\bibitem{java2009we}
-Java, A., Song, X., Finin, T. {\&} Tseng, B. (2009)  Why we Twitter: an
-  analysis of a microblogging community. In {\em Advances in Web Mining and Web
-  Usage Analysis}, pages 118--138. Springer.
+\bibitem[Java et~al.(2009)Java, Song, Finin, and Tseng]{java2009we}
+Akshay Java, Xiaodan Song, Tim Finin, and Belle Tseng.
+\newblock Why we twitter: an analysis of a microblogging community.
+\newblock In \emph{Advances in Web Mining and Web Usage Analysis}, pages
+  118--138. Springer, 2009.
 
-\bibitem{kao2013talison}
-Kao, A., Ferng, W., Poteet, S., Quach, L. {\&} Tjoelker, R. (2013)
-  TALISON-Tensor analysis of social media data. In {\em Intelligence and
-  Security Informatics}, pages 137--142. IEEE.
+\bibitem[Kao et~al.(2013)Kao, Ferng, Poteet, Quach, and
+  Tjoelker]{kao2013talison}
+Anne Kao, William Ferng, Stephen Poteet, Lesley Quach, and Rod Tjoelker.
+\newblock Talison-tensor analysis of social media data.
+\newblock In \emph{Intelligence and Security Informatics}, pages 137--142.
+  IEEE, 2013.
 
-\bibitem{kitsak2010identification}
-Kitsak, M., Gallos, L.~K., Havlin, S., Liljeros, F., Muchnik, L., Stanley,
-  H.~E. {\&} Makse, H.~A. (2010)  Identification of influential spreaders in
-  complex networks. {\em Nature Phys.}, \textbf{6}(11), 888--893.
+\bibitem[Kitsak et~al.(2010)Kitsak, Gallos, Havlin, Liljeros, Muchnik, Stanley,
+  and Makse]{kitsak2010identification}
+Maksim Kitsak, Lazaros~K Gallos, Shlomo Havlin, Fredrik Liljeros, Lev Muchnik,
+  H~Eugene Stanley, and Hern{\'a}n~A Makse.
+\newblock Identification of influential spreaders in complex networks.
+\newblock \emph{Nature Phys.}, 6\penalty0 (11):\penalty0 888--893, 2010.
 
-\bibitem{Kovacs2010}
-Kov\'{a}cs, I.~A., Palotai, R., Szalay, M.~S. {\&} Csermely, P. (2010)
-  Community landscapes: an integrative approach to determine overlapping
-  network module hierarchy, identify key nodes and predict network dynamics.
-  {\em PLoS ONE}, \textbf{5}(9), e12528.
+\bibitem[Kov\'{a}cs et~al.(2010)Kov\'{a}cs, Palotai, Szalay, and
+  Csermely]{Kovacs2010}
+I.~A. Kov\'{a}cs, R.~Palotai, M.~S. Szalay, and P.~Csermely.
+\newblock Community landscapes: an integrative approach to determine
+  overlapping network module hierarchy, identify key nodes and predict network
+  dynamics.
+\newblock \emph{PLoS ONE}, 5\penalty0 (9):\penalty0 e12528, 2010.
 
-\bibitem{Lancichinetti2009}
-Lancichinetti, A., Fortunato, S. {\&} Kert\'{e}sz, J. (2009)  {Detecting the
-  overlapping and hierarchical community structure in complex networks}. {\em
-  New J. Phys.}, \textbf{11}(3), 033015.
+\bibitem[Lancichinetti et~al.(2009)Lancichinetti, Fortunato, and
+  Kert\'{e}sz]{Lancichinetti2009}
+Andrea Lancichinetti, Santo Fortunato, and J\'{a}nos Kert\'{e}sz.
+\newblock {Detecting the overlapping and hierarchical community structure in
+  complex networks}.
+\newblock \emph{New J. Phys.}, 11\penalty0 (3):\penalty0 033015, 2009.
 
-\bibitem{LancichinettiPlos}
-Lancichinetti, A., Radicchi, F., Ramasco, J.~J. {\&} Fortunato, S. (2011)
-  Finding statistically significant communities in networks. {\em PLoS ONE},
-  \textbf{6}(4), e18961.
+\bibitem[Lancichinetti et~al.(2011)Lancichinetti, Radicchi, Ramasco, and
+  Fortunato]{LancichinettiPlos}
+Andrea Lancichinetti, Filippo Radicchi, Jos{\'e}~J. Ramasco, and Santo
+  Fortunato.
+\newblock Finding statistically significant communities in networks.
+\newblock \emph{PLoS ONE}, 6\penalty0 (4):\penalty0 e18961, 2011.
 
-\bibitem{lim2012following}
-Lim, K.~H. {\&} Datta, A. (2012a)  Following the follower: detecting
-  communities with common interests on Twitter. In {\em Proc. of the 23rd ACM
-  HT}, pages 317--318. ACM.
+\bibitem[Lim and Datta(2012{\natexlab{a}})]{lim2012following}
+Kwan~Hui Lim and Amitava Datta.
+\newblock Following the follower: detecting communities with common interests
+  on twitter.
+\newblock In \emph{Proc. of the 23rd ACM HT}, pages 317--318. ACM,
+  2012{\natexlab{a}}.
 
-\bibitem{lim2012tweets}
-Lim, K.~H. {\&} Datta, A. (2012b)  Tweets beget propinquity: detecting highly
-  interactive communities on Twitter using tweeting links. In {\em Proc. of the
-  IEEE/WIC/ACM WI-IAT}, pages 214--221. IEEE.
+\bibitem[Lim and Datta(2012{\natexlab{b}})]{lim2012tweets}
+Kwan~Hui Lim and Amitava Datta.
+\newblock Tweets beget propinquity: detecting highly interactive communities on
+  twitter using tweeting links.
+\newblock In \emph{Proc. of the IEEE/WIC/ACM WI-IAT}, pages 214--221. IEEE,
+  2012{\natexlab{b}}.
 
-\bibitem{meilua2003comparing}
-Meil{\u{a}}, M. (2003)  Comparing clusterings by the variation of information.
-  In {\em Learning theory and kernel machines}, pages 173--187. Springer.
+\bibitem[Meil{\u{a}}(2003)]{meilua2003comparing}
+Marina Meil{\u{a}}.
+\newblock Comparing clusterings by the variation of information.
+\newblock In \emph{Learning theory and kernel machines}, pages 173--187.
+  Springer, 2003.
 
-\bibitem{michelson2010discovering}
-Michelson, M. {\&} Macskassy, S.~A. (2010)  Discovering users' topics of
-  interest on twitter: a first look. In {\em Proc. of the 4th workshop on
-  analytics for noisy unstructured text data}, pages 73--80. ACM.
+\bibitem[Michelson and Macskassy(2010)]{michelson2010discovering}
+Matthew Michelson and Sofus~A Macskassy.
+\newblock Discovering users' topics of interest on twitter: a first look.
+\newblock In \emph{Proc. of the 4th workshop on analytics for noisy
+  unstructured text data}, pages 73--80. ACM, 2010.
 
-\bibitem{miller1955note}
-Miller, G.~A. (1955)  Note on the bias of information estimates. In Quastler,
-  H., editor, {\em Information theory in psychology II-B}, pages 95--100.
-  Glencoe, Illinois: Free Press.
+\bibitem[Miller(1955)]{miller1955note}
+George~A Miller.
+\newblock Note on the bias of information estimates.
+\newblock In H~Quastler, editor, \emph{Information theory in psychology II-B},
+  pages 95--100. Glencoe, Illinois: Free Press, 1955.
 
-\bibitem{PhysRevE.77.016107}
-Nepusz, T., Petr\'oczi, A., N\'egyessy, L. {\&} Bazs\'o, F. (2008)  Fuzzy
-  communities and the concept of bridgeness in complex networks. {\em Phys.
-  Rev. E}, \textbf{77}, 016107.
+\bibitem[Nepusz et~al.(2008)Nepusz, Petr\'oczi, N\'egyessy, and
+  Bazs\'o]{PhysRevE.77.016107}
+Tam\'as Nepusz, Andrea Petr\'oczi, L\'aszl\'o N\'egyessy, and F\"ul\"op
+  Bazs\'o.
+\newblock Fuzzy communities and the concept of bridgeness in complex networks.
+\newblock \emph{Phys. Rev. E}, 77:\penalty0 016107, Jan 2008.
+\newblock \doi{10.1103/PhysRevE.77.016107}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevE.77.016107}.
 
-\bibitem{newman2009networks}
-Newman, M. (2009) {\em Networks: an introduction}.
-Oxford University Press.
+\bibitem[Newman(2009)]{newman2009networks}
+Mark Newman.
+\newblock \emph{Networks: an introduction}.
+\newblock Oxford University Press, 2009.
 
-\bibitem{newman2004finding}
-Newman, M.~E. {\&} Girvan, M. (2004)  Finding and evaluating community
-  structure in networks. {\em Phys. Rev. E}, \textbf{69}(2), 026113.
+\bibitem[Newman and Girvan(2004)]{newman2004finding}
+Mark~EJ Newman and Michelle Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock \emph{Phys. Rev. E}, 69\penalty0 (2):\penalty0 026113, 2004.
 
-\bibitem{nguyen2011adaptive}
-Nguyen, N.~P., Dinh, T.~N., Xuan, Y. {\&} Thai, M.~T. (2011)  Adaptive
-  algorithms for detecting community structure in dynamic social networks. In
-  {\em Proc. of the IEEE 2011 INFOCOM}, pages 2282--2290. IEEE.
+\bibitem[Nguyen et~al.(2011)Nguyen, Dinh, Xuan, and Thai]{nguyen2011adaptive}
+Nam~P Nguyen, Thang~N Dinh, Ying Xuan, and My~T Thai.
+\newblock Adaptive algorithms for detecting community structure in dynamic
+  social networks.
+\newblock In \emph{Proc. of the IEEE 2011 INFOCOM}, pages 2282--2290. IEEE,
+  2011.
 
-\bibitem{PalEtAl05}
-Palla, G., Der{\'e}nyi, I., Farkas, I. {\&} Vicsek, T. (2005)  Uncovering the
-  overlapping community structure of complex networks in nature and society.
-  {\em Nature}, \textbf{435}(7043), 814--818.
+\bibitem[Palla et~al.(2005)Palla, Der{\'e}nyi, Farkas, and Vicsek]{PalEtAl05}
+Gergely Palla, Imre Der{\'e}nyi, Ill{\'e}s Farkas, and Tam{\'a}s Vicsek.
+\newblock Uncovering the overlapping community structure of complex networks in
+  nature and society.
+\newblock \emph{Nature}, 435\penalty0 (7043):\penalty0 814--818, June 2005.
+\newblock ISSN 0028-0836.
+\newblock URL \url{http://dx.doi.org/10.1038/nature03607}.
 
-\bibitem{paninski2003estimation}
-Paninski, L. (2003)  Estimation of entropy and mutual information. {\em Neural
-  Comput.}, \textbf{15}(6), 1191--1253.
+\bibitem[Paninski(2003)]{paninski2003estimation}
+Liam Paninski.
+\newblock Estimation of entropy and mutual information.
+\newblock \emph{Neural Comput.}, 15\penalty0 (6):\penalty0 1191--1253, 2003.
 
-\bibitem{porter2009communities}
-Porter, M.~A., Onnela, J.-P. {\&} Mucha, P.~J. (2009)  Communities in networks.
-  {\em Notices of the AMS}, \textbf{56}(9), 1082--1097.
+\bibitem[Porter et~al.(2009)Porter, Onnela, and Mucha]{porter2009communities}
+Mason~A Porter, Jukka-Pekka Onnela, and Peter~J Mucha.
+\newblock Communities in networks.
+\newblock \emph{Notices of the AMS}, 56\penalty0 (9):\penalty0 1082--1097,
+  2009.
 
-\bibitem{romero2011influence}
-Romero, D.~M., Galuba, W., Asur, S. {\&} Huberman, B.~A. (2011)  Influence and
-  passivity in social media. In {\em Machine learning and knowledge discovery
-  in databases}, pages 18--33. Springer.
+\bibitem[Romero et~al.(2011)Romero, Galuba, Asur, and
+  Huberman]{romero2011influence}
+Daniel~M Romero, Wojciech Galuba, Sitaram Asur, and Bernardo~A Huberman.
+\newblock Influence and passivity in social media.
+\newblock In \emph{Machine learning and knowledge discovery in databases},
+  pages 18--33. Springer, 2011.
 
-\bibitem{rossi2012conversation}
-Rossi, L. {\&} Magnani, M. (2012)  Conversation practices and network structure
-  in Twitter. In {\em Proc. of the 6th ICWSM}, pages 563--566.
+\bibitem[Rossi and Magnani(2012)]{rossi2012conversation}
+Luca Rossi and Matteo Magnani.
+\newblock Conversation practices and network structure in twitter.
+\newblock In \emph{Proc. of the 6th ICWSM}, pages 563--566, 2012.
 
-\bibitem{Rosvall08mapsof}
-Rosvall, M. {\&} Bergstrom, C.~T. (2008)  Maps of random walks on complex
-  networks reveal community structure. {\em Proc. Natl. Acad. Sci.},
-  \textbf{105}(4), 1118--1123.
+\bibitem[Rosvall and Bergstrom(2008)]{Rosvall08mapsof}
+Martin Rosvall and Carl~T. Bergstrom.
+\newblock Maps of random walks on complex networks reveal community structure.
+\newblock \emph{Proc. Natl. Acad. Sci.}, 105\penalty0 (4):\penalty0 1118--1123,
+  2008.
 
-\bibitem{salton_introduction_1983}
-Salton, G. {\&} {McGill}, M.~J. (1983) {\em Introduction to modern information
-  retrieval}.
-{McGraw-Hill}, New York.
+\bibitem[Salton and {McGill}(1983)]{salton_introduction_1983}
+Gerard Salton and Michael~J. {McGill}.
+\newblock \emph{Introduction to modern information retrieval}.
+\newblock {McGraw-Hill}, New York, 1983.
 
-\bibitem{schreiber2000measuring}
-Schreiber, T. (2000)  Measuring information transfer. {\em Phys. Rev. Lett.},
-  \textbf{85}(2), 461--464.
+\bibitem[Schreiber(2000)]{schreiber2000measuring}
+Thomas Schreiber.
+\newblock Measuring information transfer.
+\newblock \emph{Phys. Rev. Lett.}, 85\penalty0 (2):\penalty0 461--464, 2000.
 
-\bibitem{shalizi2007discovering}
-Shalizi, C.~R., Camperi, M.~F. {\&} Klinkner, K.~L. (2007)  Discovering
-  functional communities in dynamical networks. In {\em Statistical network
-  analysis: models, issues, and new directions}, pages 140--157. Springer.
+\bibitem[Shalizi et~al.(2007)Shalizi, Camperi, and
+  Klinkner]{shalizi2007discovering}
+Cosma~Rohilla Shalizi, Marcelo~F Camperi, and Kristina~Lisa Klinkner.
+\newblock Discovering functional communities in dynamical networks.
+\newblock In \emph{Statistical network analysis: models, issues, and new
+  directions}, pages 140--157. Springer, 2007.
 
-\bibitem{tsur2012s}
-Tsur, O. {\&} Rappoport, A. (2012)  What's in a hashtag?: content based
-  prediction of the spread of ideas in microblogging communities. In {\em Proc.
-  of the 5th ACM WSDM}, pages 643--652. ACM.
+\bibitem[Tsur and Rappoport(2012)]{tsur2012s}
+Oren Tsur and Ari Rappoport.
+\newblock What's in a hashtag?: content based prediction of the spread of ideas
+  in microblogging communities.
+\newblock In \emph{Proc. of the 5th ACM WSDM}, pages 643--652. ACM, 2012.
 
-\bibitem{ver2012information}
-Ver~Steeg, G. {\&} Galstyan, A. (2012)  Information transfer in social media.
-  In {\em Proc. of the 21st Inter. WWW Conf.}, pages 509--518. ACM.
+\bibitem[Ver~Steeg and Galstyan(2012)]{ver2012information}
+Greg Ver~Steeg and Aram Galstyan.
+\newblock Information transfer in social media.
+\newblock In \emph{Proc. of the 21st Inter. WWW Conf.}, pages 509--518. ACM,
+  2012.
 
-\bibitem{yin2012latent}
-Yin, Z., Cao, L., Gu, Q. {\&} Han, J. (2012)  Latent community topic analysis:
-  integration of community discovery with topic modeling. {\em ACM Trans.
-  Intell. Syst. Technol.}, \textbf{3}(4), 63:1--63:21.
+\bibitem[Yin et~al.(2012)Yin, Cao, Gu, and Han]{yin2012latent}
+Zhijun Yin, Liangliang Cao, Quanquan Gu, and Jiawei Han.
+\newblock Latent community topic analysis: integration of community discovery
+  with topic modeling.
+\newblock \emph{ACM Trans. Intell. Syst. Technol.}, 3\penalty0 (4):\penalty0
+  63:1--63:21, 2012.
 
-\bibitem{ZhaWanZha07}
-Zhang, S., Wang, R.-S. {\&} Zhang, X.-S. (2007)  Identification of overlapping
-  community structure in complex networks using fuzzy $c$-means clustering.
-  {\em Phys. A}, \textbf{374}(1), 483--490.
+\bibitem[Zhang et~al.(2007)Zhang, Wang, and Zhang]{ZhaWanZha07}
+Shihua Zhang, Rui-Sheng Wang, and Xiang-Sun Zhang.
+\newblock Identification of overlapping community structure in complex networks
+  using fuzzy $c$-means clustering.
+\newblock \emph{Phys. A}, 374\penalty0 (1):\penalty0 483--490, 2007.
 
-\bibitem{zhao2011comparing}
-Zhao, W.~X., Jiang, J., Weng, J., He, J., Lim, E.-P., Yan, H. {\&} Li, X.
-  (2011)  Comparing Twitter and traditional media using topic models. In {\em
-  Proc. of the 33rd ECIR}, pages 338--349. Springer.
+\bibitem[Zhao et~al.(2011)Zhao, Jiang, Weng, He, Lim, Yan, and
+  Li]{zhao2011comparing}
+Wayne~Xin Zhao, Jing Jiang, Jianshu Weng, Jing He, Ee-Peng Lim, Hongfei Yan,
+  and Xiaoming Li.
+\newblock Comparing twitter and traditional media using topic models.
+\newblock In \emph{Proc. of the 33rd ECIR}, pages 338--349. Springer, 2011.
 
 \end{thebibliography}
