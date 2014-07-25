@@ -31,7 +31,7 @@ to be more about the analysis you do with a already-collected network rather tha
 
 * Rewrite the 'We see in Table 1...' text to make sense. (Dave)
 
-* Remove the asterisk from Table 5 and replace it with a $\cdot$ or just a space. (Elisa)
+* [[Complete]] Remove the asterisk from Table 5 and replace it with a $\cdot$ or just a space. (Elisa)
 
 * Add a sentence to 'Next we consider the distribution of community sizes ...' section. (Dave)
 

@@ -77,7 +77,7 @@ In order to detect the topical communities, we weight the edges of the user-foll
 
 To this end, we characterize each user $u$ by a vector $\vec{h}(u)$ of length equal to the number of unique hashtags in the dataset, and whose elements are defined as
 \begin{equation}
-h_i(u) = n_i(u) * \log{ \frac{N}{n_i} }
+h_i(u) = n_i(u)\log{ \frac{N}{n_i} }
 \end{equation}
 where $n_i(u)$ is the frequency of hashtag $i$ occuring in user $u$'s tweets, $N$ is the total number of users, and $n_i$ is the number of users that have used the hashtag $i$ in their tweets. This adapted term frequency--inverse document frequency (tf-idf) measure \cite{salton_introduction_1983} captures the importance of a hashtag in the users's tweets through the first factor, but at the same time smooths it through the second factor by giving less importance to hashtags that are too widely used (as $\frac{N}{n_i}$ approaches one, its logarithm approaches zero). 
 
