@@ -1,5 +1,9 @@
 \begin{thebibliography}{00}
 
+\bibitem{Aicher26062014}
+Aicher, C., Jacobs, A.~Z. {\&} Clauset, A. (2014)  Learning latent block
+  structure in weighted networks. {\em To appear, J. Compl. Netw.}
+
 \bibitem{BaumesGKMP05}
 Baumes, J., Goldberg, M.~K., Krishnamoorthy, M.~S., Magdon-Ismail, M. {\&}
   Preston, N. (2005)  Finding communities by clustering a graph into

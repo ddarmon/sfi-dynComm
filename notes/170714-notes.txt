@@ -27,7 +27,7 @@ to be more about the analysis you do with a already-collected network rather tha
 
 * Add some sentences about how information theoretic and social influence may be different, and we must be careful about how we interpret results related to TE. (Josh)
 
-* Add Aaron Clauset's WSBM paper to the list of community detection methods. (Josh)
+* [[Complete]] Add Aaron Clauset's WSBM paper to the list of community detection methods. (Josh)
 
 * Rewrite the 'We see in Table 1...' text to make sense. (Dave)
 
