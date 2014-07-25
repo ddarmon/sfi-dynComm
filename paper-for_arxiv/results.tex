@@ -222,25 +222,31 @@ In words, an inter-edge connects two users who share no community memberships, a
 	\label{Fig-edge_types}
 \end{figure}
 
-\begin{table}
-	\caption{The percentage of intra-, inter-, and mixed-edges associated with the coverings for each of the four community types.}
-	\centering
-	\begin{tabular}{l | r r r}
-		Community Type & Intra & Inter & Mixed \\
-		\hline
-		Structural & 7.5 & 87.0 &  5.5 \\
-		Activity-based & 10.7 & 81.9 & 7.4 \\
-		Topic-based & 7.3 & 89.0  & 3.7 \\
-		Interaction-based & 42.3 & 47.9 & 9.8
-	\end{tabular}
-\end{table}
+%\begin{table}
+%	\caption{The percentage of intra-, inter-, and mixed-edges associated %with the coverings for each of the four community types.}
+%	\centering
+%	\begin{tabular}{l | r r r}
+%		Community Type & Intra & Inter & Mixed \\
+%		\hline
+%		Structural & 7.5 & 87.0 &  5.5 \\
+%		Activity-based & 10.7 & 81.9 & 7.4 \\
+%		Topic-based & 7.3 & 89.0  & 3.7 \\
+%		Interaction-based & 42.3 & 47.9 & 9.8
+%	\end{tabular}
+%\end{table}
 
 Each community type (Structural, Activity-based, Topic-based, Interaction-based) induces a different partition of the edges, and each edge type (Transfer Entropy, Hashtag, Mention-Retweet) induces a different distribution of weights. That is, let $W_{u \to f}$ be the weight on a randomly selected edge $E_{u \to f}$ from the network, and compute
 \begin{align}
 	P(W_{u \to f} \leq w | T(E_{u \to f}) = t),
 \end{align}
 the empirical distribution over the edge weights conditioned on $t$ being one of inter, intra, and mixed. For meaningful community structure, we expect the distribution of edge weights to differ with the edge type $t$. If the community structure were arbitrary, the edge weights would be independent of the edge type, and all three conditional distributions would be identical.
-The densities associated with these distributions are shown in Figure~\ref{Fig-distributions_by_types}, included in Appendix B.
+The densities associated with these distributions are shown in Figure~\ref{Fig-distributions_by_types}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{densities-edges.eps}
+	\caption{The density of edge weights for different community types (rows) and weight types (columns). The red,  blue, and magenta values below each collection of densities indicate the median of weight on intra-, inter-, and mixed-edges, respectively.}
+	\label{Fig-distributions_by_types}
+\end{figure}
 
 Each \emph{column} of Figure~\ref{Fig-distributions_by_types} demonstrates how the density of weights change with the community type used to induce the partition. For example, the second column shows how the density of hashtag weights change based on the community partition. In general, the densities differ in non-trivial ways across the edge types and coverings. However, we see that the medians of the distributions provide a useful summary statistic. Under each collection of density functions, we list the median value of the inter, intra, and mixed-edges in red, blue, and magenta, respectively. Unsurprisingly, we see that the greatest difference between the distributions occurs when we consider the topic-based communities, since the topic-based communities are determined based on the hashtag weights. However, we also see differences in the distributions when the Community-type / Weight-type pairs do not match. For example, for the covering corresponding to the activity-based communities, the hashtag weights tend to be higher for edges internal to communities than between communities. Similarly, for the covering corresponding to the topic-based communities, the transfer entropy weights tend to be higher on edges within (intra) and between (inter) communities, and lower for edges between members with multiple, non-identical memberships (mixed).
 

@@ -1,8 +1,8 @@
 Next actions:
 
-* Remove Table 2. (Josh)
+* [[Complete]]Remove Table 2. (Josh)
 
-* Put Figure 4 back into the main text. (Josh)
+* [[Complete]] Put Figure 4 back into the main text. (Josh)
 
 * Mention *why* we mostly report on lag-4 TE: (Dave)
 	** Add other lags to the ECDF plot.
