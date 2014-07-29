@@ -21,7 +21,7 @@ to be more about the analysis you do with a already-collected network rather tha
 
 ** 'We then describe our methodology for constructing the question-specific networks.'
 
-* Change the 'teenagers vs. elderly users' to something about activity profiles. (Josh)
+* [[Complete]] Change the 'teenagers vs. elderly users' to something about activity profiles. (Josh)
 
 * Move the references in the related works section to the introduction, and remove the related works section. (Elisa)
 
