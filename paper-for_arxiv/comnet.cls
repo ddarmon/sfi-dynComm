@@ -3,7 +3,7 @@
 %%    IMA Journal of Complex Networks
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{COMNET}
+\ProvidesClass{comnet}
               [2012/12/11 v1.0
  Standard LaTeX document class]
 \newcommand\@ptsize{}
@@ -132,7 +132,7 @@
 \ProcessOptions
 \input{size1\@ptsize.clo}
 
-\usepackage{lastpage,}
+\usepackage{lastpage}
 %%%%%%%%%%%%%%%%%%%%trim size setting
 \textwidth145mm
 \textheight46pc
@@ -1302,15 +1302,15 @@
 % %%%%%%%%%%%%%%%%%%%%
 
 
-\ifnum@bib
-\usepackage[sort&compress,numbers]{natbib}
-\bibpunct{[}{]}{,}{a}{,}{;}
-\def\@biblabel#1{{\bf #1.\ }}
-\else
-\usepackage{natbib}
-\bibpunct{(}{)}{;}{a}{,}{,}
-\def\@biblabel#1{}
-\fi
+%\ifnum@bib
+%\usepackage[sort&compress,numbers]{natbib}
+%\bibpunct{[}{]}{,}{a}{,}{;}
+%\def\@biblabel#1{{\bf #1.\ }}
+%\else
+%\usepackage[sort&compress,numbers]{natbib}
+%\bibpunct{(}{)}{;}{a}{,}{,}
+%\def\@biblabel#1{}
+%\fi
 
 \renewenvironment{thebibliography}[1]
      {\vbox{\vskip12pt\centering{\sc References}}
