@@ -25,7 +25,7 @@ to be more about the analysis you do with a already-collected network rather tha
 
 * Move the references in the related works section to the introduction, and remove the related works section. (Elisa)
 
-* Add some sentences about how information theoretic and social influence may be different, and we must be careful about how we interpret results related to TE. (Josh)
+*[[Complete]] Add some sentences about how information theoretic and social influence may be different, and we must be careful about how we interpret results related to TE. (Josh)
 
 * [[Complete]] Add Aaron Clauset's WSBM paper to the list of community detection methods. (Josh)
 
