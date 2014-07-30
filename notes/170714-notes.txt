@@ -43,4 +43,4 @@ to be more about the analysis you do with a already-collected network rather tha
 
 * Use $P(W_{u \to f} \leq w_{u \to f} | ...)$ in the definition of the cdf. (Dave)
 
-* Clarify and make careful distinction between information theoretic and social influence wrt the sentence "Our findings have important implications..." (Josh)
+* [[Complete]] Clarify and make careful distinction between information theoretic and social influence wrt the sentence "Our findings have important implications..." (Josh)
