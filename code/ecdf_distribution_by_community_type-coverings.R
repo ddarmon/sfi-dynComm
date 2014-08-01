@@ -26,7 +26,7 @@
 # weight_type = 'mention-retweet'
 
 label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
-# weight_types = c('TE4', 'hashtag', 'mention-retweet')
+weight_types = c('TE4', 'hashtag', 'mention-retweet')
 
 # label_types = c('struc')
 # label_types = c('TE4')
@@ -34,7 +34,7 @@ label_types = c('struc', 'TE4', 'hashtag', 'mention-retweet')
 # label_types = c('mention-retweet')
 
 # weight_types = c('TE4')
-weight_types = c('hashtag')
+# weight_types = c('hashtag')
 # weight_types = c('mention-retweet')
 
 output.filename = 'stats_for_edges.dat'

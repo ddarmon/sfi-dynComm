@@ -38,13 +38,15 @@ import collections
 
 # comm_alg = 'i' # For InfoMap
 #
-comm_alg = 'WSBM_K10' # For WSBM
+# comm_alg = 'WSBM_K10' # For WSBM
+
+comm_alg = '' # For OSLOM
 
 label_type_to_number = {'struc' : 0, 'TE4' : 4, 'hashtag' : 7, 'mention-retweet' : 10}
 
 for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
-	# for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
-	for label_type in ['struc', 'mention-retweet']:
+	for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
+	# for label_type in ['struc', 'mention-retweet']:
 		print 'Working on {}/{} pairing...'.format(weight_type, label_type)
 
 		if 'TE' in weight_type:
@@ -165,7 +167,8 @@ for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
 
 					if len(I) == 0:
 						inter.append(weight)
-					elif len(A) == len(B) and len(A) == len(I):
+					# elif len(A) == len(B) and len(A) == len(I):
+					elif A == B:
 						intra.append(weight)
 					else:
 						multi.append(weight)

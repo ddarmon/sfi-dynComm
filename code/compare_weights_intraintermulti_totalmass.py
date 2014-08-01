@@ -42,13 +42,13 @@ comm_alg = ''
 #
 # comm_alg = 'WSBM_K10' # For WSBM
 
-label_type_to_number = {'struc' : 0, 'TE4' : 4, 'hashtag' : 7, 'mention-retweet' : 10}
+label_type_to_number = {'struc' : 0, 'TE1': 1, 'TE2' : 2, 'TE3' : 3, 'TE4' : 4, 'TE5' : 5, 'TE6' : 6, 'hashtag' : 7, 'mention-retweet' : 10}
 
 # for weight_type in ['TE4', 'hashtag', 'mention-retweet']:
-for weight_type in ['TE4']:
+for weight_type in ['TE6']:
 	# for label_type in ['struc', 'TE4', 'hashtag', 'mention-retweet']:
 	# for label_type in ['struc', 'mention-retweet']:
-	for label_type in ['TE4']:
+	for label_type in ['TE6']:
 		print 'Working on {}/{} pairing...'.format(weight_type, label_type)
 
 		if 'TE' in weight_type:
@@ -174,7 +174,7 @@ for weight_type in ['TE4']:
 						
 						for b in B:
 							inter_out[b].append(weight)
-					elif len(A.intersection(B)) == len(B.intersection(A)) and len(A.intersection(B)) != 0:
+					elif A == B:
 						for i in I:
 							intra[i].append(weight)
 					else:
