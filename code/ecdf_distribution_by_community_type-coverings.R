@@ -129,7 +129,8 @@ if (weight_type == 'TE4'){
 	log = ''
 }
 
-tiff(paste0('figures/', prefix.pdf, '-pdf_by_type.tiff'), res = 120)
+# tiff(paste0('figures/', prefix.pdf, '-pdf_by_type.tiff'), res = 120)
+pdf(paste0('figures/', prefix.pdf, '-pdf_by_type.pdf'))
 par(mar=c(5,5,2,1), cex.lab = 2, cex.axis = 2)
 plot(density(data_inter, from = 0), col = 'blue', xlim = xlim, ylim = ylim, lty = 1, lwd = lwd.cdf, main = '', xlab = expression(paste('Weight, ', w)), ylab = expression(paste('f(', w, '| ', T == t, ')')), log = log)
 lines(density(data_intra, from = 0), col = 'red', lty = 2, lwd = lwd.cdf)
