@@ -18,7 +18,7 @@ are the usual conditional entropies over the conditional (predictive) distributi
 \begin{align}
 	H[X | Y, Z] \leq H[X | Y],
 \end{align}
-we can see that transfer entropy is always non-negative, and is zero precisely when $H\left[X_{t} | X_{t-k}^{t-1}\right] = H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]$, in which case knowing the past $k$ lags of $Y_{t}$ does not reduce the uncertainty in $X_{t}$. If the transfer entropy is positive, then $\{ Y_{t}\}$ is considered causal for $\{ X_{t}\}$ in the Granger sense~\cite{granger1963economic}.
+we can see that transfer entropy is always non-negative, and is zero precisely when $$H\left[X_{t} | X_{t-k}^{t-1}\right] = H\left[X_{t} | X_{t-k}^{t-1}, Y_{t-k}^{t-1}\right]$$, in which case knowing the past $k$ lags of $Y_{t}$ does not reduce the uncertainty in $X_{t}$. If the transfer entropy is positive, then $\{ Y_{t}\}$ is considered causal for $\{ X_{t}\}$ in the Granger sense~\cite{granger1963economic}.
 
 When estimating transfer entropy from finite data, we will assume that the process $\{(X_{t}, Y_{t})\}$ is jointly stationary, which gives us that
 \begin{align}
