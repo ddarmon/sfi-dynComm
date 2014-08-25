@@ -45,7 +45,7 @@ Most importantly, we see that the distributions of community sizes differ across
 \begin{figure}[ht]
   \centering
 %\includegraphics[width=0.50\textwidth]{comm_sizes_ecdf_loglog.pdf}
-\includegraphics[width=1\textwidth]{cdf_comm_sizes.pdf}
+\includegraphics[width=1\textwidth]{cdf_comm_sizes}
 \caption{The proportion of communities greater than $s$ in size, across the different community types. Note the logarithmic scale on the horizontal and vertical axes.}
 \label{Fig-community_size_distribution}
 \end{figure}
@@ -79,7 +79,7 @@ We considered the normalized mutual information between the communities inferred
     \toprule
     Normalized Mutual Information & Community Types \\
     \midrule
-    \multirow{8}[8]{*}{\includegraphics[width=0.50\textwidth]{nmi_singletons.pdf}}&0---Structural \bigstrut\\
+    \multirow{8}[8]{*}{\includegraphics[width=0.50\textwidth]{nmi_singletons}}&0---Structural \bigstrut\\
     &1-6---Activity-Based with Lags 1-6\bigstrut\\
     %&2---Activity-Based with Lag 2\bigstrut\\
     %&3---Activity-Based with Lag 3\bigstrut\\
@@ -221,7 +221,7 @@ In words, an inter-edge connects two users who share no community memberships, a
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{edge-types.pdf}
+	\includegraphics[width=0.8\textwidth]{edge-types}
 	\caption{A schematic of how, given a covering, the edges of the network can be partitioned using (\ref{Eqn-edge_types}) into inter-edges, intra-edges, and mixed-edges. Inter-edges (red dashed) cross community boundaries. Intra-edges (blue solid) remain inside community boundaries. Mixed-edges (purple dotted) both remain in and cross community boundaries due to overlap in community membership. Each column corresponds to the same collection of weights, but partitioned using a different covering. Each row corresponds to the same covering, but for the different weights.}
 	\label{Fig-edge_types}
 \end{figure}
@@ -247,7 +247,7 @@ the empirical distribution over the edge weights conditioned on the edge type $t
 The densities associated with these distributions are shown in Figure~\ref{Fig-distributions_by_types}.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=1\textwidth]{densities-edges.pdf}
+	\includegraphics[width=1\textwidth]{densities-edges}
 	\caption{The density of edge weights for different community types (rows) and weight types (columns). The red,  blue, and purple values below each collection of densities indicate the median of weight on intra-, inter-, and mixed-edges, respectively.}
 	\label{Fig-distributions_by_types}
 \end{figure}
