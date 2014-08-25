@@ -1,0 +1,9 @@
+Kristina Lerman, Department of Computer Science, University of Southern California, lerman@isi.edu
+Aram Galstyan, Department of Computer Science, University of Southern California, galstyan@isi.edu
+Filippo Radicchi, School of Informatics and Computing, Indiana University, f.radicchi@gmail.com
+Simon DeDeo, Center for Complex Networks and Systems Research, Indiana University, sdedeo@indiana.edu
+Mark Granovetter, Department of Sociology, Stanford University, MGranovetter@stanford.edu
+
+Suggested editor:
+
+Ravi Kumar, Google, ravi.k53@gmail.com
