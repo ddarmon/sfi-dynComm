@@ -1,0 +1,21 @@
+Notes from 291014:
+
+Change title of section 3.4 to 'Answering the Questions' or something like that.
+
+Elisa: Find two or three users that are in different types of communities depending on the type of community we look at.
+
+A Case Study in Multifaceted View of User
+
+Rewrite 'blindly' into a multi-faceted view of users.
+
+Weaken the statement about blindly. Make clearer the point that we're asking multiple questions at the same time, rather than anything about agnostic.
+
+Change 'influence' to 'predictive ability ' for transfer entropy sections. Use an acronym like PV-AC (predictive / activity)
+
+Remove pM and pR from the interaction-based section.
+
+Change structural communities to follower-based structural communities.
+
+Reviewer 2: This is beyond the scope of this paper. We focused on community detection...
+
+Give example for how two different weightings could give the same community structure.

@@ -1,0 +1,52 @@
+Elisa:
+======
+
+* Find two or three users that are in very different communities when viewed from the framework of the different types of questions. Include this in a subsection called something like "A Case Study in a Multifaceted View of Users"
+
+* Change title of section 3.4 to something like 'Answering the Questions' to motivate that this is our attempt at answering the questions we posed in the beginning.
+
+* Give more motivation for Equations 2, 3, and 4.
+
+Josh and Dave:
+==============
+
+Introduction:
+-------------
+
+* Rewrite sections where we talk about collecting the network 'blindly' to highlight that we're proposing a multi-faceted view of users.
+
+	* Weaken the statement about blindly. Make clearer the point that we're asking multiple questions at the same time, rather than anything about agnostic.
+
+* Change 'influence' to 'predictive ability ' for transfer entropy sections. Use an acronym like PV-AC (predictive / activity). Reemphasize the information theoretic nature of transfer entropy.
+
+* Rewrite the sentence "many of these connections do not correspond to real friendships or more generally to accounts that users interact with" to incorporate something like "People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc."
+
+* Change structural communities to follower-based structural communities.
+
+* Give an example of how different weightings of a network might still result in the same community structure.
+
+* Address how activity-based and interaction-based views of users differ.
+
+Methodology:
+------------
+
+* Briefly discuss the sparsity of the time series used in the transfer entropy computations.
+
+* Rewrite the sentences surrounding "a positive value for the transfer entropy of the user" to be about predictive ability rather than influence.
+
+Results:
+--------
+
+* Rewrite the section around "For meaningful community structure, we expect the distribution of edge weights to differ with the edge type" to explain why we expect this to be the case, or when it might not be the case. Or remove the assumption of difference altogether.
+
+* Rewrite the section around "This means that these accounts had high influence in terms of their followers’ activity on Twitter" to be a statement about predictability rather than influence.
+
+* Rewrite the section around "But we have seen in our study that a structural network alone is not sufficient to capture user interaction or even activity-based influence in online social media." to emphasize how we get different communities from that of the follower network, and thus the follower network alone is not enough to elucidate these types of communities.
+
+Reviewer 2:
+-----------
+
+* Address the reviewer's final thought by saying something like "This is an interesting avenue of research, butbeyond the scope of this paper. We focused on communities because ..."
+
+Completed:
+==========

@@ -1,0 +1,185 @@
+ %%File: formatting-instruction.tex
+\documentclass{article}
+\usepackage{authblk}
+%\usepackage{color}
+%\usepackage{subfigure}
+%\usepackage{appendix}
+%%\frenchspacing
+%%\setlength{\pdfpagewidth}{8.5in}
+%%\setlength{\pdfpageheight}{11in}
+%\textwidth=126mm
+
+%Before this was old one
+
+%\documentclass{COMNET}%%%%where comnet is the template name
+%%%% To get the unnumbered reference the authors should use unnumbib in the optional of \documentclass.
+%%%% Ex:\documentclass[unnumbib]{comnet}
+
+
+\usepackage{amsmath} %for dealing with mathematics,
+\usepackage{amsfonts}	%for dealing with mathematics,
+\usepackage{amsthm} %for dealing with theorem environments,
+%\usepackage{hyperref} %for linking the cross references % CA: I couldn't get it to work properly with this package
+\usepackage{graphicx} %for dealing with figures.
+%\usepackage{algorithm}
+%\usepackage{algorithmic} %for describing algorithms
+\usepackage{subfigure} %for getting the subfigures e.g., "Figure 1a and 1b" etc.
+\usepackage{times}
+\usepackage{helvet}
+%\usepackage{courier}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{booktabs}
+\usepackage{multirow,bigstrut}
+\usepackage{tabu}
+\usepackage{authblk}
+\usepackage{color}
+%\usepackage{subfigure}
+\usepackage{appendix}
+\usepackage{url} %CA: I want to use hyperref -> but we get errors (see above)
+\usepackage{enumitem}
+
+\usepackage[sort&compress,numbers]{natbib} % CA: comnet.cls file had errors -> This is a fix%
+\renewcommand{\bibnumfmt}[1]{\textbf #1.\ }
+\setlength{\bibsep}{0pt}
+
+\newcommand{\alert}[1]{{\color{red}#1}}
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+%\oddsidemargin= 0.25in % 1in margins at left and right
+%\evensidemargin= 0in
+\textwidth= 5in % US paper is 8.5in wide     ultra conservative = 5in
+\marginparwidth= 0in
+
+\textheight=7.6667in % US paper is 11.0in high %%% ultra conservative = 7.6in
+
+
+
+
+
+
+
+
+
+
+
+%\pdfinfo{
+%/Title (Followers Are Not Enough: Beyond Structural Communities in Online %Social Networks)
+%/Author (David Darmon, Elisa Omodei, Joshua Garland)
+%%/Keywords (community detection, functional communities, social network analysis)}
+
+%%%%%%%%%%
+% Section Numbers
+% Uncomment if you want to use section numbers % and change the 0 to a 1 or 2
+%\setcounter{secnumdepth}{0}
+
+
+
+
+
+
+
+
+%%%%%%%%%%
+% Body of Paper Begins
+\begin{document}
+
+
+
+\title{Followers Are Not Enough: A Question-Oriented Approach to Community Detection in Online Social Networks}
+
+
+ \author[1]{David Darmon}
+ \author[2]{Elisa Omodei}
+ \author[3]{Joshua Garland}
+ \affil[1]{University of Maryland\\
+ Dept. of Mathematics}
+ \affil[2]{
+ LaTTiCe (CNRS, ENS, Paris 3)\\
+ ISC-PIF}
+ \affil[3]{
+ University of Colorado at Boulder\\
+ Dept. of Computer Science
+ } 
+
+%BELOW IS FOR JCN guidelines
+%\shorttitle{Followers Are Not Enough}
+%\shortauthorlist{D. Darmon \emph{ET AL.}} %%% for verso running head
+
+%\author{
+%%%%% First author details
+%\name{David Darmon$^*$}
+%\address{Department of Mathematics, University of Maryland, College Park, MD 20740\email{$^*$Corresponding author: ddarmon@math.umd.edu}}
+%%%%%%%% Second author details
+%\name{Elisa Omodei}
+%\address{LaTTiCe (CNRS, ENS, Paris 3)\\
+% ISC-PIF}
+%%%%%%%%
+%\and
+%%%%%%%% Third author details
+%\name{Joshua Garland}
+%\address{Department of Computer Science, University of Colorado, Boulder, CO 80309}
+%}
+
+\maketitle
+
+
+ 
+ 
+ 
+ 
+ % \author{David Darmon  \\
+ % University of Maryland\\
+ % Dept. of Mathematics \\
+ % ddarmon@math.umd.edu \\
+ % \And Elisa Omodei \\
+ % LaTTiCe (CNRS, ENS, Paris 3)\\
+ % ISC-PIF\\
+ % elisa.omodei@ens.fr \\
+ % \And 
+ % Joshua Garland\\
+ % University of Colorado at Boulder\\
+ % Dept. of Computer Science \\
+ % joshua.garland@colorado.edu}
+
+ 
+
+\maketitle
+
+\begin{abstract}
+%\begin{quote}
+%The Keywords
+%Community detection, functional communities, social network analysis, transfer entropy
+
+
+Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users often have hundreds or even thousands of such connections, and many of these connections do not correspond to real friendships or more generally to accounts that users interact with. We claim that community detection in online social networks should be question-oriented and rely on additional information beyond the simple structure of the network. The concept of `community' is very general, and different questions such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different social groups. In this paper we focus on three types of communities beyond structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that the communities obtained in the three weighted cases are highly different from each other, and from the communities obtained by considering only the unweighted structural network. Our results confirm that asking a precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights about the network under study.
+%\end{quote}
+\end{abstract}
+
+\newpage
+
+\input{intro.tex}
+\input{methods.tex}
+\input{results.tex}
+\input{conclusions.tex}
+
+\section{Funding}
+%Elisa Omodei is partially supported by a PhD grant from the R\'{e}gion \^{I}le-de-France (DIM 2011) and by the French National Agency of Research (ANR) through the grant Algopol (ANR-12-CORD-0018).
+This work was partially supported by the R\'{e}gion \^{I}le-de-France [DIM 2011 to E.O.]; and by the French National Agency of Research [ANR-12-CORD-0018 to E.O.].
+%We are grateful to DARPA for the support of David Darmon.
+
+\section{Acknowledgments}
+
+Thanks to Cesar Flores, Lu\'is Seoane, Kevin Stadler, Jody Wright, and Nix Barnett for their contributions to preliminary ideas related to this paper and to Michelle Girvan, William Rand, Aaron Clauset, and Ryan James for their valuable comments and suggestions. Finally, we would like to acknowledge the Santa Fe Institute and its Complex Systems Summer School for providing the intellectually stimulating environment where this project began.
+
+
+\input{appendices.tex}
+
+\bibliographystyle{comnet}
+%\bibliographystyle{plainnat}
+\bibliography{references.bib}
+
+
+% \input{paper.bbl}
+
+\end{document}
