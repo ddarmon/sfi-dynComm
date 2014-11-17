@@ -7,6 +7,8 @@ comm*_labels-*_weights-*
 *.synctex.gz
 *.log
 *.aux
+paper-postreview/paper.pdf
+paper-postreview/paper.blg
 paper/paper.log
 data/content-full/*
 paper-for_arxiv/paper.blg

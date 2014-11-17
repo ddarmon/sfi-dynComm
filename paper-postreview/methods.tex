@@ -39,7 +39,7 @@ For the communities based on transfer entropy, we weighted each edge from a user
 \begin{align}
 	w_{u \to f}^{\text{TE}(k)} = \widetilde{\text{TE}}_{X(u) \to X(f)}^{(k)}. \label{Eqn-EW-activity}
 \end{align}
-As discussed in the introduction, a positive value for the transfer entropy of the user $u$ on $f$ indicates that $u$ influences $f$, or that $u$ and $f$ share a common influencer~\cite{ver2012information}, and that the time series $X(u)$ and $X(f)$, are casually related in a Granger sense.  
+As discussed in the introduction, a positive value for the transfer entropy of the user $u$ on $f$ indicates that the time series $X(u)$ and $X(f)$, are casually related in a Granger sense, i.e, users $u$ and $f$ have PV-AC. 
 
  We computed the transfer entropy on each coarsened time series with lag $k$ ranging from 1 to 6, this corresponds to a lag of ten minutes to an hour. The choice of lag must balance a trade-off between additional information and sparsity of samples: as we increase the lag $k$, we account for longer range dependencies, but we also decrease the number of samples available to infer a higher dimensional predictive distribution. See Appendix A for a discussion of these issues. As we will show, the underlying communities resulting from the different lags have similar structure.
 
