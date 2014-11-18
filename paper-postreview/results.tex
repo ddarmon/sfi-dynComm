@@ -243,8 +243,8 @@ Each community type (Structural, Activity-based, Topic-based, Interaction-based)
 \begin{align}
 	P(W_{u \to f} \leq w_{u \to f} | T(E_{u \to f}) = t),
 \end{align}
-the empirical distribution over the edge weights conditioned on the edge type $t$ being one of inter, intra, and mixed. For meaningful community structure, we expect the distribution of edge weights to differ with the edge type $t$. If the community structure were arbitrary, the edge weights would be independent of the edge type, and all three conditional distributions would be identical.
-The densities associated with these distributions are shown in Figure~\ref{Fig-distributions_by_types}.
+the empirical distribution over the edge weights conditioned on the edge type $t$ being one of inter, intra, and mixed. The densities associated with these distributions are shown in Figure~\ref{Fig-distributions_by_types}. By considering how the weights vary conditional on the edge type, we can explore whether and how each of the follower-, interaction-, activity-, and topic-based communities define functional units within the network. For example, if users interact more-or-less independently of the topics they discuss, then the distributions of the interaction-based / topic-based edge weights should be independent of the edge type determined from the topic-based / interaction-based communities. By contrast, if users tend to interact mostly with those users who discuss similar topics, then the edge weight distributions should vary with the edge type.
+%For meaningful community structure, we expect the distribution of edge weights to differ with the edge type $t$. If the community structure were arbitrary, the edge weights would be independent of the edge type, and all three conditional distributions would be identical.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=1\textwidth]{densities-edges}
