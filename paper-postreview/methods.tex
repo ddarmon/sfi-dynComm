@@ -48,26 +48,27 @@ As discussed in the introduction, a positive value for the transfer entropy of t
 
 Retweets and mentions are two useful features of Twitter networks which can be used to track information flow through the network.
 %A way of tracking the flow of information through users is by considering two useful features of this social network: mentions and retweets. 
-With mentions, users are sending directed information to other users and with retweets users are rebroadcasting information from a user they follow to all of their followers. 
+With mentions, users are sending direct information to other users and with retweets users are rebroadcasting information from a user they follow to all of their followers.
 %information from a user has been captured by a follower and shared with his/her own followers. 
 This type of information flow defines a community in a much different way than transfer entropy. Instead of defining communities by the loss of uncertainty in one user's tweeting history based on another's, we define interaction-based communities by weighting the user-follower network with a measure proportional to the number of mentions and/or retweets between users. 
 % We can therefore define interaction-based communities by weighting the user-follower network with a measure proportional to the number of mentions and retweets between users. 
-For the interaction-based communities we consider three weighting schemes: proportional retweets,
+% For the interaction-based communities we consider three weighting schemes: proportional retweets,
+We define three weighting schemes. Firstly, we consider the number of tweets of a user $u$ that were rebroadcast by a follower $f$, indicating a flow of information from $u$ to $f$. Since different users produce different amounts of tweets and retweets, in order to take into account the relative importance of this measure we normalize it by dividing over the total number of retweets made by $f$,
 \begin{equation}
-w_{u \to f}^{\text{R}}=pR=\frac{\mbox{\# retweets of }u \mbox{ by }f}{\mbox{\# total retweets made by }f},
+w_{u \to f}^{\text{R}}=\frac{\mbox{\# retweets of }u \mbox{ by }f}{\mbox{\# total retweets made by }f},
 \end{equation}
-proportional mentions,
+Secondly, we consider the number of mentions of $f$ made by user $u$. To account for the fact that some users/accounts are very popular and are often mentioned by so many other users that there is not real flow of information from the latter to the former, we normalize this measure by dividing over the total number of mentions received by $f$.
 \begin{equation}
-w_{u \to f}^{\text{M}} = pM = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# total mentions of }f},
+w_{u \to f}^{\text{M}} = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# total mentions of }f},
 \end{equation}
-and mention-retweet as the arithmetic mean of these two measures,
+Finally, we define the mention-retweet proportion as the arithmetic mean of the two measures just defined,
 %we weight each edge from a user $u$ to a follower $f$ through a combination of proportional mentions ($pM$):
 % In more details, for each couple of user-follower $u$ and $f$, we use the arithmetic mean of the two following numbers:
 %\begin{equation}
 %w_{u \to f}^{\text{M}} = pM = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# %total mentions of }f}
 %\end{equation}
 \begin{align}
-	w_{u \to f}^{\text{MR}} = \frac{(pM+pR)}{2}. \label{Eqn-EW-interaction}
+	w_{u \to f}^{\text{MR}} = \frac{(w_{u \to f}^{\text{R}}+w_{u \to f}^{\text{M}})}{2}. \label{Eqn-EW-interaction}
 \end{align} 
 
 %	w_{u \to f}^{\text{MR}} = \frac{1}{2}\left(\frac{\mbox{\# mentions of }f %\mbox{ by }u}{\mbox{\# total mentions of }f} + \frac{\mbox{\# retweets of }u \mbox{ by }f}{\mbox{\# total retweets made by }f}\right).
