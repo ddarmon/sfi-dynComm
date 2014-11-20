@@ -45,17 +45,22 @@ Introduction:
 
 * Address how activity-based and interaction-based views of users differ.
 
+
+
+
+
+
+Completed:
+==========
+
+
 Methodology:
 ------------
 
 * Briefly discuss the sparsity of the time series used in the transfer entropy computations.
 
-* Rewrite the sentences surrounding "a positive value for the transfer entropy of the user" to be about predictive ability rather than influence.
+* [[Joshua, Done]]Rewrite the sentences surrounding "a positive value for the transfer entropy of the user" to be about predictive ability rather than influence.
 
 Results:
 --------
-
-* Rewrite the section around "This means that these accounts had high influence in terms of their followers’ activity on Twitter" to be a statement about predictability rather than influence.
-
-Completed:
-==========
+ [[Joshua, Done]] * Rewrite the section around "This means that these accounts had high influence in terms of their followers’ activity on Twitter" to be a statement about predictability rather than influence.
