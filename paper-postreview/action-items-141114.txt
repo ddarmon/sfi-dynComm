@@ -19,17 +19,6 @@ Introduction:
 * "However, with the prevalence of large rich data sets for online social networks": I think that the opposite is actually true. Sociologists usually go beyond simple structure and/or structure is used to describe dynamics. 
 [[This seems to be cleared up by you but please check]]
 
-* Rewrite sections where we talk about collecting the network 'blindly' to highlight that we're proposing a multi-faceted view of users.
-
-	* Weaken the statement about blindly. Make clearer the point that we're asking multiple questions at the same time, rather than anything about agnostic.
-
-* Rewrite the sentence "many of these connections do not correspond to real friendships or more generally to accounts that users interact with" to incorporate something like "People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc."
-
-* Change structural communities to follower-based structural communities.
-
-* Give an example of how different weightings of a network might still result in the same community structure.
-
-
 * "However, we conjecture": rightly, the authors say that this is just a conjecture. At the same time, very bold claims are based on this very simple conjecture. 
 [[I can’t find what the reviewer is talking about so this might be done]]* "For example [6],": the idea of building a network based on this is not particularly new.* "However, this approach focused on data for a particular topic...": this is not a credible justification to dismiss the work. The fact that you present an approach based on structure together with this one does not represent a significant contribution per se in my opinion.[[We are not dismissing this work we are using it to say what we have done has been done before in a different context. We just need to make this more clear that this is not our contribution and that we are not dismissing this work.]]
 
@@ -42,12 +31,6 @@ Methods:
 
 Results:
 --------
-
-* Rewrite the section around "For meaningful community structure, we expect the distribution of edge weights to differ with the edge type" to explain why we expect this to be the case, or when it might not be the case. Or remove the assumption of difference altogether.
-
-* Rewrite the section around "But we have seen in our study that a structural network alone is not sufficient to capture user interaction or even activity-based influence in online social media." to emphasize how we get different communities from that of the follower network, and thus the follower network alone is not enough to elucidate these types of communities.
-
-
 
 Make sure the following reviewer concerns have been addressed, I don’t think a lot needs to be done with these just more justification added really so that the reviewer is not as confused.
 
@@ -89,6 +72,20 @@ Abstract
 Throughout
 ___________
 [[Joshua Done]] Rewrite to focus on multifaceted rather than single questions. 
+
+* [[David Done]] Rewrite sections where we talk about collecting the network 'blindly' to highlight that we're proposing a multi-faceted view of users.
+
+	* [[David Done]] Weaken the statement about blindly. Make clearer the point that we're asking multiple questions at the same time, rather than anything about agnostic.
+
+* [[David Done]] Rewrite the sentence "many of these connections do not correspond to real friendships or more generally to accounts that users interact with" to incorporate something like "People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc."
+
+* [[David Done]] Change structural communities to follower-based structural communities.
+
+* [[David Done]] Give an example of how different weightings of a network might still result in the same community structure.
+
+* [[David Done]] Rewrite the section around "For meaningful community structure, we expect the distribution of edge weights to differ with the edge type" to explain why we expect this to be the case, or when it might not be the case. Or remove the assumption of difference altogether.
+
+* [[David Done]] Rewrite the section around "But we have seen in our study that a structural network alone is not sufficient to capture user interaction or even activity-based influence in online social media." to emphasize how we get different communities from that of the follower network, and thus the follower network alone is not enough to elucidate these types of communities.
 
 Introduction:
 -------------
