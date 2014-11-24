@@ -76,15 +76,22 @@ Method
 
 
 
+
+
+
+
+
+
+
 Completed:
 ==========
 Title
-*Change to reflect new focus
+[[Joshua Done]]Change to reflect new focus
 
 
 Abstract
 —————
-*Rewrite to reflect new focus
+[[Joshua Done]]Rewrite to reflect new focus
 
 Throughout
 ___________
