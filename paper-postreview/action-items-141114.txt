@@ -1,3 +1,7 @@
+Address for submitting journal revisions:
+
+http://mc.manuscriptcentral.com/comnet
+
 Elisa:
 ======
 
@@ -150,7 +154,7 @@ Concl
 * [[Joshua Done]]“even activity-based influence": it depends, you can consider weights accordingly, for example based on the frequency/intensity of the interaction, etc. You can even add a weight using Granger correlation. You can put a weight if the correlation is higher than a certain given threshold for example - and only tnen apply the community detection algorithm.
 
 
-* [[David done]] "erroneous results": how can you say that your resutls are corrects. [[Seems like this has been fixed as I can’t find it anymore but please check]]
+* [[David done]] "erroneous results": how can you say that your resutls are corrects.
 
 
 
