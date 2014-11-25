@@ -15,79 +15,67 @@ Reviewer 1
 
 - As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
 
-* 
+* We have attempted to address this point more fully in section 3.4 of the revised manuscript. In particular, we demonstrate how the topic-based, interaction-based, and activity-based networks give rise to meaningful communities based on their respective interpretations of the meaning of 'community.' e.g. A topic-based community based around small businesses, an activity-based community based around individuals in Denver, CO, etc. Finally, we have added individual case studies to demonstrate how the community membership of a user across the different community types reveals different aspects of the user's online identity. 
 
 - "many of these connections do not correspond to real friendships or more generally to accounts that users interact with": This sentence is very difficult to understand. People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc.
 
-* 
-
-- "structural communities": also these are structural communities based on a different type of weight.
-
-* 
+* Thank you for this suggestion. We have revised this sentence to more accurately reflect the plurality of account-types that exist on Twitter.
 
 - "we show that the communities obtained in the three weighted cases are highly different from each other": this is a fairly result. Different weights lead to different results.
 
-* 
+* The fact that different weightings should give rise to different communities is in our opinion non-trivial. For example, if all of the different weightings were strongly associated with each other, then we would expect to obtain the same communities, since the same structural backbone was used to to construct each weighted network. One might expect this to be the case with, for example, the interaction-based and activity-based weights. However, as both Figures 1 and 2 demonstrate, this is not the case.
 
 - "contact filtering": this is not a common term/concept at all in my opinion. It seems that tit has been introduce by the authors.
 
-* 
+* We did not introduce the term/concept. It can be found in reference [5].
 
 - "However, with the prevalence of large rich data sets for online social networks": I think that the opposite is actually true. Sociologists usually go beyond simple structure and/or structure is used to describe dynamics.
 
-* 
-
-- "On a more abstract level, a user might consider themselves part of a community of people discussing similar topics...": this is a standard approach to social network analysis. The membership is defined by the users themselves.
-
-* 
+* We did not mean to claim that sociologists currently take this approach, but rather that this approach was more reasonable in the era of small-scale studies of human/human interaction (for example, the small-world experiment of Stanley Milgram, or Zachary's Karate club). 
 
 - "Interaction-based": why is this different from activity based? It seems to me that this is a sort of limit case of the "activity-based" considering a simplification of the problem: communication vs no communication.
 
-* 
+* [[Josh]]
 
 - "We divide our approaches into four categories": I think that this is not strictly necessary since you have already mentioned this.
 
-* 
+* Thank you for this suggestion. We have revised the manuscript to remove this redundancy.
 
 - "However, we conjecture": rightly, the authors say that this is just a conjecture. At the same time, very bold claims are based on this very simple conjecture.
 
-* 
+* We agree that our original presentation of transfer entropy did not do a good enough job of stressing the difference between social and information theoretic influence. We have attempted to revise our presentation of transfer entropy to make it more clear exactly what we believe transfer entropy does and does not capture in the setting of our paper.
 
 - "For example [6],": the idea of building a network based on this is not particularly new.
 
-* 
+* We agree. As stated above, we feel that our contribution with this paper is not to demonstrate new ways to construct networks from data derived from Twitter, but rather how to use many of those networks to highlight the multifaceted nature of user engagement with online social media.
 
 - "However, this approach focused on data for a particular topic...": this is not a credible justification to dismiss the work. The fact that you present an approach based on structure together with this one does not represent a significant contribution per se in my opinion.
 
-* 
-
-- The discussion of the selection of the clustering algorithm can be summarized in my opinion.
-
-* 
+* See the previous response.
 
 - "For this reason, we coarsen each time series by considering non-overlapping time intervals...": this time series might be rather sparse. A discussion of this issue might be helpful.
 
-* 
+* [[Josh]]
 
 - "A positive value for the transfer...": this is just an assumption, you should say that you assume this.
 
-* 
+* We have revised the manuscript to emphasize that this is a property that immediately follows from the definition of the transfer entropy, rather than an assumption that we have made. However, we admit that our interpretation of the positivity is an assumption, and we have attempted to make this interpretation more concrete in the revised manuscript.
 
 - Formulae (2) and (3): you should use a different symbol for p in (2) and (3). In (4) the p can be very different. This formula is not correct in my opinion.
 
-* 
+* Thank you for this suggestion. The p was not meant to be a variable, but rather to indicate the proportion of retweets / mentions. We have revised our notation to remove any confusion caused by the use of the prefix p.
 
 - In general, the 3 metrics listed in (2), (3) and (4) are not properly motivated in my opinion.
 
-* 
+* [[Elisa]]
 
 - Section 2.5: the extraction of the weights is pretty standard, I do not consider this as a contribution per se.
 
-* 
+* As noted in previous responses, the scope of this paper was not to present new weighting metrics, but rather to demonstrate the impact of standard weighting metrics on the communities extracted from a real-world online social network.
 
 - The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
 
-* 
+* We believe that the differing distributions do demonstrate that the mesoscopic structure of the network looks different depending on the question-type employed to extract the communities. For example, using the follower network alone results in smaller communities that resolve together into larger communities after applying the weightings. Thus, those individuals who appear to be unassociated based on the follower network become associated after we include more information about their activity / interactions / topic profiles.
 
 - "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
 
@@ -99,36 +87,35 @@ Reviewer 1
 
 - For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behaviour.
 
-*
+* Thank you for pointing this out. We have revised the manuscript to emphasize those cases when we do / do not expect the edge weight distributions to vary depending on the conditioning.
 
 - "If the community structure were arbitrary...": this is not true in general.
 
-* 
+* Thank you for pointing this out. We have revised the manuscript to account for this.
 
 - "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
 
-*
-
+* 
 
 - "This means that these accounts had high influence...": this is a strong claim. This might be simply due to the higher probability of retweet for that account, i.e., the use of the entropy transfer function might not necessary. The actual introduction of such a complex tool for describing this tool is not completely justified.
 
-*
+* [[Josh]]
 
 - "Lastly, it is interesting to note...": the same might be true for these accounts.
 
-* 
+* [[Josh]]
 
 - "even activity-based influence": it depends, you can consider weights accordingly, for example based on the frequency/intensity of the interaction, etc. You can even add a weight using Granger correlation. You can put a weight if the correlation is higher than a certain given threshold for example - and only tnen apply the community detection algorithm.
 
-* 
+* We agree. Alternative activity-based metrics could and should certainly be applied. In this sentence, we meant to emphasize that the structural network alone would not capture this information, and therefore performing influence detection using this network might lead to 
 
 - "erroneous results": how can you say that your resutls are corrects.
 
-* 
+* We have expanded on this point in the revised manuscript, and given examples of how influence detection based solely on the structural network could result in an incomplete understanding of the influence exhibited by users in an online social network.
 
 Reviewer 2
 ==========
 
 - My only minor complaint is the following. Depending on the "type" of links considered, I expect the network to be different. Why did the authors focus only on communities, instead of considering also more basic network properties? I would add some statistics about it.
 
-* 
+* Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis. However, as we indicated in the Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks.
