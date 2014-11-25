@@ -10,15 +10,13 @@ Dave:
 
 General
 ______
-* Clear up that we are different than 44 addressing the comment “The method itself is not particularly new. It was used in the past in [44]."
+
 
 
 Introduction:
 -------------
 
-* "For example [6],": the idea of building a network based on this is not particularly new.
 
-* "However, this approach focused on data for a particular topic...": this is not a credible justification to dismiss the work. The fact that you present an approach based on structure together with this one does not represent a significant contribution per se in my opinion.
 
 
 Methods:
@@ -26,13 +24,6 @@ Methods:
 
 Results:
 --------
-
-Make sure the following reviewer concerns have been addressed, I don’t think a lot needs to be done with these just more justification added really so that the reviewer is not as confused.
-
-*The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
-* "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
-* Figure 2: I cannot se real insights from these plots.
-* "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
 
 Reviewer 2:
 -----------
@@ -89,6 +80,20 @@ ___________
 * [[David Done]] Rewrite the section around "For meaningful community structure, we expect the distribution of edge weights to differ with the edge type" to explain why we expect this to be the case, or when it might not be the case. Or remove the assumption of difference altogether.
 
 * [[David Done]] Rewrite the section around "But we have seen in our study that a structural network alone is not sufficient to capture user interaction or even activity-based influence in online social media." to emphasize how we get different communities from that of the follower network, and thus the follower network alone is not enough to elucidate these types of communities.
+
+[[David Done]] Clear up that we are different than 44 addressing the comment “The method itself is not particularly new. It was used in the past in [44]."
+
+[[David Done]] "For example [6],": the idea of building a network based on this is not particularly new.
+
+[[David Done]] "However, this approach focused on data for a particular topic...": this is not a credible justification to dismiss the work. The fact that you present an approach based on structure together with this one does not represent a significant contribution per se in my opinion.
+
+[[David Done]] The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
+
+[[David Done]] "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
+
+[[David Done]] Figure 2: I cannot se real insights from these plots.
+
+[[David Done]] "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
 
 Introduction:
 -------------
