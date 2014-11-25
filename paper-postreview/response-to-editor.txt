@@ -3,15 +3,19 @@ Reviewer 1
 
 - The authors claim that the novelty of their work is based on the fact that community extraction has been done "blindly", i.e. without considering that actual type of network under analysis. It seems to the reviewer that this is simply not true, because the construction of the network is always done considering a specific representation of the problem under consideration. A link can represent an activity, an interaction, etc.
 
-* 
+* We did not mean to claim that the community extraction was done blindly. In fact, we demonstrated exactly the opposite: by intentionally choosing a different question about the individuals in the social network, very different community structure may be extracted. We did wish to highlight that a question-oriented approach to community detection can be undertaken with the network at-hand, assuming the network was collected in a way that would not strongly bias any of the weighting metrics we utilized.
 
 - In particular, as far as the activity-based approach is concerned, the definition of influence is very difficult to justify. The method itself is not particularly new. It was used in the past in [44]. In general, in my opinion, the use of transfer entropy for measuring the influence of a certain user on another user is fairly questionable. In fact, saying that a certain user influences another one considering th patterns of user activity might be rather questionable. What about different "followees" influencing the same person? What about external influences? In any case, I think that it is difficult to talk about "influence" in these cases. And then there is a fundamental question: it is not clear which information you can get using transfer entropy and its semantics.
 
-* 
+* The method used in [44] is very different from our own. We originally cited this paper because it was the impetus for us considering point process-type models of user behavior in social media, but we see that this may have been misleading. The method in [44] assumes a weighted adjacency matrix based on the point-wise (in time) informational coherence between any two nodes in the network. The informational coherence is computed as the normalized mutual information between the marginal causal states associated with each node in the vertex, and thus measures whether or not the information processing between any two nodes is associated across time. Thus, this measure is neither directed, nor does it account for lagged effects in terms of the interaction between two nodes in network, as our method does.
 
 - Also, the similarity based on topics is not a contribution per se in my opinion. Topic extraction techniques (also in more refined ones, as cited by the authors) have been used in several papers.
 
-* As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
+* We do not believe that the contribution of our paper is any of the particular weightings, but rather in how the choice of a weighting can strongly impact. We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, but did not intend for these to be new or even state-of-the-art.
+
+- As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
+
+* 
 
 - "many of these connections do not correspond to real friendships or more generally to accounts that users interact with": This sentence is very difficult to understand. People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc.
 
