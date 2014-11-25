@@ -1,0 +1,130 @@
+Reviewer 1
+==========
+
+- The authors claim that the novelty of their work is based on the fact that community extraction has been done "blindly", i.e. without considering that actual type of network under analysis. It seems to the reviewer that this is simply not true, because the construction of the network is always done considering a specific representation of the problem under consideration. A link can represent an activity, an interaction, etc.
+
+* 
+
+- In particular, as far as the activity-based approach is concerned, the definition of influence is very difficult to justify. The method itself is not particularly new. It was used in the past in [44]. In general, in my opinion, the use of transfer entropy for measuring the influence of a certain user on another user is fairly questionable. In fact, saying that a certain user influences another one considering th patterns of user activity might be rather questionable. What about different "followees" influencing the same person? What about external influences? In any case, I think that it is difficult to talk about "influence" in these cases. And then there is a fundamental question: it is not clear which information you can get using transfer entropy and its semantics.
+
+* 
+
+- Also, the similarity based on topics is not a contribution per se in my opinion. Topic extraction techniques (also in more refined ones, as cited by the authors) have been used in several papers.
+
+* As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
+
+- "many of these connections do not correspond to real friendships or more generally to accounts that users interact with": This sentence is very difficult to understand. People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc.
+
+* 
+
+- "structural communities": also these are structural communities based on a different type of weight.
+
+* 
+
+- "we show that the communities obtained in the three weighted cases are highly different from each other": this is a fairly result. Different weights lead to different results.
+
+* 
+
+- "contact filtering": this is not a common term/concept at all in my opinion. It seems that tit has been introduce by the authors.
+
+* 
+
+- "However, with the prevalence of large rich data sets for online social networks": I think that the opposite is actually true. Sociologists usually go beyond simple structure and/or structure is used to describe dynamics.
+
+* 
+
+- "On a more abstract level, a user might consider themselves part of a community of people discussing similar topics...": this is a standard approach to social network analysis. The membership is defined by the users themselves.
+
+* 
+
+- "Interaction-based": why is this different from activity based? It seems to me that this is a sort of limit case of the "activity-based" considering a simplification of the problem: communication vs no communication.
+
+* 
+
+- "We divide our approaches into four categories": I think that this is not strictly necessary since you have already mentioned this.
+
+* 
+
+- "However, we conjecture": rightly, the authors say that this is just a conjecture. At the same time, very bold claims are based on this very simple conjecture.
+
+* 
+
+- "For example [6],": the idea of building a network based on this is not particularly new.
+
+* 
+
+- "However, this approach focused on data for a particular topic...": this is not a credible justification to dismiss the work. The fact that you present an approach based on structure together with this one does not represent a significant contribution per se in my opinion.
+
+* 
+
+- The discussion of the selection of the clustering algorithm can be summarized in my opinion.
+
+* 
+
+- "For this reason, we coarsen each time series by considering non-overlapping time intervals...": this time series might be rather sparse. A discussion of this issue might be helpful.
+
+* 
+
+- "A positive value for the transfer...": this is just an assumption, you should say that you assume this.
+
+* 
+
+- Formulae (2) and (3): you should use a different symbol for p in (2) and (3). In (4) the p can be very different. This formula is not correct in my opinion.
+
+* 
+
+- In general, the 3 metrics listed in (2), (3) and (4) are not properly motivated in my opinion.
+
+* 
+
+- Section 2.5: the extraction of the weights is pretty standard, I do not consider this as a contribution per se.
+
+* 
+
+- The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
+
+* 
+
+- "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
+
+* 
+
+- Figure 2: I cannot se real insights from these plots.
+
+* 
+
+- For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behaviour.
+
+*
+
+- "If the community structure were arbitrary...": this is not true in general.
+
+* 
+
+- "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
+
+*
+
+
+- "This means that these accounts had high influence...": this is a strong claim. This might be simply due to the higher probability of retweet for that account, i.e., the use of the entropy transfer function might not necessary. The actual introduction of such a complex tool for describing this tool is not completely justified.
+
+*
+
+- "Lastly, it is interesting to note...": the same might be true for these accounts.
+
+* 
+
+- "even activity-based influence": it depends, you can consider weights accordingly, for example based on the frequency/intensity of the interaction, etc. You can even add a weight using Granger correlation. You can put a weight if the correlation is higher than a certain given threshold for example - and only tnen apply the community detection algorithm.
+
+* 
+
+- "erroneous results": how can you say that your resutls are corrects.
+
+* 
+
+Reviewer 2
+==========
+
+- My only minor complaint is the following. Depending on the "type" of links considered, I expect the network to be different. Why did the authors focus only on communities, instead of considering also more basic network properties? I would add some statistics about it.
+
+* 
