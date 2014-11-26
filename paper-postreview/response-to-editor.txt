@@ -8,10 +8,11 @@ Reviewer 1
 - In particular, as far as the activity-based approach is concerned, the definition of influence is very difficult to justify. The method itself is not particularly new. It was used in the past in [44]. In general, in my opinion, the use of transfer entropy for measuring the influence of a certain user on another user is fairly questionable. In fact, saying that a certain user influences another one considering th patterns of user activity might be rather questionable. What about different "followees" influencing the same person? What about external influences? In any case, I think that it is difficult to talk about "influence" in these cases. And then there is a fundamental question: it is not clear which information you can get using transfer entropy and its semantics.
 
 * The method used in [44] is very different from our own. We originally cited this paper because it was the impetus for us considering point process-type models of user behavior in social media, but we see that this may have been misleading. The method in [44] assumes a weighted adjacency matrix based on the point-wise (in time) informational coherence between any two nodes in the network. The informational coherence is computed as the normalized mutual information between the marginal causal states associated with each node in the vertex, and thus measures whether or not the information processing between any two nodes is associated across time. Thus, this measure is neither directed, nor does it account for lagged effects in terms of the interaction between two nodes in network, as our method does.
+(Elisa: I think this answers only the very first part of the comment. Josh, could you please elaborate also on the rest (I leave this to you since it's the transfer entropy stuff))
 
 - Also, the similarity based on topics is not a contribution per se in my opinion. Topic extraction techniques (also in more refined ones, as cited by the authors) have been used in several papers.
 
-* We do not believe that the contribution of our paper is any of the particular weightings, but rather in how the choice of a weighting can strongly impact. We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, but did not intend for these to be new or even state-of-the-art.
+* We do not believe that the contribution of our paper is any of the particular weightings, but rather in how the choice of a weighting can strongly impact. We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, but did not intend for these to be new or even state-of-the-art. (Elisa: I would eliminate "or even state-of-the-art". Also, I don't understand the first sentence.)
 
 - As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
 
@@ -67,11 +68,12 @@ Reviewer 1
 
 - In general, the 3 metrics listed in (2), (3) and (4) are not properly motivated in my opinion.
 
-* [[Elisa]]
+* Thank you for this comment. We expanded section 2.4 in the revised manuscript in order to motivate more in details these metrics.
 
 - Section 2.5: the extraction of the weights is pretty standard, I do not consider this as a contribution per se.
 
 * As noted in previous responses, the scope of this paper was not to present new weighting metrics, but rather to demonstrate the impact of standard weighting metrics on the communities extracted from a real-world online social network.
+(Elisa: I would say "to compare" rather than "to demontrate")
 
 - The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
 
@@ -119,3 +121,4 @@ Reviewer 2
 - My only minor complaint is the following. Depending on the "type" of links considered, I expect the network to be different. Why did the authors focus only on communities, instead of considering also more basic network properties? I would add some statistics about it.
 
 * Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis. However, as we indicated in the Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks.
+(Elisa: where exactly did we write that (I personally can't really find what sentence you refer to)? If we added in the revised version we should say it explicitely)
