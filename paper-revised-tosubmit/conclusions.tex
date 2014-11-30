@@ -1,0 +1,79 @@
+\section{Conclusion and Future Work}
+
+\label{sec:conc}
+
+% What have we done:
+% ==================
+
+%In this study, we have demonstrated that the communities observed in online social %networks are highly question-dependent 
+%[[Joshua:maybe reword this sentence to explicitly say what we mean by question-dependent", might be a little confusing]]
+%, and that different definitions of communities reveal different relationships between users. More importantly, we have shown that these different views of the network are not revealed by using the structural network alone. We found that community structure differs across community types on both the macro (e.g. number of communities and their size distribution) and micro (e.g. specific memberships, comemberships) scale.
+
+In this study, we have demonstrated that the communities observed in online social networks are highly question-dependent. The questions posed about a network \emph{a priori} have a strong impact on the communities observed.  Moreover, using different definitions of community reveal different and interesting relationships between users. More importantly, we have shown that these different views of the network are not revealed by using the structural network or any one weighting scheme alone. By varying the questions we asked about the network and then deriving weighting schema to answer each question, we found that community structure differed across community types on both the macro ({\it e.g.,} number of communities and their size distribution) and micro ({\it e.g.,} specific memberships, comemberships) scale in interesting ways.
+
+%We have also demonstrated that boundaries between communities represent meaningful internal/external divisions, with conversations and topics tending to be most highly concentrated within communities than without. We found this to be the case even when the communities were defined by a different criteria from the edge weights. [[Wasn't this the opposite in the transfer entropy case? Maybe I am remembering wrong. If so maybe we can spend a few sentences explaining why this is so leading into the next paragraph]]
+
+To verify the validity of these communities we demonstrated that boundaries between communities represent meaningful internal/external divisions. In particular, conversations ({\it e.g.,} retweets and mentions) and topics ({\it e.g.,} hashtags) tended to be most highly concentrated within communities. We found this to be the case even when the communities were defined by a different criterion from the edge weights under study. 
+
+% At first glance the boundaries defined by the communities in the activity-based network (those weighted with transfer entropy) seemed less meaningful. However, upon further investigation our novel use of transfer entropy for the detection of activity-based communities\footnote{It should be noted that while in previous work on online social media~\cite{ver2012information}, transfer entropy was found useful for identifying influence between users, it has not to the best of our knowledge been used to aid in the identification of communities.} brought to light a very interesting fact about this social network: influence tends to be higher across community boundaries than within them. This result echos the `strength of weak ties' theory from~\cite{granovetter1973strength}, which was supported empirically in~\cite{grabowicz2012social}. This means that our novel use of transfer entropy not only defines boundaries that are meaningful divisions between communities but it helps illustrate that influential users of a community need not be a member of that community.  
+
+% Removed the footnote.
+
+At first glance the boundaries defined by the activity-based communities derived from the transfer entropy weighting seemed less meaningful. However, upon further investigation our novel use of transfer entropy for the detection of activity-based communities highlighted an important fact about this social network: information transmission tended to be higher across community boundaries than within them. This result echos the `strength of weak ties' theory from~\cite{granovetter1973strength}, which has found empirical support in online social networks~\cite{grabowicz2012social}. This means that our use of transfer entropy not only defines boundaries that are meaningful divisions between communities but also illustrates that users who have a strong APC with a community need not be a member of that community. 
+
+
+%Start of future work**
+Our findings may have important implications to a common problem in social network analysis: identification of influential individuals---but further work must be carried out.
+Many network measures of influence are based on the various types of centrality (degree, betweenness, closeness, eigenvector, etc.)~\cite{newman2009networks}. Most centralities depend explicitly on the structure of the network under consideration. But we have seen in our study that the structural network only highlights one of many possible ways that users interact with online social media.
+Thus, a na\"ive application of centrality measures to a structural network may be answering a different question than the one motivating influence detection. For example, a user exhibiting high closeness centrality based on the structural network may be able to make a message visible to most other users in a social network, but this does not mean that those other users are likely to respond to or propagate that message. The importance of correctly framing network measures of influence has been explored previously~\cite{kitsak2010identification}, and our work further highlights its importance. 
+
+Based on our preliminary results, we conjecture that weighted generalizations of these centrality measures using transfer entropy might lead to better insights about who is actually influential in an online social network. 
+It is interesting to note for example that two of the Forbes ``Top 10 Social Media Influencers", happen to be in our network, \emph{viz.}, Ann Tran and Jessica Northey, and transfer entropy also quantified these two users as having two of the highest APC on average, i.e., there was a high reduction in uncertainty about their followers activity on Twitter given their tweet histories. While we do not believe this information theoretic measure can capture social influence in its entirety, 
+% members, as categorized by transfer entropy. 
+this suggests that this activity-based measure may be useful in finding influential members purely based on their temporal tweet history; even completely ignoring both tweet content and social status. However, a deeper analysis would need to be carried out to verify this finding.
+In addition to exploring this phenomenon further, we plan to explore a broader selection of choices for both the transfer-entropy lag and tweet history time resolution. We believe that by doing an in-depth analysis of both of these parameters we can discover interesting activity-based communities that occur on much broader time scales.
+%End of futre work**
+  %based on methods for model selection~\cite{claeskens2008model}.
+
+%Our work has introduced a novel use of transfer entropy for the detection of activity-based communities. 
+
+
+%Our transfer entropy results thus reflect that influence tends to be higher across community boundaries than within them. This result echos the `strength of weak ties' theory from~\cite{granovetter1973strength}, which has found empirical support in~\cite{grabowicz2012social}. In addition to exploring this phenomenon further, we plan to consider more rigorous choices of both the lag and time resolution based on methods for model selection~\cite{claeskens2008model}.
+
+
+
+
+% * Defined four types of communities based natural questions one might ask about users in online social media.
+
+% * Proposed three weightings to detect such communities.
+
+% * Demonstrated that the community structure differed between weighting to weighting.
+
+% Future Work:
+% ============
+
+% More with transfer entropy.
+% 	Why did information tend to flow *across*, rather than within, community boundaries?
+
+% Longitudinal study:
+% 	How do the different types of communities change over time? Are activity-based communities more stable than interaction-based, etc.? For example, preliminary studies indicate that `conversations,' as defined by mentions and retweets, tend to move outside of structural communities over time.
+
+%[[This paragraph needs to be recrafted a bit. It just reads a little confusing]]
+
+%Our work has introduced a novel use of transfer entropy for the detection of activity-based communities. In previous work on online social media~\cite{ver2012information}, transfer entropy was found useful for identifying influence between users. Our transfer entropy results thus reflect that influence tends to be higher across community boundaries than within them. This result echos the `strength of weak ties' theory from~\cite{granovetter1973strength}, which has found empirical support in~\cite{grabowicz2012social}. In addition to exploring this phenomenon further, we plan to consider more rigorous choices of both the lag and time resolution based on methods for model selection~\cite{claeskens2008model}.
+
+% Why Care? (i.e. impact):
+% ========================
+
+% What does this mean for researchers in online social media? Businesses?
+
+% Using concepts like centrality to determine influence 
+% 	* These metrics are based solely on the structural network.
+% 	* Your *activity* may be more important than your *topology* in determining
+% 	  your influence.
+%[[While I agree with this next paragraph completely I am not sure we covered this topic enough to be the final paragraph of the conclussion or even in the conclusion. I need to think about this...]]
+
+% More generally, our work demonstrates that asking the proper question is an unavoidable first step to community detection, and that the rich data sets available from 
+
+This work demonstrates the utility of a multifaceted question-oriented approach to community detection. This work shows that crafting \emph{several} facet-driven weighting schema, doing community detection for each weighting scheme and then comparing the similarities and differences across community types, is an unavoidable process for uncovering the complex---and often hidden---community structure present in online social networks. More generally, this work illustrates that without a clear definition of community---or even only using a \emph{single} definition of community---many rich and interesting communities present in online social networks remain invisible. Multifaceted question-oriented community detection can bring those hidden communities into the light.
+

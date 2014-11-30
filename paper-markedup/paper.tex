@@ -1,7 +1,7 @@
  %%File: formatting-instruction.tex
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../paper-prereview/paper.tex    Mon Aug 25 16:39:19 2014
-%DIF ADD ../paper-postreview/paper.tex   Sun Nov 23 10:45:53 2014
+%DIF ADD ../paper-postreview/paper.tex   Sun Nov 30 10:51:03 2014
 \documentclass{article}
 \usepackage{authblk}
 %\usepackage{color}
@@ -41,6 +41,9 @@
 \usepackage{appendix}
 \usepackage{url} %CA: I want to use hyperref -> but we get errors (see above)
 \usepackage{enumitem}
+%DIF 41a41
+\usepackage[normalem]{ulem} %DIF > 
+%DIF -------
 
 \usepackage[sort&compress,numbers]{natbib} % CA: comnet.cls file had errors -> This is a fix%
 \renewcommand{\bibnumfmt}[1]{\textbf #1.\ }
@@ -110,15 +113,7 @@
 
 
 \title{Followers Are Not Enough: A \DIFdelbegin \DIFdel{Question-Oriented }\DIFdelend \DIFaddbegin \DIFadd{Multifaceted }\DIFaddend Approach to Community Detection in Online Social Networks
-\DIFaddbegin \\
-\DIFadd{A Multifaceted Approach to Unveiling the Layered Communities of Online Social Networks
-}\\
- \DIFadd{A Multifaceted Approach to Unveiling the Layers of Hidden Communities in Online Social Networks
- }\\ 
-\DIFadd{A Multifaceted Approach for Unveiling Hidden Communities in Online Social Networks
-}\\
-\DIFadd{On the Importance of a Multifaceted Approach to Community Detection in Online Social Networks
-}\DIFaddend }
+}
 
 
  \author[1]{David Darmon}
@@ -179,25 +174,28 @@
 \maketitle
 
 \begin{abstract}
-\DIFaddbegin 
+%DIF < \begin{quote}
+%DIF < The Keywords
+%DIF < Community detection, functional communities, social network analysis, transfer entropy
 
-\DIFadd{In online social media networks, users often have hundreds or even thousands of connections, which connect these users not only to friends, associates, and colleagues, but to news outlets, celebrities, government organizations and many others. In these complex social networks the concept of `community' becomes very general, and different definitions of community such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to very different and interesting social groups.  Taking into account the multifaceted nature of these networks, we claim that community detection in online social networks should also be multifaceted in order to capture all of the different and valuable viewpoints of `community'. In this paper we focus on three types of communities beyond follower-based structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that interesting insights can be obtained about the multilayered community structure present in complex social networks by studying when, why and how these four different community types are similar as well as completely disjoint; structure that would be completely invisible if only using a single definition of community.
+\DIFdelbegin \DIFdel{Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users }\DIFdelend \DIFaddbegin \DIFadd{In online social media networks, individuals }\DIFaddend often have hundreds or even thousands of \DIFdelbegin \DIFdel{such connections, and many of these connections do not correspond to real friendships or more generally to accounts that users interact with. We claim that communitydetection in online social networks should be question-oriented and rely on additional information beyond the simple structure }\DIFdelend \DIFaddbegin \DIFadd{connections, which link these users not only to friends, associates, and colleagues, but also to news outlets, celebrities, and organizations. In these complex social networks, a `community' as studied in the social network literature, can have very different meaning depending on the property }\DIFaddend of the network \DIFdelbegin \DIFdel{. The concept of `community' is very general, and different questions such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different social groups.}\DIFdelend \DIFaddbegin \DIFadd{under study. 
+%DIF >  and different definitions of community such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to very different and interesting social groups. 
+Taking into account the multifaceted nature of these networks, we claim that community detection in online social networks should also be multifaceted in order to capture all of the different and valuable viewpoints of `community.' }\DIFaddend In this paper we focus on three types of communities beyond \DIFaddbegin \DIFadd{follower-based }\DIFaddend structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that \DIFdelbegin \DIFdel{the communities obtained in the three weighted cases are highly different from each other, and from the communities obtained by considering only the unweighted structural network. Our results confirm that asking a precise question is an unavoidable first step in community detection in  online social networks , and that different questions can lead to different insights about the network under study.
+}\DIFdelend \DIFaddbegin \DIFadd{interesting insights can be obtained about the complex community structure present in  social networks by studying when and how these four community types give rise to similar as well as completely distinct community structure.
 }\\\\
 
 
 
-\DIFaddend %\begin{quote}
-%The Keywords
-%Community detection, functional communities, social network analysis, transfer entropy
+%DIF > \begin{quote}
+%DIF > The Keywords
+%DIF > Community detection, functional communities, social network analysis, transfer entropy
 
 
-Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users often have hundreds or even thousands of such connections, \DIFdelbegin \DIFdel{and many of these connections do not correspond to real friendships or more generally to accounts that users interact with . We }\DIFdelend \DIFaddbegin \DIFadd{many of which connect them with news outlets, governmental organizations, etc., in addition to their friends and associates. Because of the multifaceted nature of these networks, we }\DIFaddend claim that community detection in online social networks should be \DIFaddbegin \DIFadd{multifaceted, }\DIFaddend question-oriented and rely on additional information beyond the simple structure of the network. The concept of `community' is very general, and different questions such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different \DIFaddbegin \DIFadd{and interesting }\DIFaddend social groups. In this paper we focus on three types of communities beyond \DIFaddbegin \DIFadd{follower-based }\DIFaddend structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that \DIFdelbegin \DIFdel{the communities obtained in the three weighted cases are highly different from each other, and from the communities obtained by considering only the unweighted structural network. 
-}\DIFdelend \DIFaddbegin \DIFadd{interesting insights can be obtained about the true community structure of a social network by studying when and why these four different community types are disjoint and when they overlap. Community structure that would be missed if only doing a single layer of community detection. 
+%DIF > Community detection in online social networks is typically based on the analysis of the explicit connections between users, such as ``friends" on Facebook and ``followers" on Twitter. But online users often have hundreds or even thousands of such connections, many of which connect them with news outlets, governmental organizations, etc., in addition to their friends and associates. Because of the multifaceted nature of these networks, we claim that community detection in online social networks should be multifaceted, question-oriented and rely on additional information beyond the simple structure of the network. The concept of `community' is very general, and different questions such as ``whom do we interact with?" and ``with whom do we share similar interests?" can lead to the discovery of different and interesting social groups. In this paper we focus on three types of communities beyond follower-based structural communities: activity-based, topic-based, and interaction-based. We analyze a Twitter dataset using three different weightings of the structural network meant to highlight these three community types, and then infer the communities associated with these weightings. We show that interesting insights can be obtained about the true community structure of a social network by studying when and why these four different community types are disjoint and when they overlap. Community structure that would be missed if only doing a single layer of community detection. 
 %DIF > %
 %DIF > We show that the communities obtained in the three weighted cases %are highly different from each other, and from the communities %obtained by considering only the unweighted structural network.
 %DIF > Our results confirm that asking a precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights about the network under study.
-  }\DIFaddend Our results confirm that asking a \DIFaddbegin \DIFadd{series of }\DIFaddend precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights about the network under study.
- \DIFaddbegin 
+ %DIF > Our results confirm that asking a series of precise question is an unavoidable first step in community detection in online social networks, and that different questions can lead to different insights about the network under study.
 
 \DIFaddend %\end{quote}
 \end{abstract}

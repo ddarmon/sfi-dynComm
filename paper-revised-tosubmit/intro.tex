@@ -1,0 +1,86 @@
+\section{Introduction}
+
+Networks play a central role in online social media services like Twitter, Facebook, and Google+. These services allow a user to interact with others based on the online social network they curate through a process known as contact filtering~\cite{cazabet2012automated}. For example, `friends' on Facebook represent reciprocal links for sharing information, while `followers' on Twitter allow a single user to broadcast information in a one-to-many fashion. Central to all these interactions is the fact that the \emph{structure} of the social network influences how information can be broadcast or diffuse through the service.
+
+Because of the importance of structural networks in online social media, a large amount of work in this area has focused on using structural networks for community detection. In this traditional view, a community is defined as a collection of nodes (users) within the network which are more highly connected to each other than to nodes (users) outside of the community~\cite{girvan2002a, newman2004finding}. For instance, in~\cite{java2009we}, the authors use a follower network to determine communities within Twitter, and note that conversations tend to occur within these communities. The approach of focusing on the structure of networks makes sense for `real-world' sociological experiments, where obtaining additional information about user interactions may be expensive and time-consuming. However, with the prevalence of large, rich data sets from online social networks, additional information beyond the structure alone may be incorporated, and these augmented networks more realistically reflect how users interact with each other on social media services~\cite{nguyen2011adaptive,grabowicz2012social}.
+
+%A large body of work exists on methods for automatic detection of communities within networks~\cite{newman2004fast,newman2004finding,rosvall2008maps,blondel2008fast,LancichinettiPlos}. See~\cite{fortunato2010community} for a recent review. 
+A large body of work exists on methods for automatic detection of communities within networks, {\it e.g.,} the stochastic blockmodel~\cite{Holland1983} (and its recent generalization to weighted networks~\cite{Aicher26062014}), the Girvan-Newman algorithm~\cite{newman2004finding}, clique percolation~\cite{PalEtAl05}, Infomap~\cite{Rosvall08mapsof}, Louvain~\cite{blondel2008fast}, and the recently introduced OSLOM~\cite{LancichinettiPlos}.
+All these methods begin with a given network, and then attempt to uncover structure present in the network, \emph{i.e.,} they are agnostic to how the network was constructed.
+As opposed to this agnostic analysis, we propose---and illustrate the importance of---a \emph{multifaceted question-focused} approach. We believe that in order to understand all of the communities present in a network, it is important to take the following crucial steps: 
+\begin{enumerate}
+
+\item Ask \emph{several} questions about the communities that may be present in the network, each of which is aimed at revealing a new facet of the community structure present in the network---{\it e.g.,} which users are tightly connected structurally? which groups of users have similar topical interests?
+
+\item Derive a weighting scheme aimed at answering each of the questions asked in the first step and then perform community detection on each weighted network.
+\item Compare the (possibly) different communities that arise from this series of experiments on a micro and macro scale to unveil all the interesting facets of community structure present in the social network. 
+\end{enumerate}
+
+This is especially true for social network analysis. In social networks, a `community' could refer to several possible structures. The simplest definition of community, as we have seen, might stem from the network of explicit connections between users on a service (friends, followers, etc.). On small time scales, these connections are more or less static. To form a more dynamic picture of community structure, we might instead determine communities based on who is talking to whom or which users talk about similar topics.
+More abstractly, we could even define communities as groups of people who exhibit similar activity profiles. We can characterize these types of communities based on the questions that motivate them:
+\begin{itemize}
+	\item \textbf{Structure-based:} Who are your stated friends? Whom do you follow?
+	\item \textbf{Activity-based:} Who shares similar activity profiles?
+	\item \textbf{Topic-based:} What do you talk about?
+	\item \textbf{Interaction-based:} Whom do you communicate with?
+\end{itemize}
+
+This is not meant to be an exhaustive list, but rather a list of some of the more common types of communities observed and studied in social networks. Instead of looking at each of these questions in isolation---which is the standard approach---we propose looking at when and how communities motivated by these different questions overlap and are disjoint, and whether different approaches to asking the question ``What community are you in?'' leads to different insights about a social network. For example, a user on Twitter might connect mostly with computational social scientists, utilize the service nearly every time a particular user or group of users is active, talk mostly about machine learning, and interact solely with close friends (who may or may not be computational social scientists). 
+For this user, the answers to each question therefore correspond to more or less distinct communities. By contrast, a teenage user may only connect and interact with their friends, will most likely exhibit similar activity patterns dictated by the academic and extracurricular schedule of a student, and will discuss topics typical of their demographic. For this user, the answers to each question map to the same community of users, even though different definitions of community are being used. This highlights an important subtlety of this work: defining communities in different ways does not imply that the collection of users in each community \emph{must} be different. Said differently, it is not obvious---or always the case---that changing the definition of community will always change the communities that are detected. Studying when this change does and does not occur---as we will show---provides interesting insights into the complex community structure present in these networks.
+%Thus, each question acts to highlight a particular subset of users a particular user is connected with in an online social network, and this can help identify the possibly different communities the user belongs to.
+%Thus, each question acts to highlight a particular `profile' of a user, and these profiles or facets could help define the relationships of a user on an online social network more completely. 
+
+We now consider in more detail how each of these types of questions describes a unique facet of `community'. Later in Section~\ref{sec:conc} we will show how asking \emph{all} of these questions---instead of focusing on only one---gives a much deeper view of the (possibly) different communities that users belong to. 
+
+Na\"ively the activity-based approach is motivated by the question of ``Which users in a network have similar activity profiles?".
+%--- \emph{i.e.,} which user(s) cause groups of users to become active on the network.  %, \emph{i.e.}, which user(s) cause a user(s) to interact with the network. 
+ With this question in mind, a community can then be thought of as those users who use (or do not use) the service at similar times. However, the measure we use is slightly more subtle that this. In particular, these communities can be thought of as groups of users who possess so-called ``activity-based predictive capacity" with one another, \emph{i.e.}, given a user $u$ and follower $f$, who are members of a community detected with this weighting, there exists a reduction in uncertainty about the activity profile of follower $f$ (tweeting or remaining silent), given the tweet history of user $u$, ignoring the information present in the tweet history of follower $f$.  To accomplish this, we consider each user on Twitter as an information processing unit, but completely ignore the \emph{content} of their tweets. We then weight the directed edges (the reported follower-followee relationships) between users with the so-called \emph{transfer entropy}~\cite{schreiber2000measuring}, calculated between the tweet history of follower $f$ and user $u$. This is discussed in more detail in Section~\ref{sec:method-activity}.
+
+The topic-based and interaction-based approaches, in contrast to the activity-based approach, rely on the \emph{content} of a user's interactions and ignore their temporal components. The content contains a great deal of information about communication between users.
+There are two broad approaches to topic-based communities in the literature. \cite{rossi2012conversation} used a set of users collected based on their use of a single hashtag, and tracked the formation of follower and friendship links within that set of users. In~\cite{lim2012following}, the authors chose a set of topics to explore, and then seeded a network from a celebrity chosen to exemplify a particular topic. Both approaches thus begin with a particular topic in mind, and perform the data collection accordingly. Other approaches use probabilistic models for the topics and treat community membership as a latent variable~\cite{yin2012latent}.
+For example, a popular approach to analyzing social media data is to use Latent Dirichlet Allocation (LDA) to infer topics based on the prevalence of words within a status~\cite{zhao2011comparing,michelson2010discovering}. The LDA model can then be used to infer distributions over latent topics, and the similarity of two users with respect to topics may be defined in terms of the distance between their associated topic distributions. Because our focus is not on topic identification, we apply a simpler approach using hashtags as a proxy for topics, similar to the approaches presented in~\cite{becker2011beyond,tsur2012s}. We can then define the similarity of two users in terms of their hashtags, and use this similarity to build a topic-based network. This method is described in detail in Section~\ref{sec:method-topic}.
+
+Finally, the interaction-based approach relies on the meta-data and text of messages to identify whom a user converses with on the social media service. On Twitter, we can use mentions (indicating a directed communication) and retweets (indicating endorsement of another user) to identify conversation. 
+A few works have investigated this type of community. For example, \cite{conover2011political} considered both mention and retweet networks in isolation for a collection of users chosen for their political orientation. In~\cite{deitrick2013mutually}, the authors construct a dynamic network based on simple time-windowed counts of mentions and retweets, and use the evolution of this network to aid in community detection.
+
+Previous research on communities in social networks focused almost exclusively on different network types in isolation.
+A notable exception to this is~\cite{lim2012tweets}, which considered both structure-based and interaction-based communities on Twitter. However, this study focused on data collected based on particular topics (country music, tennis, and basketball), and not on a generic subpopulation of Twitter users. Moreover, it did not explore the differences in community structure resulting from the different network weightings, and focused on aggregate statistics (community size, network statistics, etc.). Another notable exception is~\cite{kao2013talison}, where the authors used a tensor representation of user data to incorporate retweet and hashtag information into a study of the social media coverage of the Occupy Movement. The tensor can then be decomposed into factors in a generalization of the singular value decomposition of a matrix, and these factors can be used to determine `salient' users. However, unlike our work, this approach focused on data for a particular topic (the Occupy Movement) and did not collect users based on a structural network.
+
+Studying how the communities derived from follower-followee, activity-based, topic-based, and interaction-based networks are disjoint as well as overlapping allow for a more complete picture of the \emph{implicit} networks present in online social media, as opposed to the \emph{explicit} social network indicated by follower links alone. In this paper, we explore the relation between these various possible networks through their corresponding communities. We begin by describing the methodologies used to generate the various types of networks, and infer their community structure.  We then explore how the communities of users differ depending on the type of network used.
+%\sout{\emph{Finally, we explore how communication patterns differ across and within the different community types. (Elisa: We do that?)}} 
+We conclude by illustrating that this multifaceted question-oriented approach to community detection provides interesting insights into the intricate multifaceted structure of several different users' communities, information that would not be available if only a single form of community detection was performed. 
+%\section{Related Work}
+
+% Structural:
+% ==========
+
+% \cite{java2009we} Determine friendship network on Twitter to define communities.
+
+% \cite{nguyen2011adaptive} Uses a dynamic community detection algorithm (that uses snapshots of the network), but still focuses on \emph{structural} ties (Facebook friendship relationships)
+
+% Interaction-based:
+% ==================
+
+% \cite{deitrick2013mutually} use 'dynamic' mention-retweet network to detect communities, but just augment the count of mentions retweets in the weighting (instead of using a proportion), and don't combine mentions and retweets.
+
+% \cite{conover2011political} Retweet-mention analysis for political polarization analysis
+% http://truthy.indiana.edu/site_media/pdfs/conover_icwsm2011_polarization.pdf
+
+% Activity-based:
+% ===============
+
+% None, to the best of our knowledge.
+
+% Topic-based:
+% ============
+
+% \cite{lim2012following} "We propose an efficient approach for detecting communities that share common interests on Twitter, based on linkages among followers of celebrities representing an interest category." Use both InfoMAP and clique percolation.
+
+% \cite{rossi2012conversation} Collect users who use the same hashtag (a *single* hashtag, #XF5, for XFactor 5), and then note if this impacts the friend/follower network.
+
+% \cite{xu2011sentiment} Generate 'sentiment' networks.
+
+% Most-relevant:
+% ==============
+
+% \cite{lim2012tweets} This one is *very* important: they also note that structural links do not indicate communication. They use an interaction-based approach (mentions only). But they do not use a weighted version of the structural network. Instead, they use . And they do not go into much depth comparing how the two types of communities (structural and activity-based) differ. Moreover, they explicitly seed their network to focus around a particular topic (country music, tennis, basketball, etc.)

@@ -1,0 +1,108 @@
+\section{Methodology}
+In the following sections, we introduce the problem of community detection, and present the data set used for our analyses. We then describe our methodology for constructing the question-specific networks. In particular, we introduce an information theoretic statistic for activity-based communities, a retweet-mention statistic for interaction-based communities, and a hashtag similarity metric for defining topic-based communities. It should be noted that our goal is to choose representative weightings for each community type so that we may compare community structure across types, and not to---aside from the activity-based weighting---introduce novel weighting schemes \emph{per se}.
+
+\subsection{Community Detection}
+
+As discussed in the introduction, we adopt the standard definition of \emph{community}: a collection of nodes (users) within a network who are more densely connected to each other than with the rest of the network. Structural community detection is a well studied problem and several different methods and algorithms have been proposed. For a complete review of this subject we refer the reader to \cite{porter2009communities, fortunato2010community}. In this paper however we focus on a class of networks and communities that is far less studied, in particular we study networks which are both \textit{weighted} and \textit{directed} and communities within those weighted directed networks that can (but need not) \emph{overlap}. When selecting a detection algorithm we propose that all three (weight, direction, and overlap) are important for the following reasons. First, communication on Twitter occurs in a directed manner, with users broadcasting information to their followers. An undirected representation of the network would ignore this fact, and could lead to communities composed of users who do not actually share information. Second, we are interested in not just the structure of links but also in their function, and to capture this we use edge weightings which must be incorporated into the community detection process. Finally, since people can belong to multiple and possibly overlapping social (e.g., college friends, co-workers, family, etc.) and topical (e.g., a user can be interested in both cycling and politics and use the network to discuss the two topics with two different groups of users) communities, we are interested in finding \textit{overlapping} communities, rather than partitions of the weighted directed network. 
+%For example, users can belong to multiple social groups such as college friends, %co-workers, family, etc. and these groups may but need not overlap. A user can also %belong to multiple topical communities, e.g., a user can be interested in both %cycling and politics and use the network to discuss the two topics with the two %different communities. 
+
+This last criterion in particular poses a problem because the majority of community detection algorithms developed so far are built to find partitions of a network and few are aimed at finding overlapping communities \cite{Aicher26062014,BaumesGKMP05,PalEtAl05,ZhaWanZha07,Gre07,PhysRevE.77.016107,Lancichinetti2009,PhysRevE.80.016105,Kovacs2010}. Among these methods, even fewer deal with directed or weighted networks. For example, the work of~\cite{PalEtAl05} on clique percolation can account for both features, but not at the same time. A recent method proposed in~\cite{LancichinettiPlos}, OSLOM (Order Statistics Local Optimization Method), is one of the first methods  able to deal with all of these features simultaneously. This method of Lancichinetti \emph{et al.} relies on a fitness function that measures the statistical significance of clusters with respect to random fluctuations, and attempts to optimize this fitness function across all clusters. 
+Following~\cite{LancichinettiPlos}, the significance measure is defined as the probability of finding the cluster in a network without community structure. The null model used is highly similar to the one adopted by Newman and Girvan in \cite{newman2004finding} to define modularity, {\it i.e.,} it is a model that generates random graphs with a given degree distribution. The authors tested their algorithm on different benchmarks (LFR and Girvan-Newman) and real networks (such as the US air transportation network and a word association network), and compared its performance against the best algorithms
+currently available ({\it i.e.,} the ones mentioned in the introduction), and found excellent results. Moreover, they showed that OSLOM is also able to recognize the absence, and not simply the presence, of community structure, by testing it on random graphs. This feature of the algorithm plays an important role in the analysis of real world networks, since it is not always the case that community structure is indeed present and it is therefore useful to be able to detect its absence too. 
+Therefore, given its versatility and performance with benchmark networks, in this paper we used OSLOM to detect \emph{overlapping} communities present in our \emph{weighted} and \emph{directed} networks.
+%For this paper we use OSLOM since it allowed us to detect \emph{overlapping} communities present in our \emph{weighted} and \emph{directed} network, and its authors showed that it performs very well on various types of artificial benchmark graphs and also on several real networks.
+
+\subsection{The Initial Dataset and Network Construction}
+
+The dataset for this study consisted of the tweets of 15,000 Twitter users over a 9 week period (from April 25th to June 25th 2011). The users are embedded in a network collected by performing a breadth-first expansion from a random seed user. In particular, once the seed user was chosen, the network was expanded to include his/her followers, but only included users considered to be `active' ({\it i.e.,} users who tweeted at least once per day over the past one hundred days). Network collection continued in this fashion by considering the active followers of the active followers of the seed, and so on until 15,000 users were added to the network. The only biasing steps in this procedure are the selection of the seed node and the filtering out of inactive users. However, because all of the community types we are interested in involve some aspect of the interaction between users, each other, and their content, this procedure provides a reasonable follower-followee network for use with the different question-based analyses.
+
+Since our goal is to explore the functional communities of this network, we filter the network down to the subset of users that actively interact with each other ({\it e.g.,} via retweets and mentions). We do this by measuring what we call (incoming/outgoing) information events. We define an outgoing information event for a given user $u$ as either a mention made by $u$ of another user in the network, or a retweet of one of $u$'s tweets by another user in the network. The logic for this definition is as follows: if $u$ mentions a user $v$ this can be thought of as $u$ directly sending information to $v$, and if $u$ is retweeted by $v$ then $v$ received information from $u$ and rebroadcast it to their followers. In either case there was information outgoing from $u$ which affected the network in some way. Analogously, we define the incoming information event for $u$ as either being mentioned by a different user in the network, or as retweeting another user in the network.
+%function and information share is important We then filter down this starting %network to include only users that [[what??]]. To do this 
+%Since one of the community types we want to explore is based on the explicit interactions ( between users, we filter the dataset in order to take into account only users who make use of these kinds of features in their tweets. [[Seeems out of place]]
+%We define an event of outgoing information for a given user $u$ as either a mention made by $u$ of another user in the network, or a retweet by another user of one of $u$'s tweets. 
+%[[Switched the readers perspective]]When we mention someone we are in fact sending him some information, and when we are retweeted it means that the person that retweeted us has received some information from us and is sharing it. 
+With (incoming/outgoing) information events defined we filtered the network by eliminating all users with less than a total of 9 outgoing \emph{and} incoming information events, {\it i.e.,} less than one information event per type per week on average. 
+We then further restricted our analysis to the strong giant connected component of the network built from the (incoming/outgoing) information filtered set of users. %and whose link represent a user-follower relationship.
+In this study the link is directed from the user to the follower because this is the direction in which information flows. Thus, for a pair of users $u$ and $v$, an edge $a_{v \to u}$ in the follower-followee network has weight 1 if user $u$ follows $v$, and 0 otherwise. The final network consists of 6,917 nodes and 1,481,131 edges.
+
+\subsection{Activity-Based Communities and Transfer Entropy}
+\label{sec:method-activity}
+
+
+
+
+
+
+For the activity-based communities, we consider only the timing of each user's tweets and ignore any additional content. From this starting point, we can view the behavior of a user $u$ on Twitter as a point process, where at any instant $t$ the user has either emitted a tweet ($X_{t}(u) = 1$) or remained silent ($X_{t}(u) = 0$). This is the view of a user's dynamics taken in~\cite{darmon2013understanding} and~\cite{ver2012information}. Thus, we reduce all of the information generated by a user on Twitter to a time series $\{ X_{t}(u)\}$ where $t$ ranges over the time interval for which we have data (9 weeks in this case). Because status updates are only collected in discrete, 1-second time intervals, it is natural to consider only the discrete times $t = 1 \text{s}, 2 \text{s}, \ldots, $ relative to a reference time. 
+
+Operationally, we expect users to interact with Twitter on a human time scale, and thus the natural one-second time resolution is too fine, since most humans do not write tweets on the time scale of seconds. For this reason, we coarsen each time series by considering non-overlapping time intervals ten minutes in length. For each time interval, we record a 1 if the user has tweeted during that time interval, and a 0 if he or she has not. Thus, the new coarsened time series now captures whether or not the user has been active on Twitter over any given ten minute time interval in our data set. It should be noted that, as (most) users are not constantly tweeting, these time series are quite sparse. For this particular application, this sparsity appropriately reflects the behavior of the users. However, this sparsity may not be appropriate for all applications; anytime the following measure is used in practice the effects of binning, sparsity, and their role in the activity-based community structure should be considered. We can then compute the flow of information from a user  $u$ to a follower $f$ by computing the transfer entropy between their time series $X_{t}(u)$ and $X_{t}(f).$ See Appendix A for a detailed introduction to transfer entropy and its estimation from data.
+
+ For the communities based on transfer entropy, we weighted each edge from a user $u$ to a follower $f$ by the estimated transfer entropy of the user $u$ on $f$, 
+\begin{align}
+	w_{u \to f}^{\text{TE}(k)} = \widetilde{\text{TE}}_{X(u) \to X(f)}^{(k)}. \label{Eqn-EW-activity}
+\end{align}
+% Transfer entropy is an information theoretic measure of \emph{directed} information flow. Since transfer entropy is a nonlinear generalization of Granger causality \cite{granger1963economic}, we assume---as is standard---a positive transfer entropy from the tweet history of a user $u$ to a follower $f$'s tweet history implies that this relationship is causal in the Granger sense.  Thus, communities detected in this way have members whose tweet histories are causally related in a Granger sense. %As a result, transfer entropy is often thought of as a measure of ``influence" in an information theoretic sense.
+Transfer entropy is an information theoretic measure of \emph{directed} information flow. We assume---as is standard---a positive transfer entropy from the tweet history of a user $u$ to $X(f)$ implies a reduction in uncertainty in the activity of the follower, given the information contained in $X(u)$, while removing the information already contained in $X(f)$. This provides an information theoretic framework in which we can capture communities with activity-based predictive capacity between users or users with similar activity profiles. We call this relation ``APC" (activity-based predictive capacity). 
+
+ We computed the transfer entropy on each coarsened time series with lag $k$ ranging from 1 to 6, this corresponds to a lag of ten minutes to an hour. The choice of lag must balance a trade-off between additional information and sparsity of samples: as we increase the lag $k$, we account for longer range dependencies, but we also decrease the number of samples available to infer a higher dimensional predictive distribution.  Interestingly, as we will show later, the underlying communities resulting from the different lags have similar structure.  See Appendix A for a discussion of these issues.
+
+ 
+
+It should be noted that according to~\cite{ver2012information} a positive transfer entropy between $X(u)$ and $X(f)$  indicates that $u$ ``influences" $f$, or that $u$ and $f$ share a common influencer. Similarly, since transfer entropy is a nonlinear generalization of Granger causality \cite{granger1963economic}, it is common to assume a positive transfer entropy between a user $u$ and a follower $f$ implies the relationship is causal in the Granger sense. However, we are skeptical whether this measure truly captures social influence in its entirety, or even causality in the case of online social networks. So instead we simply treat this weighting as a way to explicitly quantify APC between users.
+
+As an aside, while we are skeptical that this measure can capture social influence, later in this paper we show that this information theoretic measure agrees with other concepts of influence such as the Forbes list of ``Top 10 Social Media Influencers" and corroborates with the so-called strength of weak ties~\cite{granovetter1973strength}. Even so, we do not explicitly treat transfer entropy---and we do not believe it should be treated without further investigation---as a quantification of social influence or causality. Instead this measure should be treated merely as a way to quantify APC between users.%, {\it i.e.,} a reduction in uncertainty of whether a follower $f$ will be active or not given the tweet history of a user $u$
+
+To the best of our knowledge, this is the first use of transfer entropy for community detection in online social networks. Various other information theoretic approaches have been used successfully to analyze online social networks, \emph{e.g.,} to gain insight into local user behavior~\cite{darmon2013understanding}, to detect communities based on \emph{undirected} information flow~\cite{darmon2013detecting}, and to perform network inference and link prediction~\cite{ver2012information}.
+
+
+
+
+\subsection{Topic-Based Communities and Hashtag Weighting}
+\label{sec:method-topic}
+
+In contrast to the activity-based approach, the topic-based (or topical) communities, \emph{i.e.,} communities defined by the topics users discuss, rely on the \emph{content} of a user's interactions and ignore their temporal components. In a topical community, users are defined to be a member of a community if they tweet \emph{about} similar topics as the other members of the community. 
+%Another kind of community is the one based on the content of the tweets, and relies on the idea of finding people that talk about the same things. 
+In order to detect the topical communities, we weight the edges of the user-follower network through a measure based on the number of common hashtags between pairs of users. Hashtags are a good proxy for a tweet's content as hashtags are explicitly meant to be keywords indicating the topic of the tweet. Moreover they are widely used and straightforward to detect. 
+
+To this end, we characterize each user $u$ by a vector $\vec{h}(u)$ of length equal to the number of unique hashtags in the dataset, and whose elements are defined as
+\begin{equation}
+h_i(u) = \phi_i(u)\log{ \frac{N}{n_i} },
+\end{equation}
+where $\phi_i(u)$ is the frequency of hashtag $i$ occuring in user $u$'s tweets, $N$ is the total number of users, and $n_i$ is the number of users that have used the hashtag $i$ in their tweets. This adapted term frequency--inverse document frequency (tf-idf) measure \cite{salton_introduction_1983} captures the importance of a hashtag in the users's tweets through the first factor, but at the same time smooths it through the second factor by giving less importance to hashtags that are too widely used (as $\frac{N}{n_i}$ approaches one, its logarithm approaches zero). 
+
+For the topical communities we weight each directed edge from a user $u$ to a follower $f$ with the cosine similarity of their respective vectors $\vec{h}(u)$ and $\vec{h}(f)$:
+\begin{align}
+	w_{u \to f}^{\text{HT}} = \frac{\vec{h}(u) \cdot \vec{h}(f)}{\left|\left|\vec{h}(u)\right|\right| \ \ \left|\left|\vec{h}(f)\right|\right|}. \label{Eqn-EW-topic}
+\end{align}
+This weight captures the similarity between users in terms of the topics discussed in their tweets. 
+
+
+\subsection{Interaction-Based Communities and Mention / Retweet Weighting}
+\label{sec:method-interaction}
+
+Retweets and mentions are two useful features of Twitter networks which can be used to track information flow through the network.
+%A way of tracking the flow of information through users is by considering two useful features of this social network: mentions and retweets. 
+With mentions, users are sending direct information to other users and with retweets users are rebroadcasting information from a user they follow to all of their followers.
+%information from a user has been captured by a follower and shared with his/her own followers. 
+This type of information flow defines a community in a much different way than transfer entropy. Instead of defining communities by the loss of uncertainty in one user's tweeting history based on another's, we define interaction-based communities by weighting the user-follower network with a measure proportional to the number of mentions and/or retweets between users. 
+% We can therefore define interaction-based communities by weighting the user-follower network with a measure proportional to the number of mentions and retweets between users. 
+% For the interaction-based communities we consider three weighting schemes: proportional retweets,
+We define three weighting schemes. We first consider the number of tweets of a user $u$ that were rebroadcast by a follower $f$, indicating a flow of information from $u$ to $f$. Since different users produce different amounts of tweets and retweets, in order to take into account the relative importance of this measure we normalize it by dividing over the total number of retweets made by $f$,
+\begin{equation}
+w_{u \to f}^{\text{R}}=\frac{\mbox{\# retweets of }u \mbox{ by }f}{\mbox{\# total retweets made by }f},
+\end{equation}
+We then consider the number of mentions of $f$ made by user $u$. To account for the fact that some users/accounts are very popular and are often mentioned by so many other users that the flow of information from the latter to the former is flushed out, we normalize this measure by dividing over the total number of mentions received by $f$.
+\begin{equation}
+w_{u \to f}^{\text{M}} = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# total mentions of }f},
+\end{equation}
+Finally, we define the mention-retweet proportion as the arithmetic mean of the two measures just defined,
+%we weight each edge from a user $u$ to a follower $f$ through a combination of proportional mentions ($pM$):
+% In more details, for each couple of user-follower $u$ and $f$, we use the arithmetic mean of the two following numbers:
+%\begin{equation}
+%w_{u \to f}^{\text{M}} = pM = \frac{\mbox{\# mentions of }f \mbox{ by }u}{\mbox{\# %total mentions of }f}
+%\end{equation}
+\begin{align}
+	w_{u \to f}^{\text{MR}} = \frac{(w_{u \to f}^{\text{R}}+w_{u \to f}^{\text{M}})}{2}. \label{Eqn-EW-interaction}
+\end{align} 
+
+%	w_{u \to f}^{\text{MR}} = \frac{1}{2}\left(\frac{\mbox{\# mentions of }f %\mbox{ by }u}{\mbox{\# total mentions of }f} + \frac{\mbox{\# retweets of }u \mbox{ by }f}{\mbox{\# total retweets made by }f}\right).
