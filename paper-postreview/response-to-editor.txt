@@ -1,3 +1,22 @@
+Dear Editor:
+
+Please find attached the revised manuscript of our paper "Followers Are Not Enough: A Multifaceted Approach to Community Detection in Online Social Networks" by David Darmon, Elisa Omodei, and Joshua Garland.
+
+We have included a revised version of our manuscript (paper.pdf), as well as a marked up version that highlights the changes from our original submission to current version (paper-marked.pdf).
+
+We have sought to address all of the reviewers’ comments and concerns to the best of our ability. We have addressed these concerns point-by-point in our responses to the review reports, and have also included them in the addendum of this letter. 
+
+PUT MORE HERE.
+
+Thank you for all of the feedback. We believe that it has contributed to making our manuscript clearer, more concise, and more relevant to the research community.
+
+Sincerely,
+ 
+David Darmon
+Elisa Omodei
+Joshua Garland
+
+
 Reviewer 1
 ==========
 
