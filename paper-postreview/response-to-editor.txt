@@ -12,7 +12,7 @@ Reviewer 1
 
 - Also, the similarity based on topics is not a contribution per se in my opinion. Topic extraction techniques (also in more refined ones, as cited by the authors) have been used in several papers.
 
-* We do not believe that the contribution of our paper is any of the particular weightings, but rather in how the choice of a weighting can strongly impact. We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, but did not intend for these to be new or even state-of-the-art. (Elisa: I would eliminate "or even state-of-the-art". Also, I don't understand the first sentence.)
+* Aside from he activity-based weighting. We do not believe that the contribution of our paper is any of the particular weightings, but rather that using them all in parallel provides a deeper analysis of the complex community structure present in online social networks.  We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, in order to unveil the multifaceted communities present in these networks, but we did not intend for these to be new. We have rewritten several of the sections of the paper to emphasize this change. We have also re-titled the paper and completely rewritten the abstract to emphasize that the contribution is in the multifaceted approach not in the particular weightings. We hope this is now more clear. 
 
 - As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
 
@@ -36,7 +36,7 @@ Reviewer 1
 
 - "Interaction-based": why is this different from activity based? It seems to me that this is a sort of limit case of the "activity-based" considering a simplification of the problem: communication vs no communication.
 
-* [[Josh]]
+* This is a very interesting point, while the interaction based and activity based will have *some* overlap they are not the same and not really a limiting case either. Consider the case where a person tweets in reaction to an individuals tweet but does not mention nor retweet the original user. This would be detected in the activity based but not the interaction based. You may also consider the case where a community is all tweeting about a particular event as that event is occurring but not actually talking to each other, this would register in the topic based and activity based but not in the interaction based.   In the revised manuscript we provided concrete examples, from the experimental network, of both of these circumstances. We hope that this addition to the manuscript will help clear up this confusion. 
 
 - "We divide our approaches into four categories": I think that this is not strictly necessary since you have already mentioned this.
 
@@ -44,7 +44,7 @@ Reviewer 1
 
 - "However, we conjecture": rightly, the authors say that this is just a conjecture. At the same time, very bold claims are based on this very simple conjecture.
 
-* We agree that our original presentation of transfer entropy did not do a good enough job of stressing the difference between social and information theoretic influence. We have attempted to revise our presentation of transfer entropy to make it more clear exactly what we believe transfer entropy does and does not capture in the setting of our paper.
+* We agree that our original presentation of transfer entropy did not do a good enough job of stressing the difference between social and information theoretic influence. We have completely refactored our presentation of transfer entropy to make it more clear exactly what we believe transfer entropy does and does not capture in the setting of our paper.
 
 - "For example [6],": the idea of building a network based on this is not particularly new.
 
@@ -103,7 +103,7 @@ Reviewer 1
 and 
 - "Lastly, it is interesting to note...": the same might be true for these accounts.
 
-* As has been stated in previous responses the manuscript has been significantly refactored to not assume the implication of either influence or causality but simply use transfer entropy as a mathematical tool to quantify activity-based predictive capacity, which we define explicitly in the revised paper. While we tried to make it clear in the original manuscript that we were hesitant as whether this was truly a measure of social influence, the reviewers comments illustrated to us that we had not done this well enough. We hope that this refactoring of the paper makes this skepticism as well as our actual intentions with this method more clear. 
+* The manuscript has been significantly refactored to not assume the implication of either influence or causality but simply use transfer entropy as a mathematical tool to quantify activity-based predictive capacity, which we define explicitly in the revised paper. While we tried to make it clear in the original manuscript that we were hesitant to whether this was truly a measure of social influence, the reviewers comments illustrated to us that we had not done this well enough. We hope that this refactoring of the paper makes this skepticism as well as our actual intentions with this method more clear. 
 
 
 - "even activity-based influence": it depends, you can consider weights accordingly, for example based on the frequency/intensity of the interaction, etc. You can even add a weight using Granger correlation. You can put a weight if the correlation is higher than a certain given threshold for example - and only tnen apply the community detection algorithm.
@@ -119,5 +119,4 @@ Reviewer 2
 
 - My only minor complaint is the following. Depending on the "type" of links considered, I expect the network to be different. Why did the authors focus only on communities, instead of considering also more basic network properties? I would add some statistics about it.
 
-* Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis. However, as we indicated in the Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks.
-(Elisa: where exactly did we write that (I personally can't really find what sentence you refer to)? If we added in the revised version we should say it explicitely)
+* Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis. However, as we indicated in the revised Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks and we do intend to do this analysis, but we believe this would be more appropriate for a separate paper. 
