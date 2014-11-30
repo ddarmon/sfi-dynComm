@@ -50,7 +50,7 @@ where we use the plug-in estimators $\hat{H}\left[X_{t} | X_{t-k}^{t-1}\right]$ 
 		\widetilde{TE}_{Y \to X}^{(k)} &= \tilde{H}[X_t | X_{t-k}^{t-1}] - \tilde{H}[X_t | X_{t-k}^{t-1},Y_{t-k}^{t-1}] \\ 
 		&= \tilde{H}[X_t,X_{t-k}^{t-1}]-\tilde{H}[X_{t-k}^{t-1}]-\tilde{H}[X_t,X_{t-k}^{t-1},Y_{t-k}^{t-1}]+\tilde{H}[X_{t-k}^{t-1},Y_{t-k}^{t-1}].
 	\end{align}
-	One possible problem with this estimator is that it can result in \emph{negative} estimates of entropies. That usually occurs when $\hat{H}$ is very small. In these cases, we truncate set the estimator to zero.
+	One possible problem with this estimator is that it can result in \emph{negative} estimates of entropies. That usually occurs when $\hat{H}$ is very small. In these cases, we set the estimator to zero.
 
 %\section{Appendix B: Comparing Edges Across Different Community Types}
 
