@@ -3,20 +3,19 @@ Reviewer 1
 
 - The authors claim that the novelty of their work is based on the fact that community extraction has been done "blindly", i.e. without considering that actual type of network under analysis. It seems to the reviewer that this is simply not true, because the construction of the network is always done considering a specific representation of the problem under consideration. A link can represent an activity, an interaction, etc.
 
-* We did not mean to claim that the community extraction was done blindly. In fact, we demonstrated exactly the opposite: by intentionally choosing a different question about the individuals in the social network, very different community structure may be extracted. We did wish to highlight that a question-oriented approach to community detection can be undertaken with the network at-hand, assuming the network was collected in a way that would not strongly bias any of the weighting metrics we utilized.
+* We did not mean to claim that the community extraction was done blindly or that this was the novelty of our work. In fact, we demonstrated exactly the opposite: by intentionally choosing a different question about the individuals in the social network, very different community structure may be extracted. We did wish to highlight that a multifaceted question-oriented approach to community detection can be undertaken with the network at-hand, assuming the network was collected in a way that would not strongly bias any of the weighting metrics we utilized. We have made considerable edits to address this concern. 
 
 - In particular, as far as the activity-based approach is concerned, the definition of influence is very difficult to justify. The method itself is not particularly new. It was used in the past in [44]. In general, in my opinion, the use of transfer entropy for measuring the influence of a certain user on another user is fairly questionable. In fact, saying that a certain user influences another one considering th patterns of user activity might be rather questionable. What about different "followees" influencing the same person? What about external influences? In any case, I think that it is difficult to talk about "influence" in these cases. And then there is a fundamental question: it is not clear which information you can get using transfer entropy and its semantics.
 
-* The method used in [44] is very different from our own. We originally cited this paper because it was the impetus for us considering point process-type models of user behavior in social media, but we see that this may have been misleading. The method in [44] assumes a weighted adjacency matrix based on the point-wise (in time) informational coherence between any two nodes in the network. The informational coherence is computed as the normalized mutual information between the marginal causal states associated with each node in the vertex, and thus measures whether or not the information processing between any two nodes is associated across time. Thus, this measure is neither directed, nor does it account for lagged effects in terms of the interaction between two nodes in network, as our method does.
-(Elisa: I think this answers only the very first part of the comment. Josh, could you please elaborate also on the rest (I leave this to you since it's the transfer entropy stuff))
+* The method used in [44] is very different from our own. We originally cited this paper because it was the impetus for us considering point process-type models of user behavior in social media, but we see that this may have been misleading. The method in [44] assumes a weighted adjacency matrix based on the point-wise (in time) informational coherence between any two nodes in the network. The informational coherence is computed as the normalized mutual information between the marginal causal states associated with each node in the vertex, and thus measures whether or not the information processing between any two nodes is associated across time. Thus, this measure is neither directed, nor does it account for lagged effects in terms of the interaction between two nodes in network, as our method does. As far as the reviewers comments on the connection between transfer entropy and social influence, we completely agree with the reviewer. In the original manuscript we tried to be careful about hedging this as a measure of influence and to illustrate our skepticism of this implication. Based on the reviewer comments we see that we did not make this clear enough. Since, as the authors, we are also skeptical of this implication we have taken this assumption completely out of the paper which resulted in a significant refactoring of the entire paper. Our original intention was to have transfer entropy simply be a weighting measure of activity based predictive capacity. Effectively TE measures a reduction in uncertainty about a followers activity on Twitter given the tweet history of a user, removing the information contained in the tweet history of the follower. In the literature this is often considered influence or causality. However, similar to the reviewer, we were skeptical about this. In the original manuscript we tried to state these things as possible implications while hedging that we were skeptical that TE actually captured social influence or even time-series causality. As a result of the reviewers comments we have completely refactored the entire discussion of activity-based communities to focus on the mathematical definition of TE which is activity-based predictive capacity (which is defined in the revised manuscript) and have completely removed all possible implications such as influence or casuality. Thank you for pointing out that this was not clear before. 
 
 - Also, the similarity based on topics is not a contribution per se in my opinion. Topic extraction techniques (also in more refined ones, as cited by the authors) have been used in several papers.
 
-* Aside from he activity-based weighting. We do not believe that the contribution of our paper is any of the particular weightings, but rather that using them all in parallel provides a deeper analysis of the complex community structure present in online social networks.  We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, in order to unveil the multifaceted communities present in these networks, but we did not intend for these to be new. We have rewritten several of the sections of the paper to emphasize this change. We have also re-titled the paper and completely rewritten the abstract to emphasize that the contribution is in the multifaceted approach not in the particular weightings. We hope this is now more clear. 
+* Aside from he activity-based weighting. We do not believe that the contribution of our paper is any of the particular weightings, but rather that using them all in parallel provides a deeper analysis of the complex community structure present in online social networks.  We sought to include simple, reasonable metrics motivated by the interaction-, topic-, and activity-based questions, in order to unveil the multifaceted communities present in these networks, but we did not intend for these to be new or a contribution of the work. We have rewritten several of the sections of the paper to emphasize that this is not a contribution of the paper and added several citations to clarify this. We have also re-titled the paper and completely rewrote the abstract to emphasize that the contribution is in the multifaceted approach not in the particular weightings. We hope this is now more clear. 
 
 - As far as the evaluation is concerned, in Section 3.2 the authors compare their results by comparing the communities for different types of network structure. But, by doing this, the authors do not actually evaluate if their question based method is actually able to provide an "answer" considering the semantics of the question. I believe that a method based on a given semantics should be able to provide an answer to the question that is asked.
 
-* We have attempted to address this point more fully in section 3.4 of the revised manuscript. In particular, we demonstrate how the topic-based, interaction-based, and activity-based networks give rise to meaningful communities based on their respective interpretations of the meaning of 'community.' e.g. A topic-based community based around small businesses, an activity-based community based around individuals in Denver, CO, etc. Finally, we have added individual case studies to demonstrate how the community membership of a user across the different community types reveals different aspects of the user's online identity. 
+* This is a great suggestion, and one we believe really strengthened this paper. We have attempted to address this point more explicitly in section 3.4 of the revised manuscript. In particular, we demonstrate how the topic-based, interaction-based, and activity-based networks give rise to meaningful communities based on their respective interpretations of the meaning of 'community.' e.g. A topic-based community based around small businesses, an activity-based community based around individuals in Denver, CO, etc. In addition, we have added several case studies on the community and individual user level to demonstrate how the community membership of a user across the different community types reveals different aspects of the user's online identity. 
 
 - "many of these connections do not correspond to real friendships or more generally to accounts that users interact with": This sentence is very difficult to understand. People in Twitter follow accounts that are not real friends, but news outlets, governmental organizations, etc.
 
@@ -24,19 +23,19 @@ Reviewer 1
 
 - "we show that the communities obtained in the three weighted cases are highly different from each other": this is a fairly result. Different weights lead to different results.
 
-* The fact that different weightings should give rise to different communities is in our opinion non-trivial. For example, if all of the different weightings were strongly associated with each other, then we would expect to obtain the same communities, since the same structural backbone was used to to construct each weighted network. One might expect this to be the case with, for example, the interaction-based and activity-based weights. However, as both Figures 1 and 2 demonstrate, this is not the case.
+* The fact that different weightings should give rise to different communities is, in our opinion, non-trivial. For example, if a group of users constantly interacted with each other after school and used the same hash tags, then most likely all three activity-based, interaction-based and topic-based communities would completely overlap and these different weightings would not lead to different networks. Effectively, if all of the different weightings were strongly associated with each other, then we would expect to obtain the same communities, since the same structural backbone was used to to construct each weighted network. We have added several sentences in the paper addressing this concern. However, this was not always the case as both Figures 1 and 2 demonstrate. Some weightings resulted in similar communities, while others almost completely overlapped.  The fact that the different weightings provide interesting viewpoints of the communities present in this network is in our opinion nontrivial and interesting. To make this point more clear we have added sentences to the introduction as well as case studies in Section 3.4. 
 
 - "contact filtering": this is not a common term/concept at all in my opinion. It seems that tit has been introduce by the authors.
 
-* We did not introduce the term/concept. It can be found in reference [5].
+* We did not introduce the term/concept. It can be found in reference [5]. We have added this reference in a more prominent spot to make this more clear. 
 
 - "However, with the prevalence of large rich data sets for online social networks": I think that the opposite is actually true. Sociologists usually go beyond simple structure and/or structure is used to describe dynamics.
 
-* We did not mean to claim that sociologists currently take this approach, but rather that this approach was more reasonable in the era of small-scale studies of human/human interaction (for example, the small-world experiment of Stanley Milgram, or Zachary's Karate club). 
+* We did not mean to claim that sociologists currently take this approach, but rather that this approach was more reasonable in the era of small-scale studies of human/human interaction (for example, the small-world experiment of Stanley Milgram, or Zachary's Karate club). This has been corrected in the revisions. 
 
 - "Interaction-based": why is this different from activity based? It seems to me that this is a sort of limit case of the "activity-based" considering a simplification of the problem: communication vs no communication.
 
-* This is a very interesting point, while the interaction based and activity based will have *some* overlap they are not the same and not really a limiting case either. Consider the case where a person tweets in reaction to an individuals tweet but does not mention nor retweet the original user. This would be detected in the activity based but not the interaction based. You may also consider the case where a community is all tweeting about a particular event as that event is occurring but not actually talking to each other, this would register in the topic based and activity based but not in the interaction based.   In the revised manuscript we provided concrete examples, from the experimental network, of both of these circumstances. We hope that this addition to the manuscript will help clear up this confusion. 
+* This is a very interesting point, while the interaction based and activity based will have *some* overlap they are not the same and not really a limiting case either. Consider the case where a person tweets in reaction to an individuals tweet but does not mention nor retweet the original user. This would be detected in the activity based but not the interaction based. You may also consider the case where members of a community are all tweeting about a particular event as that event is occurring but not actually talking to each other, this would register in the topic based and activity based but not in the interaction based.   In the revised manuscript we provided concrete examples, from the experimental network, of both of these circumstances. We hope that this addition to the manuscript will help clear up this confusion. 
 
 - "We divide our approaches into four categories": I think that this is not strictly necessary since you have already mentioned this.
 
@@ -44,7 +43,7 @@ Reviewer 1
 
 - "However, we conjecture": rightly, the authors say that this is just a conjecture. At the same time, very bold claims are based on this very simple conjecture.
 
-* We agree that our original presentation of transfer entropy did not do a good enough job of stressing the difference between social and information theoretic influence. We have completely refactored our presentation of transfer entropy to make it more clear exactly what we believe transfer entropy does and does not capture in the setting of our paper.
+* We agree that our original presentation of transfer entropy did not do a good enough job of stressing the difference between social influence and what this information theoretic measure actually gives you. We have completely refactored our presentation of transfer entropy to make it more clear exactly what we believe transfer entropy does and does not capture in the setting of our paper.
 
 - "For example [6],": the idea of building a network based on this is not particularly new.
 
@@ -56,11 +55,11 @@ Reviewer 1
 
 - "For this reason, we coarsen each time series by considering non-overlapping time intervals...": this time series might be rather sparse. A discussion of this issue might be helpful.
 
-* The resultant time series were indeed rather sparse, but this sparsity accurately reflects the usage statistics we were trying to capture. As users are not constantly tweeting, the activity profiles, and any coarsening of such an activity profile, should reflect this. We appreciate this comment and completely agree that this discussion would be helpful and added a few sentences to discuss this issue in section 2.3 where we first introduced the binning procedure. 
+* The resultant time series were indeed rather sparse, but this sparsity accurately reflects the usage statistics we were trying to capture. As users are not constantly tweeting, the activity profiles, and any coarsening of such an activity profile, should reflect this. We appreciate this comment and completely agree that this discussion would be helpful and as a result we added a few sentences to discuss this issue in section 2.3 of the revised manuscript where we first introduced the binning procedure. 
 
 - "A positive value for the transfer...": this is just an assumption, you should say that you assume this.
 
-* We have revised the manuscript to emphasize the property that immediately follows from the definition of transfer entropy, rather than an assumption that we have made. We admit that in the prior version our interpretation of the positivity was just an assumption, and we have performed significant refactoring of all of this work to make our interpretation more concrete in the revised manuscript. The assumption of positivity now is 100% the mathematical definition of a reduction in uncertainty and we now imply no further result such as influence or causality. Thank you for the suggestion. 
+* We have revised the manuscript to emphasize the property that immediately follows from the definition of transfer entropy, rather than an assumption that we have made. We admit that in the prior version our interpretation of the positivity was just an assumption, and we have performed significant refactoring of all of this work to make our interpretation more concrete in the revised manuscript. The assumption of positivity now is 100% the mathematical definition of a reduction in uncertainty and we now imply no further result such as influence or causality. Thank you for the suggestion, we believe it strengthened this work. 
 
 - Formulae (2) and (3): you should use a different symbol for p in (2) and (3). In (4) the p can be very different. This formula is not correct in my opinion.
 
@@ -68,7 +67,7 @@ Reviewer 1
 
 - In general, the 3 metrics listed in (2), (3) and (4) are not properly motivated in my opinion.
 
-* Thank you for this comment. We expanded section 2.4 in the revised manuscript in order to motivate more in details these metrics.
+* Thank you for this comment. We expanded section 2.4 in the revised manuscript in order to motivate these metrics in more detail.
 
 - Section 2.5: the extraction of the weights is pretty standard, I do not consider this as a contribution per se.
 
@@ -80,11 +79,12 @@ Reviewer 1
 
 - "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
 
-* 
+* [[David fill this in ]]
 
 - Figure 2: I cannot se real insights from these plots.
 
-* 
+* [[David please fill this in ]]
+
 
 - For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behavior.
 
@@ -96,11 +96,13 @@ Reviewer 1
 
 - "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
 
-* 
+* [[David please fill this in ]]
+
 
 - "This means that these accounts had high influence...": this is a strong claim. This might be simply due to the higher probability of retweet for that account, i.e., the use of the entropy transfer function might not necessary. The actual introduction of such a complex tool for describing this tool is not completely justified.
 
 and 
+
 - "Lastly, it is interesting to note...": the same might be true for these accounts.
 
 * The manuscript has been significantly refactored to not assume the implication of either influence or causality but simply use transfer entropy as a mathematical tool to quantify activity-based predictive capacity, which we define explicitly in the revised paper. While we tried to make it clear in the original manuscript that we were hesitant to whether this was truly a measure of social influence, the reviewers comments illustrated to us that we had not done this well enough. We hope that this refactoring of the paper makes this skepticism as well as our actual intentions with this method more clear. 
@@ -119,4 +121,4 @@ Reviewer 2
 
 - My only minor complaint is the following. Depending on the "type" of links considered, I expect the network to be different. Why did the authors focus only on communities, instead of considering also more basic network properties? I would add some statistics about it.
 
-* Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis. However, as we indicated in the revised Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks and we do intend to do this analysis, but we believe this would be more appropriate for a separate paper. 
+* Thank you for this suggestion. We decided to focus the paper on communities, and felt that going into more detail about the differences in other network properties went beyond the scope of our analysis and would confuse the focus of the work. However, as we indicated in the revised Future Work section, we believe that such investigations could yield new insights into the multifaceted nature of online social networks and we do intend to do this analysis, but we believe this would be more appropriate for a separate paper. 
