@@ -56,11 +56,11 @@ Reviewer 1
 
 - "For this reason, we coarsen each time series by considering non-overlapping time intervals...": this time series might be rather sparse. A discussion of this issue might be helpful.
 
-* [[Josh]]
+* The resultant time series were indeed rather sparse, but this sparsity accurately reflects the usage statistics we were trying to capture. As users are not constantly tweeting, the activity profiles, and any coarsening of such an activity profile, should reflect this. We appreciate this comment and completely agree that this discussion would be helpful and added a few sentences to discuss this issue in section 2.3 where we first introduced the binning procedure. 
 
 - "A positive value for the transfer...": this is just an assumption, you should say that you assume this.
 
-* We have revised the manuscript to emphasize that this is a property that immediately follows from the definition of the transfer entropy, rather than an assumption that we have made. However, we admit that our interpretation of the positivity is an assumption, and we have attempted to make this interpretation more concrete in the revised manuscript.
+* We have revised the manuscript to emphasize the property that immediately follows from the definition of transfer entropy, rather than an assumption that we have made. We admit that in the prior version our interpretation of the positivity was just an assumption, and we have performed significant refactoring of all of this work to make our interpretation more concrete in the revised manuscript. The assumption of positivity now is 100% the mathematical definition of a reduction in uncertainty and we now imply no further result such as influence or causality. Thank you for the suggestion. 
 
 - Formulae (2) and (3): you should use a different symbol for p in (2) and (3). In (4) the p can be very different. This formula is not correct in my opinion.
 
@@ -72,8 +72,7 @@ Reviewer 1
 
 - Section 2.5: the extraction of the weights is pretty standard, I do not consider this as a contribution per se.
 
-* As noted in previous responses, the scope of this paper was not to present new weighting metrics, but rather to demonstrate the impact of standard weighting metrics on the communities extracted from a real-world online social network.
-(Elisa: I would say "to compare" rather than "to demontrate")
+* As noted in previous responses, the scope of this paper was not to present new weighting metrics, but rather to illustrate the importance of using *several* standard weighting metrics in order to extract several communities from a real-world online social network.
 
 - The result in Figure 1 is not really significant. These are comparisons between different methods without a clear interpretation of the results.
 
@@ -87,7 +86,7 @@ Reviewer 1
 
 * 
 
-- For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behaviour.
+- For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behavior.
 
 * Thank you for pointing this out. We have revised the manuscript to emphasize those cases when we do / do not expect the edge weight distributions to vary depending on the conditioning.
 
@@ -101,17 +100,17 @@ Reviewer 1
 
 - "This means that these accounts had high influence...": this is a strong claim. This might be simply due to the higher probability of retweet for that account, i.e., the use of the entropy transfer function might not necessary. The actual introduction of such a complex tool for describing this tool is not completely justified.
 
-* [[Josh]]
-
+and 
 - "Lastly, it is interesting to note...": the same might be true for these accounts.
 
-* [[Josh]]
+* As has been stated in previous responses the manuscript has been significantly refactored to not assume the implication of either influence or causality but simply use transfer entropy as a mathematical tool to quantify activity-based predictive capacity, which we define explicitly in the revised paper. While we tried to make it clear in the original manuscript that we were hesitant as whether this was truly a measure of social influence, the reviewers comments illustrated to us that we had not done this well enough. We hope that this refactoring of the paper makes this skepticism as well as our actual intentions with this method more clear. 
+
 
 - "even activity-based influence": it depends, you can consider weights accordingly, for example based on the frequency/intensity of the interaction, etc. You can even add a weight using Granger correlation. You can put a weight if the correlation is higher than a certain given threshold for example - and only tnen apply the community detection algorithm.
 
-* We agree. Alternative activity-based metrics could and should certainly be applied. In this sentence, we meant to emphasize that the structural network alone would not capture this information, and therefore performing influence detection using this network might lead to 
+* We agree. Alternative activity-based metrics could and should certainly be applied. In this sentence, we meant to emphasize that the structural network alone would not capture this information, and therefore performing influence detection using this network might lead to more accurate influence measures. We have added some sentences discussing and hopefully making this more clear. 
 
-- "erroneous results": how can you say that your resutls are corrects.
+- "erroneous results": how can you say that your results are corrects.
 
 * We have expanded on this point in the revised manuscript, and given examples of how influence detection based solely on the structural network could result in an incomplete understanding of the influence exhibited by users in an online social network.
 
