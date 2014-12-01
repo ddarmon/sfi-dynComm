@@ -6,8 +6,6 @@ We have included a revised version of our manuscript (paper.pdf), as well as a m
 
 We have sought to address all of the reviewers’ comments and concerns to the best of our ability. We have addressed these concerns point-by-point in our responses to the review reports, and have also included them in the addendum of this letter. 
 
-PUT MORE HERE.
-
 Thank you for all of the feedback. We believe that it has contributed to making our manuscript clearer, more concise, and more relevant to the research community.
 
 Sincerely,
@@ -98,11 +96,11 @@ Reviewer 1
 
 - "That is, the transfer entropy coverings are more similar...": These findings are not particularly insightful in my opinion. These might be just artifacts of the definitions.
 
-* [[David fill this in ]]
+* We do not believe that this result is an 'artifact' of the definitions, but rather because of the definitions. Recalling that the normalized mutual information measures how similar the coverings are, the fact that we observe similar coverings for similar, but not identical, weightings gives one indication that the underlying communities correspond true latent components of the network. For artifacts, we would expect either all of the coverings to be completely dissimilar (indicating that the community structure is purely driven by the weights), or for all of the coverings to be equally similar (indicating that the community structure is purely driven by the underlying structural network used in all of the weightings).
 
 - Figure 2: I cannot se real insights from these plots.
 
-* [[David please fill this in ]]
+* This is meant to highlight the point from the previous response. Namely, we see a block diagonal structure in the normalized mutual information, indicating that coverings based on the same type of weight (interaction-, activity-, and topic-based), but not necessarily identical weight (lag-1 vs lag-2 transfer entropy, for example), are more similar. We believe this is relevant for the reason given in our response to the previous point.
 
 
 - For meaningful community structure...:: It is not clear to me why this should be the case. You can have in theory similar communities. This is probably not the case, but you should avoid to say that you expect this behavior.
@@ -115,7 +113,7 @@ Reviewer 1
 
 - "Similarly, for the coverings corresponding to...": it is not possible to compare these results directly, since they represent very different properties. They are not really normalized/scaled up.
 
-* [[David please fill this in ]]
+* We agree that it is not meaningful to directly compare, for example, the median values for the transfer entropy weights and mention-retweet weights. However, this was not what we meant to highlight with this figure. Instead, we meant to highlight that the medians differ depending on whether one considers inter-, intra-, or mixed-type edges, and that these medians differ in systematic ways that do not depend on the weight type. We believe that this type of comparison, which depends on more qualitative distributional properties of the weights, is valid.
 
 
 - "This means that these accounts had high influence...": this is a strong claim. This might be simply due to the higher probability of retweet for that account, i.e., the use of the entropy transfer function might not necessary. The actual introduction of such a complex tool for describing this tool is not completely justified.
