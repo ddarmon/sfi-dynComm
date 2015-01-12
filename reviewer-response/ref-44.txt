@@ -1,0 +1,7 @@
+Reviewer: 
+
+"In this paper, the authors stressed in a more convincing way the actual differences between [44] and their work, but still the contribution might be seen quite incremental with respect to [44]. In general, it is very difficult to see the rationale of the "variation" proposed by the authors: It is very difficult to map it against real data. I appreciate the fact that authors do not now claim that the definition of the similarity metrics is a contribution per se."
+
+Response:
+
+As we stated in our most recent response, we wish to emphasize that we made the connection to reference [44] to highlight the trail of thought that lead us to the use of transfer entropy, in terms of using an association measure for point process-like dynamics to construct a network for use in community detection. Since we found that this lead the reviewer to the wrong conclusions, namely that our method is in some way an extension of [44], we removed this connection from the paper. [44] uses both a different community detection algorithm (a Potts model-based detection algorithm), and a different association measure (informational coherence), and thus any claim that our activity-based approach is a variation on [44] seems unjustified. Rather, we chose to use transfer entropy because it quantifies how predictive the behavior of one individual is for the behavior of another individual in social circle, and we wished to use such a measure as a proxy for influence.
