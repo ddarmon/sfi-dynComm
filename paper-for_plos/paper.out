@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Methodology}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Community Detection}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{The Initial Dataset and Network Construction}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Activity-Based Communities and Transfer Entropy}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Topic-Based Communities and Hashtag Weighting}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Interaction-Based Communities and Mention / Retweet Weighting}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Results and Discussion}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Comparing Aggregate Statistics of Community Structure}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Comparing Community Structure with Normalized Mutual Information}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Comparing Edges Across Different Community Types}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Uncovering the Multifacetedness of Community Memberships}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Conclusion and Future Work}{}% 13
