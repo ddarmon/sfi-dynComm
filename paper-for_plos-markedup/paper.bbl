@@ -1,0 +1,289 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{cazabet2012automated}
+Cazabet R, Leguistin M, Amblard F (2012) Automated community detection on
+  social networks: useful? efficient? asking the users.
+\newblock In: Proc. of the 4th WI\&C. pp. 6:1--6:8.
+\bibAnnoteFile{cazabet2012automated}
+
+\bibitem{girvan2002a}
+Girvan M, Newman ME (2002) Community structure in social and biological
+  networks.
+\newblock Proceedings of the National Academy of Sciences 99: 7821--7826.
+\bibAnnoteFile{girvan2002a}
+
+\bibitem{newman2004finding}
+Newman ME, Girvan M (2004) Finding and evaluating community structure in
+  networks.
+\newblock Phys Rev E 69: 026113.
+\bibAnnoteFile{newman2004finding}
+
+\bibitem{java2009we}
+Java A, Song X, Finin T, Tseng B (2009) Why we twitter: an analysis of a
+  microblogging community.
+\newblock In: Advances in Web Mining and Web Usage Analysis, Springer. pp.
+  118--138.
+\bibAnnoteFile{java2009we}
+
+\bibitem{nguyen2011adaptive}
+Nguyen NP, Dinh TN, Xuan Y, Thai MT (2011) Adaptive algorithms for detecting
+  community structure in dynamic social networks.
+\newblock In: Proc. of the IEEE 2011 INFOCOM. IEEE, pp. 2282--2290.
+\bibAnnoteFile{nguyen2011adaptive}
+
+\bibitem{grabowicz2012social}
+Grabowicz PA, Ramasco JJ, Moro E, Pujol JM, Eguiluz VM (2012) Social features
+  of online networks: The strength of intermediary ties in online social media.
+\newblock PLoS ONE 7: e29358.
+\bibAnnoteFile{grabowicz2012social}
+
+\bibitem{Holland1983}
+Holland PW, Laskey KB, Leinhardt S (1983) Stochastic blockmodels: First steps.
+\newblock Social networks 2: 109--137.
+\bibAnnoteFile{Holland1983}
+
+\bibitem{Aicher26062014}
+Aicher C, Jacobs AZ, Clauset A (2014) Learning latent block structure in
+  weighted networks.
+\newblock To appear, J Compl Netw .
+\bibAnnoteFile{Aicher26062014}
+
+\bibitem{PalEtAl05}
+Palla G, Der{\'e}nyi I, Farkas I, Vicsek T (2005) Uncovering the overlapping
+  community structure of complex networks in nature and society.
+\newblock Nature 435: 814--818.
+\bibAnnoteFile{PalEtAl05}
+
+\bibitem{Rosvall08mapsof}
+Rosvall M, Bergstrom CT (2008) Maps of random walks on complex networks reveal
+  community structure.
+\newblock Proc Natl Acad Sci 105: 1118--1123.
+\bibAnnoteFile{Rosvall08mapsof}
+
+\bibitem{blondel2008fast}
+Blondel VD, Guillaume JL, Lambiotte R, Lefebvre E (2008) Fast unfolding of
+  communities in large networks.
+\newblock J Stat Mech 2008: P10008.
+\bibAnnoteFile{blondel2008fast}
+
+\bibitem{LancichinettiPlos}
+Lancichinetti A, Radicchi F, Ramasco JJ, Fortunato S (2011) Finding
+  statistically significant communities in networks.
+\newblock PLoS ONE 6: e18961.
+\bibAnnoteFile{LancichinettiPlos}
+
+\bibitem{schreiber2000measuring}
+Schreiber T (2000) Measuring information transfer.
+\newblock Phys Rev Lett 85: 461--464.
+\bibAnnoteFile{schreiber2000measuring}
+
+\bibitem{rossi2012conversation}
+Rossi L, Magnani M (2012) Conversation practices and network structure in
+  twitter.
+\newblock In: Proc. of the 6th ICWSM. pp. 563--566.
+\bibAnnoteFile{rossi2012conversation}
+
+\bibitem{lim2012following}
+Lim KH, Datta A (2012) Following the follower: detecting communities with
+  common interests on twitter.
+\newblock In: Proc. of the 23rd ACM HT. ACM, pp. 317--318.
+\bibAnnoteFile{lim2012following}
+
+\bibitem{yin2012latent}
+Yin Z, Cao L, Gu Q, Han J (2012) Latent community topic analysis: integration
+  of community discovery with topic modeling.
+\newblock ACM Trans Intell Syst Technol 3: 63:1--63:21.
+\bibAnnoteFile{yin2012latent}
+
+\bibitem{zhao2011comparing}
+Zhao WX, Jiang J, Weng J, He J, Lim EP, et~al. (2011) Comparing twitter and
+  traditional media using topic models.
+\newblock In: Proc. of the 33rd ECIR, Springer. pp. 338--349.
+\bibAnnoteFile{zhao2011comparing}
+
+\bibitem{michelson2010discovering}
+Michelson M, Macskassy SA (2010) Discovering users' topics of interest on
+  twitter: a first look.
+\newblock In: Proc. of the 4th workshop on analytics for noisy unstructured
+  text data. ACM, pp. 73--80.
+\bibAnnoteFile{michelson2010discovering}
+
+\bibitem{becker2011beyond}
+Becker H, Naaman M, Gravano L (2011) Beyond trending topics: real-world event
+  identification on twitter.
+\newblock In: Proc. of the 5th ICWSM. pp. 438--441.
+\bibAnnoteFile{becker2011beyond}
+
+\bibitem{tsur2012s}
+Tsur O, Rappoport A (2012) What's in a hashtag?: content based prediction of
+  the spread of ideas in microblogging communities.
+\newblock In: Proc. of the 5th ACM WSDM. ACM, pp. 643--652.
+\bibAnnoteFile{tsur2012s}
+
+\bibitem{conover2011political}
+Conover M, Ratkiewicz J, Francisco M, Gon{\c{c}}alves B, Menczer F, et~al.
+  (2011) Political polarization on twitter.
+\newblock In: Proc. of the 4th ICWSM. pp. 89--96.
+\bibAnnoteFile{conover2011political}
+
+\bibitem{deitrick2013mutually}
+Deitrick W, Hu W (2013) Mutually enhancing community detection and sentiment
+  analysis on twitter networks.
+\newblock J Data Ana and Info Proc 1: 19--29.
+\bibAnnoteFile{deitrick2013mutually}
+
+\bibitem{lim2012tweets}
+Lim KH, Datta A (2012) Tweets beget propinquity: detecting highly interactive
+  communities on twitter using tweeting links.
+\newblock In: Proc. of the IEEE/WIC/ACM WI-IAT. IEEE, pp. 214--221.
+\bibAnnoteFile{lim2012tweets}
+
+\bibitem{kao2013talison}
+Kao A, Ferng W, Poteet S, Quach L, Tjoelker R (2013) Talison-tensor analysis of
+  social media data.
+\newblock In: Intelligence and Security Informatics. IEEE, pp. 137--142.
+\bibAnnoteFile{kao2013talison}
+
+\bibitem{porter2009communities}
+Porter MA, Onnela JP, Mucha PJ (2009) Communities in networks.
+\newblock Notices of the AMS 56: 1082--1097.
+\bibAnnoteFile{porter2009communities}
+
+\bibitem{fortunato2010community}
+Fortunato S (2010) Community detection in graphs.
+\newblock Phys Rep 486: 75--174.
+\bibAnnoteFile{fortunato2010community}
+
+\bibitem{BaumesGKMP05}
+Baumes J, Goldberg MK, Krishnamoorthy MS, Magdon-Ismail M, Preston N (2005)
+  Finding communities by clustering a graph into overlapping subgraphs.
+\newblock In: Proc. of the IADIS AC. pp. 97-104.
+\bibAnnoteFile{BaumesGKMP05}
+
+\bibitem{ZhaWanZha07}
+Zhang S, Wang RS, Zhang XS (2007) Identification of overlapping community
+  structure in complex networks using fuzzy $c$-means clustering.
+\newblock Phys A 374: 483--490.
+\bibAnnoteFile{ZhaWanZha07}
+
+\bibitem{Gre07}
+Gregory S (2007) An algorithm to find overlapping community structure in
+  networks.
+\newblock In: Proc. of the 11th PKDD. pp. 91--102.
+\bibAnnoteFile{Gre07}
+
+\bibitem{PhysRevE.77.016107}
+Nepusz T, Petr\'oczi A, N\'egyessy L, Bazs\'o F (2008) Fuzzy communities and
+  the concept of bridgeness in complex networks.
+\newblock Phys Rev E 77: 016107.
+\bibAnnoteFile{PhysRevE.77.016107}
+
+\bibitem{Lancichinetti2009}
+Lancichinetti A, Fortunato S, Kert\'{e}sz J (2009) {Detecting the overlapping
+  and hierarchical community structure in complex networks}.
+\newblock New J Phys 11: 033015.
+\bibAnnoteFile{Lancichinetti2009}
+
+\bibitem{PhysRevE.80.016105}
+Evans TS, Lambiotte R (2009) Line graphs, link partitions, and overlapping
+  communities.
+\newblock Phys Rev E 80: 016105.
+\bibAnnoteFile{PhysRevE.80.016105}
+
+\bibitem{Kovacs2010}
+Kov\'{a}cs IA, Palotai R, Szalay MS, Csermely P (2010) Community landscapes: an
+  integrative approach to determine overlapping network module hierarchy,
+  identify key nodes and predict network dynamics.
+\newblock PLoS ONE 5: e12528.
+\bibAnnoteFile{Kovacs2010}
+
+\bibitem{darmon2013understanding}
+Darmon D, Sylvester J, Girvan M, Rand W (2013) Predictability of user behavior
+  in social media: Bottom-up v. top-down modeling.
+\newblock In: ASE/IEEE Int'l Conf. on Social Computing. pp. 102--107.
+\bibAnnoteFile{darmon2013understanding}
+
+\bibitem{ver2012information}
+Ver~Steeg G, Galstyan A (2012) Information transfer in social media.
+\newblock In: Proc. of the 21st Inter. WWW Conf. ACM, pp. 509--518.
+\bibAnnoteFile{ver2012information}
+
+\bibitem{granger1963economic}
+Granger CWJ (1963) Economic processes involving feedback.
+\newblock Inform Control 6: 28--48.
+\bibAnnoteFile{granger1963economic}
+
+\bibitem{granovetter1973strength}
+Granovetter MS (1973) The strength of weak ties.
+\newblock Am J Sociol 78: 1360--1380.
+\bibAnnoteFile{granovetter1973strength}
+
+\bibitem{darmon2013detecting}
+Darmon D, Omodei E, Flores CO, Seoane LF, Stadler K, et~al. (2013) Detecting
+  communities using information flow in social networks.
+\newblock In: Proc. of the CSSS, Santa Fe Institute.
+\bibAnnoteFile{darmon2013detecting}
+
+\bibitem{salton_introduction_1983}
+Salton G, {McGill} MJ (1983) Introduction to modern information retrieval.
+\newblock New York: {McGraw-Hill}.
+\bibAnnoteFile{salton_introduction_1983}
+
+\bibitem{romero2011influence}
+Romero DM, Galuba W, Asur S, Huberman BA (2011) Influence and passivity in
+  social media.
+\newblock In: Machine learning and knowledge discovery in databases, Springer.
+  pp. 18--33.
+\bibAnnoteFile{romero2011influence}
+
+\bibitem{meilua2003comparing}
+Meil{\u{a}} M (2003) Comparing clusterings by the variation of information.
+\newblock In: Learning theory and kernel machines, Springer. pp. 173--187.
+\bibAnnoteFile{meilua2003comparing}
+
+\bibitem{newman2009networks}
+Newman M (2009) Networks: an introduction.
+\newblock Oxford University Press.
+\bibAnnoteFile{newman2009networks}
+
+\bibitem{kitsak2010identification}
+Kitsak M, Gallos LK, Havlin S, Liljeros F, Muchnik L, et~al. (2010)
+  Identification of influential spreaders in complex networks.
+\newblock Nature Phys 6: 888--893.
+\bibAnnoteFile{kitsak2010identification}
+
+\bibitem{grimmett2001probability}
+Grimmett G, Stirzaker D (2001) Probability and random processes.
+\newblock Oxford University Press.
+\bibAnnoteFile{grimmett2001probability}
+
+\bibitem{cover2012elements}
+Cover TM, Thomas JA (2006) Elements of information theory.
+\newblock Wiley-Interscience.
+\bibAnnoteFile{cover2012elements}
+
+\bibitem{paninski2003estimation}
+Paninski L (2003) Estimation of entropy and mutual information.
+\newblock Neural Comput 15: 1191--1253.
+\bibAnnoteFile{paninski2003estimation}
+
+\bibitem{miller1955note}
+Miller GA (1955) Note on the bias of information estimates.
+\newblock In: Quastler H, editor, Information theory in psychology II-B,
+  Glencoe, Illinois: Free Press. pp. 95--100.
+\bibAnnoteFile{miller1955note}
+
+\end{thebibliography}
